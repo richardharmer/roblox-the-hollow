@@ -31,7 +31,7 @@ October 11, 2026. No live production success is implied.
 ## NOT TESTED
 
 - Real GitHub scheduled execution, bot push, branch protection and cache retention.
-- Cloudflare API credentials, actual Git integration/hook trigger, deployment polling and production content verification. Deploy tests use mocked responses.
+- Cloudflare API credentials, actual Git integration/hook trigger and deployment polling. API recovery tests use mocked responses; public production content verification passed separately below.
 - A real new official event item moving through publication to the live domain. Only fixture publication and local checks were tested.
 - Live AI provider request, YouTube RSS channel feed, X/Reddit authenticated API.
 - Live confirmed-universe badge scan (no confirmed game universe available yet). Group discovery API was tested.
@@ -40,3 +40,13 @@ October 11, 2026. No live production success is implied.
 ## Scope limits
 
 The code publishes supported official date/hub/game-list/badge formats and includes an optional two-pass grounded AI pipeline for official quest/reward guides. The AI provider and real official guide publication remain NOT TESTED. Community/video guides, changing existing guide instructions and unsupported official page structures still remain HOLD. These are limits of the full unattended target, not a claim that credentials alone solve every source format.
+
+
+## Production-domain follow-up — October 11, 2026
+
+- HTTPS canonical domain returned commit `6977bd4fca76c05279e0e6306e5d2085f9f898d7`; the verifier passed version, home, games, rewards and sitemap checks.
+- Full `npm run check` passed: 29 tests, validation, TypeScript, lint, static export and SEO across 12 HTML pages.
+- Forced public-source monitor checked 2 sources, with 0 errors and 0 new candidates; no content was fabricated or published.
+- A second non-forced run correctly returned SKIPPED and wrote a fresh report because the phase interval had not elapsed.
+- Workflow now skips build/commit for unchanged content and saves cache only after a scan. Deployment recovery still executes on every successful workflow run.
+- Workflow behavior was inspected locally; actual GitHub scheduled execution and repository secrets remain unverified. No frontend changes were made in this follow-up, so browser visual tests were not repeated.

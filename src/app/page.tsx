@@ -93,8 +93,9 @@ export default function Home() {
             Keep your next move in sight.
           </p>
           <p className="hero-caption">
-            Track games, quests, badges, rewards, and the latest updates. One
-            field guide. Your own progress.
+            An independent fan-made guide to The Hollow, the reported 2026
+            Roblox Halloween event. Follow sourced updates and track verified
+            games, quests, badges and rewards as details become available.
           </p>
           <div className="hero-actions">
             <Link href="/games/" className="button primary">

@@ -1,6 +1,6 @@
 # One-time GitHub / Cloudflare setup
 
-The GitHub remote is `richardharmer/roblox-the-hollow`. The public Pages site at https://roblox-the-hollow.pages.dev/ returned a deployed commit on October 11, 2026. Custom-domain binding and automation credentials have not been verified.
+The GitHub remote is `richardharmer/roblox-the-hollow`. The public Pages site at https://roblox-the-hollow.pages.dev/ returned a deployed commit on October 11, 2026. The custom domain returned deployed commit `6977bd4fca76c05279e0e6306e5d2085f9f898d7` on October 11, 2026. Automation credentials have not been verified.
 
 ## 1. GitHub
 
@@ -50,12 +50,12 @@ Secrets:
 
 Variables:
 
-| Name                      | Value                                                                                                                   |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `CLOUDFLARE_PROJECT_NAME` | Exact Pages project name                                                                                                |
-| `DEPLOY_VERIFY_ORIGIN`    | Optional; defaults to `https://<project>.pages.dev`. Set to `https://robloxthehollow.com` after domain binding succeeds |
-| `AI_BASE_URL`             | Optional HTTPS OpenAI-compatible API base, e.g. `https://api.openai.com/v1`                                             |
-| `AI_MODEL`                | Optional model ID supported by your provider                                                                            |
+| Name                      | Value                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| `CLOUDFLARE_PROJECT_NAME` | Exact Pages project name                                                      |
+| `DEPLOY_VERIFY_ORIGIN`    | Optional override; the workflow now defaults to `https://robloxthehollow.com` |
+| `AI_BASE_URL`             | Optional HTTPS OpenAI-compatible API base, e.g. `https://api.openai.com/v1`   |
+| `AI_MODEL`                | Optional model ID supported by your provider                                  |
 
 Without AI credentials, deterministic official evidence still works; semantic claims stay HOLD. Adding an AI key does not itself authorize ungrounded publication. The current adapter does not need a YouTube API key.
 
@@ -79,7 +79,7 @@ After the first Pages deployment succeeds, open GitHub Actions → Monitor evide
 The monitor:
 
 1. Scans supported public sources; evaluates candidates.
-2. Writes only data/content; validates, typechecks, lints, tests, builds and checks SEO.
+2. Writes only data/content; when content changes, validates, typechecks, lints, tests, builds and checks SEO. No-change runs skip the build; CI still checks code pushes.
 3. Enforces a file whitelist; checks daily deployment budget before a bot commit.
 4. Commits only actual changes; persists state after successful push/gates.
 5. Looks for a production deployment whose commit hash exactly matches HEAD.
@@ -106,3 +106,16 @@ If an official end timestamp is obtained, the event moves to ENDED with an archi
 ## Development before domain binding
 
 Continue development and Pages deployments using `roblox-the-hollow.pages.dev`. Leave `DEPLOY_VERIFY_ORIGIN` unset and set `CLOUDFLARE_PROJECT_NAME=roblox-the-hollow`. Successful verification reports `PAGES_VERIFIED`; this does not claim that the custom domain works. Canonicals and sitemap URLs remain on the intended custom domain. After binding and TLS succeed, set `DEPLOY_VERIFY_ORIGIN=https://robloxthehollow.com` before redirecting the Pages hostname, then run the monitor manually. Custom-domain verification reports `PRODUCTION_VERIFIED`.
+
+## Production monitoring after domain binding
+
+The workflow now defaults `DEPLOY_VERIFY_ORIGIN` to `https://robloxthehollow.com`. An existing repository variable overrides this value: remove a stale Pages override or set it to the canonical domain. The standalone verifier still defaults to Pages when no origin is supplied. Interval-skipped scans write a fresh SKIPPED report and do not save duplicate cache entries. No-change scans skip build and commit; deployment verification still runs to recover an earlier failed deployment. Invalid or future cached timestamps trigger a fresh scan.
+
+
+## Configuration preflight and acceptance
+
+The monitor now checks required variable names and formats before collection. `configuration.json` names missing settings without printing secret values. This preflight does not prove token permissions or AI connectivity. Configure all three Cloudflare secrets (API token, account ID, deploy hook) and the Pages project variable in repository Actions settings. GitHub supplies `GITHUB_TOKEN`; no personal access token is required by the current workflow. Keep the workflow's `contents: write` permission and ensure repository policies permit it.
+
+Start with AI disabled. Optional AI uses secret `AI_API_KEY` and variables `AI_BASE_URL` and `AI_MODEL`. The provider must support the current Chat Completions request and JSON responses. A configured key is not proof that the model works; the guide pipeline may not call AI at all until eligible evidence and confirmed games exist.
+
+After pushing these files to main, dispatch Monitor evidence and publish. Verify configuration, source collection, absence of unsupported publication, exact deployment commit and `PRODUCTION_VERIFIED` report. A no-change pass does not test a new bot commit or hook fallback. Validate those separately with a controlled truthful content change or a real qualifying source; do not add invented event data merely to exercise deployment. Preserve the report distinction between tested and untested stages.

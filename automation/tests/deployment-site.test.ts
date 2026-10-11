@@ -68,3 +68,13 @@ test("wrong deployed commit and broken routes fail closed", async () => {
     /route failed/,
   );
 });
+
+// A corrupt or future cache timestamp must not suppress monitoring indefinitely.
+test("monitor scheduling recovers from invalid and future cache timestamps", async () => {
+  const { due } = await import("../monitor");
+  const now = new Date("2026-10-11T12:00:00Z");
+  assert.equal(due(now, "invalid"), true);
+  assert.equal(due(now, "2027-01-01T00:00:00Z"), true);
+  assert.equal(due(now, "2026-10-11T11:30:00Z"), false);
+  assert.equal(due(now, "2026-10-11T09:00:00Z"), true);
+});

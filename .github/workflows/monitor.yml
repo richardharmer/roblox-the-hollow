@@ -21,18 +21,30 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Check automation configuration
+        run: node --import tsx automation/preflight.ts
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+          DEPLOY_VERIFY_ORIGIN: ${{ vars.DEPLOY_VERIFY_ORIGIN || 'https://robloxthehollow.com' }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
       - uses: actions/cache/restore@v4
         with:
           path: .automation
           key: hollow-monitor-${{ github.run_id }}
           restore-keys: hollow-monitor-
       - name: Collect and verify
+        id: monitor
         run: npm run monitor -- ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
         env:
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
           AI_BASE_URL: ${{ vars.AI_BASE_URL }}
           AI_MODEL: ${{ vars.AI_MODEL }}
       - name: Validate and build before committing
+        if: steps.monitor.outputs.changed == 'true'
         run: npm run check
       - name: Enforce publication file boundary
         run: |
@@ -44,6 +56,7 @@ jobs:
             esac
           done
       - name: Commit substantive content changes
+        if: steps.monitor.outputs.changed == 'true'
         run: |
           git add src/data src/content
           if ! git diff --cached --quiet; then
@@ -58,6 +71,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
       - uses: actions/cache/save@v4
+        if: steps.monitor.outputs.ran == 'true'
         with:
           path: .automation
           key: hollow-monitor-${{ github.run_id }}
@@ -68,7 +82,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
           CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
-          DEPLOY_VERIFY_ORIGIN: ${{ vars.DEPLOY_VERIFY_ORIGIN }}
+          DEPLOY_VERIFY_ORIGIN: ${{ vars.DEPLOY_VERIFY_ORIGIN || 'https://robloxthehollow.com' }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:

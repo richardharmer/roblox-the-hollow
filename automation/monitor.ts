@@ -18,9 +18,18 @@ export function phase(now: Date) {
 export function due(now: Date, last: string | null) {
   return (
     !last ||
+    !Number.isFinite(Date.parse(last)) ||
+    Date.parse(last) > now.getTime() ||
     now.getTime() - Date.parse(last) >=
       config.intervalMinutes[phase(now)] * 60000 - 60000
   );
+}
+export async function runOutputs(ran: boolean, changed: boolean) {
+  if (process.env.GITHUB_OUTPUT)
+    await fs.appendFile(
+      process.env.GITHUB_OUTPUT,
+      `ran=${ran}\nchanged=${changed}\n`,
+    );
 }
 async function main() {
   await fs.mkdir(".automation", { recursive: true });
@@ -35,6 +44,21 @@ async function main() {
   } catch {}
   const now = new Date();
   if (!process.argv.includes("--force") && !due(now, state.lastRun)) {
+    await runOutputs(false, false);
+    await fs.writeFile(
+      "automation/reports/latest.json",
+      JSON.stringify(
+        {
+          status: "SKIPPED",
+          reason: "Phase interval has not elapsed",
+          lastRun: state.lastRun,
+          checkedAt: now.toISOString(),
+          phase: phase(now),
+        },
+        null,
+        2,
+      ),
+    );
     console.log("Skipped: phase interval has not elapsed");
     return;
   }
@@ -107,6 +131,7 @@ async function main() {
       process.env.GITHUB_STEP_SUMMARY,
       `## Hollow monitor\n\nSources checked: ${report.sourcesChecked}; candidates: ${report.newCandidates}; published: ${report.publishedItems}; held: ${report.heldItems}; rejected: ${report.rejectedItems}.\n\nErrors: ${report.errors.length}. See private run artifacts for details.\n`,
     );
+  await runOutputs(true, publishing.changed);
   console.log(JSON.stringify(report, null, 2));
   if (!result.evidence.length) process.exitCode = 1;
 }
