@@ -184,22 +184,52 @@ test("missing Git deployment uses one fallback then succeeds", async () => {
   );
   assert.equal(calls, 1);
 });
-test("deployment failure retries target and surfaces failure", async () => {
-  let retry = 0;
+test("failed deployment recovers through project hook using read-only API", async () => {
+  let hooks = 0;
+  let polls = 0;
+  const result = await ensureDeployment(
+    "abc",
+    async (path, init) => {
+      assert.equal(path, "/deployments");
+      assert.equal(init, undefined);
+      polls++;
+      return {
+        success: true,
+        result: [
+          deployment("failure"),
+          ...(hooks && polls > 3
+            ? [{ ...deployment("success"), id: "replacement" }]
+            : []),
+        ],
+      };
+    },
+    async () => {
+      hooks++;
+    },
+    async () => {},
+  );
+  assert.equal(result.id, "replacement");
+  assert.equal(hooks, 1);
+});
+test("replacement build failure surfaces without triggering a second hook", async () => {
+  let hooks = 0;
   await assert.rejects(
-    () =>
-      ensureDeployment(
-        "abc",
-        async (p) => {
-          if (p.endsWith("/retry")) retry++;
-          return { success: true, result: [deployment("failure")] };
-        },
-        async () => {},
-        async () => {},
-      ),
+    ensureDeployment(
+      "abc",
+      async () => ({
+        success: true,
+        result: [
+          { ...deployment("failure"), id: hooks ? "replacement" : "original" },
+        ],
+      }),
+      async () => {
+        hooks++;
+      },
+      async () => {},
+    ),
     /failed/,
   );
-  assert.equal(retry, 1);
+  assert.equal(hooks, 1);
 });
 test("workflow gates commit/deploy behind full build and validation", async () => {
   const y = await fs.readFile(".github/workflows/monitor.yml", "utf8");

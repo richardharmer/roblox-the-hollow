@@ -1,5 +1,9 @@
 # One-time GitHub / Cloudflare setup
 
+## 提交与上线说明语言
+
+按网站所有者要求，后续 Git 提交信息、PR 标题与描述、上线说明和部署结果汇报统一使用中文；代码标识符及命令保持原样。
+
 The GitHub remote is `richardharmer/roblox-the-hollow`. The public Pages site at https://roblox-the-hollow.pages.dev/ returned a deployed commit on October 11, 2026. The custom domain returned deployed commit `6977bd4fca76c05279e0e6306e5d2085f9f898d7` on October 11, 2026. Automation credentials have not been verified.
 
 ## 1. GitHub
@@ -33,7 +37,7 @@ Do not use a Workers/SSR adapter. Keep automatic Git production deployments enab
 
 Create a deploy hook for `main` under the Pages project's settings. Treat the full hook URL as a secret.
 
-Create a Cloudflare API token with **Account → Cloudflare Pages → Edit**, scoped to the owning account. It is used to inspect target-commit deployments and retry failed ones. It is not embedded in the website.
+Create a Cloudflare API token with **Account → Cloudflare Pages → Read**, scoped to the owning account. It only reads target-commit deployments and budget usage. Missing or failed deployments are rebuilt through the project-specific main-branch hook. Standard Pages tokens are account-scoped, so this read-only token can read other Pages projects in the selected account; it cannot edit them. The application queries only its configured project. It is not embedded in the website.
 
 ## 3. GitHub configuration
 

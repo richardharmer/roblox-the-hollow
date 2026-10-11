@@ -22,7 +22,9 @@ export async function ensureDeployment(
     };
     if (!r.success || !Array.isArray(r.result))
       throw new Error("Cloudflare deployment list failed");
-    return r.result;
+    return r.result.sort(
+      (a, b) => Date.parse(b.created_on) - Date.parse(a.created_on),
+    );
   };
   let target: Deployment | undefined;
   for (let i = 0; i < 4; i++) {
@@ -34,7 +36,11 @@ export async function ensureDeployment(
     if (target) break;
     if (i < 3) await wait(20000);
   }
-  if (!target) {
+  const replacedId =
+    target && ["failure", "canceled"].includes(target.latest_stage.status)
+      ? target.id
+      : undefined;
+  if (!target || replacedId) {
     const deployments = await list();
     const day = new Date().toISOString().slice(0, 10);
     const phase =
@@ -50,15 +56,11 @@ export async function ensureDeployment(
     )
       throw new Error("Daily deployment budget reached; retry next day");
     await hook();
-  } else if (
-    target.latest_stage.status === "failure" ||
-    target.latest_stage.status === "canceled"
-  ) {
-    await api(`/deployments/${target.id}/retry`, { method: "POST" });
   }
   for (let i = 0; i < 30; i++) {
     target = (await list()).find(
       (d) =>
+        d.id !== replacedId &&
         d.environment === "production" &&
         d.deployment_trigger?.metadata?.commit_hash === commit,
     );
@@ -139,9 +141,9 @@ async function main() {
   if (!/^[a-f0-9]{40}$/.test(commit || ""))
     throw new Error("Expected full commit SHA");
   const base = `https://api.cloudflare.com/client/v4/accounts/${encodeURIComponent(account)}/pages/projects/${encodeURIComponent(project)}`;
-  const api = async (p: string, init?: RequestInit) => {
+  const api = async (p: string) => {
     const r = await fetch(base + p, {
-      ...init,
+      method: "GET",
       signal: AbortSignal.timeout(20000),
       headers: { Authorization: `Bearer ${token}` },
     });
