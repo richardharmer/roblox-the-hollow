@@ -14,6 +14,7 @@ export async function ensureDeployment(
   api: (path: string, init?: RequestInit) => Promise<unknown>,
   hook: () => Promise<void>,
   wait = sleep,
+  testHook = false,
 ) {
   const list = async () => {
     const r = (await api("/deployments")) as {
@@ -37,7 +38,8 @@ export async function ensureDeployment(
     if (i < 3) await wait(20000);
   }
   const replacedId =
-    target && ["failure", "canceled"].includes(target.latest_stage.status)
+    target &&
+    (testHook || ["failure", "canceled"].includes(target.latest_stage.status))
       ? target.id
       : undefined;
   if (!target || replacedId) {
@@ -152,18 +154,24 @@ async function main() {
   };
   let report;
   try {
-    const deployed = await ensureDeployment(commit, api, async () => {
-      if (!hook)
-        throw new Error("Deploy hook missing and Git deployment not found");
-      const u = new URL(hook);
-      if (u.hostname !== "api.cloudflare.com" || u.protocol !== "https:")
-        throw new Error("Invalid Cloudflare hook");
-      const r = await fetch(u, {
-        method: "POST",
-        signal: AbortSignal.timeout(20000),
-      });
-      if (!r.ok) throw new Error("Deploy hook failed");
-    });
+    const deployed = await ensureDeployment(
+      commit,
+      api,
+      async () => {
+        if (!hook)
+          throw new Error("Deploy hook missing and Git deployment not found");
+        const u = new URL(hook);
+        if (u.hostname !== "api.cloudflare.com" || u.protocol !== "https:")
+          throw new Error("Invalid Cloudflare hook");
+        const r = await fetch(u, {
+          method: "POST",
+          signal: AbortSignal.timeout(20000),
+        });
+        if (!r.ok) throw new Error("Deploy hook failed");
+      },
+      sleep,
+      process.env.DEPLOY_TEST_HOOK === "true",
+    );
     const origin = verificationOrigin(
       project,
       process.env.DEPLOY_VERIFY_ORIGIN,

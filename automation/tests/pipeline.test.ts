@@ -423,3 +423,24 @@ test("guide AI unavailable safely holds without publishing", async () => {
     if (previous) process.env.AI_API_KEY = previous;
   }
 });
+
+test("explicit hook diagnostic requires a new deployment even when current commit is live", async () => {
+  let hooks = 0;
+  const result = await ensureDeployment(
+    "abc",
+    async () => ({
+      success: true,
+      result: [
+        deployment("success"),
+        ...(hooks ? [{ ...deployment("success"), id: "hook-build" }] : []),
+      ],
+    }),
+    async () => {
+      hooks++;
+    },
+    async () => {},
+    true,
+  );
+  assert.equal(hooks, 1);
+  assert.equal(result.id, "hook-build");
+});

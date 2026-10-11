@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "17,47 * * * *"
   workflow_dispatch:
+    inputs:
+      test_deploy_hook:
+        description: "验证本项目备用部署 Hook（额外构建一次）"
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -83,6 +88,7 @@ jobs:
           CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
           CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
           DEPLOY_VERIFY_ORIGIN: ${{ vars.DEPLOY_VERIFY_ORIGIN || 'https://robloxthehollow.com' }}
+          DEPLOY_TEST_HOOK: ${{ inputs.test_deploy_hook && 'true' || 'false' }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
