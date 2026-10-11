@@ -1,0 +1,166 @@
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
+import { collections, games, type Collection } from "@/lib/content";
+import { Status, EmptyState } from "./ui";
+export function Directory({ kind }: { kind: Collection }) {
+  const [search, setSearch] = useState("");
+  const [game, setGame] = useState("");
+  const [status, setStatus] = useState("");
+  const [free, setFree] = useState(false);
+  const entries = collections[kind];
+  const filtered = entries.filter(
+    (x) =>
+      x.name.toLowerCase().includes(search.toLowerCase()) &&
+      (!game || ("gameId" in x && x.gameId === game)) &&
+      (!status || x.verificationLevel === status) &&
+      (!free || ("free" in x && x.free === true)),
+  );
+  return (
+    <>
+      <div className="filter-bar">
+        <div className="field">
+          <label htmlFor="directory-search">Search {kind}</label>
+          <input
+            id="directory-search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={`Find a ${kind === "quests" ? "quest" : kind === "rewards" ? "reward" : kind === "badges" ? "badge" : "game"}…`}
+          />
+        </div>
+        {kind !== "games" && (
+          <div className="field">
+            <label htmlFor="game-filter">Game</label>
+            <select
+              id="game-filter"
+              value={game}
+              onChange={(e) => setGame(e.target.value)}
+            >
+              <option value="">All games</option>
+              {games.map((g) => (
+                <option key={g.id} value={g.id}>
+                  {g.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+        <div className="field">
+          <label htmlFor="status-filter">Evidence</label>
+          <select
+            id="status-filter"
+            value={status}
+            onChange={(e) => setStatus(e.target.value)}
+          >
+            <option value="">All evidence levels</option>
+            <option value="CONFIRMED">Confirmed</option>
+            <option value="REPORTED">Reported</option>
+          </select>
+        </div>
+        {kind === "rewards" && (
+          <label className="check-label">
+            <input
+              type="checkbox"
+              checked={free}
+              onChange={(e) => setFree(e.target.checked)}
+            />
+            Free only
+          </label>
+        )}
+      </div>
+      <p className="results-count" role="status">
+        {entries.length
+          ? `${filtered.length} of ${entries.length} published ${kind}`
+          : `Awaiting verified ${kind} · No placeholder entries`}
+      </p>
+      {entries.length === 0 ? (
+        <EmptyState
+          title={`The ${kind === "games" ? "game lineup" : kind === "quests" ? "quest list" : kind === "rewards" ? "reward catalog" : "badge list"} is awaiting verification.`}
+        >
+          We haven’t verified enough evidence to publish {kind}. Once we can
+          document the official connection to The Hollow, entries will appear
+          here with their source links.
+        </EmptyState>
+      ) : filtered.length === 0 ? (
+        <div className="empty-search">
+          <h3>No matching {kind}</h3>
+          <p>Try a shorter search or clear your filters.</p>
+          <button
+            className="button"
+            onClick={() => {
+              setSearch("");
+              setGame("");
+              setStatus("");
+              setFree(false);
+            }}
+          >
+            Clear filters
+          </button>
+        </div>
+      ) : (
+        <div className="entry-list">
+          {filtered.map((x) => (
+            <article key={x.id} className="entry-card">
+              {x.image && (
+                <img
+                  src={x.image.url}
+                  alt={x.image.alt}
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+              )}
+              <div>
+                <Status level={x.verificationLevel} />
+                <h3>
+                  {x.publishDetail ? (
+                    <Link href={`/${kind}/${x.slug}/`}>{x.name}</Link>
+                  ) : (
+                    x.name
+                  )}
+                </h3>
+                <p>{x.description}</p>
+                {"availability" in x && (
+                  <p>
+                    {x.free === true
+                      ? "Free"
+                      : x.free === false
+                        ? "Paid"
+                        : "Price unverified"}{" "}
+                    ·{" "}
+                    {x.availability === "UNAVAILABLE"
+                      ? "No Longer Available"
+                      : x.availability === "AVAILABLE"
+                        ? "Available"
+                        : "Availability unverified"}
+                  </p>
+                )}
+                <div className="entry-actions">
+                  {x.publishDetail && (
+                    <Link className="text-link" href={`/${kind}/${x.slug}/`}>
+                      Read guide <ArrowUpRight size={14} />
+                    </Link>
+                  )}
+                  {"robloxUrl" in x && (
+                    <a
+                      className="text-link"
+                      href={x.robloxUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on Roblox <ArrowUpRight size={14} />
+                    </a>
+                  )}
+                  <Link className="text-link" href="/progress/">
+                    Track progress
+                  </Link>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </>
+  );
+}

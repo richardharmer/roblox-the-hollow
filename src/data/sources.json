@@ -1,0 +1,72 @@
+[
+  {
+    "id": "community-announcement",
+    "name": "Reddit community announcement",
+    "url": "https://www.reddit.com/r/roblox/comments/1x2k1ct/hw_roblox_event/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Community discussion reports the name and October 22 date; mentions Piggy. Not direct official confirmation.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": "2026-10-11"
+  },
+  {
+    "id": "doors-discussion",
+    "name": "DOORS community discussion",
+    "url": "https://www.reddit.com/r/doors_roblox/comments/1x2pl51/doors_is_apart_of_the_hollow/",
+    "level": "COMMUNITY",
+    "access": "SEARCH_ONLY",
+    "note": "Participation is speculation; matching dates do not establish participation.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": null
+  },
+  {
+    "id": "early-discussion",
+    "name": "Early community clues",
+    "url": "https://www.reddit.com/r/roblox/comments/1wryt1a/potential_upcoming_event/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Discovery lead only.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": "2026-10-11"
+  },
+  {
+    "id": "official-x",
+    "name": "Roblox on X",
+    "url": "https://x.com/Roblox/status/2108226475573096953",
+    "level": "OFFICIAL",
+    "access": "UNAVAILABLE",
+    "note": "Original post could not be read. Secondary reports are not direct verification.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": null
+  },
+  {
+    "id": "wiki",
+    "name": "Roblox Wiki",
+    "url": "https://roblox.fandom.com/wiki/The_Hollow",
+    "level": "COMMUNITY",
+    "access": "UNAVAILABLE",
+    "note": "Page could not be read during initial verification.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": null
+  },
+  {
+    "id": "newsroom",
+    "name": "Roblox Newsroom",
+    "url": "https://about.roblox.com/newsroom",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Official news index; no directly verified Hollow announcement found during initial research.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": "2026-10-11"
+  },
+  {
+    "id": "presents",
+    "name": "Roblox Presents",
+    "url": "https://www.roblox.com/communities/4111519/Roblox-Presents",
+    "level": "OFFICIAL",
+    "access": "SEARCH_ONLY",
+    "note": "Publisher identity found; no event hub verified.",
+    "lastCheckedAt": "2026-10-11",
+    "lastSuccessAt": null
+  }
+]

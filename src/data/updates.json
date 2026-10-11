@@ -1,0 +1,20 @@
+[
+  {
+    "id": "initial-source-review",
+    "slug": "initial-source-review",
+    "title": "The Hollow: what we can verify so far",
+    "summary": "Community reports point to October 22. The game lineup, event hub and reward rules remain unverified.",
+    "body": [
+      "Community discussions dated October 10 describe a Roblox Halloween event called The Hollow and point to October 22, 2026. We are treating the date as reported because the original official X post could not be directly read during this review.",
+      "Piggy is mentioned in the announcement discussion. DOORS participation is a separate community theory based on update timing. Neither is included in our confirmed games directory.",
+      "An exact launch time, end date, official hub link, quest requirements and reward catalog have not been verified. We will add playable checklists when there is enough evidence to explain what to do."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": ["community-announcement", "doors-discussion", "official-x"],
+    "publishedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
+    "lastVerifiedAt": "2026-10-11",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  }
+]

@@ -1,0 +1,76 @@
+name: Monitor evidence and publish
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hollow-production
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache/restore@v4
+        with:
+          path: .automation
+          key: hollow-monitor-${{ github.run_id }}
+          restore-keys: hollow-monitor-
+      - name: Collect and verify
+        run: npm run monitor -- ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+      - name: Validate and build before committing
+        run: npm run check
+      - name: Enforce publication file boundary
+        run: |
+          git status --porcelain --untracked-files=all | while IFS= read -r line; do
+            file="${line:3}"
+            case "$file" in
+              src/data/*.json|src/content/*.md) ;;
+              *) echo "Unexpected modified file: $file"; exit 1 ;;
+            esac
+          done
+      - name: Commit substantive content changes
+        run: |
+          git add src/data src/content
+          if ! git diff --cached --quiet; then
+            node --import tsx automation/publishing/budget.ts
+            git config user.name 'Hollow Evidence Bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'content: publish verified Hollow evidence'
+            git push origin HEAD
+          fi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+      - uses: actions/cache/save@v4
+        with:
+          path: .automation
+          key: hollow-monitor-${{ github.run_id }}
+      - name: Verify Git deployment or use hook fallback
+        run: node --import tsx automation/publishing/deploy.ts "$(git rev-parse HEAD)"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hollow-run-${{ github.run_id }}
+          path: automation/reports/
+          retention-days: 14

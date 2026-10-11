@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+.automation/
+automation/reports/*
+!automation/reports/.gitkeep
+test-results/
+playwright-report/
+src/app/(generated)/
+public/version.json

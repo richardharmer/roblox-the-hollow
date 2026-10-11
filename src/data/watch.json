@@ -1,0 +1,16 @@
+[
+  {
+    "id": "watch-piggy",
+    "name": "Piggy",
+    "status": "REPORTED",
+    "description": "Mentioned in the community discussion of the teaser. Participation has not been directly verified.",
+    "sourceId": "community-announcement"
+  },
+  {
+    "id": "watch-doors",
+    "name": "DOORS",
+    "status": "UNCONFIRMED",
+    "description": "Fans connect its Halloween update timing with the event. That is a theory, not a confirmed game listing.",
+    "sourceId": "doors-discussion"
+  }
+]

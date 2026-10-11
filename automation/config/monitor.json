@@ -1,0 +1,32 @@
+{
+  "eventId": "the-hollow-2026",
+  "eventName": "The Hollow",
+  "presentsGroupId": 4111519,
+  "preEventUntil": "2026-10-22",
+  "busyUntil": "2026-11-06",
+  "intervalMinutes": {
+    "pre": 120,
+    "busy": 30,
+    "archive": 720
+  },
+  "dailyDeployLimit": {
+    "pre": 6,
+    "busy": 12,
+    "archive": 2
+  },
+  "maxNewPages": 5,
+  "allowedHosts": [
+    "about.roblox.com",
+    "www.roblox.com",
+    "games.roblox.com",
+    "badges.roblox.com",
+    "groups.roblox.com",
+    "apis.roblox.com",
+    "www.youtube.com",
+    "www.googleapis.com",
+    "x.com"
+  ],
+  "officialPages": ["https://about.roblox.com/newsroom"],
+  "youtubeChannelIds": [],
+  "developerPages": []
+}
