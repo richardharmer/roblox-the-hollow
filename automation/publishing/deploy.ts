@@ -69,6 +69,63 @@ export async function ensureDeployment(
   }
   throw new Error("Timed out waiting for target commit deployment");
 }
+export function verificationOrigin(project: string, configured?: string) {
+  const url = new URL(configured || `https://${project}.pages.dev`);
+  if (
+    url.protocol !== "https:" ||
+    url.username ||
+    url.password ||
+    url.port ||
+    url.pathname !== "/" ||
+    url.search ||
+    url.hash ||
+    ![`${project}.pages.dev`, "robloxthehollow.com"].includes(url.hostname)
+  )
+    throw new Error(
+      "Verification origin must be the project Pages hostname or canonical domain",
+    );
+  return url.origin;
+}
+
+export async function verifySite(
+  origin: string,
+  commit: string,
+  request: typeof fetch = fetch,
+  wait = sleep,
+) {
+  let verified = false;
+  for (let i = 0; i < 6; i++) {
+    try {
+      const r = await request(`${origin}/version.json`, {
+        cache: "no-store",
+        signal: AbortSignal.timeout(15000),
+      });
+      if (r.ok && (await r.json()).commit === commit) {
+        verified = true;
+        break;
+      }
+    } catch {
+      // DNS, TLS and edge propagation can briefly lag a successful build.
+    }
+    if (i < 5) await wait(10000);
+  }
+  if (!verified)
+    throw new Error("Deployed content does not match target commit");
+  for (const path of ["/", "/games/", "/rewards/", "/sitemap.xml"]) {
+    const r = await request(origin + path, {
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!r.ok) throw new Error(`Deployed route failed: ${path}`);
+    const body = await r.text();
+    if (
+      path === "/sitemap.xml"
+        ? !body.includes("<urlset")
+        : !body.includes("The Hollow")
+    )
+      throw new Error(`Deployed route content invalid: ${path}`);
+  }
+}
+
 async function main() {
   const {
     CLOUDFLARE_API_TOKEN: token,
@@ -105,35 +162,17 @@ async function main() {
       });
       if (!r.ok) throw new Error("Deploy hook failed");
     });
-    let verified = false;
-    for (let i = 0; i < 6; i++) {
-      const r = await fetch("https://robloxthehollow.com/version.json", {
-        cache: "no-store",
-        signal: AbortSignal.timeout(15000),
-      });
-      if (r.ok && (await r.json()).commit === commit) {
-        verified = true;
-        break;
-      }
-      await sleep(10000);
-    }
-    if (!verified)
-      throw new Error("Production content does not match target commit");
-    for (const p of ["/", "/games/", "/rewards/", "/sitemap.xml"]) {
-      const r = await fetch("https://robloxthehollow.com" + p, {
-        signal: AbortSignal.timeout(15000),
-      });
-      if (!r.ok) throw new Error(`Production route failed: ${p}`);
-      const text = await r.text();
-      if (
-        p === "/sitemap.xml"
-          ? !text.includes("<urlset")
-          : !text.includes("The Hollow")
-      )
-        throw new Error(`Production route content invalid: ${p}`);
-    }
+    const origin = verificationOrigin(
+      project,
+      process.env.DEPLOY_VERIFY_ORIGIN,
+    );
+    await verifySite(origin, commit);
     report = {
-      status: "PRODUCTION_VERIFIED",
+      status:
+        origin === "https://robloxthehollow.com"
+          ? "PRODUCTION_VERIFIED"
+          : "PAGES_VERIFIED",
+      origin,
       commit,
       deploymentId: deployed.id,
     };

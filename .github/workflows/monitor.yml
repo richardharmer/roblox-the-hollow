@@ -68,6 +68,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
           CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+          DEPLOY_VERIFY_ORIGIN: ${{ vars.DEPLOY_VERIFY_ORIGIN }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
