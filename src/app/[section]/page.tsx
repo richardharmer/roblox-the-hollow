@@ -343,11 +343,16 @@ export default async function Section({
           </p>
           <h2>Analytics and advertising</h2>
           <p>
-            No analytics or advertising network scripts are installed in this
-            release. Reserved ad components do not contact ad providers. Before
-            enabling a network, this policy and any required consent controls
-            must be updated to describe its processing and age-appropriate
-            settings.
+            This site uses Google Analytics to measure visits and Microsoft
+            Clarity to understand how visitors use pages through interaction
+            data and session recordings. These services may use cookies and
+            process device, browser and usage information. See the{" "}
+            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+            {" "}and the{" "}
+            <a href="https://www.microsoft.com/privacy/privacystatement">
+              Microsoft Privacy Statement
+            </a>
+            {" "}for details. Reserved ad components do not contact ad providers.
           </p>
           <h2>External links and contact</h2>
           <p>

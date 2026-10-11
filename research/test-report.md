@@ -50,3 +50,14 @@ The code publishes supported official date/hub/game-list/badge formats and inclu
 - A second non-forced run correctly returned SKIPPED and wrote a fresh report because the phase interval had not elapsed.
 - Workflow now skips build/commit for unchanged content and saves cache only after a scan. Deployment recovery still executes on every successful workflow run.
 - Workflow behavior was inspected locally; actual GitHub scheduled execution and repository secrets remain unverified. No frontend changes were made in this follow-up, so browser visual tests were not repeated.
+
+
+## Live automation acceptance — October 11, 2026 (Asia/Shanghai)
+
+Configured only repository `richardharmer/roblox-the-hollow`: three Cloudflare Secrets, Pages project variable and canonical-origin variable. Created project-specific `hollow-automation` hook for main and a dedicated Pages Read token for the owning account after owner confirmation. No account-level Pages Edit token, unrelated project changes or AI credentials were used.
+
+- Run https://github.com/richardharmer/roblox-the-hollow/actions/runs/38114085981 succeeded. Two sources, zero errors, zero new candidates, no content commit. Production verification matched commit `023801052092a3c74b04543a78f284c21e00735e` and deployment `1476b13c-964a-4187-8233-2ed133c75c4a`.
+- Hook diagnostic https://github.com/richardharmer/roblox-the-hollow/actions/runs/38114274725 succeeded. Explicit project Hook rebuild produced deployment `b0da9d0e-fe83-4d8b-8f00-239c31f3c8e1`; canonical verification returned PRODUCTION_VERIFIED for `faae1092a067b210631eba3c2ec7285c7e461f2c`.
+- Local full check passed 33 tests, typecheck, static build and SEO. One pre-existing analytics-script lint warning remains; no lint errors.
+- Scheduled invocation itself, a real newly discovered item generating a bot content commit, and live AI extraction remain untested. Manual dispatch exercises the same monitor but forces collection. No fake source data was published to exercise those paths.
+- Read token is account-scoped and can read other Pages project metadata; write actions use only this project's hook. Daily build capacity may still be shared across the Cloudflare account.
