@@ -25,6 +25,13 @@ export const updates = updateSchema
   .parse(updatesRaw)
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 export const collections = { games, quests, rewards, badges };
+export const latestReviewAt = updates
+  .filter((update) => update.kind === "EDITORIAL")
+  .reduce(
+    (latest, update) =>
+      update.lastVerifiedAt > latest ? update.lastVerifiedAt : latest,
+    event.lastVerifiedAt,
+  );
 export type Collection = keyof typeof collections;
 export const origin = "https://robloxthehollow.com";
 export const contact = "contact@robloxthehollow.com";

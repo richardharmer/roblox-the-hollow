@@ -15,6 +15,7 @@ import {
   games,
   rewards,
   updates,
+  latestReviewAt,
   formatDate,
 } from "@/lib/content";
 import { metadata } from "@/lib/seo";
@@ -136,7 +137,7 @@ export default function Home() {
             "AVAILABLE REWARDS",
             rewards.length ? `${rewards.length} documented` : "To Be Announced",
           ],
-          ["LATEST REVIEW", formatDate(event.lastVerifiedAt)],
+          ["LATEST REVIEW", formatDate(latestReviewAt)],
         ].map(([k, v]) => (
           <div key={k}>
             <span>{k}</span>

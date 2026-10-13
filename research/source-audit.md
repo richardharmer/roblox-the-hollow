@@ -23,6 +23,13 @@ Research date uses Asia/Shanghai. Runtime reports retain UTC timestamps. Project
 - 2025 mechanics are not carried into 2026.
 - Updates contain one real editorial source review, not invented news.
 
+## October 13 monitoring follow-up — 15:00 Asia/Shanghai
+
+- User-supplied monitoring report identifies a homepage review-date mismatch. The homepage now derives Latest Review from editorial reviews' latest verification date, with the event verification date as a fallback. Existing October 13 review yields October 13, 2026.
+- Report says Pro Game Guides cites Roblox X post `2108961492187918378`; the retained source is `2108226475573096953`. Different IDs are confirmed, but their content and relationship are not. Follow-up reads of Pro Game Guides and both X URLs failed. Retain the original link and disclose the unresolved correspondence in the source note and October 13 review; do not substitute the link or promote event claims.
+- Internal candidate: Spider — UNCONFIRMED. Report attributes it to a new r/roblox discussion, without an exact discussion URL or verified publication time. Obtain that source before making a public entry. No change to the public game directory.
+- No new confirmed hub, participating games, quests, rewards, badges or exact event timing established by this follow-up. No deployment implied.
+
 ## Collector evidence
 
 `npm run monitor -- --force` initially failed because Node's address-family selection expected an address list; fixed by disabling automatic family selection with a pinned verified DNS lookup.
