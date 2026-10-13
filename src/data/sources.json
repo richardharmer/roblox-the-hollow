@@ -35,8 +35,8 @@
     "url": "https://x.com/Roblox/status/2108226475573096953",
     "level": "OFFICIAL",
     "access": "UNAVAILABLE",
-    "note": "Original post could not be read. Secondary reports are not direct verification.",
-    "lastCheckedAt": "2026-10-11",
+    "note": "Original post could not be read during the October 13 review. Pro Game Guides reproduces a teaser dated October 10 with an October 22 date; this remains secondary reporting, not direct official verification.",
+    "lastCheckedAt": "2026-10-13",
     "lastSuccessAt": null
   },
   {
@@ -68,5 +68,35 @@
     "note": "Publisher identity found; no event hub verified.",
     "lastCheckedAt": "2026-10-11",
     "lastSuccessAt": null
+  },
+  {
+    "id": "pgg-hollow-2026",
+    "name": "Pro Game Guides — The Hollow games and dates",
+    "url": "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Secondary media report, updated October 11. Reproduces the Roblox teaser but lists all game names as rumors. Its body gives November 9 as the end date while its FAQ gives November 5. The reported 11:00 AM PDT launch time and reward mechanism lack directly verified primary evidence; do not use this article to confirm them.",
+    "lastCheckedAt": "2026-10-13",
+    "lastSuccessAt": "2026-10-13"
+  },
+  {
+    "id": "gamesgg-hollow-2026",
+    "name": "GAMES.GG — The Hollow reported lineup",
+    "url": "https://games.gg/roblox/guides/roblox-the-hollow-2026/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Secondary media report, dated October 12. Explicitly says no games are officially confirmed. Its precise start time, November 9 end date and virtual-currency UGC mechanism have not been independently verified against primary evidence. Repetition of the teaser is not independent official confirmation.",
+    "lastCheckedAt": "2026-10-13",
+    "lastSuccessAt": "2026-10-13"
+  },
+  {
+    "id": "theclick-candy-vault",
+    "name": "The Click — DOORS The Candy Vault",
+    "url": "https://www.theclick.gg/doors-the-candy-vault-release-date/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Secondary media report, dated October 12. Attributes The Candy Vault to LSPLASH and reports October 22 at 18:00 UTC from a Roblox event listing. The underlying dynamic event listing was not directly verified in this review. This is a DOORS seasonal lead; it does not establish participation in The Hollow or The Hollow launch time.",
+    "lastCheckedAt": "2026-10-13",
+    "lastSuccessAt": "2026-10-13"
   }
 ]

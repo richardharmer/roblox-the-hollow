@@ -1,5 +1,30 @@
 [
   {
+    "id": "october-13-source-review",
+    "slug": "october-13-source-review",
+    "title": "October 13 source review: conflicting dates and the DOORS lead",
+    "summary": "New media sources add context, but conflicting end dates and an unverified DOORS link leave the event details unchanged.",
+    "body": [
+      "Our October 13, 2026 review directly read new secondary reports from Pro Game Guides, GAMES.GG and The Click. The Roblox X teaser could not be directly read. October 22 remains REPORTED; we have not verified an exact launch time, end date or official event hub.",
+      "Pro Game Guides, updated October 11, reproduces a Roblox teaser dated October 10 pointing to October 22. Its main text gives November 9 as the event end date, while its FAQ gives November 5. Because those dates conflict and primary evidence is missing, neither is published as the event end date.",
+      "GAMES.GG, dated October 12, says no participating games are officially confirmed. Its precise start time, end date and virtual-currency reward mechanism remain unverified here. Multiple articles repeating a claim do not replace primary evidence.",
+      "The Click, dated October 12, reports a DOORS seasonal event called The Candy Vault, attributed to LSPLASH, scheduled for October 22 at 18:00 UTC. We have not directly verified the underlying Roblox event entry. Shared timing does not demonstrate that DOORS participates in The Hollow, and this time must not be used as The Hollow launch time.",
+      "DOORS remains UNCONFIRMED in Community Watch. No games, tasks, badges or rewards have been added to the confirmed directories from these reports. We are watching for explicit Roblox or developer confirmation, a verified hub and documented reward requirements."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "pgg-hollow-2026",
+      "gamesgg-hollow-2026",
+      "theclick-candy-vault",
+      "official-x"
+    ],
+    "publishedAt": "2026-10-13",
+    "updatedAt": "2026-10-13",
+    "lastVerifiedAt": "2026-10-13",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "initial-source-review",
     "slug": "initial-source-review",
     "title": "The Hollow: what we can verify so far",
@@ -10,7 +35,11 @@
       "An exact launch time, end date, official hub link, quest requirements and reward catalog have not been verified. We will add playable checklists when there is enough evidence to explain what to do."
     ],
     "verificationLevel": "REPORTED",
-    "sources": ["community-announcement", "doors-discussion", "official-x"],
+    "sources": [
+      "community-announcement",
+      "doors-discussion",
+      "official-x"
+    ],
     "publishedAt": "2026-10-11",
     "updatedAt": "2026-10-11",
     "lastVerifiedAt": "2026-10-11",
