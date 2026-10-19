@@ -1,5 +1,29 @@
 [
   {
+    "id": "october-19-reported-instagram-lineup",
+    "slug": "october-19-reported-instagram-lineup",
+    "title": "Nine Games Reported for Roblox The Hollow Following Instagram Teasers",
+    "summary": "Bloxy News and RTC name nine experiences and point to Roblox Instagram teasers. The lineup remains REPORTED while the original posts await direct verification.",
+    "body": [
+      "Bloxy News and RTC report that Roblox published Instagram character teasers for The Hollow. During our October 19, 2026 review, we read both accounts’ reporting through Sotwe public mirrors. Roblox’s original Instagram posts could not be directly accessed, so the lineup remains REPORTED rather than independently confirmed.",
+      "The reported games are DOORS, Demonology, Animal Hospital, Scary Shawarma Kiosk, Warden, Piggy, Dandy’s World, 99 Nights in the Forest, and The Mimic. Bloxy News abbreviates 99 Nights in the Forest to 99 Nights; RTC uses the longer name. These are reported experience names, not verified game links or IDs.",
+      "The supplied monitoring reports place this coverage around October 17–18. The mirrors show relative timestamps; exact original publication times and permanent links to the nine Instagram videos have not been verified. Both accounts point to Instagram, but their reports may rely on the same material and do not constitute separate official confirmations.",
+      "October 22 remains the reported start date. An exact launch time, end date, official event hub, participation requirements, quests, badges and reward items still require primary evidence. The nine-game report does not establish a nine-night schedule.",
+      "This update records a stronger reporting lead than the earlier character speculation. The confirmed games directory remains unchanged. We will add game links and playable guides after verifying participation, experience IDs and actual instructions against Roblox or developer announcements."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup",
+      "official-instagram"
+    ],
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "lastVerifiedAt": "2026-10-19",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-13-source-review",
     "slug": "october-13-source-review",
     "title": "October 13 source review: conflicting dates and the DOORS lead",

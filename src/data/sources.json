@@ -98,5 +98,35 @@
     "note": "Secondary media report, dated October 12. Attributes The Candy Vault to LSPLASH and reports October 22 at 18:00 UTC from a Roblox event listing. The underlying dynamic event listing was not directly verified in this review. This is a DOORS seasonal lead; it does not establish participation in The Hollow or The Hollow launch time.",
     "lastCheckedAt": "2026-10-13",
     "lastSuccessAt": "2026-10-13"
+  },
+  {
+    "id": "bloxy-instagram-lineup",
+    "name": "Bloxy News — Instagram lineup report (Sotwe mirror)",
+    "url": "https://www.sotwe.com/Bloxy_News",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Secondary reporting read through a public profile mirror on October 19. Names nine games and attributes the reveal to Roblox Instagram teasers. Exact post time and original post permalink remain unverified; the profile feed can change. This is not a direct read of Roblox’s announcement.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "rtc-instagram-lineup",
+    "name": "RTC — nine-game report (Sotwe mirror)",
+    "url": "https://www.sotwe.com/Roblox_RTC",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Secondary reporting read through a public profile mirror on October 19. Lists the same nine games and points readers to Roblox Instagram teasers. Its confirmation wording is the account’s claim, not our independent verification. Exact post time and original post permalink remain unverified; the profile feed can change.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "official-instagram",
+    "name": "Roblox on Instagram — original teasers awaiting verification",
+    "url": "https://www.instagram.com/roblox/",
+    "level": "OFFICIAL",
+    "access": "UNAVAILABLE",
+    "note": "Official account cited by Bloxy News and RTC. Direct access failed during the October 19 review; individual teaser permalinks, publication times and event participation wording were not verified. The supplied monitoring report encountered HTTP 429; this follow-up returned a generic access error.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": null
   }
 ]

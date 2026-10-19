@@ -30,6 +30,14 @@ Research date uses Asia/Shanghai. Runtime reports retain UTC timestamps. Project
 - Internal candidate: Spider — UNCONFIRMED. Report attributes it to a new r/roblox discussion, without an exact discussion URL or verified publication time. Obtain that source before making a public entry. No change to the public game directory.
 - No new confirmed hub, participating games, quests, rewards, badges or exact event timing established by this follow-up. No deployment implied.
 
+## October 19 monitoring follow-up — Asia/Shanghai
+
+- Compared the supplied October 18 20:00 and October 19 09:03 monitoring reports. Directly read the Bloxy News and RTC text via https://www.sotwe.com/Bloxy_News and https://www.sotwe.com/Roblox_RTC. Both name nine games and attribute the teasers to Roblox Instagram. These are secondary reports accessed through mirrors, not directly verified official announcements or independent primary confirmations.
+- Roblox Instagram (https://www.instagram.com/roblox/) returned a generic access error in this follow-up. HTTP 429 belongs to the supplied report, not this access attempt. No individual Instagram video permalink or exact publication time was obtained. Profile mirrors display relative timestamps and may change; October 17–18 is the supplied report's approximate source-date range, not a timestamp established here.
+- Published a local REPORTED editorial entry dated October 19 with the nine reported names and three source records. Existing schema uses verificationLevel and lastVerifiedAt; source-date uncertainty and the reported count are explained in prose without adding unsupported schema fields. Homepage Latest Review derives October 19 from this editorial entry.
+- No game IDs, participating-game records, quests, badges, rewards, hub or exact timing were added. The nine-game claim does not establish a nine-night mechanism. TikTok montage and RosenberryRooms claims from the October 18 report remain internal leads; their exact URLs were not supplied or independently recovered during this follow-up.
+- No claim of production freshness or deployment verification is made by this local change. The earlier reported cache-refresh failure cannot establish that production missed an update.
+
 ## Collector evidence
 
 `npm run monitor -- --force` initially failed because Node's address-family selection expected an address list; fixed by disabling automatic family selection with a pinned verified DNS lookup.
