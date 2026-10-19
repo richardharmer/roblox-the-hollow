@@ -80,6 +80,33 @@ const base = {
   image: z.object({ url, alt: text, permission: text }).nullable(),
 };
 const robloxId = z.number().int().positive().max(Number.MAX_SAFE_INTEGER);
+export const gameProfileSchema = z
+  .object({
+    id,
+    name: text,
+    summary: text,
+    overview: z.array(text).min(2),
+    eventNote: text,
+    creator: text,
+    creatorId: robloxId,
+    creatorType: z.enum(["Group", "User"]),
+    placeId: robloxId,
+    universeId: robloxId,
+    robloxUrl: url,
+    sourceId: id,
+    checkedAt: date,
+    image: z
+      .object({
+        src: z.string().regex(/^\/images\/games\/[a-z0-9-]+\.webp$/),
+        alt: text,
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+        credit: text,
+        sourceUrl: url,
+      })
+      .strict(),
+  })
+  .strict();
 export const gameSchema = z
   .object({
     ...base,

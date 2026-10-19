@@ -218,5 +218,95 @@
     "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: He dressed for the occasion. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Demonology is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
     "lastCheckedAt": "2026-10-19",
     "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-doors",
+    "name": "DOORS — original Roblox experience",
+    "url": "https://www.roblox.com/games/6516141723/doors",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: LSPLASH; place ID 6516141723; universe ID 2440500124. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-warden",
+    "name": "Warden — original Roblox experience",
+    "url": "https://www.roblox.com/games/130929507719087/warden",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Sonar Studios; place ID 130929507719087; universe ID 9442472087. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-animal-hospital",
+    "name": "Animal Hospital — original Roblox experience",
+    "url": "https://www.roblox.com/games/78515283254292/animal-hospital",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Animal Anomaly; place ID 78515283254292; universe ID 10148749921. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-the-mimic",
+    "name": "The Mimic — original Roblox experience",
+    "url": "https://www.roblox.com/games/6243699076/the-mimic",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: CTStudio; place ID 6243699076; universe ID 2294168059. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-scary-shawarma-kiosk",
+    "name": "Scary Shawarma Kiosk — original Roblox experience",
+    "url": "https://www.roblox.com/games/137826330724902/scary-shawarma-kiosk",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: kharbor_ykt; place ID 137826330724902; universe ID 8539298853. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-piggy",
+    "name": "Piggy — original Roblox experience",
+    "url": "https://www.roblox.com/games/4623386862/piggy",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Piggy Dev Team; place ID 4623386862; universe ID 1516533665. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-dandys-world",
+    "name": "Dandy’s World — original Roblox experience",
+    "url": "https://www.roblox.com/games/16116270224/dandys-world",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: BlushCrunch Studio; place ID 16116270224; universe ID 5569032992. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-99-nights-in-the-forest",
+    "name": "99 Nights in the Forest — original Roblox experience",
+    "url": "https://www.roblox.com/games/79546208627805/99-nights-in-the-forest",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Grandma's Favourite Games; place ID 79546208627805; universe ID 7326934954. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "roblox-game-demonology",
+    "name": "Demonology — original Roblox experience",
+    "url": "https://www.roblox.com/games/18199615050/demonology",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Blaqk Magic Blue; place ID 18199615050; universe ID 6170143659. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
   }
 ]

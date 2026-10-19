@@ -40,6 +40,14 @@ Research date uses Asia/Shanghai. Runtime reports retain UTC timestamps. Project
 
 ## Collector evidence
 
+### October 19 game card navigation correction
+
+- Owner requested original Roblox game covers, internal game profiles, and official experience links. Replaced the games/home gallery's primary Instagram navigation with `/games/<id>/` image and title links. Original Instagram links are separate secondary evidence actions. The original cover mosaic remains in the hero and the source-review article keeps its promotional artwork.
+- Verified all nine root place/universe pairs with Roblox's public universe and game APIs. Checked publisher identity and official experience descriptions; fetched current base-game covers using Roblox's multiget thumbnail API and encoded local WebP assets. Publisher, IDs, description summaries, original CDN URL and local image dimensions are retained in `src/data/game-profiles.json`; nine DEVELOPER sources document identity separately from participation.
+- Piggy's current API publisher is Piggy Dev Team; Warden is the Sonar Studios experience (place 130929507719087, universe 9442472087). No event participation was promoted because these APIs establish original game identity only.
+- Each internal profile provides a sourced introduction, official Roblox play link, event status, task/reward limitations, optional Instagram evidence, identity facts and related game navigation. Profiles are REPORTED editorial game introductions, separate from the confirmed-games collection. They use noindex/follow and remain outside the sitemap until they qualify for fuller event guides; generated confirmed detail pages take precedence on matching slugs.
+- The game directory now searches these real profiles and filters their participation evidence; empty confirmed results do not imply that no game identities exist. Homepage counts label nine as reported. Browser checks at 390px and 1440px clicked all nine cards, verified the internal URLs, official game URLs, source separation, original-cover paths, search/filter behavior and absence of horizontal overflow or page errors. Desktop and phone screenshots were visually reviewed.
+
 ### October 19 direct Instagram follow-up and image coverage
 
 - The in-app browser successfully loaded the verified `roblox` Instagram profile after dismissing a sign-up prompt. The profile exposed nine original reels, each dated October 17, 2026. All nine permanent links were opened and their visible short captions read. Expanding a caption required sign-in; a public embedded view did not expose additional text. No login was performed.

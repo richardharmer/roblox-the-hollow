@@ -8,6 +8,7 @@ import {
   badgeSchema,
   updateSchema,
   teaserSchema,
+  gameProfileSchema,
 } from "../src/lib/schema";
 export async function validate(root = process.cwd()) {
   const read = async (name: string) =>
@@ -20,9 +21,36 @@ export async function validate(root = process.cwd()) {
   const badges = badgeSchema.array().parse(await read("badges"));
   const updates = updateSchema.array().parse(await read("updates"));
   const teasers = teaserSchema.array().parse(await read("teasers"));
+  const profiles = gameProfileSchema.array().parse(await read("game-profiles"));
+  if (new Set(profiles.map((p) => p.id)).size !== profiles.length)
+    throw new Error("Duplicate game profile IDs");
+  for (const profile of profiles) {
+    if (!teasers.some((t) => t.id === profile.id))
+      throw new Error("Game profile lacks an event evidence record");
+    const source = sources.find((s) => s.id === profile.sourceId);
+    if (
+      !source ||
+      source.level !== "DEVELOPER" ||
+      source.access !== "READ" ||
+      source.url !== profile.robloxUrl
+    )
+      throw new Error("Game profile lacks a verified experience source");
+    const u = new URL(profile.robloxUrl);
+    if (
+      u.hostname !== "www.roblox.com" ||
+      !u.pathname.startsWith(`/games/${profile.placeId}/`)
+    )
+      throw new Error("Game profile place ID / URL mismatch");
+    const imageHost = new URL(profile.image.sourceUrl).hostname;
+    if (!imageHost.endsWith(".rbxcdn.com") && imageHost !== "rbxcdn.com")
+      throw new Error("Game cover must come from the Roblox CDN");
+    await fs.access(`${root}/public${profile.image.src}`);
+  }
   if (new Set(teasers.map((t) => t.id)).size !== teasers.length)
     throw new Error("Duplicate teaser IDs");
   for (const teaser of teasers) {
+    if (!profiles.some((p) => p.id === teaser.id))
+      throw new Error("Teaser card lacks its internal game profile");
     const official = sources.find((s) => s.id === teaser.officialSourceId);
     if (
       !official ||

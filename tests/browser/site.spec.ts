@@ -37,7 +37,7 @@ for (const width of [375, 390, 768, 1440])
     await expect(page.locator("h1")).toHaveText("The Hollow Games");
     await page.getByLabel("Search games").fill("nonexistent");
     await expect(
-      page.getByText("The game lineup is awaiting verification."),
+      page.getByRole("heading", { name: "No matching games", exact: true }),
     ).toBeVisible();
     expect(
       await page.evaluate(

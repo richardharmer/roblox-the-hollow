@@ -2,8 +2,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { collections, games, type Collection } from "@/lib/content";
+import {
+  collections,
+  games,
+  gameProfiles,
+  type Collection,
+} from "@/lib/content";
 import { Status, EmptyState } from "./ui";
+import { TeaserGallery } from "./teasers";
 export function Directory({ kind }: { kind: Collection }) {
   const [search, setSearch] = useState("");
   const [game, setGame] = useState("");
@@ -17,6 +23,65 @@ export function Directory({ kind }: { kind: Collection }) {
       (!status || x.verificationLevel === status) &&
       (!free || ("free" in x && x.free === true)),
   );
+  if (kind === "games" && !games.length && gameProfiles.length) {
+    const profiles = gameProfiles.filter(
+      (g) =>
+        g.name.toLowerCase().includes(search.toLowerCase()) &&
+        status !== "CONFIRMED",
+    );
+    return (
+      <section id="reported-teasers">
+        <div className="filter-bar">
+          <div className="field">
+            <label htmlFor="directory-search">Search games</label>
+            <input
+              id="directory-search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Find a game…"
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="status-filter">Evidence</label>
+            <select
+              id="status-filter"
+              value={status}
+              onChange={(e) => setStatus(e.target.value)}
+            >
+              <option value="">All evidence levels</option>
+              <option value="CONFIRMED">Confirmed</option>
+              <option value="REPORTED">Reported</option>
+            </select>
+          </div>
+        </div>
+        <p className="results-count" role="status">
+          {profiles.length} of {gameProfiles.length} game profiles · Hollow
+          participation reported
+        </p>
+        {profiles.length ? (
+          <TeaserGallery ids={profiles.map((p) => p.id)} />
+        ) : (
+          <div className="empty-search">
+            <h3>No matching games</h3>
+            <p>
+              {status === "CONFIRMED"
+                ? "No game’s Hollow participation has been independently confirmed yet."
+                : "Try a shorter search or clear your filters."}
+            </p>
+            <button
+              className="button"
+              onClick={() => {
+                setSearch("");
+                setStatus("");
+              }}
+            >
+              Clear filters
+            </button>
+          </div>
+        )}
+      </section>
+    );
+  }
   return (
     <>
       <div className="filter-bar">

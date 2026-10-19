@@ -1,5 +1,12 @@
 import type { MetadataRoute } from "next";
-import { collections, updates, event, origin, sources } from "@/lib/content";
+import {
+  collections,
+  updates,
+  event,
+  origin,
+  sources,
+  gameProfiles,
+} from "@/lib/content";
 export const dynamic = "force-static";
 const newest = (dates: string[]) => dates.sort().at(-1) || event.updatedAt;
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -11,7 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ),
       ...updates.map((x) => x.updatedAt),
     ]),
-    games: newest(collections.games.map((x) => x.updatedAt)),
+    games: newest([
+      ...collections.games.map((x) => x.updatedAt),
+      ...gameProfiles.map((x) => x.checkedAt),
+    ]),
     quests: newest(collections.quests.map((x) => x.updatedAt)),
     rewards: newest(collections.rewards.map((x) => x.updatedAt)),
     badges: newest(collections.badges.map((x) => x.updatedAt)),

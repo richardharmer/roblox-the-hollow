@@ -13,6 +13,7 @@ import {
   eventStatus,
   startLabel,
   games,
+  gameProfiles,
   rewards,
   updates,
   latestReviewAt,
@@ -138,7 +139,11 @@ export default function Home() {
           ["START DATE", startLabel],
           [
             "PARTICIPATING GAMES",
-            games.length ? `${games.length} confirmed` : "To Be Announced",
+            games.length
+              ? `${games.length} confirmed`
+              : gameProfiles.length
+                ? `${gameProfiles.length} reported`
+                : "To Be Announced",
           ],
           [
             "AVAILABLE REWARDS",
@@ -165,8 +170,8 @@ export default function Home() {
       </div>
       <section className="section">
         <SectionHead
-          eyebrow="THE OCTOBER 17 TEASERS"
-          title="Recognize these faces?"
+          eyebrow="THE REPORTED LINEUP"
+          title="Explore the games"
           href="/games/#reported-teasers"
           label="See all nine"
         />
@@ -216,7 +221,7 @@ export default function Home() {
           <section className="section">
             <SectionHead
               eyebrow="THE LINEUP"
-              title="The Hollow participating games"
+              title="Confirmed participation"
               href="/games/"
               label="View directory"
             />

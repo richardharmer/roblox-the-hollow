@@ -6,6 +6,7 @@ import badgesRaw from "@/data/badges.json";
 import sourcesRaw from "@/data/sources.json";
 import updatesRaw from "@/data/updates.json";
 import teasersRaw from "@/data/teasers.json";
+import gameProfilesRaw from "@/data/game-profiles.json";
 import {
   eventSchema,
   gameSchema,
@@ -15,6 +16,7 @@ import {
   sourceSchema,
   updateSchema,
   teaserSchema,
+  gameProfileSchema,
 } from "./schema";
 export const event = eventSchema.parse(eventRaw);
 export const games = gameSchema.array().parse(gamesRaw);
@@ -23,6 +25,7 @@ export const rewards = rewardSchema.array().parse(rewardsRaw);
 export const badges = badgeSchema.array().parse(badgesRaw);
 export const sources = sourceSchema.array().parse(sourcesRaw);
 export const teasers = teaserSchema.array().parse(teasersRaw);
+export const gameProfiles = gameProfileSchema.array().parse(gameProfilesRaw);
 export const updates = updateSchema
   .array()
   .parse(updatesRaw)

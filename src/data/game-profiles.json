@@ -1,0 +1,236 @@
+[
+  {
+    "id": "doors",
+    "name": "DOORS",
+    "summary": "Explore a horror experience built around doors and use each failed attempt to learn what lies ahead.",
+    "overview": [
+      "LSPLASH describes DOORS as a horror game centered on moving through doors and learning from deaths. The experience page recommends exploring without a guide, so this profile keeps its general introduction separate from any future event walkthrough.",
+      "The current description promotes the Stairwell and lists its own game benefits. Those regular features do not establish what a The Hollow quest would require."
+    ],
+    "eventNote": "The visible Instagram caption refers to Guiding Light. That is a useful DOORS lead, while the reported lineup supplies the game name; neither reveals an event objective or reward.",
+    "creator": "LSPLASH",
+    "creatorId": 3049798,
+    "creatorType": "Group",
+    "placeId": 6516141723,
+    "universeId": 2440500124,
+    "robloxUrl": "https://www.roblox.com/games/6516141723/doors",
+    "sourceId": "roblox-game-doors",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/doors.webp",
+      "alt": "DOORS 🚨 — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "LSPLASH / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-e822a794752ce011565eca23a280f4dc/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "warden",
+    "name": "Warden",
+    "summary": "Explore the corrupted world of Sonaria with a team, completing Trials while monsters hunt you.",
+    "overview": [
+      "Warden is a separate Sonar Studios experience set in the Creatures of Sonaria universe. Its official page describes cooperative exploration with up to eight players, starting as Mylo and working through strange places, puzzles and monsters.",
+      "Delvers, cards and plushies belong to Warden’s own systems. Its page describes surviving Trials, finding secrets and escaping bosses; these should not be mistaken for confirmed The Hollow tasks."
+    ],
+    "eventNote": "The teaser caption focuses on hearing, but does not name Warden in the accessible text. We retain the association as reported and link the original Sonar Studios experience below.",
+    "creator": "Sonar Studios",
+    "creatorId": 2919215,
+    "creatorType": "Group",
+    "placeId": 130929507719087,
+    "universeId": 9442472087,
+    "robloxUrl": "https://www.roblox.com/games/130929507719087/warden",
+    "sourceId": "roblox-game-warden",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/warden.webp",
+      "alt": "WARDEN 🐲 Sonaria Horror Escape — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "Sonar Studios / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-285699f467117be0b438a9ac29578caf/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "animal-hospital",
+    "name": "Animal Hospital",
+    "summary": "Work a hospital night shift, treat animal patients and watch for unusual behavior.",
+    "overview": [
+      "Animal Hospital (Anomaly) is published by Animal Anomaly. Its official description casts the player as a night-shift employee who treats patients while noticing that some of them behave strangely.",
+      "The current experience title includes a seasonal event label. A Halloween label alone does not prove that its regular shift objectives or seasonal content count toward The Hollow."
+    ],
+    "eventNote": "The original teaser says the character has stopped pretending. News coverage associates it with Animal Hospital, but no accessible caption supplies the event’s treatment rules, anomaly checklist or reward requirements.",
+    "creator": "Animal Anomaly",
+    "creatorId": 344908697,
+    "creatorType": "Group",
+    "placeId": 78515283254292,
+    "universeId": 10148749921,
+    "robloxUrl": "https://www.roblox.com/games/78515283254292/animal-hospital",
+    "sourceId": "roblox-game-animal-hospital",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/animal-hospital.webp",
+      "alt": "[🎃 EVENT] Animal Hospital (Anomaly) 🧪 — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "Animal Anomaly / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "the-mimic",
+    "name": "The Mimic",
+    "summary": "Enter horror stories inspired by Japanese history and urban legends, taking the role of different characters.",
+    "overview": [
+      "CTStudio describes The Mimic as four stories inspired by Japanese history and urban legends. Each book places players in a different character’s journey through unfamiliar worlds.",
+      "The official page currently mentions returning Halloween Trial badges. That is a separate game announcement: it does not by itself connect those badges or their requirements to The Hollow."
+    ],
+    "eventNote": "The teaser caption mentions someone else pulling the strings. The reported lineup associates it with The Mimic; an explicit event announcement and actual objectives are still needed before we publish a walkthrough.",
+    "creator": "CTStudio",
+    "creatorId": 9482918,
+    "creatorType": "Group",
+    "placeId": 6243699076,
+    "universeId": 2294168059,
+    "robloxUrl": "https://www.roblox.com/games/6243699076/the-mimic",
+    "sourceId": "roblox-game-the-mimic",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/the-mimic.webp",
+      "alt": "The Mimic — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "CTStudio / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-89b8fd1fe5e936435bfaf0f5c94316b5/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "scary-shawarma-kiosk",
+    "name": "Scary Shawarma Kiosk",
+    "summary": "Run a night shift at Shawarma 24, serving orders while following the rules posted at the counter.",
+    "overview": [
+      "The official Scary Shawarma Kiosk page is published by kharbor_ykt and credits Gren as developer. Its description asks players to keep the grill running and serve orders during a dangerous night shift.",
+      "The counter’s rules form part of the original experience. This profile does not present those normal rules as The Hollow objectives, and it does not infer a reward from completing an ordinary shift."
+    ],
+    "eventNote": "The Instagram caption refers to an unfinished shift, which fits the reported association. The cover in our evidence section is promotional art; the main cover above comes from the original Roblox experience.",
+    "creator": "kharbor_ykt",
+    "creatorId": 1321140345,
+    "creatorType": "User",
+    "placeId": 137826330724902,
+    "universeId": 8539298853,
+    "robloxUrl": "https://www.roblox.com/games/137826330724902/scary-shawarma-kiosk",
+    "sourceId": "roblox-game-scary-shawarma-kiosk",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/scary-shawarma-kiosk.webp",
+      "alt": "Scary Shawarma Kiosk: the ANOMALY [horror] — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "kharbor_ykt / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-13c4384bc8a275d2c52bb754d3463056/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "piggy",
+    "name": "Piggy",
+    "summary": "Escape Piggy, use items and investigate the mystery surrounding the creature.",
+    "overview": [
+      "Piggy’s official description challenges players to escape and discover the mystery behind the beast. Its controls distinguish picking up or using items from crouching or placing a trap.",
+      "The current Roblox API lists Piggy Dev Team as publisher for the original place. We preserve that verified place identity rather than pointing to a fan game, roleplay remake or similarly named experience."
+    ],
+    "eventNote": "The teaser asks about Chapter 13. That wording is a clue, not a published chapter walkthrough or proof that a specific chapter grants a The Hollow reward.",
+    "creator": "Piggy Dev Team",
+    "creatorId": 722903330,
+    "creatorType": "Group",
+    "placeId": 4623386862,
+    "universeId": 1516533665,
+    "robloxUrl": "https://www.roblox.com/games/4623386862/piggy",
+    "sourceId": "roblox-game-piggy",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/piggy.webp",
+      "alt": "Piggy [MR. STITCHY] — original Roblox experience cover",
+      "width": 768,
+      "height": 417,
+      "credit": "Piggy Dev Team / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-d1356216b4a39ccfd1d2a98d52e7869f/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "dandys-world",
+    "name": "Dandy’s World",
+    "summary": "Team up as Toons, complete machines and travel deeper into Gardenview Center.",
+    "overview": [
+      "BlushCrunch Studio describes Dandy’s World as a multiplayer mascot-horror survival experience. Players cooperate as Toons, work on machines and descend through Gardenview Center.",
+      "Its standard systems include Toons with different abilities, research and trinkets. The current description also promotes its own Halloween floors and shop; those features are not automatically The Hollow objectives."
+    ],
+    "eventNote": "The teaser’s shopping reference is associated with Dandy’s World in the reported lineup. It does not establish any required purchase, currency cost or event reward, so we do not recommend buying an item for The Hollow.",
+    "creator": "BlushCrunch Studio",
+    "creatorId": 14576965,
+    "creatorType": "Group",
+    "placeId": 16116270224,
+    "universeId": 5569032992,
+    "robloxUrl": "https://www.roblox.com/games/16116270224/dandys-world",
+    "sourceId": "roblox-game-dandys-world",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/dandys-world.webp",
+      "alt": "🎃 Dandy's World [ALPHA] — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "BlushCrunch Studio / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-9bdf605a2b2179c957984a94d2fb8c14/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "99-nights-in-the-forest",
+    "name": "99 Nights in the Forest",
+    "summary": "Build a forest camp with friends while an unseen threat watches from the trees.",
+    "overview": [
+      "The original experience is published by Grandma’s Favourite Games. Its brief official description focuses on building a camp together while something watches the players.",
+      "Use the verified place link in this profile to distinguish the original game from forest tycoons, roleplay copies and other similarly named experiences. Its ordinary survival progression is separate from an event checklist."
+    ],
+    "eventNote": "The teaser refers to greater hunger, and news coverage associates the character with 99 Nights in the Forest. No specific number of survival nights, rescue objective or event badge requirement has been verified.",
+    "creator": "Grandma's Favourite Games",
+    "creatorId": 6042520,
+    "creatorType": "Group",
+    "placeId": 79546208627805,
+    "universeId": 7326934954,
+    "robloxUrl": "https://www.roblox.com/games/79546208627805/99-nights-in-the-forest",
+    "sourceId": "roblox-game-99-nights-in-the-forest",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/99-nights-in-the-forest.webp",
+      "alt": "99 Nights in the Forest 🔦 — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "Grandma's Favourite Games / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-ee923b1e9ac5564624ee9c484006166c/768/432/Image/Png/noFilter"
+    }
+  },
+  {
+    "id": "demonology",
+    "name": "Demonology",
+    "summary": "Use ghost-hunting equipment to investigate a haunted jobsite and identify its spirit.",
+    "overview": [
+      "Demonology is published by Blaqk Magic Blue. The official experience description centers on using available tools to investigate a haunted location and identify the spirit responsible.",
+      "That describes the base game, not a confirmed The Hollow contract. We have not verified an event-specific ghost type, difficulty setting or successful-investigation requirement."
+    ],
+    "eventNote": "The original character teaser refers to dressing for the occasion. Its reported Demonology association is retained here, while the event’s jobsite, task conditions and reward details remain pending.",
+    "creator": "Blaqk Magic Blue",
+    "creatorId": 32847485,
+    "creatorType": "Group",
+    "placeId": 18199615050,
+    "universeId": 6170143659,
+    "robloxUrl": "https://www.roblox.com/games/18199615050/demonology",
+    "sourceId": "roblox-game-demonology",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/games/demonology.webp",
+      "alt": "Demonology🕯️ — original Roblox experience cover",
+      "width": 768,
+      "height": 432,
+      "credit": "Blaqk Magic Blue / Roblox",
+      "sourceUrl": "https://tr.rbxcdn.com/180DAY-2651cff28f8766658687d6df2067bf03/768/432/Image/Png/noFilter"
+    }
+  }
+]

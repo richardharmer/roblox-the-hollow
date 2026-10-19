@@ -42,7 +42,7 @@ export function Detail({
             </p>
           ))}
           {u.slug === "official-instagram-teasers-located" && (
-            <TeaserGallery showNotesLink={false} />
+            <TeaserGallery showNotesLink={false} artwork />
           )}
           <h2>Sources</h2>
           <SourceList ids={u.sources} />

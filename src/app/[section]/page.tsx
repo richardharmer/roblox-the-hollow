@@ -21,11 +21,10 @@ import {
 } from "@/components/ui";
 import { Directory } from "@/components/directory";
 import { Tracker } from "@/components/tracker";
-import { TeaserGallery } from "@/components/teasers";
 const pages: Record<string, [string, string]> = {
   games: [
     "The Hollow Games",
-    "Find the verified participating games, official Roblox links and game-specific guides. Community theories are kept separate from the lineup.",
+    "Explore the nine reported games with original Roblox covers, game profiles and official experience links. Event participation and task evidence are labeled separately.",
   ],
   quests: [
     "The Hollow Quests",
@@ -98,15 +97,6 @@ export default async function Section({
       {section in collections ? (
         <>
           <Directory kind={section as Collection} />
-          {section === "games" && (
-            <section className="section" id="reported-teasers">
-              <p className="eyebrow">OFFICIAL ART / REPORTED ASSOCIATIONS</p>
-              <h2 className="teaser-section-title">
-                The nine character teasers
-              </h2>
-              <TeaserGallery />
-            </section>
-          )}
           <div className="prose">
             <h2>
               {section === "games"
@@ -128,15 +118,16 @@ export default async function Section({
             </p>
             <h2>
               {section === "games"
-                ? "How to read the teaser gallery"
+                ? "What do these game profiles cover?"
                 : "What to do while information is pending"}
             </h2>
             {section === "games" ? (
               <p>
-                The artwork and original Instagram links come from Roblox’s
-                verified account. Game names follow secondary reporting. We have
-                not directly verified an announcement explicitly naming every
-                participating experience.
+                Each profile introduces the original game and links to its
+                verified Roblox experience. The covers come from Roblox’s
+                official thumbnail service. Hollow participation is still
+                reported; the Instagram teasers are supporting evidence rather
+                than a playable game entry.
               </p>
             ) : (
               <p>
