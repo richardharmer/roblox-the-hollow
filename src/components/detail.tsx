@@ -12,6 +12,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumb, PageHead, Status, SourceList, VerifiedDates } from "./ui";
 import { jsonLd } from "@/lib/seo";
+import { TeaserGallery } from "./teasers";
 export function Detail({
   kind,
   slug,
@@ -40,6 +41,9 @@ export function Detail({
               {p}
             </p>
           ))}
+          {u.slug === "official-instagram-teasers-located" && (
+            <TeaserGallery showNotesLink={false} />
+          )}
           <h2>Sources</h2>
           <SourceList ids={u.sources} />
           <VerifiedDates verified={u.lastVerifiedAt} updated={u.updatedAt} />

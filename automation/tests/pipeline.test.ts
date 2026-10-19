@@ -252,6 +252,7 @@ test("official game listing publishes a real directory entry without a thin guid
   const { validate } = await import("../../scripts/validate");
   const root = await fixture();
   try {
+    await fs.writeFile(path.join(root, "src/data/teasers.json"), "[]");
     for (const f of ["games", "quests", "rewards", "badges", "updates"])
       await fs.copyFile(
         `src/data/${f}.json`,

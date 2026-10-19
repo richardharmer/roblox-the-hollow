@@ -44,6 +44,28 @@ export const sourceSchema = z
     lastSuccessAt: date.nullable(),
   })
   .strict();
+export const teaserSchema = z
+  .object({
+    id,
+    gameName: text,
+    verificationLevel: z.literal("REPORTED"),
+    officialSourceId: id,
+    reportSourceIds: z.array(id).min(1),
+    caption: text,
+    sourceDate: date,
+    checkedAt: date,
+    image: z
+      .object({
+        src: z.string().regex(/^\/images\/teasers\/[a-z0-9-]+\.webp$/),
+        alt: text,
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+        credit: text,
+        usage: text,
+      })
+      .strict(),
+  })
+  .strict();
 const base = {
   id,
   slug: id,

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "doors",
+    "gameName": "DOORS",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-doors",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "No Guiding Light this time.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/doors.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: DOORS",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "warden",
+    "gameName": "Warden",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-warden",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "It hears everything now.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/warden.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Warden",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "animal-hospital",
+    "gameName": "Animal Hospital",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-animal-hospital",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "It’s done pretending.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/animal-hospital.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Animal Hospital",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "the-mimic",
+    "gameName": "The Mimic",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-the-mimic",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "Someone else is pulling the strings this time.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/the-mimic.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: The Mimic",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "scary-shawarma-kiosk",
+    "gameName": "Scary Shawarma Kiosk",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-scary-shawarma-kiosk",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "Your shift isn’t over.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/scary-shawarma-kiosk.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Scary Shawarma Kiosk",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "piggy",
+    "gameName": "Piggy",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-piggy",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "Ready for Chapter 13?",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/piggy.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Piggy",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "dandys-world",
+    "gameName": "Dandy’s World",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-dandys-world",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "Buying something won’t save you now.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/dandys-world.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Dandy’s World",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "99-nights-in-the-forest",
+    "gameName": "99 Nights in the Forest",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-99-nights-in-the-forest",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "It’s even hungrier tonight.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/99-nights-in-the-forest.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: 99 Nights in the Forest",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  },
+  {
+    "id": "demonology",
+    "gameName": "Demonology",
+    "verificationLevel": "REPORTED",
+    "officialSourceId": "instagram-teaser-demonology",
+    "reportSourceIds": [
+      "bloxy-instagram-lineup",
+      "rtc-instagram-lineup"
+    ],
+    "caption": "He dressed for the occasion.",
+    "sourceDate": "2026-10-17",
+    "checkedAt": "2026-10-19",
+    "image": {
+      "src": "/images/teasers/demonology.webp",
+      "alt": "Roblox The Hollow character teaser; reported association: Demonology",
+      "width": 360,
+      "height": 640,
+      "credit": "Roblox / Instagram",
+      "usage": "Official promotional cover reproduced for editorial coverage; artwork belongs to its respective owners. No endorsement or license grant is implied."
+    }
+  }
+]

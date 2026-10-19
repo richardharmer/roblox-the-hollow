@@ -27,7 +27,7 @@ import {
   icons,
 } from "@/components/ui";
 import { Countdown } from "@/components/countdown";
-import watch from "@/data/watch.json";
+import { TeaserGallery, TeaserMosaic } from "@/components/teasers";
 export const generateMetadata = () =>
   metadata(
     "The Hollow Roblox 2026 – Event Guide, Games & Rewards",
@@ -66,8 +66,8 @@ export default function Home() {
           <ArrowUpRight size={13} />
         </Link>
       </div>
-      <section className="hero">
-        <div className="hero-art" aria-hidden="true" />
+      <section className="hero hero-with-teasers">
+        <TeaserMosaic />
         <div className="hero-content">
           <div className="hero-kicker">
             <Status level={status} />
@@ -89,7 +89,7 @@ export default function Home() {
             )}
           </h1>
           <p className="hero-description">
-            Something is stirring.
+            Nine faces in the dark.
             <br />
             Keep your next move in sight.
           </p>
@@ -120,7 +120,14 @@ export default function Home() {
             )}
           </div>
         </div>
-        <span className="art-credit">ORIGINAL ARTWORK · NOT GAMEPLAY</span>
+        <a
+          className="art-credit"
+          href="https://www.instagram.com/roblox/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PROMOTIONAL ART · ROBLOX / INSTAGRAM ↗
+        </a>
       </section>
       <div className="stat-bar">
         {[
@@ -156,6 +163,15 @@ export default function Home() {
           Our sources <ArrowUpRight size={15} />
         </Link>
       </div>
+      <section className="section">
+        <SectionHead
+          eyebrow="THE OCTOBER 17 TEASERS"
+          title="Recognize these faces?"
+          href="/games/#reported-teasers"
+          label="See all nine"
+        />
+        <TeaserGallery featured />
+      </section>
       <section className="section">
         <SectionHead
           eyebrow="YOUR EVENT COMPANION"
@@ -223,32 +239,6 @@ export default function Home() {
                 walkthroughs.
               </EmptyState>
             )}
-            <div className="watch-heading">
-              <h3>Community Watch</h3>
-              <span>NOT THE CONFIRMED LINEUP</span>
-            </div>
-            <div className="watch-grid">
-              {watch
-                .filter((w) => !games.some((g) => g.name === w.name))
-                .map((w, i) => (
-                  <article className="watch-card" key={w.id}>
-                    <div
-                      className={`watch-art watch-art-${i}`}
-                      aria-hidden="true"
-                    >
-                      <span>{i === 0 ? "?" : "Ⅲ"}</span>
-                    </div>
-                    <div>
-                      <Status level={w.status} />
-                      <h3>{w.name}</h3>
-                      <p>{w.description}</p>
-                      <Link href="/sources/">
-                        Check the source <ArrowUpRight size={14} />
-                      </Link>
-                    </div>
-                  </article>
-                ))}
-            </div>
           </section>
           <section className="section">
             <SectionHead

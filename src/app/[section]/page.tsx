@@ -21,7 +21,7 @@ import {
 } from "@/components/ui";
 import { Directory } from "@/components/directory";
 import { Tracker } from "@/components/tracker";
-import watch from "@/data/watch.json";
+import { TeaserGallery } from "@/components/teasers";
 const pages: Record<string, [string, string]> = {
   games: [
     "The Hollow Games",
@@ -98,6 +98,15 @@ export default async function Section({
       {section in collections ? (
         <>
           <Directory kind={section as Collection} />
+          {section === "games" && (
+            <section className="section" id="reported-teasers">
+              <p className="eyebrow">OFFICIAL ART / REPORTED ASSOCIATIONS</p>
+              <h2 className="teaser-section-title">
+                The nine character teasers
+              </h2>
+              <TeaserGallery />
+            </section>
+          )}
           <div className="prose">
             <h2>
               {section === "games"
@@ -119,18 +128,16 @@ export default async function Section({
             </p>
             <h2>
               {section === "games"
-                ? "Community Watch"
+                ? "How to read the teaser gallery"
                 : "What to do while information is pending"}
             </h2>
             {section === "games" ? (
-              watch.map((w) => (
-                <div className="callout" key={w.id}>
-                  <Status level={w.status} />
-                  <h3>{w.name}</h3>
-                  <p>{w.description}</p>
-                  <SourceList ids={[w.sourceId]} />
-                </div>
-              ))
+              <p>
+                The artwork and original Instagram links come from Roblox’s
+                verified account. Game names follow secondary reporting. We have
+                not directly verified an announcement explicitly naming every
+                participating experience.
+              </p>
             ) : (
               <p>
                 Check the{" "}
@@ -347,12 +354,14 @@ export default async function Section({
             Clarity to understand how visitors use pages through interaction
             data and session recordings. These services may use cookies and
             process device, browser and usage information. See the{" "}
-            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
-            {" "}and the{" "}
+            <a href="https://policies.google.com/privacy">
+              Google Privacy Policy
+            </a>{" "}
+            and the{" "}
             <a href="https://www.microsoft.com/privacy/privacystatement">
               Microsoft Privacy Statement
-            </a>
-            {" "}for details. Reserved ad components do not contact ad providers.
+            </a>{" "}
+            for details. Reserved ad components do not contact ad providers.
           </p>
           <h2>External links and contact</h2>
           <p>

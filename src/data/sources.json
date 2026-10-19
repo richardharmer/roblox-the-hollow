@@ -124,9 +124,99 @@
     "name": "Roblox on Instagram — original teasers awaiting verification",
     "url": "https://www.instagram.com/roblox/",
     "level": "OFFICIAL",
-    "access": "UNAVAILABLE",
-    "note": "Official account cited by Bloxy News and RTC. Direct access failed during the October 19 review; individual teaser permalinks, publication times and event participation wording were not verified. The supplied monitoring report encountered HTTP 429; this follow-up returned a generic access error.",
+    "access": "READ",
+    "note": "Follow-up browser review succeeded on October 19 after earlier HTTP access failures. The verified Roblox profile exposes nine October 17 character reels and a cover mosaic spelling The Hollow. Individual original post links and short captions were read; expanding captions prompts sign-in. The accessible wording does not explicitly name all nine experiences, so reported game associations remain REPORTED.",
     "lastCheckedAt": "2026-10-19",
-    "lastSuccessAt": null
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-doors",
+    "name": "Roblox Instagram — character teaser 1",
+    "url": "https://www.instagram.com/roblox/reel/DemjxuUgFW0/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: No Guiding Light this time. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with DOORS is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-warden",
+    "name": "Roblox Instagram — character teaser 2",
+    "url": "https://www.instagram.com/roblox/reel/DemjNENjOpM/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: It hears everything now. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Warden is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-animal-hospital",
+    "name": "Roblox Instagram — character teaser 3",
+    "url": "https://www.instagram.com/roblox/reel/DemiplNkTxV/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: It’s done pretending. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Animal Hospital is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-the-mimic",
+    "name": "Roblox Instagram — character teaser 4",
+    "url": "https://www.instagram.com/roblox/reel/DemiDwSn4ae/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: Someone else is pulling the strings this time. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with The Mimic is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-scary-shawarma-kiosk",
+    "name": "Roblox Instagram — character teaser 5",
+    "url": "https://www.instagram.com/roblox/reel/Demhf8IDIjG/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: Your shift isn’t over. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Scary Shawarma Kiosk is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-piggy",
+    "name": "Roblox Instagram — character teaser 6",
+    "url": "https://www.instagram.com/roblox/reel/Demg6wAiVcD/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: Ready for Chapter 13? The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Piggy is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-dandys-world",
+    "name": "Roblox Instagram — character teaser 7",
+    "url": "https://www.instagram.com/roblox/reel/DemgVqKCXMi/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: Buying something won’t save you now. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Dandy’s World is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-99-nights-in-the-forest",
+    "name": "Roblox Instagram — character teaser 8",
+    "url": "https://www.instagram.com/roblox/reel/Demfxpjgtd6/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: It’s even hungrier tonight. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with 99 Nights in the Forest is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "instagram-teaser-demonology",
+    "name": "Roblox Instagram — character teaser 9",
+    "url": "https://www.instagram.com/roblox/reel/DemfN_9kxeO/",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox account page read in the browser on October 19. Visible caption: He dressed for the occasion. The official profile dates this reel October 17, 2026. The nine covers form The Hollow artwork. The reported association with Demonology is not explicitly named in the accessible caption; full caption expansion prompts sign-in. No game ID, quest or reward is verified by this post.",
+    "lastCheckedAt": "2026-10-19",
+    "lastSuccessAt": "2026-10-19"
   }
 ]

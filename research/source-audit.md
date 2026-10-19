@@ -40,6 +40,15 @@ Research date uses Asia/Shanghai. Runtime reports retain UTC timestamps. Project
 
 ## Collector evidence
 
+### October 19 direct Instagram follow-up and image coverage
+
+- The in-app browser successfully loaded the verified `roblox` Instagram profile after dismissing a sign-up prompt. The profile exposed nine original reels, each dated October 17, 2026. All nine permanent links were opened and their visible short captions read. Expanding a caption required sign-in; a public embedded view did not expose additional text. No login was performed.
+- The nine profile covers form a mosaic spelling The Hollow. This verifies the official teaser series and original artwork; accessible captions do not explicitly name the nine experiences or link their Roblox place IDs. Game-to-character associations remain REPORTED. No confirmed game records or playable guides were created.
+- Original links, visible captions, profile dates, reported game associations, local cover paths and attribution are retained in `src/data/teasers.json`; each reel has a directly read OFFICIAL source record. The earlier Instagram UNAVAILABLE record is updated with the browser follow-up, while the earlier article retains its review history with a follow-up note.
+- Cover images were downloaded from the official profile's rendered image elements and encoded locally as 360×640 WebP files. They are official promotional covers used for editorial reference, not game screenshots or original site artwork. Credit: Roblox / Instagram; rights remain with respective owners and no license grant is asserted. The frontend uses local assets to avoid expiring Instagram CDN links.
+- Visual direction retains the existing charcoal, red and warm-ivory field-guide identity and original site mark. Official character art replaces abstract hero scenery and question-mark watch cards. Homepage features three reported associations; `/games/` and the follow-up review show all nine with evidence labels and original-source links. Confirmed game counts stay separate from teaser counts.
+- Validation: full `npm run check` passed (33 tests, static build, 15-page SEO audit; one existing GTM lint warning). Browser checks at 390/768/1440px covered home, games and the new review: all local images decoded, correct card counts and source URLs, no horizontal overflow or page errors, and the confirmed directory remained empty. Desktop and mobile screenshots were visually reviewed. A final typecheck/build/SEO pass covered the removal of a self-link on the review page.
+
 `npm run monitor -- --force` initially failed because Node's address-family selection expected an address list; fixed by disabling automatic family selection with a pinned verified DNS lookup.
 
 Retest UTC 2026-10-11T02:16:45.289Z: sourcesChecked=2, errors=[], newCandidates=0, changed=false. Sources: newsroom and `https://games.roblox.com/v2/groups/4111519/games?accessFilter=Public&limit=50&sortOrder=Desc`. No content was promoted or deployment claimed. Later tests are recorded in `automation/reports/` locally.

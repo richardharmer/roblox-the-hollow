@@ -7,6 +7,7 @@ import {
   rewardSchema,
   badgeSchema,
   updateSchema,
+  teaserSchema,
 } from "../src/lib/schema";
 export async function validate(root = process.cwd()) {
   const read = async (name: string) =>
@@ -18,6 +19,24 @@ export async function validate(root = process.cwd()) {
   const rewards = rewardSchema.array().parse(await read("rewards"));
   const badges = badgeSchema.array().parse(await read("badges"));
   const updates = updateSchema.array().parse(await read("updates"));
+  const teasers = teaserSchema.array().parse(await read("teasers"));
+  if (new Set(teasers.map((t) => t.id)).size !== teasers.length)
+    throw new Error("Duplicate teaser IDs");
+  for (const teaser of teasers) {
+    const official = sources.find((s) => s.id === teaser.officialSourceId);
+    if (
+      !official ||
+      official.level !== "OFFICIAL" ||
+      official.access !== "READ"
+    )
+      throw new Error("Teaser lacks a directly read official source");
+    for (const sourceId of teaser.reportSourceIds)
+      if (!sources.some((s) => s.id === sourceId))
+        throw new Error(`Unknown teaser report source ${sourceId}`);
+    if (teaser.checkedAt < teaser.sourceDate)
+      throw new Error("Invalid teaser chronology");
+    await fs.access(`${root}/public${teaser.image.src}`);
+  }
   const sourceIds = new Set(sources.map((s) => s.id));
   if (sourceIds.size !== sources.length)
     throw new Error("Duplicate source IDs");
