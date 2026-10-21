@@ -55,4 +55,4 @@ YouTube RSS accepts explicitly configured channel IDs. No channels have been pre
 
 See [DEPLOYMENT.md](DEPLOYMENT.md), [research/test-report.md](research/test-report.md), and [research/seo-audit.md](research/seo-audit.md). Cloudflare/GitHub live authorization is not available in this workspace. Local simulation tests do not prove production deployment.
 
-Advertising is off. `NEXT_PUBLIC_ADS_ENABLED=true` shows reserved labeled slots only; there are no ad network scripts. Configure and review privacy/consent requirements before installing a network. Brand/domain use is not legally cleared; see source audit.
+Adsterra banners are enabled by default: responsive 728×90/320×50 upper-page slots and 300×250 content/sidebar slots. Keys are the public publisher embed identifiers for this site. `NEXT_PUBLIC_ADS_ENABLED=false` is the build-time kill switch. Below-fold units load on approach; no automatic refresh, popunders or Social Bar. Privacy disclosures describe the provider. Browser regression tests intercept ad requests to avoid generating impressions. Brand/domain use is not legally cleared; see source audit.

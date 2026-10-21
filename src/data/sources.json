@@ -308,5 +308,25 @@
     "note": "Original experience page and Roblox public APIs checked October 19. Publisher: Blaqk Magic Blue; place ID 18199615050; universe ID 6170143659. Root place verified and cover retrieved from Roblox’s official thumbnail API. These establish the game identity, not its participation or objectives in The Hollow.",
     "lastCheckedAt": "2026-10-19",
     "lastSuccessAt": "2026-10-19"
+  },
+  {
+    "id": "official-x-date-teaser",
+    "name": "Roblox — October 22 date teaser",
+    "url": "https://x.com/Roblox/status/2108961492187918378",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Directly read in the browser on October 21. Verified @Roblox post explicitly displays 10.22.26. It does not give a launch time or time zone. The browser displays October 11 in Asia/Shanghai; this is October 10 UTC.",
+    "lastCheckedAt": "2026-10-21",
+    "lastSuccessAt": "2026-10-21"
+  },
+  {
+    "id": "official-x-nine-names",
+    "name": "Roblox — Nine names, nine nights",
+    "url": "https://x.com/Roblox/status/2110409528051453961",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Directly read on the verified Roblox account in X search on October 21. Names The Hollow and October 22, with nine numbered redacted entries. This establishes the name and date, not a complete solution, end date, game schedule or reward mechanism.",
+    "lastCheckedAt": "2026-10-21",
+    "lastSuccessAt": "2026-10-21"
   }
 ]

@@ -29,7 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "release-date": event.updatedAt,
     about: "2026-10-11",
     sources: newest(sources.map((s) => s.lastCheckedAt)),
-    privacy: "2026-10-11",
+    privacy: "2026-10-21",
+    puzzle: "2026-10-21",
   };
   return [
     ...Object.entries(staticDates).map(([p, date]) => ({

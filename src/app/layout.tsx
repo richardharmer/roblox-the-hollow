@@ -84,7 +84,7 @@ gtag('config', 'G-L7ZEYVH7WD');`,
               "@type": "WebSite",
               name: "The Hollow Guide",
               description:
-                "An independent fan-made guide to The Hollow, the reported 2026 Roblox Halloween event, with sourced updates, game and reward directories, and a personal progress checklist.",
+                "An independent fan-made guide to The Hollow, the 2026 Roblox Halloween event, with sourced updates, game and reward directories, and a personal progress checklist.",
               url: origin,
               inLanguage: "en-US",
             }),

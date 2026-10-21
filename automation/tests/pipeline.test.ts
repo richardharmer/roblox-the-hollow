@@ -32,6 +32,16 @@ async function fixture() {
       `src/data/${f}.json`,
       path.join(root, `src/data/${f}.json`),
     );
+  // Tests must start from an unconfirmed fixture regardless of live editorial data.
+  const eventPath = path.join(root, "src/data/event.json");
+  const fixtureEvent = JSON.parse(await fs.readFile(eventPath, "utf8"));
+  Object.assign(fixtureEvent, {
+    verificationLevel: "REPORTED",
+    dateVerification: "REPORTED",
+    startAt: null,
+    endAt: null,
+  });
+  await fs.writeFile(eventPath, JSON.stringify(fixtureEvent));
   return root;
 }
 test("no change does not publish", async () => {

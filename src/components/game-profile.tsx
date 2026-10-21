@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { gameProfiles, teasers, sources, formatDate } from "@/lib/content";
-import { Breadcrumb, SourceList, Status, VerifiedDates } from "./ui";
+import { AdSlot, Breadcrumb, SourceList, Status, VerifiedDates } from "./ui";
 
 export function GameProfile({ id }: { id: string }) {
   const game = gameProfiles.find((g) => g.id === id);
@@ -18,6 +18,7 @@ export function GameProfile({ id }: { id: string }) {
           { name: game.name, path: `/games/${id}/` },
         ]}
       />
+      <AdSlot placement="header" />
       <header className="game-profile-header">
         <div className="game-profile-cover">
           <Image

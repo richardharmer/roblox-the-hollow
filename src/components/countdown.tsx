@@ -29,7 +29,7 @@ export function Countdown({
       {days === null
         ? "Date only"
         : days > 0
-          ? `${days} calendar days away`
+          ? `${days} calendar ${days === 1 ? "day" : "days"} away`
           : days === 0
             ? "Calendar date is today"
             : "Awaiting launch verification"}

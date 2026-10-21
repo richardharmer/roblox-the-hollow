@@ -494,7 +494,7 @@ ul {
 }
 .home-columns {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 286px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   gap: 28px;
 }
 .home-columns h2 {
@@ -1050,13 +1050,48 @@ details p {
   padding: 8px 0;
 }
 .ad-slot {
-  min-height: 100px;
   display: grid;
-  place-items: center;
+  justify-items: center;
+  gap: 8px;
+  padding: 12px 0;
   background: var(--surface);
   color: var(--muted);
-  font-size: 10px;
-  margin: 30px 0;
+  margin: 24px 0;
+  max-width: 100%;
+  overflow: hidden;
+  contain: layout;
+  container-type: inline-size;
+}
+.ad-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ad-frame-space {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.ad-banner .ad-frame-space {
+  min-height: 50px;
+}
+.ad-rectangle .ad-frame-space {
+  min-height: 250px;
+}
+.ad-slot iframe {
+  border: 0;
+  display: block;
+  max-width: 100%;
+}
+@container (min-width: 728px) {
+  .ad-banner .ad-frame-space {
+    min-height: 90px;
+  }
+}
+@container (max-width: 319px) {
+  .ad-banner .ad-frame-space {
+    min-height: 250px;
+  }
 }
 .skip-link {
   position: fixed;
@@ -1110,7 +1145,7 @@ details p {
     font-size: 65px;
   }
   .home-columns {
-    grid-template-columns: minmax(0, 1fr) 250px;
+    grid-template-columns: minmax(0, 1fr) 300px;
     gap: 20px;
   }
   .watch-grid {
@@ -2116,4 +2151,17 @@ details p {
   .related-game-profiles {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 359px) {
+  .ad-slot {
+    width: calc(100% + 16px);
+    max-width: none;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 800px) {
+  .home-sidebar > .ad-slot { grid-column: 1 / -1; }
 }

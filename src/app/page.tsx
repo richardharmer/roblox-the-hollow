@@ -32,7 +32,7 @@ import { TeaserGallery, TeaserMosaic } from "@/components/teasers";
 export const generateMetadata = () =>
   metadata(
     "The Hollow Roblox 2026 – Event Guide, Games & Rewards",
-    "Follow reports and verified information about The Hollow, the reported 2026 Roblox Halloween event. Explore game, quest and reward updates and local progress tracking.",
+    "The Hollow starts October 22, 2026. Follow verified information about Roblox’s Halloween event. Explore game, quest and reward updates and local progress tracking.",
     "/",
   );
 const faq = [
@@ -67,6 +67,7 @@ export default function Home() {
           <ArrowUpRight size={13} />
         </Link>
       </div>
+      <AdSlot placement="header" />
       <section className="hero hero-with-teasers">
         <TeaserMosaic />
         <div className="hero-content">
@@ -95,9 +96,10 @@ export default function Home() {
             Keep your next move in sight.
           </p>
           <p className="hero-caption">
-            An independent fan-made guide to The Hollow, the reported 2026
-            Roblox Halloween event. Follow sourced updates and track verified
-            games, quests, badges and rewards as details become available.
+            An independent fan-made guide to The Hollow, Roblox’s 2026 Halloween
+            event announced for October 22. Follow sourced updates and track
+            verified games, quests, badges and rewards as details become
+            available.
           </p>
           <div className="hero-actions">
             <Link href="/games/" className="button primary">
@@ -275,6 +277,7 @@ export default function Home() {
           </section>
         </div>
         <aside className="home-sidebar">
+          <AdSlot placement="sidebar" />
           <section className="tracker-promo">
             <span className="eyebrow">YOUR PERSONAL CHECKLIST</span>
             <div className="progress-emblem">
@@ -314,16 +317,18 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              A reported date is not a launch time. A teaser theory is not a
+              A calendar date is not a launch time. A teaser theory is not a
               game announcement.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />
             </Link>
+            <p>
+              <Link href="/puzzle/">Explore the nine-name puzzle clues →</Link>
+            </p>
           </section>
         </aside>
       </div>
-      <AdSlot placement="content" />
       <section className="section">
         <SectionHead
           eyebrow="FROM THE FIELD NOTES"

@@ -3,14 +3,17 @@
   "name": "The Hollow",
   "year": 2026,
   "status": "UPCOMING",
-  "verificationLevel": "REPORTED",
+  "verificationLevel": "CONFIRMED",
   "startDate": "2026-10-22",
   "startAt": null,
   "endAt": null,
-  "dateVerification": "REPORTED",
+  "dateVerification": "CONFIRMED",
   "hubUrl": null,
-  "summary": "A reported Roblox Halloween event for 2026. Follow the evidence, find verified guides, and keep your own completion checklist.",
-  "sources": ["community-announcement", "doors-discussion"],
-  "lastVerifiedAt": "2026-10-11",
-  "updatedAt": "2026-10-11"
+  "summary": "Roblox’s 2026 Halloween event, announced for October 22. Find sourced game information and follow launch, quest and reward verification.",
+  "sources": [
+    "official-x-date-teaser",
+    "official-x-nine-names"
+  ],
+  "lastVerifiedAt": "2026-10-21",
+  "updatedAt": "2026-10-21"
 }

@@ -1,5 +1,27 @@
 [
   {
+    "id": "october-21-official-date-verified",
+    "slug": "october-21-official-date-verified",
+    "title": "October 22 Confirmed: Roblox’s Original Date and Nine-Names Posts Verified",
+    "summary": "Direct reads of Roblox’s X posts confirm The Hollow name and October 22 date. The launch hour, event hub, reward rules and redacted-name solution remain unverified.",
+    "body": [
+      "On October 21, we directly opened Roblox’s verified X post carrying the date 10.22.26. We also read its separate nine-names post, which explicitly names The Hollow and October 22. The event name and calendar date now move from REPORTED to CONFIRMED in this guide. This is a change in our verification status, not a new postponement or launch announcement.",
+      "The date teaser is post 2108961492187918378. Our older retained source, post 2108226475573096953, is a different teaser. We now cite the date-bearing original directly so readers can distinguish the two. Earlier source reviews remain available as historical records.",
+      "The nine-names post contains nine numbered redacted entries. Its wording does not explain a daily unlock schedule, establish the event’s end date, or provide a complete puzzle solution. We have added a dedicated clue briefing that separates the visible promotional text from unverified passwords and QR-code claims.",
+      "Neither of these posts supplies a launch hour, time zone, playable hub URL or reward requirements. Game identities and the previously located Instagram artwork remain available in the games directory; participation labels are unchanged until explicit game-level evidence is checked."
+    ],
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-x-date-teaser",
+      "official-x-nine-names"
+    ],
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "lastVerifiedAt": "2026-10-21",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "official-instagram-teasers-located",
     "slug": "official-instagram-teasers-located",
     "title": "Roblox’s Nine Original Instagram Teasers Located",

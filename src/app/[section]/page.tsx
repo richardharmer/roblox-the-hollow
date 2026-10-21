@@ -13,6 +13,7 @@ import {
 } from "@/lib/content";
 import { metadata } from "@/lib/seo";
 import {
+  AdSlot,
   Breadcrumb,
   PageHead,
   Status,
@@ -94,9 +95,13 @@ export default async function Section({
       <PageHead eyebrow="THE HOLLOW / 2026 FIELD GUIDE" title={p[0]}>
         {p[1]}
       </PageHead>
+      {!["privacy", "about", "sources", "progress"].includes(section) && (
+        <AdSlot placement="header" />
+      )}
       {section in collections ? (
         <>
           <Directory kind={section as Collection} />
+          <AdSlot placement="content" />
           <div className="prose">
             <h2>
               {section === "games"
@@ -145,6 +150,15 @@ export default async function Section({
               and rewards are not evidence of The Hollow’s mechanics. We will
               not reuse those requirements as 2026 instructions.
             </p>
+            {section === "quests" && (
+              <p>
+                Looking for the teaser puzzle? Read{" "}
+                <Link href="/puzzle/">
+                  The Hollow puzzle clues and QR-code status
+                </Link>{" "}
+                before treating a claimed password as a quest requirement.
+              </p>
+            )}
             <SourceList ids={event.sources} />
           </div>
         </>
@@ -165,7 +179,7 @@ export default async function Section({
           <h2>Where does the date come from?</h2>
           <p>
             {event.dateVerification === "CONFIRMED"
-              ? "The official evidence linked below establishes the event date. See the original source for any subsequent changes."
+              ? "Roblox’s original X teaser displays 10.22.26. Its separate nine-names post explicitly names The Hollow and October 22. We directly read both on October 21; neither specifies an opening hour."
               : "Community discussions describe a teaser pointing to October 22, 2026. The official X post could not be directly read during the initial source review. We therefore label the date REPORTED rather than CONFIRMED."}
           </p>
           <SourceList ids={event.sources} />
@@ -174,6 +188,13 @@ export default async function Section({
             {event.startAt
               ? `The documented start is ${event.startAt}.`
               : "No precise time or time zone has been verified. A calendar-day countdown cannot tell you when servers open. We will add time-zone conversions only when an official timestamp is available."}
+          </p>
+          <h2>Is 11 AM PT the confirmed launch time?</h2>
+          <p>
+            Some secondary guides quote 11 AM PT, but the official posts we
+            verified give only a date. We have not verified that hour. A local
+            countdown needs an official time and time zone; we will not turn
+            another game’s Halloween update time into The Hollow’s launch time.
           </p>
           <h2>When does it end?</h2>
           <p>
@@ -192,6 +213,14 @@ export default async function Section({
                 when they become available.
               </>
             )}
+          </p>
+          <h2>What can I check before launch?</h2>
+          <p>
+            Browse the <Link href="/games/">nine reported game profiles</Link>
+            for original Roblox links, or read the{" "}
+            <Link href="/puzzle/">puzzle and QR-code evidence briefing</Link>.
+            Game participation, quest requirements and reward availability are
+            separate checks. A date announcement does not establish any of them.
           </p>
           <VerifiedDates
             verified={event.lastVerifiedAt}
@@ -319,7 +348,7 @@ export default async function Section({
         </div>
       ) : (
         <div className="prose">
-          <p>Effective October 11, 2026.</p>
+          <p>Effective October 21, 2026.</p>
           <h2>Progress stays in your browser</h2>
           <p>
             The checklist stores stable quest and reward IDs in localStorage
@@ -352,7 +381,21 @@ export default async function Section({
             <a href="https://www.microsoft.com/privacy/privacystatement">
               Microsoft Privacy Statement
             </a>{" "}
-            for details. Reserved ad components do not contact ad providers.
+            for details.
+          </p>
+          <p>
+            We display labeled Adsterra advertisements to support this
+            independent guide. Loading an advertisement contacts Adsterra and
+            its delivery partners, which may process your IP address, device and
+            browser information, page/referrer information, cookies and ad
+            interactions. Ads are third-party promotions, not Roblox rewards or
+            editorial recommendations. See the{" "}
+            <a href="https://adsterra.com/privacy-policy/">
+              Adsterra Privacy Policy
+            </a>
+            . Your local progress checklist is not included in our ad
+            configuration. Browser privacy controls can restrict cookies and
+            third-party requests.
           </p>
           <h2>External links and contact</h2>
           <p>

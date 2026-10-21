@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Advertisement } from "./advertisement";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -175,11 +176,9 @@ export function AdSlot({
 }: {
   placement: "header" | "content" | "sidebar" | "footer";
 }) {
-  return process.env.NEXT_PUBLIC_ADS_ENABLED === "true" ? (
-    <aside className={`ad-slot ad-${placement}`} aria-label="Advertisement">
-      <span>Advertisement</span>
-    </aside>
-  ) : null;
+  return process.env.NEXT_PUBLIC_ADS_ENABLED === "false" ? null : (
+    <Advertisement placement={placement} />
+  );
 }
 export function Brand() {
   return (

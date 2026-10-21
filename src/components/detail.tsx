@@ -10,7 +10,14 @@ import {
   origin,
   type Collection,
 } from "@/lib/content";
-import { Breadcrumb, PageHead, Status, SourceList, VerifiedDates } from "./ui";
+import {
+  AdSlot,
+  Breadcrumb,
+  PageHead,
+  Status,
+  SourceList,
+  VerifiedDates,
+} from "./ui";
 import { jsonLd } from "@/lib/seo";
 import { TeaserGallery } from "./teasers";
 export function Detail({
@@ -34,6 +41,7 @@ export function Detail({
         <PageHead eyebrow="EDITORIAL FIELD NOTES" title={u.title}>
           {u.summary}
         </PageHead>
+        <AdSlot placement="header" />
         <div className="prose">
           <Status level={u.verificationLevel} />
           {u.body.map((p, i) => (
@@ -92,6 +100,7 @@ export function Detail({
       >
         {entry.description}
       </PageHead>
+      <AdSlot placement="header" />
       <div className="prose">
         <Status level={entry.verificationLevel} />
         {"participationStatus" in entry && (

@@ -1,4 +1,12 @@
 import { test, expect } from "@playwright/test";
+test.beforeEach(async ({ page }) => {
+  await page.route("https://bicea.org/**", (route) =>
+    route.fulfill({
+      contentType: "application/javascript",
+      body: "/* Ad request intercepted during automated tests. */",
+    }),
+  );
+});
 for (const width of [375, 390, 768, 1440])
   test(`layout and navigation at ${width}px`, async ({ page }) => {
     const errors: string[] = [];
@@ -12,7 +20,7 @@ for (const width of [375, 390, 768, 1440])
       ),
     ).toBe(true);
     await page.screenshot({
-      path: `research/screenshots/home-${width}.png`,
+      path: `test-results/home-${width}.png`,
       fullPage: true,
     });
     await page
@@ -20,7 +28,7 @@ for (const width of [375, 390, 768, 1440])
       .filter({ hasText: "When does The Hollow start?" })
       .click();
     await expect(
-      page.getByText("October 22, 2026 is the reported date.", {
+      page.getByText("October 22, 2026 is the confirmed date.", {
         exact: false,
       }),
     ).toBeVisible();
