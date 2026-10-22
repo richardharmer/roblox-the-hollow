@@ -2269,3 +2269,71 @@ details p {
     grid-template-columns: 1fr;
   }
 }
+
+.field-notes {
+  max-width: 900px;
+  margin-block: 2rem 3rem;
+}
+.field-table-wrap {
+  overflow-x: auto;
+  margin-block: 1.25rem;
+}
+.field-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+.field-table caption {
+  text-align: left;
+  padding-bottom: 0.75rem;
+  color: var(--muted);
+}
+.field-table th,
+.field-table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.field-table thead {
+  background: var(--surface);
+}
+.outskirts-list {
+  columns: 2;
+  column-gap: 2rem;
+  padding-left: 1.4rem;
+}
+.outskirts-list li {
+  break-inside: avoid;
+  padding-block: 0.2rem;
+}
+.field-facts {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 3fr;
+  gap: 0.55rem 1rem;
+}
+.field-facts dt {
+  font-weight: 700;
+}
+.field-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .outskirts-list {
+    columns: 1;
+  }
+  .field-table th,
+  .field-table td {
+    padding: 0.55rem;
+  }
+}
+
+.field-notes ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+.field-notes ol li {
+  padding-left: 0.3rem;
+  margin-block: 0.65rem;
+}

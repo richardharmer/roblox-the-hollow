@@ -139,15 +139,15 @@ export function Directory({ kind }: { kind: Collection }) {
       <p className="results-count" role="status">
         {entries.length
           ? `${filtered.length} of ${entries.length} published ${kind}`
-          : `Awaiting verified ${kind} · No placeholder entries`}
+          : `Detailed ${kind} records · Announcements and partial guides are above`}
       </p>
       {entries.length === 0 ? (
         <EmptyState
           title={`The ${kind === "games" ? "game lineup" : kind === "quests" ? "quest list" : kind === "rewards" ? "reward catalog" : "badge list"} is awaiting verification.`}
         >
-          We haven’t verified enough evidence to publish {kind}. Once we can
-          document the official connection to The Hollow, entries will appear
-          here with their source links.
+          Sourced announcements and partial guidance appear above. This
+          searchable catalog requires complete record details, including the
+          relevant IDs or documented completion requirements.
         </EmptyState>
       ) : filtered.length === 0 ? (
         <div className="empty-search">

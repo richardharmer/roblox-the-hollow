@@ -1,5 +1,33 @@
 [
   {
+    "id": "october-22-full-lineup-and-hunted",
+    "slug": "october-22-full-lineup-and-hunted",
+    "title": "The Hollow Expands Beyond Nine Games: Full Poster, Outskirts and Hunted Badge",
+    "summary": "Roblox’s full poster separates nightly encounters, everyday roaming monsters and cross-game side quests. Hunted’s developer confirms a special event badge.",
+    "body": [
+      "Roblox’s full lineup poster, posted October 21 at 20:00 UTC and reviewed directly October 22, names three distinct categories. The nine main monster origins are the Nightly Haunts; they are not the entire event lineup. The games page now lists all three categories.",
+      "The nightly creator pairings are Bundun with The Deer, Kat with Animal Hospital’s Mimic, LimaMosca with Twisted Dandy, Vanilbean and Kreative Kyle with Biter, NO_DATA with Seek, KreekCraft with Piggy, ItsJustNicholas with The Inspector, Kim Left Arm with Hiachi, and SirDapper with The Overseer. No dated daily order appears on the poster.",
+      "The roaming category includes BEAR, PETAPETA, Flee the Facility, Survive the Killer, Dead Rails, Evade, Home Alone: Anomalies, Banana Eats and Aooni Nightmare. The poster describes these as everyday encounters. The Outskirts is explicitly a cross-Roblox side-quest category; its full printed lineup is now on the games and quests pages.",
+      "Dark Deception’s official account separately confirms a Hunted event quest with a special badge. We verified Hunted’s Place ID 136431686349723, Universe ID 7229780065 and publisher through Roblox. The public API returned 29 badges with no explicit Hollow match, so the quest briefing supplies the correct game entry and confirmed reward type without inventing an objective or badge ID.",
+      "Our quests page also links timestamped environment shots from Roblox’s 24-second trailer. These are preview landmarks, not a continuous maze solution. Creator video and livestream checks did not establish a usable spawn-to-exit route in the material inspected.",
+      "A separate REPORTED guide on the rewards page explains the theme-setting steps demonstrated by KreekCraft. Its account rollout and device availability have not been independently tested. This setting is separate from avatar UGC and the Hunted badge."
+    ],
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-x-full-lineup",
+      "developer-hunted-hollow",
+      "official-hunted-game-api",
+      "official-hunted-badges-api",
+      "official-hollow-trailer",
+      "creator-kreek-hollow-theme"
+    ],
+    "publishedAt": "2026-10-22",
+    "updatedAt": "2026-10-22",
+    "lastVerifiedAt": "2026-10-22",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-22-official-mechanics",
     "slug": "october-22-official-mechanics",
     "title": "Roblox Confirms The Hollow Start Time, Nine Monsters, Rewards and Finale",
@@ -13,9 +41,7 @@
       "This review supersedes earlier launch-time and reported-lineup summaries. Historical reviews remain dated records. The nine linked original Roblox experience pages were read; existing Universe IDs retain their earlier identity-check dates and were not rechecked through the API in this review."
     ],
     "verificationLevel": "CONFIRMED",
-    "sources": [
-      "official-newsroom-hollow"
-    ],
+    "sources": ["official-newsroom-hollow"],
     "publishedAt": "2026-10-22",
     "updatedAt": "2026-10-22",
     "lastVerifiedAt": "2026-10-22",
@@ -34,10 +60,7 @@
       "Neither of these posts supplies a launch hour, time zone, playable hub URL or reward requirements. Game identities and the previously located Instagram artwork remain available in the games directory; participation labels are unchanged until explicit game-level evidence is checked."
     ],
     "verificationLevel": "CONFIRMED",
-    "sources": [
-      "official-x-date-teaser",
-      "official-x-nine-names"
-    ],
+    "sources": ["official-x-date-teaser", "official-x-nine-names"],
     "publishedAt": "2026-10-21",
     "updatedAt": "2026-10-21",
     "lastVerifiedAt": "2026-10-21",
@@ -128,11 +151,7 @@
       "An exact launch time, end date, official hub link, quest requirements and reward catalog have not been verified. We will add playable checklists when there is enough evidence to explain what to do."
     ],
     "verificationLevel": "REPORTED",
-    "sources": [
-      "community-announcement",
-      "doors-discussion",
-      "official-x"
-    ],
+    "sources": ["community-announcement", "doors-discussion", "official-x"],
     "publishedAt": "2026-10-11",
     "updatedAt": "2026-10-11",
     "lastVerifiedAt": "2026-10-11",

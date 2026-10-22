@@ -1,3 +1,10 @@
+import {
+  FullLineup,
+  Outskirts,
+  HuntedBriefing,
+  MazeEvidence,
+  ThemeGuide,
+} from "@/components/hollow-field-notes";
 import { EventSchedule } from "@/components/event-schedule";
 import { dateBriefing, gameBriefing } from "@/lib/briefing";
 import Link from "next/link";
@@ -25,7 +32,7 @@ import { Tracker } from "@/components/tracker";
 const pages: Record<string, [string, string]> = {
   games: [
     "The Hollow Games",
-    "Explore nine confirmed monster origins, original Roblox game profiles and official experience links. Individual Hollow tasks remain unverified.",
+    "Explore the Nightly Haunts creator pairings, everyday roaming monsters and Outskirts side quests, with original Roblox game profiles.",
   ],
   quests: [
     "The Hollow Quests",
@@ -100,6 +107,59 @@ export default async function Section({
       )}
       {section in collections ? (
         <>
+          {section === "games" && <FullLineup />}
+          {section === "quests" && (
+            <>
+              <HuntedBriefing />
+              <Outskirts />
+              <MazeEvidence />
+            </>
+          )}
+          {section === "badges" && <HuntedBriefing />}
+          {section === "rewards" && <ThemeGuide />}
+          {section === "quests" && (
+            <div className="prose">
+              <h2>Where to play and what to do</h2>
+              <p>
+                The Hollow takes place in a shared event hub. The nine featured
+                games supply its monsters; their original game links are not
+                confirmed destinations for separate event quests. The Outskirts
+                is a separately announced cross-game quest lineup, listed above.
+                Start with the Hollow hub when its official entry link is
+                available.
+              </p>
+              <p>
+                Roblox describes a new maze each day for nine days: navigate the
+                maze, search for clues and evade monsters. Completing quests
+                earns UGC and survival rewards. Specific objectives, routes and
+                claim steps still need gameplay evidence.
+              </p>
+              <h2>Find live clue-solving coverage</h2>
+              <p>
+                Roblox names LimaMosca, KreekCraft, Bundun and SirDapper as
+                creators who will stream from inside the Hollow. Their gameplay
+                is a useful place to look for demonstrated solutions once play
+                begins. A scheduled stream or reaction video is not a completed
+                walkthrough.
+              </p>
+              <h2>Can you catch up after missing a day?</h2>
+              <p>
+                This remains unanswered. A player asks this exact question in
+                post 17 of the official announcement thread; none of the 22
+                posts read on October 22 provides an answer. The overall reward
+                deadline does not establish that earlier daily quests remain
+                available.
+              </p>
+              <p>
+                The announced monster list also does not specify their daily
+                arrival order. We will attach dates to individual monsters when
+                an announcement or recorded gameplay establishes the pairing.
+              </p>
+              <SourceList
+                ids={["official-newsroom-hollow", "official-devforum-hollow"]}
+              />
+            </div>
+          )}
           {section === "rewards" && (
             <div className="prose">
               <h2>Three distinct reward categories</h2>
@@ -148,7 +208,7 @@ export default async function Section({
                 : section === "quests"
                   ? "Each published guide must identify its game, prerequisites, real completion steps and supporting sources. Estimated completion times appear only when evidence supports them."
                   : section === "rewards"
-                    ? "Requirements are not verified yet. A reward entry must explain what it is, which game it belongs to, how it is obtained, whether it costs anything and its documented availability."
+                    ? "Use the sourced guidance above for announced rewards and the demonstrated app setting. Individual avatar-item records need an identity, documented requirements, cost and availability."
                     : "We check the badge ID, its universe and the evidence linking it to The Hollow. Badge creation, a spooky name or a Halloween image alone is insufficient."}
             </p>
             <h2>

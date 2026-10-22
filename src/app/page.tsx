@@ -99,8 +99,8 @@ export default function Home() {
           <p className="hero-caption">
             An independent fan-made guide to The Hollow. Roblox’s 2026 Halloween
             survival hub opens October 22 at 2 p.m. PDT. Explore changing mazes
-            and monsters from nine games; follow verified quest and reward
-            details.
+            with nine Nightly Haunts, everyday roaming monsters and Outskirts
+            side quests. Explore the full lineup and sourced reward details.
           </p>
           <div className="hero-actions">
             <Link href="/games/" className="button primary">
@@ -177,7 +177,7 @@ export default function Home() {
           eyebrow="NINE CONFIRMED MONSTERS"
           title="Explore the games"
           href="/games/"
-          label="See all nine"
+          label="See the full lineup"
         />
         <TeaserGallery featured />
       </section>

@@ -338,5 +338,105 @@
     "note": "Directly read on the verified Roblox account in X search on October 21. Names The Hollow and October 22, with nine numbered redacted entries. This establishes the name and date, not a complete solution, end date, game schedule or reward mechanism.",
     "lastCheckedAt": "2026-10-21",
     "lastSuccessAt": "2026-10-21"
+  },
+  {
+    "id": "official-devforum-hollow",
+    "name": "Roblox DevForum — The Hollow announcement and player questions",
+    "url": "https://devforum.roblox.com/t/the-hollow-new-platform-wide-survival-event-for-halloween/4948535",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Read via the public topic JSON and remaining-post endpoint on October 22: all 22 posts. Staff announcement embeds Roblox trailer https://www.youtube.com/watch?v=4oFH5keX1gY; verified Roblox channel and 24-second unlisted video page read in browser, with no description or captions available. Post 17 asks whether missed daily quests can be completed later; no answer in the posts read. Community replies are not official statements.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-x-full-lineup",
+    "name": "Roblox — full Nightly Haunts, roaming and Outskirts poster",
+    "url": "https://x.com/Roblox/status/2112997455042125939",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Original verified Roblox post and full-resolution poster read directly on October 22. Posted October 21 at 20:00:25 UTC (October 22 at 04:00:25 Beijing). Nine nightly game/monster/creator pairings, nine roaming entries, and the Outskirts names transcribed from the artwork. Poster order is not a daily schedule.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-hollow-trailer",
+    "name": "Roblox — The Hollow official trailer",
+    "url": "https://www.youtube.com/watch?v=4oFH5keX1gY",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "24-second unlisted video linked by the official DevForum announcement. Verified Roblox channel. Visual samples across 0–21 seconds inspected, including plaza, corridor, red-lit facade, monsters and creators. No captions or description; promotional shots do not establish a continuous maze route.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "developer-hunted-hollow",
+    "name": "Dark Deception — Hunted Hollow quest and special badge",
+    "url": "https://x.com/DarkDeceptionDD/status/2112957420624609606",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Original verified franchise account post read directly. Announces Hunted participation and a special badge for its event quest. Displayed October 22 at 01:21 Beijing. No objective, badge ID or UGC redemption instructions supplied.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-hunted-game-api",
+    "name": "Roblox — Hunted experience identity",
+    "url": "https://games.roblox.com/v1/games?universeIds=7229780065",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Public Roblox API read directly. HUNTED [HALLOWEEN EVENT], root Place ID 136431686349723, Universe ID 7229780065, publisher Glowstick Entertainment x Exclusible (group 35512405). Description has ordinary soul-shard gameplay but no Hollow-specific objective. Place-to-universe endpoint independently agrees.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-hunted-badges-api",
+    "name": "Roblox — Hunted public badge list",
+    "url": "https://badges.roblox.com/v1/universes/7229780065/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct public API read returned 29 badges, null next-page cursor. No returned name or description explicitly identified The Hollow. This does not disprove the announced badge or establish when it will appear.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "creator-kreek-hollow-theme",
+    "name": "KreekCraft — How to UNLOCK the HOLLOW Roblox Theme",
+    "url": "https://www.youtube.com/watch?v=YtoRojJMuZI",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Original verified creator video, dated October 22, read with full 15-second transcript and visual samples. Settings instruction at 0:00–0:08; theme selector and changed appearance visible. Early Plus eligibility reported in clip; no independent account/device rollout test.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "creator-waffle-hollow-guide",
+    "name": "WaffleTrades — The Hollow Full Event Guide",
+    "url": "https://www.youtube.com/watch?v=hF36NLsfZgI",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Full transcript read, official poster visually inspected at 6:15 and followed to Roblox original. Much of the video summarizes announcements; later launcher-session plans are not proof of completed reward claims.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "creator-sirdapper-hollow-prep",
+    "name": "SirDapper — THE HOLLOW PREP replay",
+    "url": "https://www.twitch.tv/videos/2907048930",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Original Twitch replay metadata read; 2:39:53 duration. Visual samples around 0:04, 0:30 and 1:30 show starting screen and other gameplay, not a verified Hollow completion. Not watched end-to-end; no route inferred.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "creator-noobblox-free-items",
+    "name": "NoobBlox — prelaunch free-items video review",
+    "url": "https://www.youtube.com/watch?v=a7qfC7OEGY4",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Full 3:35 transcript read. Despite guide title, includes predictions about skulls and reward tracks and admits no leaked items apart from a claimed bundle at 2:55. No demonstrated claim sequence. Not used to assert specific rewards or launch time.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
   }
 ]
