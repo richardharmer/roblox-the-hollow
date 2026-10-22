@@ -5,15 +5,20 @@
   "status": "UPCOMING",
   "verificationLevel": "CONFIRMED",
   "startDate": "2026-10-22",
-  "startAt": null,
+  "startAt": "2026-10-22T21:00:00Z",
   "endAt": null,
   "dateVerification": "CONFIRMED",
   "hubUrl": null,
-  "summary": "Roblox’s 2026 Halloween event, announced for October 22. Find sourced game information and follow launch, quest and reward verification.",
+  "summary": "A shared Halloween survival hub featuring monsters from nine Roblox games, changing mazes and quest rewards.",
   "sources": [
+    "official-newsroom-hollow",
     "official-x-date-teaser",
     "official-x-nine-names"
   ],
-  "lastVerifiedAt": "2026-10-21",
-  "updatedAt": "2026-10-21"
+  "lastVerifiedAt": "2026-10-22",
+  "updatedAt": "2026-10-22",
+  "plusEarlyAccessAt": "2026-10-22T19:00:00Z",
+  "finaleDate": "2026-10-31",
+  "finaleAt": null,
+  "rewardClaimDeadline": "2026-11-02T20:00:00Z"
 }

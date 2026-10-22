@@ -2,11 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { gameProfiles, teasers, sources, formatDate } from "@/lib/content";
+import {
+  gameProfiles,
+  games,
+  teasers,
+  sources,
+  formatDate,
+} from "@/lib/content";
 import { AdSlot, Breadcrumb, SourceList, Status, VerifiedDates } from "./ui";
 
 export function GameProfile({ id }: { id: string }) {
   const game = gameProfiles.find((g) => g.id === id);
+  const participation = games.find((g) => g.id === id);
   const teaser = teasers.find((t) => t.id === id);
   if (!game || !teaser) notFound();
   const original = sources.find((s) => s.id === teaser.officialSourceId)!;
@@ -37,7 +44,7 @@ export function GameProfile({ id }: { id: string }) {
           <p>{game.summary}</p>
           <p className="game-publisher">By {game.creator}</p>
           <div className="game-participation">
-            <Status level="REPORTED" />
+            <Status level={participation?.verificationLevel ?? "REPORTED"} />
             <span>The Hollow participation</span>
           </div>
           <a
@@ -71,11 +78,11 @@ export function GameProfile({ id }: { id: string }) {
             <h2>Is {game.name} in The Hollow?</h2>
             <p>{game.eventNote}</p>
             <div className="callout">
-              <strong>Current answer: reported participation.</strong>
+              <strong>Confirmed monster: {participation?.monster}</strong>
               <p>
-                The original game identity is verified. Its participation in The
-                Hollow has not yet been independently confirmed against an
-                explicit game announcement.
+                Roblox confirms this monster in the shared Hollow hub. The
+                original game link below does not open that hub or establish a
+                separate quest.
               </p>
             </div>
             <h3>Tasks, badges and rewards</h3>
@@ -106,8 +113,8 @@ export function GameProfile({ id }: { id: string }) {
                 <blockquote>“{teaser.caption}”</blockquote>
                 <p>
                   This is the visible caption on the original Roblox post. The
-                  game association follows the reported lineup; the artwork does
-                  not supply a quest checklist.
+                  later Newsroom announcement confirms the monster; this artwork
+                  does not supply a quest checklist.
                 </p>
                 <a
                   href={original.url}
@@ -124,12 +131,15 @@ export function GameProfile({ id }: { id: string }) {
             <h2>Sources & verification</h2>
             <SourceList
               ids={[
-                game.sourceId,
+                ...(participation?.sources ?? [game.sourceId]),
                 teaser.officialSourceId,
                 ...teaser.reportSourceIds,
               ]}
             />
-            <VerifiedDates verified={game.checkedAt} updated={game.checkedAt} />
+            <VerifiedDates
+              verified={participation?.lastVerifiedAt ?? game.checkedAt}
+              updated={participation?.updatedAt ?? game.checkedAt}
+            />
           </section>
         </div>
         <aside className="game-profile-facts">
@@ -155,7 +165,7 @@ export function GameProfile({ id }: { id: string }) {
             Official Roblox page <ArrowUpRight size={14} />
           </a>
           <Link
-            href="/updates/official-instagram-teasers-located/"
+            href="/updates/october-22-official-mechanics/"
             className="text-link"
           >
             Read the lineup review <ArrowRight size={14} />

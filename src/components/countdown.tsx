@@ -26,14 +26,18 @@ export function Countdown({
   }, [date]);
   return (
     <span className="countdown">
-      {days === null
-        ? "Date only"
-        : days > 0
-          ? `${days} calendar ${days === 1 ? "day" : "days"} away`
-          : days === 0
-            ? "Calendar date is today"
-            : "Awaiting launch verification"}
-      <small>{startAt ? `Launch: ${startAt}` : "Exact launch time TBA"}</small>
+      {startAt
+        ? "Launch time confirmed"
+        : days === null
+          ? "Date only"
+          : days > 0
+            ? `${days} calendar ${days === 1 ? "day" : "days"} away`
+            : days === 0
+              ? "Calendar date is today"
+              : "Awaiting launch verification"}
+      <small>
+        {startAt ? "October 22 · 2 p.m. PDT" : "Exact launch time TBA"}
+      </small>
     </span>
   );
 }

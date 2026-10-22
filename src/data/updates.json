@@ -1,5 +1,28 @@
 [
   {
+    "id": "october-22-official-mechanics",
+    "slug": "october-22-official-mechanics",
+    "title": "Roblox Confirms The Hollow Start Time, Nine Monsters, Rewards and Finale",
+    "summary": "The October 21 Newsroom announcement confirms a shared survival hub, a 2 p.m. Pacific launch on October 22 and nine monster/game pairings. Reviewed October 22.",
+    "body": [
+      "Roblox’s official announcement supplies the launch schedule and event format. Public access starts October 22 at 2 p.m. PDT (21:00 UTC; October 23 at 05:00 Beijing time). Active Roblox Plus subscribers can enter the hub two hours earlier, at noon PDT (19:00 UTC; October 23 at 03:00 Beijing time).",
+      "The Hollow takes place in a shared survival hub with changing mazes, clues and a new monster each day over nine days. The nine featured games supply monsters; the announcement does not establish nine separate original-game quest chains. The games directory records each confirmed monster pairing. Daily monster order and walkthroughs remain unverified.",
+      "Quest completion can earn UGC and survival rewards. Marketplace products, including Hollow Horseman, and paid Plus benefits are separate categories. Specific item IDs, prices and individual claim requirements are not verified here.",
+      "The live finale is scheduled for the morning of October 31, with no exact hour published. Reward collection continues until November 2 at noon PST: 20:00 UTC, or November 3 at 04:00 Beijing time. Pacific time changes from PDT to PST on November 1; the reward cutoff is distinct from the finale.",
+      "The event targets ages 9 and above in most regions; access varies by region. Creators will stream clues during the event. The announcement does not provide a verified hub Place ID, Universe ID, badge list or catalog list.",
+      "This review supersedes earlier launch-time and reported-lineup summaries. Historical reviews remain dated records. The nine linked original Roblox experience pages were read; existing Universe IDs retain their earlier identity-check dates and were not rechecked through the API in this review."
+    ],
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-newsroom-hollow"
+    ],
+    "publishedAt": "2026-10-22",
+    "updatedAt": "2026-10-22",
+    "lastVerifiedAt": "2026-10-22",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-21-official-date-verified",
     "slug": "october-21-official-date-verified",
     "title": "October 22 Confirmed: Roblox’s Original Date and Nine-Names Posts Verified",

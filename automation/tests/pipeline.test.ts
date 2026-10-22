@@ -264,11 +264,9 @@ test("official game listing publishes a real directory entry without a thin guid
   try {
     await fs.writeFile(path.join(root, "src/data/teasers.json"), "[]");
     await fs.writeFile(path.join(root, "src/data/game-profiles.json"), "[]");
+    // Publication fixtures must not depend on the production lineup being empty.
     for (const f of ["games", "quests", "rewards", "badges", "updates"])
-      await fs.copyFile(
-        `src/data/${f}.json`,
-        path.join(root, `src/data/${f}.json`),
-      );
+      await fs.writeFile(path.join(root, `src/data/${f}.json`), "[]");
     const c: Candidate = {
       ...base,
       candidateId: "participant-fixture",

@@ -1,10 +1,10 @@
+import { EventSchedule } from "@/components/event-schedule";
 import { dateBriefing, gameBriefing } from "@/lib/briefing";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   collections,
   event,
-  startLabel,
   sources,
   updates,
   contact,
@@ -25,7 +25,7 @@ import { Tracker } from "@/components/tracker";
 const pages: Record<string, [string, string]> = {
   games: [
     "The Hollow Games",
-    "Explore the nine reported games with original Roblox covers, game profiles and official experience links. Event participation and task evidence are labeled separately.",
+    "Explore nine confirmed monster origins, original Roblox game profiles and official experience links. Individual Hollow tasks remain unverified.",
   ],
   quests: [
     "The Hollow Quests",
@@ -100,6 +100,36 @@ export default async function Section({
       )}
       {section in collections ? (
         <>
+          {section === "rewards" && (
+            <div className="prose">
+              <h2>Three distinct reward categories</h2>
+              <ul className="reward-categories">
+                <li>
+                  <strong>Earned through quests:</strong> exclusive UGC and
+                  survival rewards. Individual items, catalog IDs and claim
+                  requirements remain unverified.
+                </li>
+                <li>
+                  <strong>Marketplace purchases:</strong> limited-time products
+                  including Hollow Horseman, avatar accessories and seasonal
+                  makeup. These are not confirmed free quest rewards; prices are
+                  not documented here.
+                </li>
+                <li>
+                  <strong>Active Roblox Plus benefits:</strong> two-hour early
+                  hub access, a profile frame and background, and an item
+                  launcher for gifting. Active subscribers can retain the theme
+                  after the finale.
+                </li>
+              </ul>
+              <p>
+                Reward collection ends November 2 at noon PST (November 3 at
+                04:00 Beijing). No specific item is listed below without
+                verified requirements.
+              </p>
+              <SourceList ids={["official-newsroom-hollow"]} />
+            </div>
+          )}
           <Directory kind={section as Collection} />
           <AdSlot placement="content" />
           <div className="prose">
@@ -130,9 +160,10 @@ export default async function Section({
               <p>
                 Each profile introduces the original game and links to its
                 verified Roblox experience. The covers come from Roblox’s
-                official thumbnail service. Hollow participation is still
-                reported; the Instagram teasers are supporting evidence rather
-                than a playable game entry.
+                official thumbnail service. The October 21 Newsroom announcement
+                confirms their monsters in the shared Hollow hub. Original game
+                IDs are not hub IDs; independent tasks in these games are not
+                confirmed.
               </p>
             ) : (
               <p>
@@ -166,41 +197,45 @@ export default async function Section({
         <Tracker />
       ) : section === "release-date" ? (
         <div className="prose">
-          <div className="callout">
-            <Status level={event.dateVerification} />
-            <h2>{startLabel}</h2>
-            <p>
-              <strong>
-                {event.startAt ? event.startAt : "Exact launch time TBA."}
-              </strong>{" "}
-              {dateBriefing}
-            </p>
-          </div>
-          <h2>Where does the date come from?</h2>
+          <Status level={event.dateVerification} />
+          <EventSchedule />
+          <h2>Where does the schedule come from?</h2>
           <p>
-            {event.dateVerification === "CONFIRMED"
-              ? "Roblox’s original X teaser displays 10.22.26. Its separate nine-names post explicitly names The Hollow and October 22. We directly read both on October 21; neither specifies an opening hour."
-              : "Community discussions describe a teaser pointing to October 22, 2026. The official X post could not be directly read during the initial source review. We therefore label the date REPORTED rather than CONFIRMED."}
+            Roblox published the official Newsroom announcement on October 21;
+            we directly read it on October 22. Earlier X posts confirmed only
+            the date.
           </p>
           <SourceList ids={event.sources} />
-          <h2>What time does The Hollow start?</h2>
-          <p>
-            {event.startAt
-              ? `The documented start is ${event.startAt}.`
-              : "No precise time or time zone has been verified. A calendar-day countdown cannot tell you when servers open. We will add time-zone conversions only when an official timestamp is available."}
-          </p>
+          <h2>Launch schedule</h2>
+          <ul>
+            <li>
+              Public opening: October 22, 2 p.m. PDT / 21:00 UTC / October 23,
+              05:00 Beijing.
+            </li>
+            <li>
+              Active Roblox Plus subscribers: October 22, noon PDT / 19:00 UTC /
+              October 23, 03:00 Beijing.
+            </li>
+          </ul>
           <h2>Is 11 AM PT the confirmed launch time?</h2>
           <p>
-            Some secondary guides quote 11 AM PT, but the official posts we
-            verified give only a date. We have not verified that hour. A local
-            countdown needs an official time and time zone; we will not turn
-            another game’s Halloween update time into The Hollow’s launch time.
+            No. Roblox specifies 2 p.m. Pacific for public access and noon for
+            Plus early hub access. DOORS seasonal update times are separate.
           </p>
-          <h2>When does it end?</h2>
+          <h2>Finale and reward deadline</h2>
           <p>
-            {event.endAt
-              ? `The documented end is ${event.endAt}.`
-              : "An end date has not been verified. Previous Roblox events do not establish this event’s duration."}
+            The live finale is on the morning of October 31. Its exact hour
+            remains TBA.
+          </p>
+          <p>
+            Rewards can be collected until November 2 at noon PST / 20:00 UTC /
+            November 3 at 04:00 Beijing. This is the reward cutoff, not the
+            finale time. Pacific time switches to PST on November 1.
+          </p>
+          <h2>Who can participate?</h2>
+          <p>
+            The announcement covers eligible Roblox accounts, generally ages 9
+            and above. Age and access restrictions vary by region.
           </p>
           <h2>Where can I play?</h2>
           <p>
@@ -216,11 +251,13 @@ export default async function Section({
           </p>
           <h2>What can I check before launch?</h2>
           <p>
-            Browse the <Link href="/games/">nine reported game profiles</Link>
+            Browse the{" "}
+            <Link href="/games/">nine confirmed monster origins</Link>
             for original Roblox links, or read the{" "}
             <Link href="/puzzle/">puzzle and QR-code evidence briefing</Link>.
             Game participation, quest requirements and reward availability are
-            separate checks. A date announcement does not establish any of them.
+            separate checks. The Newsroom announcement confirms monster origins
+            but does not supply individual task instructions.
           </p>
           <VerifiedDates
             verified={event.lastVerifiedAt}
@@ -241,7 +278,10 @@ export default async function Section({
                     u.title
                   )}
                 </h2>
-                <p>{u.summary}</p>
+                <p>
+                  {u.publishedAt < "2026-10-22" && "Historical review · "}
+                  {u.summary}
+                </p>
                 <SourceList ids={u.sources} />
               </div>
             </article>
@@ -259,6 +299,17 @@ export default async function Section({
       ) : section === "sources" ? (
         <>
           <div className="prose">
+            <h2>October 22 verification update</h2>
+            <p>
+              We directly read Roblox’s October 21 Newsroom announcement and its
+              nine original game links. The launch schedule, monster origins and
+              reward categories are now confirmed. Older records below retain
+              their original check dates, including the October 11 index review
+              that had not found an announcement.
+            </p>
+            <Link href="/updates/october-22-official-mechanics/">
+              Read the official announcement review
+            </Link>
             <h2>Three evidence levels</h2>
             <p>
               <strong>CONFIRMED:</strong> directly readable primary evidence

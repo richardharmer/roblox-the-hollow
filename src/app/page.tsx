@@ -1,3 +1,4 @@
+import { EventSchedule } from "@/components/event-schedule";
 import { dateBriefing, gameBriefing, rewardBriefing } from "@/lib/briefing";
 import Link from "next/link";
 import {
@@ -39,14 +40,14 @@ const faq = [
   [
     "What is The Hollow Roblox event?",
     event.verificationLevel === "CONFIRMED"
-      ? "The Hollow is a Roblox event documented by the official sources linked in this guide."
+      ? event.summary
       : "The Hollow is the name used in community reports for a 2026 Roblox Halloween event. Our initial review could not directly verify the official teaser, so the name and event details are labeled reported.",
   ],
   ["When does The Hollow start?", dateBriefing],
   ["Which Roblox games are part of The Hollow?", gameBriefing],
   [
     "Is The Hollow free to play?",
-    "Event access and reward pricing have not been verified. We will distinguish free rewards from paid items when official requirements are available.",
+    "Roblox announces access for eligible accounts, generally ages 9 and above, with regional restrictions. Marketplace purchases and paid Plus perks are separate from earned quest rewards; individual reward costs remain unverified.",
   ],
   ["How do I get The Hollow rewards?", rewardBriefing],
   [
@@ -96,10 +97,10 @@ export default function Home() {
             Keep your next move in sight.
           </p>
           <p className="hero-caption">
-            An independent fan-made guide to The Hollow, Roblox’s 2026 Halloween
-            event announced for October 22. Follow sourced updates and track
-            verified games, quests, badges and rewards as details become
-            available.
+            An independent fan-made guide to The Hollow. Roblox’s 2026 Halloween
+            survival hub opens October 22 at 2 p.m. PDT. Explore changing mazes
+            and monsters from nine games; follow verified quest and reward
+            details.
           </p>
           <div className="hero-actions">
             <Link href="/games/" className="button primary">
@@ -114,7 +115,7 @@ export default function Home() {
             <div>
               <strong>{startLabel}</strong>
               <span>
-                {event.dateVerification.toLowerCase()} start date ·{" "}
+                2 p.m. PDT / 21:00 UTC ·{" "}
                 <Link href="/release-date/">View evidence</Link>
               </span>
             </div>
@@ -132,6 +133,7 @@ export default function Home() {
           PROMOTIONAL ART · ROBLOX / INSTAGRAM ↗
         </a>
       </section>
+      <EventSchedule />
       <div className="stat-bar">
         {[
           [
@@ -172,9 +174,9 @@ export default function Home() {
       </div>
       <section className="section">
         <SectionHead
-          eyebrow="THE REPORTED LINEUP"
+          eyebrow="NINE CONFIRMED MONSTERS"
           title="Explore the games"
-          href="/games/#reported-teasers"
+          href="/games/"
           label="See all nine"
         />
         <TeaserGallery featured />
@@ -228,13 +230,13 @@ export default function Home() {
               label="View directory"
             />
             {games.length ? (
-              <div className="entry-list">
+              <div className="confirmed-game-links">
                 {games.map((g) => (
-                  <Link
-                    key={g.id}
-                    href={g.publishDetail ? `/games/${g.slug}/` : "/games/"}
-                  >
-                    {g.name}
+                  <Link key={g.id} href={`/games/${g.slug}/`}>
+                    <span>
+                      {g.name}
+                      <small>{g.monster}</small>
+                    </span>
                     <ArrowRight size={16} />
                   </Link>
                 ))}
@@ -269,9 +271,8 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <EmptyState title="Rewards are yet to be revealed.">
-                No verified items or unlock requirements are available. Free,
-                paid, and no-longer-available items will be clearly separated.
+              <EmptyState title="Reward categories confirmed; item details pending.">
+                {rewardBriefing}
               </EmptyState>
             )}
           </section>
@@ -317,8 +318,9 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              A calendar date is not a launch time. A teaser theory is not a
-              game announcement.
+              Launch times and monster origins are confirmed. Hub access, daily
+              walkthroughs and individual item requirements still need
+              verification.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />
@@ -344,7 +346,10 @@ export default function Home() {
               <h3>
                 <Link href={`/updates/${u.slug}/`}>{u.title}</Link>
               </h3>
-              <p>{u.summary}</p>
+              <p>
+                {u.publishedAt < "2026-10-22" && "Historical review · "}
+                {u.summary}
+              </p>
             </div>
             <Link
               href={`/updates/${u.slug}/`}

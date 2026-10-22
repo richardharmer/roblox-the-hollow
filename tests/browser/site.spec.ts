@@ -113,7 +113,59 @@ test("progress import, persistence, merge, export and reset", async ({
 });
 test("static HTML and real 404", async ({ request }) => {
   const r = await request.get("/");
-  expect(await r.text()).toContain("The lineup is still behind the door.");
+  expect(await r.text()).toContain("9 confirmed");
   const missing = await request.get("/quests/not-a-real-quest/");
   expect(missing.status()).toBe(404);
 });
+
+test("confirmed lineup filters link to sourced monster profiles", async ({
+  page,
+}) => {
+  await page.goto("/games/");
+  await page.getByLabel("Evidence").selectOption("CONFIRMED");
+  await expect(page.locator(".teaser-card")).toHaveCount(9);
+  await page.getByLabel("Search games").fill("DOORS");
+  await expect(page.locator(".teaser-card")).toHaveCount(1);
+  await expect(page.locator(".teaser-card")).toContainText("Seek");
+  await page.getByRole("link", { name: "DOORS", exact: true }).click();
+  await expect(page.locator("#hollow-status")).toContainText(
+    "Confirmed monster: Seek",
+  );
+  await expect(
+    page.getByRole("link", { name: "Play on Roblox" }),
+  ).toHaveAttribute("href", /games\/6516141723\//);
+  await expect(page.locator("#game-sources")).toContainText(
+    "official announcement",
+  );
+});
+
+for (const width of [375, 1440]) {
+  test(`schedule and reward reading at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    for (const path of ["/release-date/", "/rewards/", "/games/"]) {
+      await page.goto(path);
+      expect(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      ).toBe(true);
+      await page.screenshot({
+        path: `test-results/${path.replaceAll("/", "")}-${width}.png`,
+        fullPage: true,
+      });
+    }
+    await page.goto("/release-date/");
+    await expect(page.locator(".schedule-primary time")).toHaveAttribute(
+      "datetime",
+      "2026-10-22T21:00:00Z",
+    );
+    await expect(page.locator(".event-schedule")).toContainText(
+      "Nov 3, 04:00 Beijing",
+    );
+    await page.goto("/rewards/");
+    await expect(page.locator(".reward-categories li")).toHaveCount(3);
+    await expect(page.locator(".reward-categories")).toContainText(
+      "not confirmed free quest rewards",
+    );
+  });
+}

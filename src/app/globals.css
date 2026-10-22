@@ -2163,5 +2163,109 @@ details p {
 }
 
 @media (min-width: 521px) and (max-width: 800px) {
-  .home-sidebar > .ad-slot { grid-column: 1 / -1; }
+  .home-sidebar > .ad-slot {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Official schedule: readable milestones in the existing field-guide palette. */
+.event-schedule {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+.schedule-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-width: 0;
+}
+.schedule-primary {
+  border-top: 3px solid var(--orange);
+}
+.schedule-card strong {
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.3;
+}
+.schedule-card > span:last-child {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.monster-label {
+  color: var(--orange);
+  font-size: 14px;
+  margin: 12px 0;
+}
+.reward-categories {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.reward-categories li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.reward-categories strong {
+  display: block;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+@media (min-width: 1100px) {
+  .container > .event-schedule {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .event-schedule {
+    grid-template-columns: 1fr;
+  }
+  .schedule-card {
+    padding: 20px;
+  }
+  .prose p,
+  .prose li {
+    font-size: 16px;
+  }
+}
+.confirmed-game-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.confirmed-game-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  min-height: 72px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+}
+.confirmed-game-links a:hover {
+  border-color: var(--orange);
+}
+.confirmed-game-links small {
+  display: block;
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 13px;
+}
+.confirmed-game-links svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .confirmed-game-links {
+    grid-template-columns: 1fr;
+  }
 }

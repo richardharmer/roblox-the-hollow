@@ -1,5 +1,15 @@
 [
   {
+    "id": "official-newsroom-hollow",
+    "name": "Roblox — The Hollow official announcement (October 21)",
+    "url": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Published October 21, 2026; directly read October 22. Confirms the launch schedule, nine monster/game pairings, shared hub survival, reward categories and finale. Linked original game pages were also read; they are not the event hub. Earlier source records below preserve their original review dates.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
     "id": "community-announcement",
     "name": "Reddit community announcement",
     "url": "https://www.reddit.com/r/roblox/comments/1x2k1ct/hw_roblox_event/",

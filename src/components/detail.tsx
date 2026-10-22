@@ -44,6 +44,18 @@ export function Detail({
         <AdSlot placement="header" />
         <div className="prose">
           <Status level={u.verificationLevel} />
+          {u.publishedAt < "2026-10-22" && (
+            <div className="callout">
+              <strong>Historical source review</strong>
+              <p>
+                This article records what was known on its review date.{" "}
+                <Link href="/updates/october-22-official-mechanics/">
+                  Read the October 22 official announcement review
+                </Link>{" "}
+                for confirmed times, monsters and reward categories.
+              </p>
+            </div>
+          )}
           {u.body.map((p, i) => (
             <p key={i} style={{ marginTop: 24 }}>
               {p}

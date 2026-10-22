@@ -23,7 +23,7 @@ for (const profile of gameProfiles) {
   await fs.mkdir(target, { recursive: true });
   await fs.writeFile(
     path.join(target, "page.tsx"),
-    `import {GameProfile} from '@/components/game-profile';import {metadata as makeMetadata} from '@/lib/seo';export const metadata=makeMetadata(${JSON.stringify(profile.name + " in The Hollow — Game & Event Status")},${JSON.stringify(profile.summary + " Check its reported Hollow status, official Roblox link and teaser evidence.")},${JSON.stringify("/games/" + profile.id + "/")},true);export default function Page(){return <GameProfile id=${JSON.stringify(profile.id)}/>}`,
+    `import {GameProfile} from '@/components/game-profile';import {metadata as makeMetadata} from '@/lib/seo';export const metadata=makeMetadata(${JSON.stringify(profile.name + " in The Hollow — Game & Event Status")},${JSON.stringify(profile.summary + " Check its confirmed monster, official Roblox link and Hollow evidence.")},${JSON.stringify("/games/" + profile.id + "/")},true);export default function Page(){return <GameProfile id=${JSON.stringify(profile.id)}/>}`,
   );
 }
 const missing = async (file: string) => {

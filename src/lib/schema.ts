@@ -24,6 +24,16 @@ export const eventSchema = z
     startDate: date.nullable(),
     startAt: z.iso.datetime({ offset: true }).nullable(),
     endAt: z.iso.datetime({ offset: true }).nullable(),
+    plusEarlyAccessAt: z.iso
+      .datetime({ offset: true })
+      .nullable()
+      .default(null),
+    finaleDate: date.nullable().default(null),
+    finaleAt: z.iso.datetime({ offset: true }).nullable().default(null),
+    rewardClaimDeadline: z.iso
+      .datetime({ offset: true })
+      .nullable()
+      .default(null),
     dateVerification: level,
     hubUrl: url.nullable(),
     summary: text,
@@ -113,6 +123,7 @@ export const gameSchema = z
     robloxUrl: url,
     universeId: robloxId,
     placeId: robloxId,
+    monster: text.nullable().default(null),
     participationStatus: z.enum(["CONFIRMED", "REPORTED", "UNCONFIRMED"]),
     walkthrough: z.array(text),
     troubleshooting: z.array(text),

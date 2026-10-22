@@ -23,11 +23,13 @@ export function Directory({ kind }: { kind: Collection }) {
       (!status || x.verificationLevel === status) &&
       (!free || ("free" in x && x.free === true)),
   );
-  if (kind === "games" && !games.length && gameProfiles.length) {
+  if (kind === "games" && gameProfiles.length) {
     const profiles = gameProfiles.filter(
       (g) =>
         g.name.toLowerCase().includes(search.toLowerCase()) &&
-        status !== "CONFIRMED",
+        (!status ||
+          (games.find((entry) => entry.id === g.id)?.verificationLevel ??
+            "REPORTED") === status),
     );
     return (
       <section id="reported-teasers">
@@ -56,7 +58,7 @@ export function Directory({ kind }: { kind: Collection }) {
         </div>
         <p className="results-count" role="status">
           {profiles.length} of {gameProfiles.length} game profiles · Hollow
-          participation reported
+          monster origins confirmed
         </p>
         {profiles.length ? (
           <TeaserGallery ids={profiles.map((p) => p.id)} />
@@ -65,7 +67,7 @@ export function Directory({ kind }: { kind: Collection }) {
             <h3>No matching games</h3>
             <p>
               {status === "CONFIRMED"
-                ? "No game’s Hollow participation has been independently confirmed yet."
+                ? "No confirmed games match this search."
                 : "Try a shorter search or clear your filters."}
             </p>
             <button

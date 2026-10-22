@@ -20,7 +20,7 @@ export default function Puzzle() {
     <div className="container page-content">
       <Breadcrumb items={[{ name: "The Hollow puzzle", path: "/puzzle/" }]} />
       <PageHead
-        eyebrow="TEASER EVIDENCE / OCTOBER 21, 2026"
+        eyebrow="TEASER EVIDENCE / OCTOBER 22, 2026"
         title="The Hollow Puzzle & QR Code"
       >
         Roblox has published a nine-name teaser. We have not verified a secret
@@ -57,9 +57,9 @@ export default function Puzzle() {
             </Link>{" "}
             links to nine original Roblox Instagram teasers. Their artwork is
             primary promotional material. The game associations in the{" "}
-            <Link href="/games/">games directory</Link> remain reported, and the
-            covers do not establish puzzle answers, quest steps or item unlock
-            requirements.
+            <Link href="/games/">games directory</Link> are now confirmed by the
+            October 21 Newsroom announcement. The covers do not establish puzzle
+            answers, quest steps or item unlock requirements.
           </p>
         </section>
         <section id="qr-code">
@@ -84,8 +84,7 @@ export default function Puzzle() {
           <ol>
             <li>
               Check the <Link href="/release-date/">release-date briefing</Link>
-              . October 22 is confirmed; the exact launch hour is still
-              unverified.
+              . Public access opens October 22 at 2 p.m. PDT.
             </li>
             <li>
               Use the official source links below to compare a clue with the
@@ -110,9 +109,10 @@ export default function Puzzle() {
             "official-x-date-teaser",
             "official-x-nine-names",
             "official-instagram",
+            "official-newsroom-hollow",
           ]}
         />
-        <VerifiedDates verified="2026-10-21" updated="2026-10-21" />
+        <VerifiedDates verified="2026-10-22" updated="2026-10-22" />
         <p>
           <Link href="/updates/october-21-official-date-verified/">
             Read the October 21 verification update

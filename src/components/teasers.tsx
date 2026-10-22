@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { gameProfiles, sources, teasers } from "@/lib/content";
+import { gameProfiles, games, sources, teasers } from "@/lib/content";
 import { Status } from "./ui";
 
 export function TeaserMosaic() {
@@ -43,13 +43,17 @@ export function TeaserGallery({
       <p className="teaser-intro">
         {artwork
           ? "Official October 17 teaser artwork. Open a game profile for the event status; original posts are linked separately."
-          : "Original game covers from Roblox. Open a game profile for its overview, official game link and reported Hollow status."}
+          : "Original game covers from Roblox. Open a game profile for its overview, official game link and confirmed monster and Hollow status."}
       </p>
       <div
         className={`teaser-grid${featured ? " teaser-grid-featured" : ""}${artwork ? " teaser-grid-artwork" : ""}`}
       >
         {entries.map((t) => {
-          const source = sources.find((s) => s.id === t.officialSourceId)!;
+          const source = sources.find(
+            (s) =>
+              s.id ===
+              (artwork ? t.officialSourceId : "official-newsroom-hollow"),
+          )!;
           const profile = gameProfiles.find((p) => p.id === t.id)!;
           const cover = artwork ? t.image : profile.image;
           return (
@@ -71,7 +75,15 @@ export function TeaserGallery({
                 </span>
               </Link>
               <div className="teaser-card-body">
-                <Status level={t.verificationLevel} />
+                <Status
+                  level={
+                    games.find((g) => g.id === t.id)?.verificationLevel ??
+                    t.verificationLevel
+                  }
+                />
+                <p className="monster-label">
+                  Monster · {games.find((g) => g.id === t.id)?.monster}
+                </p>
                 <h3>
                   <Link href={`/games/${t.id}/`}>{t.gameName}</Link>
                 </h3>
@@ -85,7 +97,8 @@ export function TeaserGallery({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Instagram evidence <ArrowUpRight size={13} />
+                  {artwork ? "Instagram evidence" : "Official confirmation"}{" "}
+                  <ArrowUpRight size={13} />
                 </a>
               </div>
             </article>
@@ -100,7 +113,7 @@ export function TeaserGallery({
         </p>
         {showNotesLink && (
           <Link
-            href="/updates/official-instagram-teasers-located/"
+            href="/updates/october-22-official-mechanics/"
             className="text-link"
           >
             Read the verification notes <ArrowUpRight size={15} />
