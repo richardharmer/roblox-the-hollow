@@ -438,5 +438,15 @@
     "note": "Full 3:35 transcript read. Despite guide title, includes predictions about skulls and reward tracks and admits no leaked items apart from a claimed bundle at 2:55. No demonstrated claim sequence. Not used to assert specific rewards or launch time.",
     "lastCheckedAt": "2026-10-22",
     "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-fea8ddebcc38",
+    "name": "Roblox Presents official evidence",
+    "url": "https://games.roblox.com/v1/games?universeIds=10770728771",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Exact event name and official Presents ownership",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
   }
 ]
