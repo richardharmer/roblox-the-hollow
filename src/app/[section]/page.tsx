@@ -144,7 +144,16 @@ export default async function Section({
               <MazeEvidence />
             </>
           )}
-          {section === "badges" && <HuntedBriefing />}
+          {section === "badges" && <>
+            <div className="prose">
+              <h2>Official badge IDs and verification status</h2>
+              <p>Nine enabled badges were returned by Roblox’s official API for The Hollow universe 10770728771 on October 23, with no next-page cursor. Search by name, Badge ID or Universe ID below.</p>
+              <p>CONFIRMED refers to badge identity and universe ownership. Empty API descriptions do not establish completion steps, Tickets, free or Plus eligibility, or successful avatar-item delivery. Badge IDs are not Catalog IDs. Linked video-based reward guides remain REPORTED. Enabled is an API snapshot, not a guarantee that a claim currently works.</p>
+              <SourceList ids={["official-hollow-badges"]} />
+            </div>
+            <Directory kind="badges" />
+            <HuntedBriefing />
+          </>}
           {section === "rewards" && <ThemeGuide />}
           {section === "quests" && (
             <div className="prose">
@@ -222,7 +231,7 @@ export default async function Section({
               <SourceList ids={["official-newsroom-hollow"]} />
             </div>
           )}
-          {section !== "quests" && <Directory kind={section as Collection} />}
+          {section !== "quests" && section !== "badges" && <Directory kind={section as Collection} />}
           <AdSlot placement="content" />
           <div className="prose">
             <h2>

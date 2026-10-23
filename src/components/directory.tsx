@@ -19,7 +19,7 @@ export function Directory({ kind }: { kind: Collection }) {
   const entries = collections[kind];
   const filtered = entries.filter(
     (x) =>
-      x.name.toLowerCase().includes(search.toLowerCase()) &&
+      `${x.name} ${"badgeId" in x ? x.badgeId : ""} ${"universeId" in x ? x.universeId : ""}`.toLowerCase().includes(search.toLowerCase()) &&
       (!game || ("gameId" in x && x.gameId === game)) &&
       (!status || x.verificationLevel === status) &&
       (!free || ("free" in x && x.free === true)),
@@ -192,6 +192,14 @@ export function Directory({ kind }: { kind: Collection }) {
                   )}
                 </h3>
                 <p>{x.description}</p>
+                {"badgeId" in x && (
+                  <>
+                    <p>Badge ID: {x.badgeId} · Universe ID: {x.universeId ?? "Not recorded"}</p>
+                    <p>API enabled: {x.enabled === undefined ? "Unknown" : x.enabled ? "Yes" : "No"} · Checked {x.lastVerifiedAt}</p>
+                    <p>Claim instructions: {x.claimInstructionsEvidence === "REPORTED" ? "Reported — separate video-based reward guide" : "Unverified — no complete claim instructions"}</p>
+                    {x.relatedRewardSlug && <Link className="text-link" href={`/rewards/${x.relatedRewardSlug}/`}>Read the reported reward guide →</Link>}
+                  </>
+                )}
                 {"availability" in x && (
                   <p>
                     {x.costLabel ??

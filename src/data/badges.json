@@ -1,1 +1,205 @@
-[]
+[
+  {
+    "id": "badge-2455468832393759",
+    "slug": "badge-2455468832393759",
+    "name": "Lord Umberhallow BLOXikin",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 2455468832393759,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "requirements": [],
+    "relatedRewardSlug": "lord-umberhallow-bloxikin",
+    "robloxUrl": "https://www.roblox.com/badges/2455468832393759/"
+  },
+  {
+    "id": "badge-1763079723422323",
+    "slug": "badge-1763079723422323",
+    "name": "Gourdlord: The Entangled",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1763079723422323,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "requirements": [],
+    "relatedRewardSlug": "gourdlord-entangled",
+    "robloxUrl": "https://www.roblox.com/badges/1763079723422323/"
+  },
+  {
+    "id": "badge-1912601234268529",
+    "slug": "badge-1912601234268529",
+    "name": "Spotlight Specter",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1912601234268529,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/1912601234268529/"
+  },
+  {
+    "id": "badge-113653722921762",
+    "slug": "badge-113653722921762",
+    "name": "Incorporeal Incorporated",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 113653722921762,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/113653722921762/"
+  },
+  {
+    "id": "badge-3659729077946821",
+    "slug": "badge-3659729077946821",
+    "name": "Phantom in the Code",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3659729077946821,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/3659729077946821/"
+  },
+  {
+    "id": "badge-3758032687890331",
+    "slug": "badge-3758032687890331",
+    "name": "Little Plus-tergeist",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3758032687890331,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/3758032687890331/"
+  },
+  {
+    "id": "badge-926854509956508",
+    "slug": "badge-926854509956508",
+    "name": "All-Seeking Antlers",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 926854509956508,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "requirements": [],
+    "relatedRewardSlug": "all-seeking-antlers",
+    "robloxUrl": "https://www.roblox.com/badges/926854509956508/"
+  },
+  {
+    "id": "badge-76777109677652",
+    "slug": "badge-76777109677652",
+    "name": "Quack-o'-Lantern",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 76777109677652,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "requirements": [],
+    "relatedRewardSlug": "quack-o-lantern",
+    "robloxUrl": "https://www.roblox.com/badges/76777109677652/"
+  },
+  {
+    "id": "badge-1585089789720925",
+    "slug": "badge-1585089789720925",
+    "name": "The Beasthammer",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1585089789720925,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "requirements": [],
+    "relatedRewardSlug": "the-beasthammer",
+    "robloxUrl": "https://www.roblox.com/badges/1585089789720925/"
+  }
+]

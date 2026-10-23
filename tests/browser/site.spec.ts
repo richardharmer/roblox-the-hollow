@@ -193,3 +193,16 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
     page.locator(".entry-list").getByText("Quack-o'-Lantern", { exact: true }),
   ).toHaveCount(0);
 });
+
+test("official badge directory searches IDs without upgrading claim evidence", async ({ page }) => {
+  await page.goto("/badges/");
+  await expect(page.locator(".entry-card")).toHaveCount(9);
+  await page.getByLabel("Search badges").fill("2455468832393759");
+  await expect(page.locator(".entry-card")).toHaveCount(1);
+  await expect(page.locator(".entry-card")).toContainText("Lord Umberhallow BLOXikin");
+  await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
+  await page.getByLabel("Search badges").fill("1912601234268529");
+  await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
+  await page.getByLabel("Search badges").fill("10770728771");
+  await expect(page.locator(".entry-card")).toHaveCount(9);
+});

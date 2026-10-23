@@ -159,6 +159,10 @@ export const badgeSchema = z
     ...base,
     gameId: id,
     badgeId: robloxId,
+    universeId: robloxId.optional(),
+    enabled: z.boolean().optional(),
+    claimInstructionsEvidence: z.enum(["REPORTED", "UNVERIFIED"]).optional(),
+    relatedRewardSlug: id.optional(),
     robloxUrl: url,
     requirements: z.array(text),
   })
