@@ -149,5 +149,40 @@
       "Use the same Roblox account for the task and the Hollow hub.",
       "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
     ]
+  },
+  {
+    "verificationLevel": "CONFIRMED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "hunted-candy-collector",
+    "slug": "hunted-candy-collector",
+    "name": "Hunted: Candy Collector event task",
+    "gameId": "the-hollow-2026",
+    "description": "Find event-tagged portals, collect candy at Trick-or-Treat doors, then use the lobby Ring Alter for the Candy Collector badge. Includes the official 75-candy wording ambiguity.",
+    "steps": [
+      "Open Hunted, place 136431686349723. Find a portal carrying the event tag.",
+      "Enter an event-tagged portal and collect candy from its Trick-or-Treat doors.",
+      "The official description first says more than 75 candies, but later says 75. Once you reach 75, return to the main lobby and interact with the Ring Alter.",
+      "Check your badge inventory for Candy Collector, ID 1253232809160660. A badge award is not proof of Tickets credit or an avatar-item claim."
+    ],
+    "tips": [
+      "If 75 does not award the badge, collecting more than 75 follows the stricter wording. This is a suggested retry, not a demonstrated fix."
+    ],
+    "troubleshooting": [
+      "Use the lobby Ring Alter after collecting candy; collecting alone is not the entire documented claim sequence.",
+      "Tickets amount, exact door locations, candy persistence between sessions and a separate UGC claim are not established by this source. Do not substitute ordinary soul-shard collection for event candy."
+    ],
+    "sources": [
+      "official-hunted-candy-collector",
+      "developer-hunted-hollow"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Access to Hunted and an event-tagged portal.",
+      "Official written requirements checked October 23; this guide has not been completed on a test account."
+    ]
   }
 ]

@@ -608,5 +608,15 @@
     "note": "Roblox user 1 identity and item description directly read. Description identifies the launcher owner; it does not prove recipient eligibility or successful delivery.",
     "lastCheckedAt": "2026-10-23",
     "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-hunted-candy-collector",
+    "name": "Roblox badge API — Hunted Candy Collector",
+    "url": "https://badges.roblox.com/v1/badges/1253232809160660",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Directly read October 23. Universe 7229780065 and root place 136431686349723 match Hunted. Description specifies event-tagged portals, Trick-or-Treat doors and lobby Ring Alter. It inconsistently says more than 75 and then 75 candies. Tickets payout is not stated.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
   }
 ]

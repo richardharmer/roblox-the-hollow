@@ -144,64 +144,23 @@ export function FullLineup() {
 export function HuntedBriefing() {
   return (
     <section className="prose field-notes" id="hunted">
-      <h2>Hunted side quest: a special badge is announced</h2>
+      <h2>Hunted: Candy Collector badge walkthrough</h2>
       <Status level="CONFIRMED" />
-      <p>
-        Dark Deception’s official account says Hunted has a Hollow event quest
-        that awards a special badge. Roblox’s poster independently lists Hunted
-        in The Outskirts.
-      </p>
-      <p>
-        <a
-          href="https://www.roblox.com/games/136431686349723/HUNTED"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open the verified Hunted experience →
-        </a>
-      </p>
-      <dl className="field-facts">
-        <dt>Publisher</dt>
-        <dd>Glowstick Entertainment x Exclusible</dd>
-        <dt>Place ID</dt>
-        <dd>136431686349723</dd>
-        <dt>Universe ID</dt>
-        <dd>7229780065</dd>
-        <dt>Announced reward</dt>
-        <dd>Special event badge; name and ID not yet identified</dd>
-      </dl>
-      <h3>What you can do now</h3>
+      <p>Roblox’s badge API now identifies Candy Collector (Badge ID 1253232809160660) in Hunted universe 7229780065. The developer’s Hollow announcement and Roblox’s Outskirts poster establish the event connection.</p>
       <ol>
-        <li>
-          Use the verified Hunted link above and check the publisher before
-          joining.
-        </li>
-        <li>
-          Look for an explicitly Hollow-labeled event objective when available.
-          The developer has confirmed the quest, but has not supplied its
-          starting NPC, menu or required actions in the announcement.
-        </li>
-        <li>
-          Follow that event objective for the announced badge. We have not
-          verified an award or an extra UGC redemption step.
-        </li>
+        <li>In Hunted, enter a portal marked with the event tag.</li>
+        <li>Collect candy from the Trick-or-Treat doors in those portals.</li>
+        <li>Return to the main lobby and interact with the Ring Alter to receive the badge.</li>
       </ol>
-      <p>
-        <strong>Partial guide:</strong> entry identity and the quest-to-badge
-        connection are confirmed. The objective, maze route, unlock time and
-        claim sequence remain unconfirmed. Hunted’s ordinary soul-shard gameplay
-        is not evidence for this event’s completion condition.
-      </p>
-      <p>
-        The public badge list returned 29 entries with no next page on October
-        22; none explicitly named The Hollow. Existing chapter and PvP badges
-        are not substitutes for the announced event badge.
-      </p>
+      <p>The official description is inconsistent at the threshold: it first says “more than 75” candies, then says to return after 75. Try the lobby interaction at 75; if it does not award the badge, collect more than 75 before trying again. That retry is a practical suggestion, not a verified bug fix.</p>
+      <p>These are official written requirements, not an account-tested run. Tickets payout, exact door locations, session persistence and any separate avatar-item reward remain unverified.</p>
+      <Link className="text-link" href="/quests/hunted-candy-collector/">Read the full task checklist and limitations →</Link>
       <SourceList
         ids={[
           "developer-hunted-hollow",
           "official-hunted-game-api",
           "official-hunted-badges-api",
+          "official-hunted-candy-collector",
         ]}
       />
     </section>

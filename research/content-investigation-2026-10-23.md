@@ -29,3 +29,9 @@
 直接读取 economy.roblox.com/v2/assets/{id}/details：Spotlight Specter 133784027835704、Little Plus-tergeist 95891531906747、Phantom in the Code 136331462544974、Incorporeal Incorporated 109977772936626。四项 creator 均为 Roblox user 1；描述分别明确从 Star Creator、Plus subscriber、developer、Roblox admin 的 ghost launcher 捕获。发布此官方身份映射及捕获条件，不推断领取人必须 Plus、不推断成功入库或免费资格。首页站内链接、奖励页独立小节；不混入已核查免费筛选。
 
 SharkBlox 原视频 HTPoidDz6xg 本轮在内置浏览器打开；转录导出不可用，文字转录按钮导航异常，返回显示媒体不可播放。没有声称取得完整字幕或领取画面。网页检索的第三方指南只能作为线索。暂无本轮核实的新活动兑换码或 Night 2 完整任务。
+
+## 17:47 北京时间后续：Hunted Candy Collector
+
+从第三方徽章索引发现 ID 后，直接核验官方 https://badges.roblox.com/v1/badges/1253232809160660：Candy Collector，enabled true，awardingUniverse 7229780065，rootPlaceId 136431686349723。描述给出 event 标签传送门、Trick-or-Treat doors、回主大厅 Ring Alter 领取徽章的流程；同时出现 more than 75 和 75，公开保留歧义。新增官方文字攻略及首页、奖励页站内入口，替换旧“条件未知”说明。不宣称本人实测、不写未核实 Tickets 数量。
+
+Grow a Garden Sweet Fortune 3035855755279266 官方 API 身份可读，但 description null；500糖及具体领取步骤仍未发布。
