@@ -19,7 +19,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        Four earned rewards and one Plus-only item. Read the requirements here,
+        Four quest/shop rewards and one Plus-only shop item. Read the requirements here,
         then follow the written claim guide.
       </p>
       <div className="player-reward-list">
@@ -61,6 +61,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         <nav className="player-jumps" aria-label="Player help">
           <Link href="/rewards/#tickets">Get & spend Tickets</Link>
           <Link href="/rewards/#codes">Working codes?</Link>
+          <Link href="/rewards/#launcher-ghosts">4 launcher ghosts: who to find</Link>
           <Link href="/quests/">Task walkthroughs</Link>
         </nav>
       )}
@@ -181,6 +182,25 @@ export function CodesGuide() {
         verified.
       </p>
       <SourceList ids={["official-hollow-hub", "official-newsroom-hollow"]} />
+    </section>
+  );
+}
+
+
+export function LauncherGhostsGuide() {
+  return (
+    <section className="prose player-guide" id="launcher-ghosts">
+      <h2>Four launcher ghosts: which player do you need?</h2>
+      <p>Roblox’s own item descriptions identify four additional rewards obtained by catching ghosts from launchers during The Hollow. These are separate from the cinema Ticket-shop items above.</p>
+      <ul>
+        <li><strong>Spotlight Specter:</strong> catch a ghost launched by a Star Creator.</li>
+        <li><strong>Phantom in the Code:</strong> catch a ghost launched by a developer.</li>
+        <li><strong>Incorporeal Incorporated:</strong> catch a ghost launched by a Roblox admin.</li>
+        <li><strong>Little Plus-tergeist:</strong> catch a ghost launched by a Roblox Plus subscriber.</li>
+      </ul>
+      <p>Look for the appropriate launcher owner during the event and catch their launched ghost. Simply joining a creator’s community is not the collection condition stated by Roblox. For Little Plus-tergeist, the official description identifies the launcher owner as a Plus subscriber; it does not establish a subscription requirement for the recipient. Do not confuse it with the Plus-only Quack-o’-Lantern shop item.</p>
+      <p>Checked October 23 against official catalog descriptions. The precise pickup controls, recipient eligibility and current successful delivery have not been independently tested, so these items are not yet included in our verified free-reward filter. We do not have a verified server queue or guaranteed delivery method.</p>
+      <SourceList ids={["official-ghost-spotlight", "official-ghost-phantom", "official-ghost-incorporeal", "official-ghost-plus"]} />
     </section>
   );
 }

@@ -23,3 +23,9 @@
 ## 实现
 
 首页奖励优先：5件物品；奖励页内嵌Tickets获取/入账/兑换/预算/问题检查、活动码状态。新增5个奖励页、4个任务页，可保存至既有进度工具。Hub及跨体验任务使用事件ID作归属，保留九个Nightly Haunts游戏目录的意义。
+
+## 15:37 北京时间后续核查：四种 launcher ghosts
+
+直接读取 economy.roblox.com/v2/assets/{id}/details：Spotlight Specter 133784027835704、Little Plus-tergeist 95891531906747、Phantom in the Code 136331462544974、Incorporeal Incorporated 109977772936626。四项 creator 均为 Roblox user 1；描述分别明确从 Star Creator、Plus subscriber、developer、Roblox admin 的 ghost launcher 捕获。发布此官方身份映射及捕获条件，不推断领取人必须 Plus、不推断成功入库或免费资格。首页站内链接、奖励页独立小节；不混入已核查免费筛选。
+
+SharkBlox 原视频 HTPoidDz6xg 本轮在内置浏览器打开；转录导出不可用，文字转录按钮导航异常，返回显示媒体不可播放。没有声称取得完整字幕或领取画面。网页检索的第三方指南只能作为线索。暂无本轮核实的新活动兑换码或 Night 2 完整任务。

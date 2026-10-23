@@ -2,6 +2,7 @@ import {
   RewardBoard,
   TicketsGuide,
   CodesGuide,
+  LauncherGhostsGuide,
 } from "@/components/player-guide";
 import {
   FullLineup,
@@ -115,6 +116,7 @@ export default async function Section({
           {section === "rewards" && (
             <>
               <RewardBoard />
+              <LauncherGhostsGuide />
               <TicketsGuide />
               <CodesGuide />
             </>

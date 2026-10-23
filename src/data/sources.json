@@ -568,5 +568,45 @@
     "note": "Exact event name and official Presents ownership",
     "lastCheckedAt": "2026-10-22",
     "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "official-ghost-spotlight",
+    "name": "Roblox catalog — Spotlight Specter",
+    "url": "https://economy.roblox.com/v2/assets/133784027835704/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Roblox user 1 identity and item description directly read. Description identifies the launcher owner; it does not prove recipient eligibility or successful delivery.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-ghost-phantom",
+    "name": "Roblox catalog — Phantom in the Code",
+    "url": "https://economy.roblox.com/v2/assets/136331462544974/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Roblox user 1 identity and item description directly read. Description identifies the launcher owner; it does not prove recipient eligibility or successful delivery.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-ghost-incorporeal",
+    "name": "Roblox catalog — Incorporeal Incorporated",
+    "url": "https://economy.roblox.com/v2/assets/109977772936626/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Roblox user 1 identity and item description directly read. Description identifies the launcher owner; it does not prove recipient eligibility or successful delivery.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-ghost-plus",
+    "name": "Roblox catalog — Little Plus-tergeist",
+    "url": "https://economy.roblox.com/v2/assets/95891531906747/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Roblox user 1 identity and item description directly read. Description identifies the launcher owner; it does not prove recipient eligibility or successful delivery.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
   }
 ]
