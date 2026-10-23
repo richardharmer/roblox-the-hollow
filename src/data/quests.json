@@ -1,1 +1,153 @@
-[]
+[
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "night-one-relics",
+    "slug": "night-one-relics",
+    "name": "Night 1 maze: five relics and Lord Umberhallow BLOXikin",
+    "gameId": "the-hollow-2026",
+    "description": "Find five purple relics, solve the vault connection puzzle and return to the elevator. A written route through the objectives, checked against WaffleTrades’ October 23 recording.",
+    "steps": [
+      "Enter the cinema in The Hollow and use the elevator at the back to reach Floor 1.",
+      "Search different rooms for five glowing purple relics while avoiding Seek. The demonstrated layout is variable: follow unexplored branches rather than a fixed left/right sequence.",
+      "After collecting all five, locate the large room and its side room leading to the DOORS area. Find the vault there.",
+      "Complete the vault puzzle by connecting the purple line across to the other side. Take the revealed relic/key.",
+      "Return to the elevator with the key. The walkthrough identifies this return as the completion trigger for the Lord Umberhallow BLOXikin badge and reward."
+    ],
+    "tips": [
+      "WaffleTrades: 0:09–0:58 relic hunt; 0:58–1:23 vault and key; 1:23–1:30 elevator return.",
+      "The relics trail behind the character in the demonstration. Check your collected set before searching for the vault."
+    ],
+    "troubleshooting": [
+      "A different room layout is not proof of a bug. This guide gives objectives and landmarks, not a guaranteed identical maze seed.",
+      "Collecting relics alone is not the final step: solve the vault, take the key and return to the elevator."
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-hollow-badges"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Use the same Roblox account for the task and the Hollow hub.",
+      "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "doors-candy-vault",
+    "slug": "doors-candy-vault",
+    "name": "DOORS Candy Vault: All-Seeking Antlers",
+    "gameId": "doors",
+    "description": "Reach the end of the Candy Vault’s 50 doors within its 20-minute limit, then return to The Hollow to claim the antlers.",
+    "steps": [
+      "In DOORS, enter the limited-time Estate / Candy Vault mode. This is the event route, not a normal Hotel run.",
+      "Approach the mansion, let the opening scenes finish and enter the large vault straight ahead with your team.",
+      "Follow the numbered doors and descend through 50 rooms before the 20-minute timer expires. Keep moving toward the next numbered door; optional side rooms can lead back to your route.",
+      "At the final large cauldron room, cross to the far side and escape with your team.",
+      "Return to The Hollow cinema. Find the All-Seeking Antlers display on the left and use its claim interaction. Completing DOORS and claiming the hub item are separate steps."
+    ],
+    "tips": [
+      "WaffleTrades 1:42–2:58 demonstrates the Estate and timed route; 2:58–3:08 explains the hub claim.",
+      "20 minutes is the run deadline, not a promise that every player will finish in that time."
+    ],
+    "troubleshooting": [
+      "A normal DOORS badge is not the event completion: the official event badge is Sweet Deceit (1035315791189379).",
+      "If the claim stays locked, check the event badge on the same account, rejoin the hub and check again. Rejoining is a diagnostic step, not a guaranteed bug fix."
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-doors-hollow-badge",
+      "official-hollow-badges"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Use the same Roblox account for the task and the Hollow hub.",
+      "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "flee-candy-beasthammer",
+    "slug": "flee-candy-beasthammer",
+    "name": "Flee the Facility: 100 candies and The Beasthammer",
+    "gameId": "the-hollow-2026",
+    "description": "Bank 100 event candies and escape as a survivor, then claim The Beasthammer in The Hollow. Candy carried is not the same as candy deposited.",
+    "steps": [
+      "Join Flee the Facility and play an event-enabled round. As a survivor, hack computers and rescue teammates to earn candy; the recording also shows beast actions earning candy.",
+      "Carry candy to the event buckets around the map and deposit it. The guide reports a 30-candy carrying cap, so bank candy in batches.",
+      "Continue until the deposited event total reaches 100. Do not confuse the carrying counter with the banked total.",
+      "Escape a round as a survivor after reaching the 100-candy requirement. The reviewed guide says finishing as the beast does not satisfy this final step.",
+      "Return to The Hollow cinema and claim The Beasthammer from the reward display on the right."
+    ],
+    "tips": [
+      "WaffleTrades 3:10–4:15 covers candy, deposits, survivor escape and the hub display.",
+      "Official Flee event badge: The Hollow 2026, ID 1891002643329212."
+    ],
+    "troubleshooting": [
+      "If you have 100 candies but no claim, check that they were deposited and that you escaped as a survivor.",
+      "Players report missing credit in early servers; do not keep buying or spending to fix a claim. Check badge ownership and retry the hub before repeating a long task."
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-flee-badge",
+      "official-hollow-badges"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Use the same Roblox account for the task and the Hollow hub.",
+      "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "clean-leaves-tickets",
+    "slug": "clean-leaves-tickets",
+    "name": "Clean all the Leaves: 15-minute Tickets task",
+    "gameId": "the-hollow-2026",
+    "description": "Play the Halloween map for 15 minutes to earn its event badge. SharkBlox reports 20 Hollow Tickets; Roblox’s badge API independently confirms the timer objective.",
+    "steps": [
+      "Open Clean all the Leaves and select Chapter 3, Halloween Haunted Mansion, in the map selector.",
+      "For the solo setup demonstrated by SharkBlox, set maximum players to 1 and select Confirm.",
+      "Stay in the Halloween map for 15 minutes and follow its event countdown. You can play normally; clearing every leaf is not the badge’s stated requirement.",
+      "Check Roblox badge inventory for Halloween Event (2355592664430485). The recording shows the badge in inventory even though the creator missed the award popup.",
+      "Return to The Hollow on the same account and use the Confirm prompt to credit newly earned event badges. Check the Ticket balance; this guide reports a 20-Ticket payout, not repeatable farming."
+    ],
+    "tips": [
+      "The 15-minute objective is directly confirmed by the official badge description.",
+      "SharkBlox 0:24–0:40 map setup; 0:44–1:08 timer; end of clip shows inventory badge."
+    ],
+    "troubleshooting": [
+      "The ordinary Leaf Collection and Secret Ending badges are different objectives.",
+      "If the badge exists but Tickets do not appear, rejoin the hub and check its credit prompt. No guaranteed workaround for delayed event credit is verified."
+    ],
+    "sources": [
+      "sharkblox-leaves",
+      "official-leaves-badge",
+      "sharkblox-ticket-redemption"
+    ],
+    "estimatedMinutes": 15,
+    "prerequisites": [
+      "Use the same Roblox account for the task and the Hollow hub.",
+      "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
+    ]
+  }
+]

@@ -1,4 +1,9 @@
 import {
+  RewardBoard,
+  TicketsGuide,
+  CodesGuide,
+} from "@/components/player-guide";
+import {
   FullLineup,
   Outskirts,
   HuntedBriefing,
@@ -40,7 +45,7 @@ const pages: Record<string, [string, string]> = {
   ],
   rewards: [
     "The Hollow Rewards",
-    "Browse documented reward requirements, free and paid items, and availability. No items are listed without evidence.",
+    "Get Night 1 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
   ],
   badges: [
     "The Hollow Badges",
@@ -107,6 +112,28 @@ export default async function Section({
       )}
       {section in collections ? (
         <>
+          {section === "rewards" && (
+            <>
+              <RewardBoard />
+              <TicketsGuide />
+              <CodesGuide />
+            </>
+          )}
+          {section === "quests" && (
+            <>
+              <div className="prose">
+                <h2>Night 1: choose a task</h2>
+                <p>
+                  Four written walkthroughs below cover the maze, DOORS, Flee
+                  the Facility and the 15-minute Halloween map. Steps were
+                  checked against October 23 recordings; official badge
+                  identities are linked in each guide.
+                </p>
+              </div>
+              <Directory kind="quests" />
+              <TicketsGuide />
+            </>
+          )}
           {section === "games" && <FullLineup />}
           {section === "quests" && (
             <>
@@ -125,14 +152,17 @@ export default async function Section({
                 games supply its monsters; their original game links are not
                 confirmed destinations for separate event quests. The Outskirts
                 is a separately announced cross-game quest lineup, listed above.
-                Start with the Hollow hub when its official entry link is
-                available.
+                The official hub description now confirms avatar-item quests
+                both in the hub and participating experiences. Start with the{" "}
+                <a href={event.hubUrl ?? undefined}>official Hollow hub</a>. Use
+                the written guides above for the tasks reviewed so far.
               </p>
               <p>
                 Roblox describes a new maze each day for nine days: navigate the
                 maze, search for clues and evade monsters. Completing quests
-                earns UGC and survival rewards. Specific objectives, routes and
-                claim steps still need gameplay evidence.
+                earns UGC and survival rewards. The Night 1 guides above now
+                cover recorded objectives and claim steps; later-night routes
+                remain unverified.
               </p>
               <h2>Find live clue-solving coverage</h2>
               <p>
@@ -166,8 +196,8 @@ export default async function Section({
               <ul className="reward-categories">
                 <li>
                   <strong>Earned through quests:</strong> exclusive UGC and
-                  survival rewards. Individual items, catalog IDs and claim
-                  requirements remain unverified.
+                  survival rewards. The reward board above lists the first
+                  documented items and their written claim guides.
                 </li>
                 <li>
                   <strong>Marketplace purchases:</strong> limited-time products
@@ -190,7 +220,7 @@ export default async function Section({
               <SourceList ids={["official-newsroom-hollow"]} />
             </div>
           )}
-          <Directory kind={section as Collection} />
+          {section !== "quests" && <Directory kind={section as Collection} />}
           <AdSlot placement="content" />
           <div className="prose">
             <h2>
@@ -208,7 +238,7 @@ export default async function Section({
                 : section === "quests"
                   ? "Each published guide must identify its game, prerequisites, real completion steps and supporting sources. Estimated completion times appear only when evidence supports them."
                   : section === "rewards"
-                    ? "Use the sourced guidance above for announced rewards and the demonstrated app setting. Individual avatar-item records need an identity, documented requirements, cost and availability."
+                    ? "Use the reward board for item-specific steps, the Tickets guide for shop credit, and the free-only filter to exclude Plus-required items."
                     : "We check the badge ID, its universe and the evidence linking it to The Hollow. Badge creation, a spooky name or a Halloween image alone is insufficient."}
             </p>
             <h2>
@@ -277,6 +307,13 @@ export default async function Section({
               October 23, 03:00 Beijing.
             </li>
           </ul>
+          <h2>What does the hub’s 3 p.m. PT start mean?</h2>
+          <p>
+            The official hub description says “It opens October 22 2pm PT. It
+            starts 3pm PT.” The latter is October 22 at 22:00 UTC / October 23
+            at 06:00 Beijing. Roblox does not explain which gameplay phase this
+            means; it is not a verified first-day quest unlock time.
+          </p>
           <h2>Is 11 AM PT the confirmed launch time?</h2>
           <p>
             No. Roblox specifies 2 p.m. Pacific for public access and noon for
@@ -309,7 +346,14 @@ export default async function Section({
               </>
             )}
           </p>
-          <h2>What can I check before launch?</h2>
+          <p>
+            Verified October 23 through the Newsroom’s direct link: Place ID
+            116463962153167, published by Roblox Presents (group 4111519).
+            Universe ID 10770728771 is verified by Roblox APIs. The API reports
+            active players, but we have not independently tested account entry
+            or regional availability.
+          </p>
+          <h2>What else can I check?</h2>
           <p>
             Browse the{" "}
             <Link href="/games/">nine confirmed monster origins</Link>
@@ -359,6 +403,18 @@ export default async function Section({
       ) : section === "sources" ? (
         <>
           <div className="prose">
+            <h2>October 23: official hub verified</h2>
+            <p>
+              We followed Roblox Newsroom → The Hollow experience (Place ID
+              116463962153167) → Roblox Presents (group 4111519). The official
+              entry link is confirmed; live server access is not independently
+              tested. The hub’s separate 3 p.m. PT start has no explained
+              gameplay meaning. Its description confirms quests in the hub and
+              participating experiences.
+            </p>
+            <SourceList
+              ids={["official-newsroom-hollow", "official-hollow-hub"]}
+            />
             <h2>October 22 verification update</h2>
             <p>
               We directly read Roblox’s October 21 Newsroom announcement and its

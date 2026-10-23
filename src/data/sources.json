@@ -1,13 +1,23 @@
 [
   {
+    "id": "official-hollow-hub",
+    "name": "Roblox — The Hollow official hub",
+    "url": "https://www.roblox.com/games/116463962153167/The-Hollow",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Directly read October 23, 2026, following the October 21 Newsroom link. The Hollow uses Place ID 116463962153167; its Roblox Presents publisher link points to group 4111519. The description gives October 22 opening at 2 p.m. PT and a separate 3 p.m. PT start without explaining the gameplay phase. It confirms avatar-item quests in the hub and participating experiences. Follow-up API read on October 23 verified Universe ID 10770728771. Recorded task guides are now available; successful entry on our own account remains untested. The static server message is not a live availability test.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
     "id": "official-newsroom-hollow",
     "name": "Roblox — The Hollow official announcement (October 21)",
     "url": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Published October 21, 2026; directly read October 22. Confirms the launch schedule, nine monster/game pairings, shared hub survival, reward categories and finale. Linked original game pages were also read; they are not the event hub. Earlier source records below preserve their original review dates.",
-    "lastCheckedAt": "2026-10-22",
-    "lastSuccessAt": "2026-10-22"
+    "note": "Published October 21, 2026; re-read October 23. Its The Hollow link points directly to Place ID 116463962153167, whose publisher link points to Roblox Presents group 4111519. Confirms the public and Plus schedule, monster origins, reward categories and finale. Original-game links are distinct from the event hub. Earlier source records retain their original review dates.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
   },
   {
     "id": "community-announcement",
@@ -75,8 +85,8 @@
     "url": "https://www.roblox.com/communities/4111519/Roblox-Presents",
     "level": "OFFICIAL",
     "access": "SEARCH_ONLY",
-    "note": "Publisher identity found; no event hub verified.",
-    "lastCheckedAt": "2026-10-11",
+    "note": "October 23: the official Hollow experience publisher link resolves to Roblox Presents group 4111519. The community page requires JavaScript and did not expose ownership details; no group-owner claim is made. The hub identity is established by Newsroom → experience → publisher link.",
+    "lastCheckedAt": "2026-10-23",
     "lastSuccessAt": null
   },
   {
@@ -436,6 +446,126 @@
     "level": "COMMUNITY",
     "access": "READ",
     "note": "Full 3:35 transcript read. Despite guide title, includes predictions about skulls and reward tracks and admits no leaked items apart from a claimed bundle at 2:55. No demonstrated claim sequence. Not used to assert specific rewards or launch time.",
+    "lastCheckedAt": "2026-10-22",
+    "lastSuccessAt": "2026-10-22"
+  },
+  {
+    "id": "sharkblox-ticket-redemption",
+    "name": "SharkBlox — Tickets shop and completed redemption",
+    "url": "https://www.youtube.com/watch?v=2r79xI9AW-s",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 23 original video; full 1:11 transcript read. 0:08 Confirm credits badges; 0:15–0:31 cinema/right counter/shop; 0:39 shop visually shows Gourdlord 100 Tickets and Quack-o-Lantern 20 Tickets with Roblox Plus label. 0:48–0:56 purchase visibly changes balance 40 to 20 and shows OWNED. This is recorded gameplay, not an independent account test.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "waffle-night-one",
+    "name": "WaffleTrades — Night 1 reward walkthrough",
+    "url": "https://www.youtube.com/watch?v=-yFROXeBpVY",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 23 original video; full 5:05 transcript read and selected gameplay frames inspected. 0:09–1:30 five relics/vault/purple connection puzzle/elevator; 1:42–3:08 DOORS Estate, 50 doors, 20 minutes, hub claim; 3:10–4:15 Flee 100 banked candies, 30 carry cap, survivor escape and hub claim; 4:24 Gourdlord at concession stand. Its universal 20-Tickets wording is NOT adopted: KAM Gats shows both 10 and 20. Routes remain attributed video guides; not played on our account.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "kam-ticket-values",
+    "name": "KAM Gats — Tickets and Visit Games menu",
+    "url": "https://www.youtube.com/watch?v=a1pDpkOCHeA",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 23 original 2:47 video, full transcript read. 1:15 first avatar item costs 100; 1:22 Visit Games; 1:39 game payouts vary between 10 and 20 Tickets. Do not adopt the unsupported generalization that 10-Ticket tasks are always easier.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "sharkblox-leaves",
+    "name": "SharkBlox — Clean all the Leaves event badge",
+    "url": "https://www.youtube.com/watch?v=iDI6F2XWZ-c",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 23 original 1:18 video, full transcript read. 0:24–0:40 Chapter 3 / Halloween Haunted Mansion / one player / Confirm. 0:44–1:08 15 minutes on Halloween map; inventory badge visually checked at end. Author reports 20 Tickets; official badge API independently confirms 15-minute objective. Missing toast does not by itself mean no badge.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-hollow-api",
+    "name": "Roblox — The Hollow universe identity",
+    "url": "https://games.roblox.com/v1/games?universeIds=10770728771",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 API read: Universe 10770728771, root Place 116463962153167, Roblox Presents group 4111519. Place-to-universe API agrees. API reported active players at check time; this is not a successful login, regional access or enduring server-health guarantee.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-hollow-badges",
+    "name": "Roblox — The Hollow reward badges",
+    "url": "https://badges.roblox.com/v1/universes/10770728771/badges?limit=100&sortOrder=Asc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 read: nine enabled badges, null next cursor. Includes Lord Umberhallow BLOXikin, Gourdlord: The Entangled, four ghosts, All-Seeking Antlers, Quack-o-Lantern and The Beasthammer. Descriptions null; identity evidence only, not claim instructions.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-leaves-badge",
+    "name": "Roblox — Clean all the Leaves Halloween badge",
+    "url": "https://badges.roblox.com/v1/universes/10539411000/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 read: enabled Halloween Event badge 2355592664430485 says Play 15 minutes of the new Halloween map. Three badges, null next cursor. Universe 10539411000 / Place 92637789841354, Muffin Interactive. The badge description does not itself state the Hollow Ticket payout.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-flee-badge",
+    "name": "Roblox — Flee the Facility Hollow badge",
+    "url": "https://badges.roblox.com/v1/universes/372226183/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 read: The Hollow 2026 badge 1891002643329212 exists, description null. Nine badges, null next cursor. Universe 372226183 / Place 893973440. Candy steps are sourced separately to recorded gameplay.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-doors-hollow-badge",
+    "name": "Roblox — DOORS Hollow badge",
+    "url": "https://badges.roblox.com/v1/universes/2440500124/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 read of first 100 records: Sweet Deceit badge 1035315791189379 explicitly identifies The Hollow. A next-page cursor exists, so this is not exhaustive. Game API description independently says The Estate is part of The Hollow.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-gourdlord",
+    "name": "Roblox — Gourdlord: The Entangled item identity",
+    "url": "https://economy.roblox.com/v2/assets/117762017263411/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 asset API read: name and verified Roblox user 1 creator match. IsForSale false. API price fields are not the in-event Tickets cost; shop price and eligibility come from the gameplay recording.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-quack",
+    "name": "Roblox — Quack-o'-Lantern item identity",
+    "url": "https://economy.roblox.com/v2/assets/82738816117935/details",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 23 asset API read: name and verified Roblox user 1 creator match. IsForSale false. API price fields are not the in-event Tickets cost; shop price and eligibility come from the gameplay recording.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-fea8ddebcc38",
+    "name": "Roblox Presents official evidence",
+    "url": "https://games.roblox.com/v1/games?universeIds=10770728771",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Exact event name and official Presents ownership",
     "lastCheckedAt": "2026-10-22",
     "lastSuccessAt": "2026-10-22"
   }

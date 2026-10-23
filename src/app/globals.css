@@ -2337,3 +2337,85 @@ details p {
   padding-left: 0.3rem;
   margin-block: 0.65rem;
 }
+
+/* Player answers stay above the event archive and editorial background. */
+.player-board {
+  margin: 32px 0;
+  padding: 24px;
+  background: var(--surface);
+  border-top: 3px solid var(--red);
+}
+.player-board-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.player-board h2 {
+  margin: 6px 0 12px;
+  font-size: clamp(24px, 3vw, 34px);
+}
+.player-reward-row {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.player-reward-row h3 {
+  font-size: 19px;
+  margin: 4px 0 0;
+}
+.player-reward-row p {
+  margin: 0;
+  color: var(--text);
+}
+.player-reward-row p span,
+.player-evidence {
+  color: var(--muted);
+  font-size: 14px;
+}
+.player-evidence {
+  margin: 18px 0 0;
+}
+.player-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 12px;
+}
+.player-jumps a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.player-guide {
+  margin: 36px 0;
+  scroll-margin-top: 100px;
+}
+#reward-board,
+#codes,
+#tickets {
+  scroll-margin-top: 100px;
+}
+@media (max-width: 700px) {
+  .player-board {
+    padding: 18px;
+  }
+  .player-reward-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .player-reward-row .button {
+    justify-self: start;
+  }
+  .player-board p,
+  .player-guide p,
+  .player-guide li {
+    font-size: 16px;
+  }
+}

@@ -1,1 +1,183 @@
-[]
+[
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "gourdlord-entangled",
+    "slug": "gourdlord-entangled",
+    "name": "Gourdlord: The Entangled",
+    "gameId": "the-hollow-2026",
+    "description": "The first standard avatar-shop reward costs 100 earned Tickets. Find it at the cinema concession counter under Avatar Items.",
+    "costLabel": "100 earned Tickets · no Plus requirement shown",
+    "free": true,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "100 unspent Tickets. Ticket awards vary by game: observed menu values include 10 and 20.",
+      "Reviewed October 23 from gameplay and official item identity; availability can change."
+    ],
+    "steps": [
+      "Complete participating-game event objectives and return to the hub. Confirm newly earned badge credit.",
+      "Enter the cinema, turn right to the concession counter and open the shop.",
+      "Choose Avatar Items, select Gourdlord: The Entangled and spend 100 Tickets.",
+      "Check the ownership confirmation and your Roblox inventory. Tickets are spent, not just counted toward a milestone."
+    ],
+    "questIds": [
+      "clean-leaves-tickets"
+    ],
+    "sources": [
+      "sharkblox-ticket-redemption",
+      "waffle-night-one",
+      "kam-ticket-values",
+      "official-gourdlord"
+    ],
+    "catalogItemId": 117762017263411
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "lord-umberhallow-bloxikin",
+    "slug": "lord-umberhallow-bloxikin",
+    "name": "Lord Umberhallow BLOXikin",
+    "gameId": "the-hollow-2026",
+    "description": "Claim the Lord Umberhallow BLOXikin by completing the Floor 1 relic-and-vault objective. Includes the final elevator return and source timestamps.",
+    "costLabel": "Earned through the event quest",
+    "free": true,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Night 1 maze: five relics and Lord Umberhallow BLOXikin",
+      "Follow the completion and claim steps; a guide review is not a successful claim on your account."
+    ],
+    "steps": [
+      "Enter the cinema in The Hollow and use the elevator at the back to reach Floor 1.",
+      "Search different rooms for five glowing purple relics while avoiding Seek. The demonstrated layout is variable: follow unexplored branches rather than a fixed left/right sequence.",
+      "After collecting all five, locate the large room and its side room leading to the DOORS area. Find the vault there.",
+      "Complete the vault puzzle by connecting the purple line across to the other side. Take the revealed relic/key.",
+      "Return to the elevator with the key. The walkthrough identifies this return as the completion trigger for the Lord Umberhallow BLOXikin badge and reward."
+    ],
+    "questIds": [
+      "night-one-relics"
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-hollow-badges"
+    ],
+    "catalogItemId": null
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "all-seeking-antlers",
+    "slug": "all-seeking-antlers",
+    "name": "All-Seeking Antlers",
+    "gameId": "doors",
+    "description": "Unlock All-Seeking Antlers through the DOORS Candy Vault event, then use the left-side display in The Hollow to collect the avatar reward.",
+    "costLabel": "Earned through the event quest",
+    "free": true,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "DOORS Candy Vault: All-Seeking Antlers",
+      "Follow the completion and claim steps; a guide review is not a successful claim on your account."
+    ],
+    "steps": [
+      "In DOORS, enter the limited-time Estate / Candy Vault mode. This is the event route, not a normal Hotel run.",
+      "Approach the mansion, let the opening scenes finish and enter the large vault straight ahead with your team.",
+      "Follow the numbered doors and descend through 50 rooms before the 20-minute timer expires. Keep moving toward the next numbered door; optional side rooms can lead back to your route.",
+      "At the final large cauldron room, cross to the far side and escape with your team.",
+      "Return to The Hollow cinema. Find the All-Seeking Antlers display on the left and use its claim interaction. Completing DOORS and claiming the hub item are separate steps."
+    ],
+    "questIds": [
+      "doors-candy-vault"
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-doors-hollow-badge",
+      "official-hollow-badges"
+    ],
+    "catalogItemId": null
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "the-beasthammer",
+    "slug": "the-beasthammer",
+    "name": "The Beasthammer",
+    "gameId": "the-hollow-2026",
+    "description": "Earn The Beasthammer through Flee the Facility’s event objective. Includes candy deposits, the survivor-escape requirement and the right-side hub claim.",
+    "costLabel": "Earned through the event quest",
+    "free": true,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Flee the Facility: 100 candies and The Beasthammer",
+      "Follow the completion and claim steps; a guide review is not a successful claim on your account."
+    ],
+    "steps": [
+      "Join Flee the Facility and play an event-enabled round. As a survivor, hack computers and rescue teammates to earn candy; the recording also shows beast actions earning candy.",
+      "Carry candy to the event buckets around the map and deposit it. The guide reports a 30-candy carrying cap, so bank candy in batches.",
+      "Continue until the deposited event total reaches 100. Do not confuse the carrying counter with the banked total.",
+      "Escape a round as a survivor after reaching the 100-candy requirement. The reviewed guide says finishing as the beast does not satisfy this final step.",
+      "Return to The Hollow cinema and claim The Beasthammer from the reward display on the right."
+    ],
+    "questIds": [
+      "flee-candy-beasthammer"
+    ],
+    "sources": [
+      "waffle-night-one",
+      "official-flee-badge",
+      "official-hollow-badges"
+    ],
+    "catalogItemId": null
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "publishDetail": true,
+    "image": null,
+    "id": "quack-o-lantern",
+    "slug": "quack-o-lantern",
+    "name": "Quack-o'-Lantern",
+    "gameId": "the-hollow-2026",
+    "description": "A Plus-only avatar-shop reward costing 20 Tickets. The recording shows a completed claim and the balance decreasing from 40 to 20.",
+    "costLabel": "Roblox Plus subscription + 20 Tickets",
+    "free": false,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Active Roblox Plus eligibility and 20 unspent Tickets. This is not a free reward for every account."
+    ],
+    "steps": [
+      "Credit earned event badges in the hub using Confirm.",
+      "Enter the cinema and open the shop at the right-hand concession counter.",
+      "Under Avatar Items, choose Quack-o'-Lantern in the Roblox Plus row.",
+      "Check the membership requirement and spend 20 Tickets. The recorded result shows OWNED; check Roblox inventory after the claim."
+    ],
+    "questIds": [
+      "clean-leaves-tickets"
+    ],
+    "sources": [
+      "sharkblox-ticket-redemption",
+      "official-quack"
+    ],
+    "catalogItemId": 82738816117935
+  }
+]

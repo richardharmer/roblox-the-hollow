@@ -169,6 +169,9 @@ export function Tracker() {
             onChange={(e) => setGame(e.target.value)}
           >
             <option value="">All games</option>
+            <option value="the-hollow-2026">
+              The Hollow hub & cross-game tasks
+            </option>
             {games.map((g) => (
               <option value={g.id} key={g.id}>
                 {g.name}
@@ -291,7 +294,13 @@ export function Tracker() {
       {games.length > 0 && (
         <section className="section">
           <h2>Progress by game</h2>
-          {games.map((g) => {
+          {[
+            {
+              id: "the-hollow-2026",
+              name: "The Hollow hub & cross-game tasks",
+            },
+            ...games,
+          ].map((g) => {
             const subset = items.filter((x) => x.gameId === g.id);
             return (
               <div className="group-summary" key={g.id}>

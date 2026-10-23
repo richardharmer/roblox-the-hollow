@@ -1,5 +1,53 @@
 [
   {
+    "id": "october-23-player-rewards-guide",
+    "slug": "october-23-player-rewards-guide",
+    "title": "Night 1 Rewards: Tickets, Claim Steps and Four Quest Guides",
+    "summary": "Written guides now cover the first avatar-shop rewards, the relic maze, DOORS, Flee the Facility and a 15-minute Tickets task. Plus-only items are separated from earned rewards.",
+    "body": [
+      "October 23 gameplay reviews now document five reward entries and four task guides. Official API reads establish the hub universe, reward badges and two Roblox-created catalog items; gameplay steps are attributed to the original creators rather than presented as our own playtest.",
+      "Tickets are credited from event badges when returning to the hub. Use Confirm, then enter the cinema and open the right-hand concession shop. Gourdlord: The Entangled costs 100 Tickets; Quack-o-Lantern costs 20 Tickets and requires Roblox Plus. Purchases reduce the balance. Game menu payouts vary: do not assume every badge gives 20 Tickets.",
+      "The written quest guides cover five purple relics and the Floor 1 vault, DOORS’ 50-door Candy Vault escape, Flee the Facility’s 100 deposited candies plus survivor escape, and Clean all the Leaves’ 15-minute Halloween map requirement. Layouts and early-server credit problems can vary.",
+      "No working redemption code for the official Hollow event was verified in the announcement, hub description or reviewed gameplay. Search results for Bleach-inspired HOLLOW reroll codes are a different game; we have not presented them as event codes."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "sharkblox-ticket-redemption",
+      "waffle-night-one",
+      "kam-ticket-values",
+      "sharkblox-leaves",
+      "official-leaves-badge",
+      "official-hollow-api"
+    ],
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
+    "id": "october-23-official-hub",
+    "slug": "october-23-official-hub",
+    "title": "The Hollow Official Roblox Hub Link and Place ID Confirmed",
+    "summary": "The official Newsroom links to The Hollow by Roblox Presents. Its description confirms cross-experience quests and lists an additional start time with an unexplained meaning.",
+    "body": [
+      "Roblox’s October 21 Newsroom announcement links directly to The Hollow, Place ID 116463962153167. The experience names Roblox Presents as publisher and links to group 4111519. We followed this evidence chain on October 23.",
+      "Public opening remains October 22 at 2 p.m. PDT (21:00 UTC; October 23 at 05:00 Beijing), with Plus access at noon PDT. The hub description separately gives a 3 p.m. PT start (22:00 UTC; October 23 at 06:00 Beijing). It does not explain the phase this refers to, so this is not a verified daily quest unlock time.",
+      "The hub description confirms that event quests in The Hollow and participating experiences can earn avatar items. Individual objectives, daily monster order, Tickets mechanics and item claim requirements remain unverified.",
+      "The verified link establishes the official destination, not successful gameplay access. Universe ID, live server availability and regional entry behavior have not been independently verified."
+    ],
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-newsroom-hollow",
+      "official-hollow-hub"
+    ],
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-22-full-lineup-and-hunted",
     "slug": "october-22-full-lineup-and-hunted",
     "title": "The Hollow Expands Beyond Nine Games: Full Poster, Outskirts and Hunted Badge",
@@ -41,7 +89,9 @@
       "This review supersedes earlier launch-time and reported-lineup summaries. Historical reviews remain dated records. The nine linked original Roblox experience pages were read; existing Universe IDs retain their earlier identity-check dates and were not rechecked through the API in this review."
     ],
     "verificationLevel": "CONFIRMED",
-    "sources": ["official-newsroom-hollow"],
+    "sources": [
+      "official-newsroom-hollow"
+    ],
     "publishedAt": "2026-10-22",
     "updatedAt": "2026-10-22",
     "lastVerifiedAt": "2026-10-22",
@@ -60,7 +110,10 @@
       "Neither of these posts supplies a launch hour, time zone, playable hub URL or reward requirements. Game identities and the previously located Instagram artwork remain available in the games directory; participation labels are unchanged until explicit game-level evidence is checked."
     ],
     "verificationLevel": "CONFIRMED",
-    "sources": ["official-x-date-teaser", "official-x-nine-names"],
+    "sources": [
+      "official-x-date-teaser",
+      "official-x-nine-names"
+    ],
     "publishedAt": "2026-10-21",
     "updatedAt": "2026-10-21",
     "lastVerifiedAt": "2026-10-21",
@@ -151,7 +204,11 @@
       "An exact launch time, end date, official hub link, quest requirements and reward catalog have not been verified. We will add playable checklists when there is enough evidence to explain what to do."
     ],
     "verificationLevel": "REPORTED",
-    "sources": ["community-announcement", "doors-discussion", "official-x"],
+    "sources": [
+      "community-announcement",
+      "doors-discussion",
+      "official-x"
+    ],
     "publishedAt": "2026-10-11",
     "updatedAt": "2026-10-11",
     "lastVerifiedAt": "2026-10-11",

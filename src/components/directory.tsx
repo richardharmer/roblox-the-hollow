@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import {
   collections,
   games,
+  event,
   gameProfiles,
   type Collection,
 } from "@/lib/content";
@@ -105,6 +106,9 @@ export function Directory({ kind }: { kind: Collection }) {
               onChange={(e) => setGame(e.target.value)}
             >
               <option value="">All games</option>
+              <option value={event.id}>
+                The Hollow hub & cross-game tasks
+              </option>
               {games.map((g) => (
                 <option key={g.id} value={g.id}>
                   {g.name}
@@ -190,11 +194,12 @@ export function Directory({ kind }: { kind: Collection }) {
                 <p>{x.description}</p>
                 {"availability" in x && (
                   <p>
-                    {x.free === true
-                      ? "Free"
-                      : x.free === false
-                        ? "Paid"
-                        : "Price unverified"}{" "}
+                    {x.costLabel ??
+                      (x.free === true
+                        ? "Free"
+                        : x.free === false
+                          ? "Paid"
+                          : "Price unverified")}{" "}
                     ·{" "}
                     {x.availability === "UNAVAILABLE"
                       ? "No Longer Available"

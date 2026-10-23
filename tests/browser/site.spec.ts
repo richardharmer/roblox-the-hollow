@@ -169,3 +169,27 @@ for (const width of [375, 1440]) {
     );
   });
 }
+
+test("player rewards stay on-site and Plus is excluded by the free filter", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const board = page.locator("#reward-board");
+  await expect(board.locator(".player-reward-row")).toHaveCount(5);
+  await board
+    .getByRole("link", { name: "Gourdlord: The Entangled", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/rewards\/gourdlord-entangled\//);
+  await expect(page.locator(".step-list")).toContainText("100 Tickets");
+  await page.goto("/rewards/");
+  await expect(page.locator("#tickets")).toContainText("Confirm");
+  await expect(page.locator("#codes")).toContainText(
+    "No working event redemption code was verified",
+  );
+  await expect(page.locator(".entry-card")).toHaveCount(5);
+  await page.getByLabel("Free only", { exact: false }).check();
+  await expect(page.locator(".entry-card")).toHaveCount(4);
+  await expect(
+    page.locator(".entry-list").getByText("Quack-o'-Lantern", { exact: true }),
+  ).toHaveCount(0);
+});

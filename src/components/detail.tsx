@@ -115,6 +115,18 @@ export function Detail({
       <AdSlot placement="header" />
       <div className="prose">
         <Status level={entry.verificationLevel} />
+        {entry.verificationLevel === "REPORTED" && (
+          <p>
+            Video-checked guide · Reviewed October 23. Steps are attributed to
+            the original recordings in Sources; this is not our own account
+            playtest.
+          </p>
+        )}
+        <p>
+          <Link href="/progress/">
+            Save this quest or reward in My Hollow Progress →
+          </Link>
+        </p>
         {"participationStatus" in entry && (
           <div className="callout">
             <strong>Is this game part of The Hollow?</strong>
@@ -130,11 +142,12 @@ export function Detail({
           <div className="callout">
             <p>
               Cost:{" "}
-              {entry.free === true
-                ? "Free"
-                : entry.free === false
-                  ? "Paid"
-                  : "Not verified"}
+              {entry.costLabel ??
+                (entry.free === true
+                  ? "Free"
+                  : entry.free === false
+                    ? "Paid"
+                    : "Not verified")}
             </p>
             <p>
               Availability:{" "}

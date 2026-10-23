@@ -1,3 +1,4 @@
+import { RewardBoard } from "@/components/player-guide";
 import { EventSchedule } from "@/components/event-schedule";
 import { dateBriefing, gameBriefing, rewardBriefing } from "@/lib/briefing";
 import Link from "next/link";
@@ -92,22 +93,22 @@ export default function Home() {
             )}
           </h1>
           <p className="hero-description">
-            Nine faces in the dark.
+            Know what to earn.
             <br />
-            Keep your next move in sight.
+            Know how to claim it.
           </p>
           <p className="hero-caption">
-            An independent fan-made guide to The Hollow. Roblox’s 2026 Halloween
-            survival hub opens October 22 at 2 p.m. PDT. Explore changing mazes
-            with nine Nightly Haunts, everyday roaming monsters and Outskirts
-            side quests. Explore the full lineup and sourced reward details.
+            Written Night 1 guides for the relic maze, DOORS and Flee the
+            Facility. Compare four earned rewards, learn the 15-minute Tickets
+            task and check which items need Plus. Independent and
+            source-checked.
           </p>
           <div className="hero-actions">
-            <Link href="/games/" className="button primary">
-              Explore Games <ArrowRight size={17} />
+            <Link href="/rewards/#reward-board" className="button primary">
+              Get free rewards <ArrowRight size={17} />
             </Link>
-            <Link href="/rewards/" className="button">
-              Track Rewards <ArrowUpRight size={16} />
+            <Link href="/rewards/#tickets" className="button">
+              Earn & spend Tickets <ArrowUpRight size={16} />
             </Link>
           </div>
           <div className="hero-date">
@@ -133,6 +134,7 @@ export default function Home() {
           PROMOTIONAL ART · ROBLOX / INSTAGRAM ↗
         </a>
       </section>
+      <RewardBoard compact />
       <EventSchedule />
       <div className="stat-bar">
         {[
@@ -308,7 +310,7 @@ export default function Home() {
             <Link href="/progress/" className="button primary">
               Open My Progress <ArrowRight size={16} />
             </Link>
-            <small>Your checklist opens when verified tasks arrive.</small>
+            <small>Four task guides and five rewards are ready to track.</small>
           </section>
           <section className="briefing">
             <span className="eyebrow">BEFORE YOU BEGIN</span>
@@ -318,9 +320,9 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              Launch times and monster origins are confirmed. Hub access, daily
-              walkthroughs and individual item requirements still need
-              verification.
+              Night 1 task and claim guides are now available from recorded
+              gameplay. Codes, later-night routes and universal fixes for
+              missing credit remain unverified.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />

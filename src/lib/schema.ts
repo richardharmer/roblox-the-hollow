@@ -147,6 +147,7 @@ export const rewardSchema = z
     catalogItemId: robloxId.nullable(),
     type: text,
     free: z.boolean().nullable(),
+    costLabel: text.optional(),
     availability: z.enum(["AVAILABLE", "UNAVAILABLE", "UNKNOWN"]),
     requirements: z.array(text).min(1),
     steps: z.array(text).min(1),

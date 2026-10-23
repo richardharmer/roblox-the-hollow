@@ -112,7 +112,7 @@ export async function validate(root = process.cwd()) {
       throw new Error("Thin game detail page");
   }
   for (const item of [...quests, ...rewards, ...badges])
-    if (!games.some((g) => g.id === item.gameId))
+    if (item.gameId !== event.id && !games.some((g) => g.id === item.gameId))
       throw new Error(`Unknown game ${item.gameId}`);
   for (const r of rewards)
     for (const q of r.questIds)
