@@ -201,5 +201,93 @@
     "requirements": [],
     "relatedRewardSlug": "the-beasthammer",
     "robloxUrl": "https://www.roblox.com/badges/1585089789720925/"
+  },
+  {
+    "id": "badge-3380536009947020",
+    "slug": "badge-3380536009947020",
+    "name": "Witches Brew-nado",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3380536009947020,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/3380536009947020/"
+  },
+  {
+    "id": "badge-4135856183138544",
+    "slug": "badge-4135856183138544",
+    "name": "Haunted Harvest Crown",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 4135856183138544,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/4135856183138544/"
+  },
+  {
+    "id": "badge-891910194111232",
+    "slug": "badge-891910194111232",
+    "name": "Reeling Petal Garland",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 891910194111232,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/891910194111232/"
+  },
+  {
+    "id": "badge-3550249711586682",
+    "slug": "badge-3550249711586682",
+    "name": "Fuwatty Side Satchel",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3550249711586682,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "requirements": [],
+    "robloxUrl": "https://www.roblox.com/badges/3550249711586682/"
   }
 ]

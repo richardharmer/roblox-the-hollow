@@ -155,8 +155,8 @@ export default async function Section({
               <div className="prose">
                 <h2>Official badge IDs and verification status</h2>
                 <p>
-                  Nine enabled badges were returned by Roblox’s official API for
-                  The Hollow universe 10770728771 on October 23, with no
+                  Thirteen enabled badges were returned by Roblox’s official API for
+                  The Hollow universe 10770728771 on October 24 (Beijing), with no
                   next-page cursor. Search by name, Badge ID or Universe ID
                   below.
                 </p>

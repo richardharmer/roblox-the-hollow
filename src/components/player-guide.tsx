@@ -22,6 +22,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         Four quest/shop rewards and one Plus-only shop item. Read the requirements here,
         then follow the written claim guide.
       </p>
+      <p>Four more badge identities were observed October 24 (Beijing): Witches Brew-nado, Haunted Harvest Crown, Reeling Petal Garland and Fuwatty Side Satchel. Claim methods and costs remain unverified. <Link href="/badges/">Check all 13 official badge IDs →</Link></p>
       <div className="player-reward-list">
         {rewards.map((reward) => (
           <article key={reward.id} className="player-reward-row">
