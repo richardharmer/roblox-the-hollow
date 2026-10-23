@@ -618,5 +618,15 @@
     "note": "Directly read October 23. Universe 7229780065 and root place 136431686349723 match Hunted. Description specifies event-tagged portals, Trick-or-Treat doors and lobby Ring Alter. It inconsistently says more than 75 and then 75 candies. Tickets payout is not stated.",
     "lastCheckedAt": "2026-10-23",
     "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "official-hollow-livestreams",
+    "name": "Roblox — nine official Hollow livestream records",
+    "url": "https://apis.roblox.com/virtual-events/v1/universes/10770728771/virtual-events?limit=50&sortOrder=Asc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct API read October 23 returned nine public active event records and empty pagination cursors. Every record has Roblox Presents group 4111519, universe 10770728771 and place 116463962153167. Original UTC timestamps and event IDs retained in research/hollow-livestreams-api-2026-10-23.json. Starts include 59.606 seconds; display omits seconds to match the official Seek event page, also read directly. Records establish scheduled streams, not actual starts, monster unlocks or the finale start.",
+    "lastCheckedAt": "2026-10-23",
+    "lastSuccessAt": "2026-10-23"
   }
 ]

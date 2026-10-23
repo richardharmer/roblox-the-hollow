@@ -1,5 +1,27 @@
 [
   {
+    "id": "october-23-official-livestream-schedule",
+    "slug": "october-23-official-livestream-schedule",
+    "title": "Nine Official Livestream Times Verified; Hunted Reward Note Corrected",
+    "summary": "All nine creator sessions are now verified through Roblox’s event API, with UTC and Beijing times. The rewards page now identifies the confirmed Candy Collector badge.",
+    "body": [
+      "Roblox’s public virtual-events API returned nine public livestream records for The Hollow. All are hosted by Roblox Presents, group 4111519, and point to universe 10770728771 and place 116463962153167. The games page now presents the complete scheduled-start table with individual official event links.",
+      "The first listed session, Seek x NO_DATA, starts October 23 at 18:00 UTC, or October 24 at 02:00 Beijing. The last, Piggy x KreekCraft, is listed for October 31 at 16:30 UTC, or November 1 at 00:30 Beijing. Seconds are omitted for readability; raw timestamps remain preserved.",
+      "These are scheduled livestream times. They do not verify actual broadcasts, the daily order of monster unlocks, new maze availability or the finale start. Every record currently gives a 30-minute window; this is not a measured stream duration.",
+      "The rewards page previously described the Hunted badge ID as unconfirmed. That stale statement is corrected to Candy Collector, Badge ID 1253232809160660, with a link to the existing task checklist. The official API was re-read: its wording still alternates between more than 75 and 75 candies. Tickets payout and any separate avatar-item reward remain unverified."
+    ],
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-livestreams",
+      "official-hunted-candy-collector"
+    ],
+    "publishedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-23",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-23-player-rewards-guide",
     "slug": "october-23-player-rewards-guide",
     "title": "Night 1 Rewards: Tickets, Claim Steps and Four Quest Guides",

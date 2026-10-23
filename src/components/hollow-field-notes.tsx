@@ -146,15 +146,35 @@ export function HuntedBriefing() {
     <section className="prose field-notes" id="hunted">
       <h2>Hunted: Candy Collector badge walkthrough</h2>
       <Status level="CONFIRMED" />
-      <p>Roblox’s badge API now identifies Candy Collector (Badge ID 1253232809160660) in Hunted universe 7229780065. The developer’s Hollow announcement and Roblox’s Outskirts poster establish the event connection.</p>
+      <p>
+        Roblox’s badge API now identifies Candy Collector (Badge ID
+        1253232809160660) in Hunted universe 7229780065. The developer’s Hollow
+        announcement and Roblox’s Outskirts poster establish the event
+        connection.
+      </p>
       <ol>
         <li>In Hunted, enter a portal marked with the event tag.</li>
         <li>Collect candy from the Trick-or-Treat doors in those portals.</li>
-        <li>Return to the main lobby and interact with the Ring Alter to receive the badge.</li>
+        <li>
+          Return to the main lobby and interact with the Ring Alter to receive
+          the badge.
+        </li>
       </ol>
-      <p>The official description is inconsistent at the threshold: it first says “more than 75” candies, then says to return after 75. Try the lobby interaction at 75; if it does not award the badge, collect more than 75 before trying again. That retry is a practical suggestion, not a verified bug fix.</p>
-      <p>These are official written requirements, not an account-tested run. Tickets payout, exact door locations, session persistence and any separate avatar-item reward remain unverified.</p>
-      <Link className="text-link" href="/quests/hunted-candy-collector/">Read the full task checklist and limitations →</Link>
+      <p>
+        The official description is inconsistent at the threshold: it first says
+        “more than 75” candies, then says to return after 75. Try the lobby
+        interaction at 75; if it does not award the badge, collect more than 75
+        before trying again. That retry is a practical suggestion, not a
+        verified bug fix.
+      </p>
+      <p>
+        These are official written requirements, not an account-tested run.
+        Tickets payout, exact door locations, session persistence and any
+        separate avatar-item reward remain unverified.
+      </p>
+      <Link className="text-link" href="/quests/hunted-candy-collector/">
+        Read the full task checklist and limitations →
+      </Link>
       <SourceList
         ids={[
           "developer-hunted-hollow",
@@ -269,15 +289,29 @@ export function ThemeGuide() {
       <SourceList
         ids={["creator-kreek-hollow-theme", "official-newsroom-hollow"]}
       />
-      <h3>Hunted’s special badge</h3>
+      <h3>Hunted: Candy Collector badge</h3>
       <p>
-        The developer has announced a badge for its Hollow quest.{" "}
-        <Link href="/quests/#hunted">
-          Open the Hunted entry and partial quest guide
-        </Link>
-        . Its badge ID and any connection to a separate avatar item remain
-        unconfirmed.
+        Candy Collector is confirmed as Badge ID{" "}
+        <strong>1253232809160660</strong>
+        in Hunted universe 7229780065 (Place ID 136431686349723). Enter
+        event-tagged portals, collect candy from Trick-or-Treat doors, then
+        return to the main lobby and interact with the Ring Alter.
       </p>
+      <p>
+        The official description says both “more than 75” and “75” candies; the
+        exact threshold remains inconsistent in the source. Tickets payout and a
+        separate avatar-item reward remain unverified. This is a badge ID, not a
+        Catalog ID, and these are written requirements rather than an
+        account-tested completion.
+      </p>
+      <p>
+        <Link href="/quests/hunted-candy-collector/">
+          Read the Hunted Candy Collector checklist and threshold note →
+        </Link>
+      </p>
+      <SourceList
+        ids={["official-hunted-candy-collector", "developer-hunted-hollow"]}
+      />
     </section>
   );
 }
