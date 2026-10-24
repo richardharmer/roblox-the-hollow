@@ -714,10 +714,10 @@
     "name": "Roblox Developer Forum — player report of Ticket and item granting errors",
     "url": "https://devforum.roblox.com/t/error-in-granting-tickets-and-items-in-new-event/4951605",
     "level": "COMMUNITY",
-    "access": "SEARCH_ONLY",
-    "note": "October 24 search index showed the topic and a snippet about Bloxburg badge credit. Original thread returned a JavaScript verification barrier. Forum hosting does not make a player report an official Roblox statement; staff replies and resolution could not be verified.",
-    "lastCheckedAt": "2026-10-24",
-    "lastSuccessAt": null
+    "access": "READ",
+    "note": "Direct topic JSON and overflow posts read October 25 Beijing. Post 14986564 (Oct 24 17:14 UTC) fadevert reports possible recovery; post 14986595 skpm_plz says a fix was pushed that morning; post 14986597 (17:30 UTC) original reporter Bric_kz says it seems fixed and intends to mark the solution. Staff role and universal account/item recovery not independently verified. Earlier missing-credit reports are retained as history, not evidence the issue still affects everyone.",
+    "lastCheckedAt": "2026-10-25",
+    "lastSuccessAt": "2026-10-25"
   },
   {
     "id": "kam-sell-lemons",

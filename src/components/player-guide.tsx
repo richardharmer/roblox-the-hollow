@@ -8,10 +8,10 @@ export function RewardIssueNotice() {
       <Status level="REPORTED" />
       <h2 id="reward-issue-title">The Hollow Tickets not showing?</h2>
       <p>
-        October 24, 2026: players report missing hub credit after earning event
-        badges, including a separate Dandy’s World accessory claim problem.
-        A badge, Ticket credit and an avatar item are separate checks.
-        These reports do not establish a platform-wide outage or an official fix.
+        Update October 25, 2026 (Beijing): a forum responder reports a fix,
+        and the original reporter says the issue appears resolved. Check your
+        own Ticket balance and avatar inventory; recovery for every account
+        and every item has not been independently verified.
       </p>
       <Link className="text-link" href="#reward-troubleshooting">
         Check your reward status and read the player reports →
@@ -162,10 +162,14 @@ export function TicketsGuide() {
         recognize or credit. Another reported a missing Dandy’s World flower
         accessory despite owning the badge, alongside an unexpected Ticket
         balance. We have not reproduced these problems on a test account.
-        Affected account scope, cause, official acknowledgement and an official
-        fix remain unverified in the sources reviewed.
+        At 17:29–17:30 UTC on October 24 (October 25 in Beijing), forum
+        responder skpm_plz said a fix had been pushed, and original reporter
+        Bric_kz replied that it seemed fixed. Another player had reported
+        possible recovery at 17:14 UTC. These are attributed recovery reports;
+        the responder’s staff role and universal recovery are not independently
+        verified. Check your account before replaying a completed task.
       </p>
-      <SourceList ids={["reddit-hollow-missing-tickets", "reddit-hollow-dandy-claim"]} />
+      <SourceList ids={["devforum-hollow-ticket-report", "reddit-hollow-missing-tickets", "reddit-hollow-dandy-claim"]} />
       <ul>
         <li>
           Check that it is the event badge, on the same account you use in the

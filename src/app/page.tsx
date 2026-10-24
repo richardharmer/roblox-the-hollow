@@ -319,8 +319,7 @@ export default function Home() {
             </h3>
             <p>
               Night 1 and Night 2 task and claim guides are available from recorded
-              gameplay. Codes, Night 3 onward and universal fixes for
-              missing credit remain unverified.
+              gameplay. Ticket recovery now has player reports; check your own balance. Codes and Night 3 onward remain unverified.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />
