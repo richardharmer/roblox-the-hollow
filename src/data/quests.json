@@ -37,7 +37,27 @@
       "Five opened packs but no badge? Return to the EVENT → The Hollow panel and use Claim; leaving immediately after opening packs skips the demonstrated final step.",
       "Badge owned but no Tickets? Check the Hollow confirmation and balance separately. Sell Lemons credit failures have been reported; badge ownership is not proof of delivery. Rebuying packs or rejoining is not a verified fix.",
       "If your shop price or reward offer differs, use the current in-game display. Do not spend Robux based on the coin amount in this guide."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "7:12 — Halloween factory setup",
+        "url": "https://www.youtube.com/watch?v=R_F2p83nY9k&t=432s"
+      },
+      {
+        "label": "7:40 — Open sticker packs",
+        "url": "https://www.youtube.com/watch?v=R_F2p83nY9k&t=460s"
+      },
+      {
+        "label": "7:56 — Claim the badge manually",
+        "url": "https://www.youtube.com/watch?v=R_F2p83nY9k&t=476s"
+      },
+      {
+        "label": "8:05 — Return to the hub",
+        "url": "https://www.youtube.com/watch?v=R_F2p83nY9k&t=485s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/79268393072444",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "id": "survive-overnight-tasty-brew",
@@ -54,28 +74,33 @@
     "sources": [
       "developer-survive-overnight-hollow",
       "official-survive-overnight-badge",
-      "pgg-survive-overnight-brew"
+      "pgg-survive-overnight-brew",
+      "techwiser-survive-overnight-controls"
     ],
     "prerequisites": [
       "Open Survive Overnight in a Mega Store, Roblox place 127380660530951. Its developer explicitly identifies it as participating in The Hollow.",
       "The official badge confirms brewing a special recipe in a witch’s cauldron. The detailed route below is REPORTED; no independent account playtest has been completed."
     ],
     "steps": [
-      "Find the cauldron near the store entrance and use its candy counter to track the recipe.",
-      "Collect 18 candies: six of each of three types, according to Pro Game Guides.",
-      "Search pumpkin chests at night. During daytime, explore graveyard coffins for candies.",
-      "Put the required candies into the entrance cauldron and stir the completed recipe.",
-      "Check for The Hollow - A Tasty Brew in your Roblox badges (ID 1102899885295859). PGG reports 20 event Tickets; check your balance separately because that payout has not been independently verified."
+      "Join a lobby through a portal on the main screen. Locate the entrance cauldron and read its three candy counters: the reported recipe needs six of each type.",
+      "Scout chest locations by day: from the cauldron, walk ahead and left into the weapons area; also check the middle corridor and the graveyard at the back. PGG documents these landmarks; treat them as search areas, not a guaranteed spawn in every server.",
+      "Open pumpkin chests at night. In daytime, visit the rear graveyard, lift coffin lids and move them aside to search inside for candy.",
+      "Return to the cauldron in batches. TechWiser reports five inventory slots: you cannot carry all 18 candies together. Equip a candy, approach the cauldron and press G on keyboard to drop it in. Mobile and controller inputs have not been verified; use the displayed interaction prompt.",
+      "Check each counter separately after depositing. Once all three types reach six, interact to stir. TechWiser reports roughly ten seconds of stirring; use daytime to reduce interruptions.",
+      "Check Roblox badges for The Hollow - A Tasty Brew (1102899885295859). Return to The Hollow, inspect any badge-credit prompt and check your Ticket balance separately. The reported 20 Tickets are not a guaranteed delivery or repeatable payout."
     ],
     "tips": [
-      "Six of each type matters; a total of 18 mixed candies may not complete the reported recipe.",
-      "This guide was added October 24. The PGG article was updated October 22; neither date establishes when the task launched."
+      "PGG supplies the lobby, landmarks and day/night search route. TechWiser supplies the inventory limit and keyboard deposit control. These are attributed walkthroughs, not our account playtest."
     ],
     "troubleshooting": [
-      "If a chest cannot be opened during daytime, the reported route requires waiting until night.",
-      "Badge ownership does not prove Ticket credit. No guaranteed payout fix, repeatable farming method or extra avatar reward is established."
+      "Chest will not open? The reported route requires night for pumpkin chests; coffin searches are available by day.",
+      "Recipe will not finish? Read all three counters: extra candy of one type does not replace a missing type.",
+      "No room to collect more? Deposit your current candy batch at the entrance cauldron, then resume searching.",
+      "Badge awarded but no Tickets? Use the hub confirmation and balance checks. Repeating the recipe is not a verified credit fix."
     ],
-    "estimatedMinutes": null
+    "estimatedMinutes": null,
+    "startUrl": "https://www.roblox.com/games/127380660530951",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "verificationLevel": "REPORTED",
@@ -112,6 +137,20 @@
     "prerequisites": [
       "Access to the Night 2 event content on the same Roblox account used in the hub.",
       "Video walkthrough reviewed October 24 (Beijing); not an independent account playtest."
+    ],
+    "videoChapters": [
+      {
+        "label": "3:51 — Create or join a lobby",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=231s"
+      },
+      {
+        "label": "4:21 — Pumpkin waves and counter",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=261s"
+      },
+      {
+        "label": "5:01 — Floor 2 reward room",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=301s"
+      }
     ]
   },
   {
@@ -149,7 +188,23 @@
     "prerequisites": [
       "Access to the Night 2 event content on the same Roblox account used in the hub.",
       "Video walkthrough reviewed October 24 (Beijing); not an independent account playtest."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "2:30 — Find the Hollow mode queue",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=150s"
+      },
+      {
+        "label": "2:55 — Collect pumpkins and complete machines",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=175s"
+      },
+      {
+        "label": "3:36 — Claim the garland in the hub",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=216s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/16116270224",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "verificationLevel": "REPORTED",
@@ -170,7 +225,8 @@
     "steps": [
       "Enter The Hollow cinema and take the elevator to Floor 2. Find the Dandy’s World room and go upstairs to the pillar puzzle. The recording approaches it from the right of the large open room; use the room landmark if your route differs.",
       "There are six pillars with four symbols each. Rotate one until it lights up to identify the target symbol. The creator’s target is a cat; do not assume every run uses that symbol.",
-      "Rotate the pillars until all six show the target. Some controls turn other pillars too: note which pillars move together and adjust your order instead of repeatedly undoing a solved pillar.",
+      "Use a deliberate trial rather than turning every pillar at once: choose one control, rotate it once, and note every pillar that changes. Check the newly visible symbols before touching the next control. This is a suggested way to track the linked rotations, not a verified universal solution sequence.",
+      "Work toward the glowing target on all six pillars. If a turn changes a pillar you already aligned, include that linked pillar in your next adjustment. The linked-turn demonstration is at 1:03 in the video below; the exact control-to-pillar mapping has not been independently established here.",
       "When all six energy beams point into the middle, pull the central lever and collect the relic.",
       "Return safely to the elevator with the relic. The creator identifies this return as the Witches Brew-nado reward trigger. Check your badge and avatar inventory; solving the pillars alone is not the final step."
     ],
@@ -186,13 +242,29 @@
     "prerequisites": [
       "Access to the Night 2 event content on the same Roblox account used in the hub.",
       "Video walkthrough reviewed October 24 (Beijing); not an independent account playtest."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "0:27 — Find the Floor 2 pillar room",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=27s"
+      },
+      {
+        "label": "1:03 — See the linked pillars rotate",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=63s"
+      },
+      {
+        "label": "2:08 — Lever, relic and elevator return",
+        "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8&t=128s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/116463962153167",
+    "startLabel": "Open The Hollow hub"
   },
   {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "publishDetail": true,
     "image": null,
     "id": "night-one-relics",
@@ -223,13 +295,29 @@
     "prerequisites": [
       "Use the same Roblox account for the task and the Hollow hub.",
       "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "0:09 — Find the purple relics",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=9s"
+      },
+      {
+        "label": "0:58 — Vault puzzle and key",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=58s"
+      },
+      {
+        "label": "1:23 — Return to the elevator",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=83s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/116463962153167",
+    "startLabel": "Open The Hollow hub"
   },
   {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "publishDetail": true,
     "image": null,
     "id": "doors-candy-vault",
@@ -261,13 +349,25 @@
     "prerequisites": [
       "Use the same Roblox account for the task and the Hollow hub.",
       "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "1:42 — Enter Estate / Candy Vault",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=102s"
+      },
+      {
+        "label": "2:58 — Claim the antlers in the hub",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=178s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/6516141723",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "publishDetail": true,
     "image": null,
     "id": "flee-candy-beasthammer",
@@ -299,13 +399,21 @@
     "prerequisites": [
       "Use the same Roblox account for the task and the Hollow hub.",
       "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "3:10 — Candy deposits, survivor escape and reward claim",
+        "url": "https://www.youtube.com/watch?v=-yFROXeBpVY&t=190s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/893973440",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "publishDetail": true,
     "image": null,
     "id": "clean-leaves-tickets",
@@ -337,13 +445,25 @@
     "prerequisites": [
       "Use the same Roblox account for the task and the Hollow hub.",
       "Guide reviewed from October 23 gameplay; account access and live bug fixes can vary."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "0:24 — Select the Halloween map",
+        "url": "https://www.youtube.com/watch?v=iDI6F2XWZ-c&t=24s"
+      },
+      {
+        "label": "0:44 — Check the event timer",
+        "url": "https://www.youtube.com/watch?v=iDI6F2XWZ-c&t=44s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/92637789841354",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "verificationLevel": "CONFIRMED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-24",
     "publishDetail": true,
     "image": null,
     "id": "hunted-candy-collector",
@@ -372,7 +492,9 @@
     "prerequisites": [
       "Access to Hunted and an event-tagged portal.",
       "Official written requirements checked October 23; this guide has not been completed on a test account."
-    ]
+    ],
+    "startUrl": "https://www.roblox.com/games/136431686349723",
+    "startLabel": "Open this quest’s game on Roblox"
   },
   {
     "id": "racket-rivals-trickster",
@@ -412,6 +534,22 @@
       "No baskets visible? Wait for the Flick or Treat phase within a match; ordinary rallies are not the event objective.",
       "Two scores alone are not the final step: return to the event panel and Claim.",
       "Badge ownership does not guarantee immediate Hollow Ticket credit. Existing event credit failures remain reported; repeating the badge is not a verified farming method or fix."
-    ]
+    ],
+    "videoChapters": [
+      {
+        "label": "0:14 — Open the Trickster task",
+        "url": "https://www.youtube.com/watch?v=Hueoew5HFAY&t=14s"
+      },
+      {
+        "label": "0:29 — Score in the special basket",
+        "url": "https://www.youtube.com/watch?v=Hueoew5HFAY&t=29s"
+      },
+      {
+        "label": "1:03 — Claim the completed badge",
+        "url": "https://www.youtube.com/watch?v=Hueoew5HFAY&t=63s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/90906407195271",
+    "startLabel": "Open this quest’s game on Roblox"
   }
 ]

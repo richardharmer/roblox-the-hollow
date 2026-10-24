@@ -138,6 +138,12 @@ export const questSchema = z
     tips: z.array(text),
     troubleshooting: z.array(text),
     estimatedMinutes: z.number().positive().nullable(),
+    startUrl: url.optional(),
+    startLabel: text.optional(),
+    videoChapters: z.array(z.object({
+      label: text,
+      url,
+    }).strict()).optional(),
   })
   .strict();
 export const rewardSchema = z

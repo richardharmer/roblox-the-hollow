@@ -176,6 +176,18 @@ export function Detail({
             </ul>
           </>
         )}
+        {"startUrl" in entry && entry.startUrl && (
+          <p><a className="text-link" href={entry.startUrl}>{entry.startLabel ?? "Open the quest experience on Roblox"} →</a></p>
+        )}
+        {"videoChapters" in entry && entry.videoChapters && (
+          <section aria-labelledby="video-chapters">
+            <h2 id="video-chapters">Watch the step you are stuck on</h2>
+            <p>These links open the original creator’s recording at the relevant step. Follow the landmarks and on-screen prompts; layouts and controls may differ on your device.</p>
+            <ul>{entry.videoChapters.map((chapter) => (
+              <li key={chapter.url}><a href={chapter.url}>{chapter.label}</a></li>
+            ))}</ul>
+          </section>
+        )}
         {"requirements" in entry && (
           <>
             <h2>Unlock requirements</h2>

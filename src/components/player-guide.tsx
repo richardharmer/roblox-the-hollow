@@ -215,7 +215,7 @@ export function CodesGuide() {
       <h2>The Hollow codes: none verified for this event</h2>
       <p>
         <strong>
-          No working event redemption code was verified in our October 23 check.
+          No working event redemption code was verified in our October 24, 2026 check.
         </strong>{" "}
         The official hub description and announcement do not publish one.
         Current documented rewards use tasks, badges and Tickets.
@@ -233,6 +233,15 @@ export function CodesGuide() {
         verified.
       </p>
       <SourceList ids={["official-hollow-hub", "official-newsroom-hollow"]} />
+      <h3>How to claim a reward without a code</h3>
+      <ol>
+        <li><Link href="/quests/clean-leaves-tickets/">Open the Clean all the Leaves walkthrough</Link> for the Chapter 3 map setup and 15-minute event badge requirement.</li>
+        <li>After earning the event badge, return to The Hollow on the same account. If the badge-credit prompt appears, read its amount and select Confirm.</li>
+        <li>For Ticket-shop items, enter the cinema and open the counter on the right. Choose Avatar Items, check the price and any Plus requirement, then select the item to purchase. Look for OWNED and verify your avatar inventory.</li>
+        <li>For a quest-specific accessory, use its own reward display instead. <Link href="/rewards/#reward-board">Choose an item for its claim steps</Link>. Missing credit? <Link href="/rewards/#reward-troubleshooting">Use the reward checks</Link> before repeating the task.</li>
+      </ol>
+      <p><a href="https://www.youtube.com/watch?v=2r79xI9AW-s&t=8s">Watch badge confirmation at 0:08</a> · <a href="https://www.youtube.com/watch?v=2r79xI9AW-s&t=15s">Find the shop at 0:15</a> · <a href="https://www.youtube.com/watch?v=2r79xI9AW-s&t=48s">See a recorded purchase at 0:48</a>. This is a creator demonstration, not a guarantee that current reward-credit issues are resolved.</p>
+      <SourceList ids={["sharkblox-ticket-redemption"]} />
     </section>
   );
 }
