@@ -88,7 +88,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
           <Link href="/rewards/#codes">Working codes?</Link>
           <Link href="/rewards/#launcher-ghosts">4 launcher ghosts: who to find</Link>
           <Link href="/quests/">Task walkthroughs</Link>
-          <Link href="/quests/racket-rivals-trickster/">New: Racket Rivals Tickets task</Link>
+          <Link href="/quests/sell-lemons-sticker-packs/">New: Sell Lemons sticker-pack task</Link>
         </nav>
       )}
     </section>
@@ -153,6 +153,7 @@ export function TicketsGuide() {
         </Link>
       </div>
       <p><Link href="/quests/hunted-candy-collector/">Hunted Candy Collector: official candy and lobby claim instructions →</Link> Tickets payout for this task is not yet verified.</p>
+      <p><Link href="/quests/sell-lemons-sticker-packs/">Sell Lemons: earn coins, open five sticker packs and manually claim the badge →</Link> The reviewed return to the hub shows a 40-Ticket confirmation offer; delivery and repeatability are not guaranteed.</p>
       <p><Link href="/quests/racket-rivals-trickster/">Racket Rivals: score two event candies, then claim the Trickster badge →</Link> The creator reports 20 Tickets; the walkthrough distinguishes badge claim from hub credit.</p>
       <h3 id="reward-troubleshooting">Badge earned, but no Tickets or item?</h3>
       <p>

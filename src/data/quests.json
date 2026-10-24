@@ -1,5 +1,45 @@
 [
   {
+    "id": "sell-lemons-sticker-packs",
+    "slug": "sell-lemons-sticker-packs",
+    "name": "Sell Lemons: five sticker packs and the manual badge claim",
+    "description": "Build the Halloween factory, earn Spooky Coins, open five sticker packs and claim the badge before checking Hollow Tickets.",
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "kam-sell-lemons",
+      "official-sell-lemons-sticker",
+      "devforum-hollow-ticket-report"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Enter Sell Lemons through The Hollow Visit Games menu, using the same Roblox account. Its official root place is 79268393072444.",
+      "Reviewed from KAM Gats’s October 23 recording and official badge API on October 24; not our own account playtest."
+    ],
+    "steps": [
+      "Enter the Halloween area and claim a factory plot. Build its production equipment and trade the candy it makes for Spooky Coins. The event panel explicitly separates candy, Spooky Coins and stickers.",
+      "Save enough for five Halloween sticker packs. The creator reports 1,000 coins per pack, or 5,000 total for the packs; factory construction is separate. These are Sell Lemons coins, not Hollow Tickets or Robux.",
+      "Go to the STICKERS stall and open five packs. The objective counts packs opened; you do not need to finish the sticker collection. Check the event counter as you open them.",
+      "Open the pumpkin EVENT button on the right, then The Hollow panel. Once it shows 5/5 packs opened, select Claim. The recording shows CLAIMED at about 8:01.",
+      "Check for Spooky Sticker Collector, badge ID 115007543086503. The official badge description independently confirms the five Halloween-pack objective.",
+      "Return to The Hollow and read the reward confirmation before selecting Confirm. At 8:10 this recording shows a 40-Ticket offer. Treat that as the amount offered in this recorded return, not a guaranteed repeatable payout or proof that all 40 came from the badge alone. Verify your balance afterward."
+    ],
+    "tips": [
+      "Video: 7:12–7:40 Halloween area and factory; 7:40–7:56 sticker shop; 7:56–8:05 manual badge claim; 8:05–8:16 return to the hub.",
+      "No Plus requirement or Robux purchase is shown for this route. Earning the in-game coins still takes play time; the edited video is not a completion-time estimate."
+    ],
+    "troubleshooting": [
+      "Five opened packs but no badge? Return to the EVENT → The Hollow panel and use Claim; leaving immediately after opening packs skips the demonstrated final step.",
+      "Badge owned but no Tickets? Check the Hollow confirmation and balance separately. Sell Lemons credit failures have been reported; badge ownership is not proof of delivery. Rebuying packs or rejoining is not a verified fix.",
+      "If your shop price or reward offer differs, use the current in-game display. Do not spend Robux based on the coin amount in this guide."
+    ]
+  },
+  {
     "id": "survive-overnight-tasty-brew",
     "slug": "survive-overnight-tasty-brew",
     "name": "The Hollow Survive Overnight in a Mega Store: A Tasty Brew Badge Guide",

@@ -718,5 +718,25 @@
     "note": "October 24 search index showed the topic and a snippet about Bloxburg badge credit. Original thread returned a JavaScript verification barrier. Forum hosting does not make a player report an official Roblox statement; staff replies and resolution could not be verified.",
     "lastCheckedAt": "2026-10-24",
     "lastSuccessAt": null
+  },
+  {
+    "id": "kam-sell-lemons",
+    "name": "KAM Gats — Sell Lemons complete task segment",
+    "url": "https://www.youtube.com/watch?v=R_F2p83nY9k&t=432s",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 23 recording reviewed October 24 through native YouTube transcript. Full 0:00–10:54 transcript read; Sell Lemons segment 7:12–8:16 supports this guide. Key frames: Halloween area 7:19; sticker opening 7:47; 8:01 event panel says build factory, trade candy for Spooky Coins, open five packs, 5/5 CLAIMED; 8:10 Hollow offers 40 Tickets with Confirm. No independent account test or repeatable payout established.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "official-sell-lemons-sticker",
+    "name": "Roblox API — Spooky Sticker Collector",
+    "url": "https://badges.roblox.com/v1/badges/115007543086503",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Read October 24: enabled badge 115007543086503, Spooky Sticker Collector, requires opening the first five Halloween Sticker Packs. Awarding universe 7395930870, Sell Lemons, root place 79268393072444. This confirms identity and the written pack objective, not Ticket delivery, shop price or our own claim.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
   }
 ]

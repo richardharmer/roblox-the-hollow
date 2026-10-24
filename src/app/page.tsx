@@ -17,6 +17,7 @@ import {
   games,
   gameProfiles,
   rewards,
+  quests,
   updates,
   latestReviewAt,
   formatDate,
@@ -307,7 +308,7 @@ export default function Home() {
             <Link href="/progress/" className="button primary">
               Open My Progress <ArrowRight size={16} />
             </Link>
-            <small>Nine task guides and eight rewards are ready to track.</small>
+            <small>{quests.filter((quest) => quest.publishDetail).length} task guides and {rewards.filter((reward) => reward.publishDetail).length} rewards are ready to track.</small>
           </section>
           <section className="briefing">
             <span className="eyebrow">BEFORE YOU BEGIN</span>
