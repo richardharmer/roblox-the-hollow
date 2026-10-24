@@ -21,6 +21,7 @@ import {
 } from "./ui";
 import { jsonLd } from "@/lib/seo";
 import { TeaserGallery } from "./teasers";
+import { NightTwoVisualGuide } from "./night-two-visual-guide";
 export function Detail({
   kind,
   slug,
@@ -198,6 +199,7 @@ export function Detail({
             </ul>
           </>
         )}
+        {(entry.id === "night-two-pillars" || entry.id === "witches-brew-nado") && <NightTwoVisualGuide />}
         {("steps" in entry || "walkthrough" in entry) && (
           <>
             <h2>Step-by-step walkthrough</h2>

@@ -87,11 +87,12 @@
     "id": "witches-brew-nado",
     "slug": "witches-brew-nado",
     "name": "Witches Brew-nado",
-    "description": "Solve the linked six-pillar puzzle on Floor 2, take the relic and return to the elevator.",
+    "description": "Use the annotated Floor 2 picture walkthrough to recognize the room, align the pillar faces, operate the lever and return the relic for Witches Brew-nado.",
     "steps": [
-      "Enter The Hollow cinema and take the elevator to Floor 2. Find the Dandy’s World room and go upstairs to the pillar puzzle. The recording approaches it from the right of the large open room; use the room landmark if your route differs.",
+      "Enter The Hollow hub cinema and take the elevator to Floor 2. In the recorded route, the Dandy-themed room is ahead through the right side of the open room. Look for flower furniture and rainbow wall trim, then go upstairs to the tall pillars on the purple floor. Use the annotated pictures above if the text alone is unclear; the recording does not establish an identical maze layout for everyone.",
       "There are six pillars with four symbols each. Rotate one until it lights up to identify the target symbol. The creator’s target is a cat; do not assume every run uses that symbol.",
-      "Rotate the pillars until all six show the target. Some controls turn other pillars too: note which pillars move together and adjust your order instead of repeatedly undoing a solved pillar.",
+      "Use a deliberate trial rather than turning every pillar at once: choose one control, rotate it once, and note every pillar that changes. Check the newly visible symbols before touching the next control. This is a suggested way to track the linked rotations, not a verified universal solution sequence.",
+      "Work toward the glowing target on all six pillars. If a turn changes a pillar you already aligned, include that linked pillar in your next adjustment. The linked-turn demonstration is at 1:28 in the linked video; the exact control-to-pillar mapping has not been independently established here.",
       "When all six energy beams point into the middle, pull the central lever and collect the relic.",
       "Return safely to the elevator with the relic. The creator identifies this return as the Witches Brew-nado reward trigger. Check your badge and avatar inventory; solving the pillars alone is not the final step."
     ],

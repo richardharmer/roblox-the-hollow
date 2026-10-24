@@ -2426,3 +2426,17 @@ details p {
     font-size: 16px;
   }
 }
+
+/* Screenshot-led walkthrough: images remain readable at mobile widths. */
+.night-two-visual { margin: 32px 0; }
+.visual-guide-grid { display: grid; gap: 32px; }
+.visual-guide-grid figure { margin: 0; }
+.visual-guide-grid h3 { margin-bottom: 12px; }
+.guide-frame { display: block; position: relative; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.guide-frame img { display: block; width: 100%; height: auto; }
+.guide-image { position: relative; display: block; }
+.frame-pin { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; color: transparent; background: transparent; border: 3px solid #ffcd80; font-size: 24px; font-weight: 700; box-shadow: 0 0 0 3px #151116; }
+.frame-caption { display: block; padding: 10px 14px; background: #211b20; color: #ffd2a4; font-weight: 700; font-size: 14px; }
+.visual-guide-grid figcaption { margin-top: 12px; line-height: 1.7; }
+.pillar-diagram { display: block; width: 100%; height: auto; margin: 20px 0; }
+.guide-frame:focus-visible { outline: 3px solid #ffcd80; outline-offset: 4px; }
