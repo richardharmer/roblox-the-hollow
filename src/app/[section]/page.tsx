@@ -127,7 +127,7 @@ export default async function Section({
               <div className="prose">
                 <h2>Night 1 & Night 2: choose a task</h2>
                 <p>
-                  Eight written walkthroughs cover both maze nights, Dandy’s World, AO ONI Nightmare, DOORS, Flee the Facility, Hunted and the 15-minute Halloween map. October 23–24 recordings and official written requirements are attributed in each guide.
+                  Nine written walkthroughs cover both maze nights, Dandy’s World, AO ONI Nightmare, DOORS, Flee the Facility, Hunted, Racket Rivals and the 15-minute Halloween map. October 23–24 recordings and official written requirements are attributed in each guide.
                 </p>
               </div>
               <Directory kind="quests" />

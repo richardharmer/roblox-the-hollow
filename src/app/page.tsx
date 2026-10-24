@@ -307,7 +307,7 @@ export default function Home() {
             <Link href="/progress/" className="button primary">
               Open My Progress <ArrowRight size={16} />
             </Link>
-            <small>Eight task guides and eight rewards are ready to track.</small>
+            <small>Nine task guides and eight rewards are ready to track.</small>
           </section>
           <section className="briefing">
             <span className="eyebrow">BEFORE YOU BEGIN</span>

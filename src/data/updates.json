@@ -1,5 +1,25 @@
 [
   {
+    "id": "october-24-racket-trickster",
+    "slug": "october-24-racket-trickster",
+    "title": "Racket Rivals: Two Candy Scores, Manual Claim and Ticket Check",
+    "summary": "A new written Tickets task covers Flick or Treat rounds, teammate credit and the separate Trickster Claim button.",
+    "body": [
+      "SharkBlox’s complete 1:15 recording shows the two-candy objective and a 2/2 Claimed result. The guide explains when baskets appear, how scoring works and why the event panel must be claimed afterward.",
+      "The official Roblox badge API confirms Trickster Badge and Racket Rivals ownership. The reported 20-Ticket payout remains attributed to the creator: this clip does not show the Hollow balance increasing. The 500 in-game reward is not 500 Hollow Tickets."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "sharkblox-racket-rivals",
+      "official-racket-trickster"
+    ],
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-24-night-two-guides",
     "slug": "october-24-night-two-guides",
     "title": "Night 2: Three Reward Walkthroughs, Pillar Puzzle and Pumpkin Tasks",

@@ -8,6 +8,7 @@ import {
   badges,
   updates,
   origin,
+  formatDate,
   type Collection,
 } from "@/lib/content";
 import {
@@ -117,8 +118,8 @@ export function Detail({
         <Status level={entry.verificationLevel} />
         {entry.verificationLevel === "REPORTED" && (
           <p>
-            Video-checked guide · Reviewed October 23. Steps are attributed to
-            the original recordings in Sources; this is not our own account
+            Source-checked guide · Reviewed {formatDate(entry.lastVerifiedAt)}. Steps are attributed to
+            the references in Sources; this is not our own account
             playtest.
           </p>
         )}

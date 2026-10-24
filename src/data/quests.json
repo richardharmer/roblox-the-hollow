@@ -295,5 +295,45 @@
       "Access to Hunted and an event-tagged portal.",
       "Official written requirements checked October 23; this guide has not been completed on a test account."
     ]
+  },
+  {
+    "id": "racket-rivals-trickster",
+    "slug": "racket-rivals-trickster",
+    "name": "Racket Rivals: two candy scores and the Trickster badge",
+    "description": "Score twice during Flick or Treat rounds, claim the Trickster badge, then check Hollow Ticket credit. Includes teammate scoring and missing-basket troubleshooting.",
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "sharkblox-racket-rivals",
+      "official-racket-trickster",
+      "sharkblox-ticket-redemption"
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Join Racket Rivals, place 90906407195271, using the same account as The Hollow.",
+      "Steps checked from the full October 23 SharkBlox recording on October 24; not our own account playtest."
+    ],
+    "steps": [
+      "Approach the Trickster in Racket Rivals and open the Hollow event panel. The objective is CANDY SCORED: 2, not two ordinary match points.",
+      "Join a match and wait for its Flick or Treat round. The event panel says these rounds appear in all matches; the special baskets are not permanently present.",
+      "Hit the candy into a Trick-or-Treat basket. The creator demonstrates a score and reports that a teammate’s successful shot also contributes to your objective.",
+      "Repeat until the Trickster panel reads 2/2. If a missed shot removes the candy opportunity, wait for another event round rather than searching the lobby for candy pickups.",
+      "Open the Trickster panel and select Claim. At 1:08 the recording shows CANDY SCORED 2/2 and Claimed. Check for Trickster Badge, ID 527134793936142.",
+      "Return to The Hollow and use Confirm for newly earned badge credit. SharkBlox reports 20 Tickets, but this video does not show the hub balance increasing. Check your actual balance before planning a purchase."
+    ],
+    "tips": [
+      "Video timestamps: 0:14–0:29 Trickster requirement; 0:29–0:55 basket gameplay; 0:55–1:03 teammate scoring; 1:03–1:12 manual claim.",
+      "The 500 reward beside the badge in the Racket Rivals panel is not evidence of 500 Hollow Tickets."
+    ],
+    "troubleshooting": [
+      "No baskets visible? Wait for the Flick or Treat phase within a match; ordinary rallies are not the event objective.",
+      "Two scores alone are not the final step: return to the event panel and Claim.",
+      "Badge ownership does not guarantee immediate Hollow Ticket credit. Existing event credit failures remain reported; repeating the badge is not a verified farming method or fix."
+    ]
   }
 ]
