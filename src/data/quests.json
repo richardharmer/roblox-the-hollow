@@ -1,5 +1,43 @@
 [
   {
+    "id": "survive-overnight-tasty-brew",
+    "slug": "survive-overnight-tasty-brew",
+    "name": "The Hollow Survive Overnight in a Mega Store: A Tasty Brew Badge Guide",
+    "description": "Brew the event recipe for A Tasty Brew. Roblox confirms the badge; the 18-candy walkthrough and 20-Ticket reward are reported by Pro Game Guides, not independently playtested.",
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "developer-survive-overnight-hollow",
+      "official-survive-overnight-badge",
+      "pgg-survive-overnight-brew"
+    ],
+    "prerequisites": [
+      "Open Survive Overnight in a Mega Store, Roblox place 127380660530951. Its developer explicitly identifies it as participating in The Hollow.",
+      "The official badge confirms brewing a special recipe in a witch’s cauldron. The detailed route below is REPORTED; no independent account playtest has been completed."
+    ],
+    "steps": [
+      "Find the cauldron near the store entrance and use its candy counter to track the recipe.",
+      "Collect 18 candies: six of each of three types, according to Pro Game Guides.",
+      "Search pumpkin chests at night. During daytime, explore graveyard coffins for candies.",
+      "Put the required candies into the entrance cauldron and stir the completed recipe.",
+      "Check for The Hollow - A Tasty Brew in your Roblox badges (ID 1102899885295859). PGG reports 20 event Tickets; check your balance separately because that payout has not been independently verified."
+    ],
+    "tips": [
+      "Six of each type matters; a total of 18 mixed candies may not complete the reported recipe.",
+      "This guide was added October 24. The PGG article was updated October 22; neither date establishes when the task launched."
+    ],
+    "troubleshooting": [
+      "If a chest cannot be opened during daytime, the reported route requires waiting until night.",
+      "Badge ownership does not prove Ticket credit. No guaranteed payout fix, repeatable farming method or extra avatar reward is established."
+    ],
+    "estimatedMinutes": null
+  },
+  {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-24",
     "lastVerifiedAt": "2026-10-24",

@@ -1,6 +1,24 @@
 import Link from "next/link";
 import { rewards } from "@/lib/content";
-import { SourceList } from "./ui";
+import { SourceList, Status } from "./ui";
+
+export function RewardIssueNotice() {
+  return (
+    <aside className="prose callout" aria-labelledby="reward-issue-title">
+      <Status level="REPORTED" />
+      <h2 id="reward-issue-title">The Hollow Tickets not showing?</h2>
+      <p>
+        October 24, 2026: players report missing hub credit after earning event
+        badges, including a separate Dandy’s World accessory claim problem.
+        A badge, Ticket credit and an avatar item are separate checks.
+        These reports do not establish a platform-wide outage or an official fix.
+      </p>
+      <Link className="text-link" href="#reward-troubleshooting">
+        Check your reward status and read the player reports →
+      </Link>
+    </aside>
+  );
+}
 
 export function RewardBoard({ compact = false }: { compact?: boolean }) {
   return (
@@ -136,7 +154,17 @@ export function TicketsGuide() {
       </div>
       <p><Link href="/quests/hunted-candy-collector/">Hunted Candy Collector: official candy and lobby claim instructions →</Link> Tickets payout for this task is not yet verified.</p>
       <p><Link href="/quests/racket-rivals-trickster/">Racket Rivals: score two event candies, then claim the Trickster badge →</Link> The creator reports 20 Tickets; the walkthrough distinguishes badge claim from hub credit.</p>
-      <h3>Badge earned, but no Tickets or item?</h3>
+      <h3 id="reward-troubleshooting">Badge earned, but no Tickets or item?</h3>
+      <p>
+        <strong>Player reports reviewed October 24, 2026 (Beijing):</strong>{" "}
+        one player reported two earned event badges that the hub did not
+        recognize or credit. Another reported a missing Dandy’s World flower
+        accessory despite owning the badge, alongside an unexpected Ticket
+        balance. We have not reproduced these problems on a test account.
+        Affected account scope, cause, official acknowledgement and an official
+        fix remain unverified in the sources reviewed.
+      </p>
+      <SourceList ids={["reddit-hollow-missing-tickets", "reddit-hollow-dandy-claim"]} />
       <ul>
         <li>
           Check that it is the event badge, on the same account you use in the
@@ -151,9 +179,21 @@ export function TicketsGuide() {
           claim. Having a badge is not the same as collecting the avatar item.
         </li>
         <li>
-          If credit is still missing, rejoin and check again. Early players
-          report delayed claims; no universal fix is verified, and spending
-          Robux is not a documented solution.
+          Compare your current Ticket balance with credits actually received,
+          minus avatar purchases and in-game gear. An expected payout is not
+          proof that the hub credited it.
+        </li>
+        <li>
+          Check the item’s own claim requirements and your Roblox avatar
+          inventory separately. A quest checkmark on this website is your
+          personal note; it does not verify delivery by Roblox.
+        </li>
+        <li>
+          If a reward is still missing, keep the badge link, experience name,
+          time and screenshots of the balance or claim message for a bug report.
+          Returning to the hub is a check, not a guaranteed fix. No universally
+          effective workaround has been verified; spending Robux is not a
+          documented solution.
         </li>
       </ul>
       <SourceList

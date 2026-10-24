@@ -640,6 +640,36 @@
     "lastSuccessAt": "2026-10-24"
   },
   {
+    "id": "developer-survive-overnight-hollow",
+    "name": "Roblox — Survive Overnight in a Mega Store participation",
+    "url": "https://www.roblox.com/games/127380660530951/Survive-Overnight-in-a-Mega-Store",
+    "level": "DEVELOPER",
+    "access": "READ",
+    "note": "Direct original-page read October 24: developer description explicitly identifies participation in The Hollow. Place 127380660530951. This confirms event association, not detailed candy requirements or Tickets payout.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "official-survive-overnight-badge",
+    "name": "Roblox badge API — The Hollow - A Tasty Brew",
+    "url": "https://badges.roblox.com/v1/badges/1102899885295859",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct API read October 24: enabled badge 1102899885295859, The Hollow - A Tasty Brew, awarded for brewing a special recipe in a witch’s cauldron. Awarding experience root place matches 127380660530951. Updated October 23; this is not an October 24 launch claim. The API does not specify candy counts, Tickets or an avatar reward.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "pgg-survive-overnight-brew",
+    "name": "Pro Game Guides — Survive Overnight A Tasty Brew walkthrough",
+    "url": "https://progameguides.com/roblox/how-to-get-the-event-badge-20-tickets-in-survive-overnight-in-a-mega-store/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Article read October 24; page updated October 22, 2026. Reports six candies of each of three types, night-only pumpkin chests, daytime graveyard coffins and brewing at the entrance cauldron. Reports 20 Tickets. Walkthrough and payout remain REPORTED; no independent account test or official payout confirmation.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
     "id": "sharkblox-racket-rivals",
     "name": "SharkBlox — Racket Rivals Trickster walkthrough",
     "url": "https://www.youtube.com/watch?v=Hueoew5HFAY",
@@ -658,5 +688,35 @@
     "note": "Enabled badge for Flick or Treat event 2026. Universe 7883776681, root place 90906407195271. Identity and event association confirmed; description does not establish the two-score requirement or Tickets payout.",
     "lastCheckedAt": "2026-10-24",
     "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "reddit-hollow-missing-tickets",
+    "name": "Reddit — earned event badges without Hollow Ticket credit",
+    "url": "https://www.reddit.com/r/RobloxHelp/comments/1xdy5va/bugged_badges_the_hollow_event/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Original player post read October 24, 2026. Reports two earned event badges not recognized or credited in the hub. Search also surfaced comments mentioning six quests, Dandy’s World and AO ONI; those comments were not returned by the direct page read. Player testimony only; account scope, cause and official fix unverified.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "reddit-hollow-dandy-claim",
+    "name": "Reddit — Dandy’s World accessory and Ticket balance report",
+    "url": "https://www.reddit.com/r/RobloxHelp/comments/1xdz4hw/hi_im_new_to_reddit_i_need_help_with_the_hollow/",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Original player post read October 24, 2026. Reports inability to claim the Dandy’s World flower accessory despite owning its badge and an unexpected Ticket balance after purchases. Not independently reproduced; no official acknowledgement or fix established.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "devforum-hollow-ticket-report",
+    "name": "Roblox Developer Forum — player report of Ticket and item granting errors",
+    "url": "https://devforum.roblox.com/t/error-in-granting-tickets-and-items-in-new-event/4951605",
+    "level": "COMMUNITY",
+    "access": "SEARCH_ONLY",
+    "note": "October 24 search index showed the topic and a snippet about Bloxburg badge credit. Original thread returned a JavaScript verification barrier. Forum hosting does not make a player report an official Roblox statement; staff replies and resolution could not be verified.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": null
   }
 ]

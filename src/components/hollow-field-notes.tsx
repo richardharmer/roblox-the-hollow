@@ -65,6 +65,10 @@ export function Outskirts() {
               <Link href="/quests/#hunted">
                 Hunted — special badge announced
               </Link>
+            ) : name === "Survive Overnight In A Mega Store" ? (
+              <Link href="/quests/survive-overnight-tasty-brew/">
+                {name} — A Tasty Brew guide (reported)
+              </Link>
             ) : (
               name
             )}

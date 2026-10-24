@@ -1,6 +1,7 @@
 import { LivestreamSchedule } from "@/components/livestream-schedule";
 import {
   RewardBoard,
+  RewardIssueNotice,
   TicketsGuide,
   CodesGuide,
   LauncherGhostsGuide,
@@ -116,6 +117,7 @@ export default async function Section({
         <>
           {section === "rewards" && (
             <>
+              <RewardIssueNotice />
               <RewardBoard />
               <LauncherGhostsGuide />
               <TicketsGuide />
@@ -124,10 +126,11 @@ export default async function Section({
           )}
           {section === "quests" && (
             <>
+              <RewardIssueNotice />
               <div className="prose">
                 <h2>Night 1 & Night 2: choose a task</h2>
                 <p>
-                  Nine written walkthroughs cover both maze nights, Dandy’s World, AO ONI Nightmare, DOORS, Flee the Facility, Hunted, Racket Rivals and the 15-minute Halloween map. October 23–24 recordings and official written requirements are attributed in each guide.
+                  {collections.quests.filter((quest) => quest.publishDetail).length} written walkthroughs cover the reviewed event tasks, including both maze nights and participating experiences. Recordings, official written requirements and community reports are attributed in each guide.
                 </p>
               </div>
               <Directory kind="quests" />
