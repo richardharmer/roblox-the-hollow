@@ -628,5 +628,15 @@
     "note": "Direct API read October 23 returned nine public active event records and empty pagination cursors. Every record has Roblox Presents group 4111519, universe 10770728771 and place 116463962153167. Original UTC timestamps and event IDs retained in research/hollow-livestreams-api-2026-10-23.json. Starts include 59.606 seconds; display omits seconds to match the official Seek event page, also read directly. Records establish scheduled streams, not actual starts, monster unlocks or the finale start.",
     "lastCheckedAt": "2026-10-23",
     "lastSuccessAt": "2026-10-23"
+  },
+  {
+    "id": "waffle-night-two",
+    "name": "WaffleTrades — all Night 2 prizes (full video review)",
+    "url": "https://www.youtube.com/watch?v=VkNzTtqcLc8",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Reviewed October 24 (Beijing): full 0:00–5:44 UI transcript and gameplay frames. 0:10–0:27 Crown price announcement only; 0:27–2:30 Floor 2; 2:30–3:51 Dandy’s World; 3:51–5:27 AO ONI. Pillars, hub interaction, pumpkin counter and mismatched banana display visually checked. Creator-reported delivery is not our account test. Universal 20-Ticket assertion excluded because other recorded menu values differ.",
+    "lastCheckedAt": "2026-10-24",
+    "lastSuccessAt": "2026-10-24"
   }
 ]

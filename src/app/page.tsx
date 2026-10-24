@@ -98,10 +98,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Written Night 1 guides for the relic maze, DOORS and Flee the
-            Facility. Compare four earned rewards, learn the 15-minute Tickets
-            task and check which items need Plus. Independent and
-            source-checked.
+            Night 2 guides: solve the six-pillar maze, collect 200 pumpkins in Dandy’s World or 50 in AO ONI Nightmare, then claim your rewards. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">
@@ -310,7 +307,7 @@ export default function Home() {
             <Link href="/progress/" className="button primary">
               Open My Progress <ArrowRight size={16} />
             </Link>
-            <small>Four task guides and five rewards are ready to track.</small>
+            <small>Eight task guides and eight rewards are ready to track.</small>
           </section>
           <section className="briefing">
             <span className="eyebrow">BEFORE YOU BEGIN</span>
@@ -320,8 +317,8 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              Night 1 task and claim guides are now available from recorded
-              gameplay. Codes, later-night routes and universal fixes for
+              Night 1 and Night 2 task and claim guides are available from recorded
+              gameplay. Codes, Night 3 onward and universal fixes for
               missing credit remain unverified.
             </p>
             <Link href="/release-date/" className="text-link">

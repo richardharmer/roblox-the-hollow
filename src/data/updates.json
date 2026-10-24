@@ -1,5 +1,26 @@
 [
   {
+    "id": "october-24-night-two-guides",
+    "slug": "october-24-night-two-guides",
+    "title": "Night 2: Three Reward Walkthroughs, Pillar Puzzle and Pumpkin Tasks",
+    "summary": "Written routes now cover Witches Brew-nado, Reeling Petal Garland and Fuwatty Side Satchel. Crown availability remains a separate, unverified shop claim.",
+    "body": [
+      "The complete WaffleTrades Night 2 video was reviewed using its in-page transcript and gameplay frames. Three task guides and three reward pages now explain the objectives, completion triggers and separate hub claims. These are REPORTED walkthroughs, not our own account playtests.",
+      "Floor 2 requires matching six linked pillars, pulling the lever, taking the relic and returning to the elevator. Dandy’s World requires 200 event pumpkins; AO ONI Nightmare requires 50 and a Floor 2 reward-room interaction.",
+      "The AO ONI recording shows a banana-shaped reward display while reporting the satchel claim. The guide warns readers to check the room and inventory result. The Crown segment announces 20 Tickets but does not demonstrate a successful purchase, so it is not listed as currently claim-verified."
+    ],
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "waffle-night-two",
+      "official-hollow-badges"
+    ],
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "kind": "EDITORIAL",
+    "publishDetail": true
+  },
+  {
     "id": "october-23-official-livestream-schedule",
     "slug": "october-23-official-livestream-schedule",
     "title": "Nine Official Livestream Times Verified; Hunted Reward Note Corrected",

@@ -1,6 +1,115 @@
 [
   {
     "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "waffle-night-two",
+      "official-hollow-badges"
+    ],
+    "id": "fuwatty-side-satchel",
+    "slug": "fuwatty-side-satchel",
+    "name": "Fuwatty Side Satchel",
+    "description": "Collect 50 event pumpkins in AO ONI Nightmare, then find its reward room on Floor 2 of The Hollow.",
+    "steps": [
+      "In AO ONI Nightmare, walk into a side room and create a lobby or join an existing one.",
+      "Wait a few seconds for event pumpkins to appear. Interact with pumpkins around the map while avoiding monsters.",
+      "Collect the initial pumpkins and the new wave that appears when the game mode begins. Track the event counter toward 50 pumpkins.",
+      "The creator rejoins after collecting the available wave and reports progress accumulating to 50. Check that your counter persists before using this strategy; the claim that no more pumpkins spawn is specific to that recording.",
+      "After reaching 50 and receiving the event badge, return to The Hollow. Take the elevator to Floor 2 and locate the AO ONI Nightmare reward room.",
+      "Use that room’s reward interaction and check for Fuwatty Side Satchel in avatar inventory. The recording shows a banana-shaped display while the creator reports the satchel claim; verify the room and item result rather than relying on the display model."
+    ],
+    "questIds": [
+      "ao-oni-pumpkins"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Night 2 quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "AO ONI Nightmare: 50 pumpkins and Fuwatty Side Satchel",
+      "Recorded gameplay supports the route; successful delivery on every current server is not independently verified."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "waffle-night-two",
+      "official-hollow-badges"
+    ],
+    "id": "reeling-petal-garland",
+    "slug": "reeling-petal-garland",
+    "name": "Reeling Petal Garland",
+    "description": "Use the limited-time Hollow mode, accumulate 200 pumpkins, then claim the garland in the hub.",
+    "steps": [
+      "In Dandy’s World, go to the left side of the lobby and enter the limited-time Hollow mode. Join its queue to start a round.",
+      "Complete machines, avoid monsters and work toward the exit. Collect pumpkins from the floor as you move.",
+      "The recording reports 1 pumpkin per floor pickup, 25 per completed machine and 50 per escape. Machines use a timing puzzle; finish all required machines to open the escape route.",
+      "Continue across rounds until the event pumpkin total reaches 200 and the event badge is awarded. This is cumulative in the reviewed guide, not a requirement to pick up 200 loose pumpkins in one run.",
+      "Return to The Hollow on the same account. Use the Dandy’s World reward display on the left side of the hub to claim Reeling Petal Garland, then check avatar inventory."
+    ],
+    "questIds": [
+      "dandys-world-pumpkins"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Night 2 quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Dandy’s World: 200 pumpkins and Reeling Petal Garland",
+      "Recorded gameplay supports the route; successful delivery on every current server is not independently verified."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-24",
+    "updatedAt": "2026-10-24",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "waffle-night-two",
+      "official-hollow-badges"
+    ],
+    "id": "witches-brew-nado",
+    "slug": "witches-brew-nado",
+    "name": "Witches Brew-nado",
+    "description": "Solve the linked six-pillar puzzle on Floor 2, take the relic and return to the elevator.",
+    "steps": [
+      "Enter The Hollow cinema and take the elevator to Floor 2. Find the Dandy’s World room and go upstairs to the pillar puzzle. The recording approaches it from the right of the large open room; use the room landmark if your route differs.",
+      "There are six pillars with four symbols each. Rotate one until it lights up to identify the target symbol. The creator’s target is a cat; do not assume every run uses that symbol.",
+      "Rotate the pillars until all six show the target. Some controls turn other pillars too: note which pillars move together and adjust your order instead of repeatedly undoing a solved pillar.",
+      "When all six energy beams point into the middle, pull the central lever and collect the relic.",
+      "Return safely to the elevator with the relic. The creator identifies this return as the Witches Brew-nado reward trigger. Check your badge and avatar inventory; solving the pillars alone is not the final step."
+    ],
+    "questIds": [
+      "night-two-pillars"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Night 2 quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Night 2 maze: six pillars and Witches Brew-nado",
+      "Recorded gameplay supports the route; successful delivery on every current server is not independently verified."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-23",
     "lastVerifiedAt": "2026-10-23",
     "updatedAt": "2026-10-23",

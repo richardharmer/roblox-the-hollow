@@ -47,7 +47,7 @@ const pages: Record<string, [string, string]> = {
   ],
   rewards: [
     "The Hollow Rewards",
-    "Get Night 1 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
+    "Get Night 1 and Night 2 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
   ],
   badges: [
     "The Hollow Badges",
@@ -125,12 +125,9 @@ export default async function Section({
           {section === "quests" && (
             <>
               <div className="prose">
-                <h2>Night 1: choose a task</h2>
+                <h2>Night 1 & Night 2: choose a task</h2>
                 <p>
-                  Four written walkthroughs below cover the maze, DOORS, Flee
-                  the Facility and the 15-minute Halloween map. Steps were
-                  checked against October 23 recordings; official badge
-                  identities are linked in each guide.
+                  Eight written walkthroughs cover both maze nights, Dandy’s World, AO ONI Nightmare, DOORS, Flee the Facility, Hunted and the 15-minute Halloween map. October 23–24 recordings and official written requirements are attributed in each guide.
                 </p>
               </div>
               <Directory kind="quests" />
@@ -191,7 +188,7 @@ export default async function Section({
               <p>
                 Roblox describes a new maze each day for nine days: navigate the
                 maze, search for clues and evade monsters. Completing quests
-                earns UGC and survival rewards. The Night 1 guides above now
+                earns UGC and survival rewards. The Night 1 and Night 2 guides above now
                 cover recorded objectives and claim steps; later-night routes
                 remain unverified.
               </p>

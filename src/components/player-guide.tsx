@@ -11,7 +11,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
     >
       <div className="player-board-heading">
         <div>
-          <span className="eyebrow">NIGHT 1 · CHECKED OCT 23</span>
+          <span className="eyebrow">NIGHT 2 · CHECKED OCT 24</span>
           <h2 id="reward-board-title">What can you earn today?</h2>
         </div>
         <Link className="text-link" href="/progress/">
@@ -19,10 +19,10 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        Four quest/shop rewards and one Plus-only shop item. Read the requirements here,
+        Night 2 adds three quest rewards. Seven earned rewards and one Plus-only shop item are documented below. Read the requirements here,
         then follow the written claim guide.
       </p>
-      <p>Four more badge identities were observed October 24 (Beijing): Witches Brew-nado, Haunted Harvest Crown, Reeling Petal Garland and Fuwatty Side Satchel. Claim methods and costs remain unverified. <Link href="/badges/">Check all 13 official badge IDs →</Link></p>
+      <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all 13 official badge IDs →</Link></p>
       <div className="player-reward-list">
         {rewards.map((reward) => (
           <article key={reward.id} className="player-reward-row">
@@ -38,7 +38,13 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
               {reward.costLabel}
               <br />
               <span>
-                {reward.id === "lord-umberhallow-bloxikin"
+                {reward.id === "witches-brew-nado"
+                  ? "Floor 2 → six pillars → relic → elevator"
+                  : reward.id === "reeling-petal-garland"
+                    ? "Dandy’s World: 200 pumpkins → hub claim"
+                    : reward.id === "fuwatty-side-satchel"
+                      ? "AO ONI: 50 pumpkins → Floor 2 claim"
+                      : reward.id === "lord-umberhallow-bloxikin"
                   ? "5 relics → vault puzzle → elevator"
                   : reward.id === "all-seeking-antlers"
                     ? "DOORS: 50 doors in 20 minutes"
@@ -54,7 +60,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         ))}
       </div>
       <p className="player-evidence">
-        Steps checked against October 23 creator recordings; official APIs
+        Steps checked against October 23–24 creator recordings; official APIs
         verify the cited identities. We have not claimed these on a test
         account. Early-server credit can vary.
       </p>

@@ -175,7 +175,7 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
 }) => {
   await page.goto("/");
   const board = page.locator("#reward-board");
-  await expect(board.locator(".player-reward-row")).toHaveCount(5);
+  await expect(board.locator(".player-reward-row")).toHaveCount(8);
   await board
     .getByRole("link", { name: "Gourdlord: The Entangled", exact: true })
     .click();
@@ -186,9 +186,9 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
   await expect(page.locator("#codes")).toContainText(
     "No working event redemption code was verified",
   );
-  await expect(page.locator(".entry-card")).toHaveCount(5);
+  await expect(page.locator(".entry-card")).toHaveCount(8);
   await page.getByLabel("Free only", { exact: false }).check();
-  await expect(page.locator(".entry-card")).toHaveCount(4);
+  await expect(page.locator(".entry-card")).toHaveCount(7);
   await expect(
     page.locator(".entry-list").getByText("Quack-o'-Lantern", { exact: true }),
   ).toHaveCount(0);
@@ -196,7 +196,7 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
 
 test("official badge directory searches IDs without upgrading claim evidence", async ({ page }) => {
   await page.goto("/badges/");
-  await expect(page.locator(".entry-card")).toHaveCount(9);
+  await expect(page.locator(".entry-card")).toHaveCount(13);
   await page.getByLabel("Search badges").fill("2455468832393759");
   await expect(page.locator(".entry-card")).toHaveCount(1);
   await expect(page.locator(".entry-card")).toContainText("Lord Umberhallow BLOXikin");
@@ -204,5 +204,5 @@ test("official badge directory searches IDs without upgrading claim evidence", a
   await page.getByLabel("Search badges").fill("1912601234268529");
   await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
   await page.getByLabel("Search badges").fill("10770728771");
-  await expect(page.locator(".entry-card")).toHaveCount(9);
+  await expect(page.locator(".entry-card")).toHaveCount(13);
 });
