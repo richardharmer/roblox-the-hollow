@@ -444,5 +444,93 @@
       "Complete the Dead Rails event quest and visit the Floor 3 hat display."
     ],
     "relatedRewardSlug": "cowboy-hat-of-the-dead"
+  },
+  {
+    "id": "badge-2815942081094508",
+    "slug": "badge-2815942081094508",
+    "name": "Boo & Bub",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 2815942081094508,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/2815942081094508/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3042033884649075",
+    "slug": "badge-3042033884649075",
+    "name": "The Great White Pumpkin",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3042033884649075,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3042033884649075/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3730061270233127",
+    "slug": "badge-3730061270233127",
+    "name": "Chrome Deer Skull Chain",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3730061270233127,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3730061270233127/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3319727498189296",
+    "slug": "badge-3319727498189296",
+    "name": "Anomaly Detection Rig",
+    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3319727498189296,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3319727498189296/",
+    "requirements": []
   }
 ]
