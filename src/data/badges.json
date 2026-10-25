@@ -345,9 +345,10 @@
     "id": "badge-1208009989394323",
     "slug": "badge-1208009989394323",
     "name": "Burned Necrobloxicon",
-    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "description": "Official Hub badge identity confirmed. A separate video shows the 60-Ticket Burned Necrobloxicon shop purchase and OWNED status.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "premium-day-three-shop",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
@@ -359,9 +360,12 @@
     "badgeId": 1208009989394323,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/1208009989394323/",
-    "requirements": []
+    "requirements": [
+      "Purchase the named avatar item for 60 Tickets in the hub shop; see recorded claim guide."
+    ],
+    "relatedRewardSlug": "burned-necrobloxicon"
   },
   {
     "id": "badge-3255111880715709",

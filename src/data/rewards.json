@@ -1,5 +1,38 @@
 [
   {
+    "id": "burned-necrobloxicon",
+    "slug": "burned-necrobloxicon",
+    "name": "Burned Necrobloxicon",
+    "description": "A 60-Ticket avatar shop reward. The recording shows a completed purchase, OWNED, and a balance change from 120 to 60 Tickets.",
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "premium-day-three-shop",
+      "official-hollow-badges"
+    ],
+    "costLabel": "60 earned Tickets",
+    "free": true,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "60 unspent event Tickets. This item appears in the standard Avatar Items row, separate from the Roblox Plus row.",
+      "Recorded successful shop claim; not an independent account playtest or a guarantee of delivery on every server."
+    ],
+    "steps": [
+      "Earn event badges in participating games, return to The Hollow hub and use Confirm when new badges are offered for Tickets. Check your balance; this item costs 60 Tickets.",
+      "Enter the cinema and approach the concession counter on the right. Choose Shop to open Little Shop of Terror. Visit Games is the separate participating-game menu.",
+      "Under Avatar Items, select Burned Necrobloxicon, the floating book-pages item. Verify the name and 60-Ticket price before choosing Buy. Do not confuse it with a Plus-only item or a maze tool.",
+      "After buying, look for OWNED and AVATAR ITEM OBTAINED. The recording changes from 120 to 60 Tickets. The shop says the item will show in Roblox inventory soon; check your avatar inventory separately if it is not immediately visible."
+    ],
+    "questIds": [],
+    "catalogItemId": null
+  },
+  {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",

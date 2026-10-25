@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Written steps, Tickets costs and Plus restrictions are all here.
+            Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Burned Necrobloxicon now has a recorded 60-Ticket purchase guide. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">
