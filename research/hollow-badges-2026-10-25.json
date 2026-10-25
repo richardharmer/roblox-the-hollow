@@ -1,0 +1,402 @@
+{
+  "previousPageCursor": null,
+  "nextPageCursor": null,
+  "data": [
+    {
+      "id": 2455468832393759,
+      "name": "Lord Umberhallow BLOXikin",
+      "description": null,
+      "displayName": "Lord Umberhallow BLOXikin",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 89098711909744,
+      "displayIconImageId": 89098711909744,
+      "created": "2026-10-21T18:38:29.585+00:00",
+      "updated": "2026-10-22T21:48:34.149+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 402606,
+        "awardedCount": 2108126,
+        "winRatePercentage": 0.089
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3380536009947020,
+      "name": "Witches Brew-nado",
+      "description": null,
+      "displayName": "Witches Brew-nado",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 130467395203059,
+      "displayIconImageId": 130467395203059,
+      "created": "2026-10-21T18:38:35.075+00:00",
+      "updated": "2026-10-23T17:43:07.983+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 879972,
+        "awardedCount": 1270121,
+        "winRatePercentage": 0.193
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 1158209636385797,
+      "name": "Festering Felix",
+      "description": null,
+      "displayName": "Festering Felix",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 81034480135127,
+      "displayIconImageId": 81034480135127,
+      "created": "2026-10-21T18:38:40.176+00:00",
+      "updated": "2026-10-24T21:30:51.85+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 90908,
+        "awardedCount": 136604,
+        "winRatePercentage": 0.02
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 1763079723422323,
+      "name": "Gourdlord: The Entangled",
+      "description": null,
+      "displayName": "Gourdlord: The Entangled",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 106888183323042,
+      "displayIconImageId": 106888183323042,
+      "created": "2026-10-21T18:46:08.369+00:00",
+      "updated": "2026-10-22T21:48:53.664+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 120259,
+        "awardedCount": 296779,
+        "winRatePercentage": 0.026
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 4135856183138544,
+      "name": "Haunted Harvest Crown",
+      "description": null,
+      "displayName": "Haunted Harvest Crown",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 110283401289190,
+      "displayIconImageId": 110283401289190,
+      "created": "2026-10-21T18:46:23.46+00:00",
+      "updated": "2026-10-23T17:43:19.548+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 594404,
+        "awardedCount": 808977,
+        "winRatePercentage": 0.131
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 1208009989394323,
+      "name": "Burned Necrobloxicon",
+      "description": null,
+      "displayName": "Burned Necrobloxicon",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 97186862042508,
+      "displayIconImageId": 97186862042508,
+      "created": "2026-10-21T18:46:45.021+00:00",
+      "updated": "2026-10-24T21:08:07.059+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 94698,
+        "awardedCount": 105072,
+        "winRatePercentage": 0.021
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 1912601234268529,
+      "name": "Spotlight Specter",
+      "description": null,
+      "displayName": "Spotlight Specter",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 84887811509899,
+      "displayIconImageId": 84887811509899,
+      "created": "2026-10-21T18:48:31.842+00:00",
+      "updated": "2026-10-22T19:05:13.762+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 50191,
+        "awardedCount": 161576,
+        "winRatePercentage": 0.011
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 113653722921762,
+      "name": "Incorporeal Incorporated",
+      "description": null,
+      "displayName": "Incorporeal Incorporated",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 116672136829536,
+      "displayIconImageId": 116672136829536,
+      "created": "2026-10-21T18:48:45.475+00:00",
+      "updated": "2026-10-22T19:10:26.637+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 36409,
+        "awardedCount": 102992,
+        "winRatePercentage": 0.008
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3659729077946821,
+      "name": "Phantom in the Code",
+      "description": null,
+      "displayName": "Phantom in the Code",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 136026812733571,
+      "displayIconImageId": 136026812733571,
+      "created": "2026-10-21T18:49:01.203+00:00",
+      "updated": "2026-10-22T19:10:05.321+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 50923,
+        "awardedCount": 137275,
+        "winRatePercentage": 0.011
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3758032687890331,
+      "name": "Little Plus-tergeist",
+      "description": null,
+      "displayName": "Little Plus-tergeist",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 109288401443182,
+      "displayIconImageId": 109288401443182,
+      "created": "2026-10-21T18:49:12.042+00:00",
+      "updated": "2026-10-22T19:05:29.536+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 872928,
+        "awardedCount": 5081076,
+        "winRatePercentage": 0.192
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 926854509956508,
+      "name": "All-Seeking Antlers",
+      "description": null,
+      "displayName": "All-Seeking Antlers",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 129717597803255,
+      "displayIconImageId": 129717597803255,
+      "created": "2026-10-21T18:49:43.257+00:00",
+      "updated": "2026-10-22T21:49:18.982+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 518114,
+        "awardedCount": 1323274,
+        "winRatePercentage": 0.114
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 891910194111232,
+      "name": "Reeling Petal Garland",
+      "description": null,
+      "displayName": "Reeling Petal Garland",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 85886562434452,
+      "displayIconImageId": 85886562434452,
+      "created": "2026-10-21T18:49:51.229+00:00",
+      "updated": "2026-10-23T17:43:32.161+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 951592,
+        "awardedCount": 1394977,
+        "winRatePercentage": 0.209
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3255111880715709,
+      "name": "Biter Fedora",
+      "description": null,
+      "displayName": "Biter Fedora",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 105880006603125,
+      "displayIconImageId": 105880006603125,
+      "created": "2026-10-21T18:49:57.468+00:00",
+      "updated": "2026-10-24T21:32:03.371+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 60748,
+        "awardedCount": 95855,
+        "winRatePercentage": 0.013
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 76777109677652,
+      "name": "Quack-o'-Lantern",
+      "description": null,
+      "displayName": "Quack-o'-Lantern",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 107032591863359,
+      "displayIconImageId": 107032591863359,
+      "created": "2026-10-21T18:52:45.722+00:00",
+      "updated": "2026-10-22T21:49:29.362+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 37679,
+        "awardedCount": 137592,
+        "winRatePercentage": 0.008
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3557398016002690,
+      "name": "Trick or Treat Squid",
+      "description": null,
+      "displayName": "Trick or Treat Squid",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 138385087728316,
+      "displayIconImageId": 138385087728316,
+      "created": "2026-10-21T18:52:59.221+00:00",
+      "updated": "2026-10-24T21:08:02.526+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 61805,
+        "awardedCount": 66948,
+        "winRatePercentage": 0.014
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 1585089789720925,
+      "name": "The Beasthammer",
+      "description": null,
+      "displayName": "The Beasthammer",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 113786784023021,
+      "displayIconImageId": 113786784023021,
+      "created": "2026-10-21T18:54:42.638+00:00",
+      "updated": "2026-10-22T21:49:38.657+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 461087,
+        "awardedCount": 1034180,
+        "winRatePercentage": 0.101
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 3550249711586682,
+      "name": "Fuwatty Side Satchel",
+      "description": null,
+      "displayName": "Fuwatty Side Satchel",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 111818218994508,
+      "displayIconImageId": 111818218994508,
+      "created": "2026-10-21T18:54:48.565+00:00",
+      "updated": "2026-10-23T17:43:50.011+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 332205,
+        "awardedCount": 438688,
+        "winRatePercentage": 0.073
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    },
+    {
+      "id": 79182670138641,
+      "name": "Cowboy Hat of the Dead",
+      "description": null,
+      "displayName": "Cowboy Hat of the Dead",
+      "displayDescription": null,
+      "enabled": true,
+      "iconImageId": 129874247945800,
+      "displayIconImageId": 129874247945800,
+      "created": "2026-10-21T18:54:57.419+00:00",
+      "updated": "2026-10-24T21:34:14.278+00:00",
+      "statistics": {
+        "pastDayAwardedCount": 16192,
+        "awardedCount": 38483,
+        "winRatePercentage": 0.004
+      },
+      "awardingUniverse": {
+        "id": 10770728771,
+        "name": "The Hollow",
+        "rootPlaceId": 116463962153167
+      }
+    }
+  ]
+}

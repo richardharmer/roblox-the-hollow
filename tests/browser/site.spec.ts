@@ -44,6 +44,9 @@ for (const width of [375, 390, 768, 1440])
       .getByRole("link", { name: "Games", exact: true })
       .click();
     await expect(page.locator("h1")).toHaveText("The Hollow Games");
+    // Leaving a Social Bar page loads a fresh document; wait for client effects
+    // before typing so hydration cannot replace the initial server-rendered input.
+    await expect(page.locator(".ad-header script[src]")).toHaveCount(1);
     await page.getByLabel("Search games").fill("nonexistent");
     await expect(
       page.getByRole("heading", { name: "No matching games", exact: true }),
@@ -208,4 +211,24 @@ test("official badge directory searches IDs without upgrading claim evidence", a
   await expect(page.locator(".entry-card")).toHaveCount(
     badges.filter((badge) => badge.universeId === 10770728771).length,
   );
+});
+
+
+test("new Hub badge identities remain separate from unverified claim instructions", async ({ page }) => {
+  await page.goto("/badges/");
+  await expect(page.locator(".prose").first()).toContainText("18 enabled Hub badges");
+  for (const [id, name] of [
+    ["1158209636385797", "Festering Felix"],
+    ["1208009989394323", "Burned Necrobloxicon"],
+    ["3255111880715709", "Biter Fedora"],
+    ["3557398016002690", "Trick or Treat Squid"],
+    ["79182670138641", "Cowboy Hat of the Dead"],
+  ]) {
+    await page.getByLabel("Search badges").fill(id);
+    await expect(page.locator(".entry-card")).toHaveCount(1);
+    await expect(page.locator(".entry-card")).toContainText(name);
+    await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
+  }
+  await page.goto("/rewards/");
+  await expect(page.getByRole("link", { name: "Check all 18 official Hub badge IDs →" })).toBeVisible();
 });

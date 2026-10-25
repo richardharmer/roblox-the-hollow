@@ -1082,6 +1082,10 @@ details p {
 .ad-banner .ad-frame-space {
   min-height: 50px;
 }
+.ad-native .ad-frame-space {
+  min-height: 250px;
+  display: block;
+}
 .ad-rectangle .ad-frame-space {
   min-height: 250px;
 }

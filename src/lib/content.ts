@@ -23,6 +23,7 @@ export const games = gameSchema.array().parse(gamesRaw);
 export const quests = questSchema.array().parse(questsRaw);
 export const rewards = rewardSchema.array().parse(rewardsRaw);
 export const badges = badgeSchema.array().parse(badgesRaw);
+export const hollowBadges = badges.filter((badge) => badge.universeId === 10770728771 && badge.enabled);
 export const sources = sourceSchema.array().parse(sourcesRaw);
 export const teasers = teaserSchema.array().parse(teasersRaw);
 export const gameProfiles = gameProfileSchema.array().parse(gameProfilesRaw);

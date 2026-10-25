@@ -64,6 +64,7 @@ export default function Puzzle() {
             answers, quest steps or item unlock requirements.
           </p>
         </section>
+        <AdSlot placement="native" />
         <section id="qr-code">
           <h2>Is there a verified Hollow QR code or secret word?</h2>
           <p>

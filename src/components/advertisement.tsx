@@ -12,7 +12,7 @@ let bannerQueue = Promise.resolve();
 export function Advertisement({
   placement,
 }: {
-  placement: "header" | "content" | "sidebar" | "footer";
+  placement: "header" | "content" | "sidebar" | "footer" | "native";
 }) {
   const container = useRef<HTMLElement>(null);
   const host = useRef<HTMLDivElement>(null);
@@ -26,7 +26,7 @@ export function Advertisement({
     let finish: (() => void) | undefined;
     bannerQueue = bannerQueue.then(() => {
       if (cancelled || !target.isConnected) return;
-      const unit = banner
+      const unit = placement === "native" ? "native" : banner
         ? element.clientWidth >= 728
           ? "desktop"
           : element.clientWidth >= 320
@@ -54,7 +54,7 @@ export function Advertisement({
   return (
     <aside
       ref={container}
-      className={`ad-slot ad-${placement} ${banner ? "ad-banner" : "ad-rectangle"}`}
+      className={`ad-slot ad-${placement} ${placement === "native" ? "ad-native" : banner ? "ad-banner" : "ad-rectangle"}`}
       aria-label="Advertisement"
       data-ad-provider="adsterra"
     >

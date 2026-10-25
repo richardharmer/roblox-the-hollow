@@ -134,6 +134,7 @@ export default function Home() {
           PROMOTIONAL ART · ROBLOX / INSTAGRAM ↗
         </a>
       </section>
+      <AdSlot placement="native" />
       <RewardBoard compact />
       <EventSchedule />
       <div className="stat-bar">

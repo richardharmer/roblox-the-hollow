@@ -505,9 +505,9 @@
     "url": "https://badges.roblox.com/v1/universes/10770728771/badges?limit=100&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Direct read October 24 Beijing (October 23 UTC): 13 enabled badges, null next cursor and empty descriptions. Four newly observed identities: Witches Brew-nado, Haunted Harvest Crown, Reeling Petal Garland and Fuwatty Side Satchel. First observed is not creation time. No claim steps, cost, free/Plus eligibility or delivery established.",
-    "lastCheckedAt": "2026-10-23",
-    "lastSuccessAt": "2026-10-23"
+    "note": "Direct read October 25 Beijing: 18 enabled Hub badges, null next-page cursor and empty descriptions. Five identities added to our directory: Festering Felix, Burned Necrobloxicon, Biter Fedora, Trick or Treat Squid and Cowboy Hat of the Dead. API timestamps for these five show creation October 21 UTC (October 22 Beijing), last update October 24 UTC (October 25 Beijing); these are not newly created today. Identity and enabled status do not establish claim steps, price, free/Plus eligibility or avatar-item delivery.",
+    "lastCheckedAt": "2026-10-25",
+    "lastSuccessAt": "2026-10-25"
   },
   {
     "id": "official-leaves-badge",

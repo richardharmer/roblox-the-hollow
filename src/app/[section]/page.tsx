@@ -19,6 +19,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   collections,
+  hollowBadges,
   event,
   sources,
   updates,
@@ -118,6 +119,7 @@ export default async function Section({
           {section === "rewards" && (
             <>
               <RewardIssueNotice />
+              <AdSlot placement="native" />
               <RewardBoard />
               <LauncherGhostsGuide />
               <TicketsGuide />
@@ -133,6 +135,7 @@ export default async function Section({
                   {collections.quests.filter((quest) => quest.publishDetail).length} written walkthroughs cover the reviewed event tasks, including both maze nights and participating experiences. Recordings, official written requirements and community reports are attributed in each guide.
                 </p>
               </div>
+              <AdSlot placement="native" />
               <Directory kind="quests" />
               <TicketsGuide />
             </>
@@ -140,6 +143,7 @@ export default async function Section({
           {section === "games" && (
             <>
               <LivestreamSchedule />
+              <AdSlot placement="native" />
               <FullLineup />
             </>
           )}
@@ -155,10 +159,10 @@ export default async function Section({
               <div className="prose">
                 <h2>Official badge IDs and verification status</h2>
                 <p>
-                  Thirteen enabled badges were returned by Roblox’s official API for
-                  The Hollow universe 10770728771 on October 24 (Beijing), with no
+                  {hollowBadges.length} enabled Hub badges were returned by Roblox’s official API for
+                  The Hollow universe 10770728771 on October 25 (Beijing), with no
                   next-page cursor. Search by name, Badge ID or Universe ID
-                  below.
+                  below. The directory also includes separately verified badges from participating experiences.
                 </p>
                 <p>
                   CONFIRMED refers to badge identity and universe ownership.
@@ -170,6 +174,7 @@ export default async function Section({
                 </p>
                 <SourceList ids={["official-hollow-badges"]} />
               </div>
+              <AdSlot placement="native" />
               <Directory kind="badges" />
               <HuntedBriefing />
             </>
@@ -322,6 +327,7 @@ export default async function Section({
         <div className="prose">
           <Status level={event.dateVerification} />
           <EventSchedule />
+          <AdSlot placement="native" />
           <h2>Where does the schedule come from?</h2>
           <p>
             Roblox published the official Newsroom announcement on October 21;

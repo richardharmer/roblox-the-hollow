@@ -9,7 +9,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -32,7 +32,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -55,7 +55,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -77,7 +77,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -99,7 +99,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -121,7 +121,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -143,7 +143,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -166,7 +166,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -189,7 +189,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-23",
-    "lastVerifiedAt": "2026-10-23",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-23",
     "publishDetail": false,
     "image": null,
@@ -213,7 +213,7 @@
       "waffle-night-two"
     ],
     "firstSeenAt": "2026-10-24",
-    "lastVerifiedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-24",
     "publishDetail": false,
     "image": null,
@@ -236,7 +236,7 @@
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-24",
-    "lastVerifiedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-24",
     "publishDetail": false,
     "image": null,
@@ -259,7 +259,7 @@
       "waffle-night-two"
     ],
     "firstSeenAt": "2026-10-24",
-    "lastVerifiedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-24",
     "publishDetail": false,
     "image": null,
@@ -283,7 +283,7 @@
       "waffle-night-two"
     ],
     "firstSeenAt": "2026-10-24",
-    "lastVerifiedAt": "2026-10-24",
+    "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-24",
     "publishDetail": false,
     "image": null,
@@ -313,6 +313,116 @@
     "gameId": "demonology",
     "badgeId": 90161806056386,
     "robloxUrl": "https://www.roblox.com/badges/90161806056386/",
+    "requirements": []
+  },
+  {
+    "id": "badge-1158209636385797",
+    "slug": "badge-1158209636385797",
+    "name": "Festering Felix",
+    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1158209636385797,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/1158209636385797/",
+    "requirements": []
+  },
+  {
+    "id": "badge-1208009989394323",
+    "slug": "badge-1208009989394323",
+    "name": "Burned Necrobloxicon",
+    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1208009989394323,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/1208009989394323/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3255111880715709",
+    "slug": "badge-3255111880715709",
+    "name": "Biter Fedora",
+    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3255111880715709,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3255111880715709/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3557398016002690",
+    "slug": "badge-3557398016002690",
+    "name": "Trick or Treat Squid",
+    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3557398016002690,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3557398016002690/",
+    "requirements": []
+  },
+  {
+    "id": "badge-79182670138641",
+    "slug": "badge-79182670138641",
+    "name": "Cowboy Hat of the Dead",
+    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 79182670138641,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/79182670138641/",
     "requirements": []
   }
 ]

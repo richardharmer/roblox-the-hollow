@@ -3,6 +3,10 @@ import { adCodes } from "../../src/lib/ad-codes";
 
 async function stubAds(page: Page) {
   await page.route("https://bicea.org/**", async (route) => {
+    if (route.request().url().includes("/21/")) {
+      await route.fulfill({ contentType: "application/javascript", body: `var nativeContainer = document.getElementById('container-a3c4d96df4650a272f65a144fd62d913'); nativeContainer.textContent = 'Test native advertisement'; nativeContainer.style.height = '180px';` });
+      return;
+    }
     if (route.request().url().includes("/14/")) {
       await route.fulfill({ contentType: "application/javascript", body: "window.socialTrialLoaded = true;" });
       return;
@@ -41,6 +45,10 @@ for (const [width, unit, key, adWidth, adHeight] of [
     // Exact original inline script text, and no added external script attributes.
     expect(await header.locator("script").first().textContent()).toBe(adCodes[unit].split("<script>")[1].split("</script>")[0]);
     expect(await header.locator("script[src]").evaluate((el) => el.outerHTML)).toBe(adCodes[unit].split("\n").at(-1));
+    const native = page.locator(".ad-native");
+    await expect(native).toContainText("Test native advertisement");
+    expect(await native.locator("script").evaluate((el) => el.outerHTML)).toBe(adCodes.native.split("\n")[0]);
+    expect(await native.evaluate((el) => Boolean(el.compareDocumentPosition(document.querySelector('#reward-board')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
     await expect(page.locator(".ad-sidebar iframe")).toHaveAttribute("data-test-key", "5eab9d566df2017b106271025e01263d");
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.setViewportSize({ width: width + 20, height: 900 });

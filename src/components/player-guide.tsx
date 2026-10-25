@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { rewards } from "@/lib/content";
+import { rewards, hollowBadges } from "@/lib/content";
 import { SourceList, Status } from "./ui";
 
 export function RewardIssueNotice() {
@@ -40,7 +40,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         Night 2 adds three quest rewards. Seven earned rewards and one Plus-only shop item are documented below. Read the requirements here,
         then follow the written claim guide.
       </p>
-      <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all 13 official badge IDs →</Link></p>
+      <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
       <div className="player-reward-list">
         {rewards.map((reward) => (
           <article key={reward.id} className="player-reward-row">
