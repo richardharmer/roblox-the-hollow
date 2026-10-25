@@ -1,16 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import { adCodes } from "@/lib/ad-codes";
 
-const units = {
-  desktop: { key: "3b697ed4f08c77989d03b8459db477b6", width: 728, height: 90 },
-  mobile: { key: "9a1a7edc1c25c225ff7981e4aa8e1fbc", width: 320, height: 50 },
-  rectangle: {
-    key: "5eab9d566df2017b106271025e01263d",
-    width: 300,
-    height: 250,
-  },
-} as const;
+// React does not execute scripts assigned with innerHTML. Insert the original
+// snippet as an executable fragment, without altering its scripts or attributes.
+// Banner snippets share the vendor's atOptions global; finish one external
+// script before inserting the next snippet so their settings cannot race.
+let bannerQueue = Promise.resolve();
 
 export function Advertisement({
   placement,
@@ -18,40 +15,42 @@ export function Advertisement({
   placement: "header" | "content" | "sidebar" | "footer";
 }) {
   const container = useRef<HTMLElement>(null);
-  const [unit, setUnit] = useState<keyof typeof units | null>(null);
+  const host = useRef<HTMLDivElement>(null);
   const banner = placement === "header" || placement === "footer";
+
   useEffect(() => {
     const element = container.current;
-    if (!element) return;
-    // Choose once per mount: never request a hidden mobile/desktop unit or
-    // refresh paid impressions just because the viewport is resized.
-    const load = () =>
-      setUnit(
-        banner
-          ? element.clientWidth >= 728
-            ? "desktop"
-            : element.clientWidth >= 320
-              ? "mobile"
-              : "rectangle"
-          : "rectangle",
-      );
-    if (placement === "header" || !("IntersectionObserver" in window)) {
-      load();
-      return;
-    }
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          load();
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "200px" },
-    );
-    observer.observe(element);
-    return () => observer.disconnect();
+    const target = host.current;
+    if (!element || !target) return;
+    let cancelled = false;
+    let finish: (() => void) | undefined;
+    bannerQueue = bannerQueue.then(() => {
+      if (cancelled || !target.isConnected) return;
+      const unit = banner
+        ? element.clientWidth >= 728
+          ? "desktop"
+          : element.clientWidth >= 320
+            ? "mobile"
+            : "rectangle"
+        : "rectangle";
+      const range = document.createRange();
+      range.selectNodeContents(target);
+      const fragment = range.createContextualFragment(adCodes[unit]);
+      const script = fragment.querySelector<HTMLScriptElement>("script[src]")!;
+      return new Promise<void>((resolve) => {
+        finish = resolve;
+        script.addEventListener("load", () => resolve(), { once: true });
+        script.addEventListener("error", () => resolve(), { once: true });
+        target.append(fragment);
+      });
+    });
+    return () => {
+      cancelled = true;
+      target.replaceChildren();
+      finish?.();
+    };
   }, [banner, placement]);
-  const selected = unit ? units[unit] : null;
+
   return (
     <aside
       ref={container}
@@ -60,20 +59,40 @@ export function Advertisement({
       data-ad-provider="adsterra"
     >
       <span className="ad-label">Advertisement</span>
-      <div className="ad-frame-space">
-        {selected && (
-          <iframe
-            title={`Advertisement — ${placement}`}
-            width={selected.width}
-            height={selected.height}
-            scrolling="no"
-            referrerPolicy="strict-origin-when-cross-origin"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-            data-ad-key={selected.key}
-            srcDoc={`<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body><script>var atOptions=${JSON.stringify({ key: selected.key, format: "iframe", height: selected.height, width: selected.width, params: {} })};</script><script src="https://bicea.org/22/${selected.key}"></script></body></html>`}
-          />
-        )}
-      </div>
+      <div ref={host} className="ad-frame-space" />
     </aside>
   );
+}
+
+// Page-limited trial: only the puzzle landing page mounts this component.
+// The provider's original script is inserted directly at the end of the body.
+export function SocialBarTrial() {
+  useEffect(() => {
+    if (process.env.NEXT_PUBLIC_ADS_ENABLED === "false") return;
+    if (!document.querySelector('script[src="https://bicea.org/14/278e37b3554f367cf51584d5599e6289"]')) {
+      const range = document.createRange();
+      range.selectNodeContents(document.body);
+      document.body.append(range.createContextualFragment(adCodes.social));
+    }
+    // The provider has no supplied SPA teardown. Leave this trial through a
+    // normal document navigation so its overlays cannot persist on other pages.
+    const navigate = (event: MouseEvent) => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const anchor = (event.target as Element | null)?.closest("a");
+      if (!anchor || anchor.target || anchor.hasAttribute("download")) return;
+      const url = new URL(anchor.href, location.href);
+      if (url.origin !== location.origin || url.pathname === location.pathname) return;
+      event.preventDefault();
+      event.stopPropagation();
+      location.assign(url.href);
+    };
+    const reload = () => location.reload();
+    document.addEventListener("click", navigate, true);
+    window.addEventListener("popstate", reload);
+    return () => {
+      document.removeEventListener("click", navigate, true);
+      window.removeEventListener("popstate", reload);
+    };
+  }, []);
+  return null;
 }

@@ -98,6 +98,7 @@ export function GameProfile({ id }: { id: string }) {
               <Link href="/rewards/">View documented rewards</Link>
             </p>
           </section>
+          <AdSlot placement="content" />
           <section id="teaser-evidence">
             <h2>The Instagram teaser</h2>
             <div className="game-teaser-evidence">

@@ -1,65 +1,76 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
+import { adCodes } from "../../src/lib/ad-codes";
 
-for (const [width, key, adWidth, adHeight] of [
-  [320, "5eab9d566df2017b106271025e01263d", 300, 250],
-  [375, "9a1a7edc1c25c225ff7981e4aa8e1fbc", 320, 50],
-  [768, "9a1a7edc1c25c225ff7981e4aa8e1fbc", 320, 50],
-  [1440, "3b697ed4f08c77989d03b8459db477b6", 728, 90],
-] as const) {
-  test(`ad request, isolation and stable layout at ${width}px`, async ({
-    page,
-  }) => {
-    const requests: string[] = [];
-    await page.route("https://bicea.org/**", async (route) => {
-      requests.push(route.request().url());
-      await route.fulfill({
-        contentType: "application/javascript",
-        body: "document.body.dataset.testLoaded = atOptions.key;",
-      });
+async function stubAds(page: Page) {
+  await page.route("https://bicea.org/**", async (route) => {
+    if (route.request().url().includes("/14/")) {
+      await route.fulfill({ contentType: "application/javascript", body: "window.socialTrialLoaded = true;" });
+      return;
+    }
+    // Deliberately slow the first banner: a second slot must not overwrite
+    // atOptions before this script consumes the provider's global settings.
+    if (route.request().url().includes("3b697")) await new Promise((resolve) => setTimeout(resolve, 100));
+    await route.fulfill({
+      contentType: "application/javascript",
+      body: `var frame = document.createElement('iframe');
+frame.dataset.testKey = atOptions.key;
+frame.width = atOptions.width;
+frame.height = atOptions.height;
+frame.title = 'Provider creative';
+document.currentScript.after(frame);`,
     });
-    await page.setViewportSize({ width, height: 900 });
-    await page.goto("/");
-    const ad = page.locator(".ad-header iframe");
-    await expect(ad).toHaveAttribute("data-ad-key", key);
-    await expect(ad).toHaveAttribute("width", String(adWidth));
-    await expect(ad).toHaveAttribute("height", String(adHeight));
-    await expect(
-      page.frameLocator(".ad-header iframe").locator("body"),
-    ).toHaveAttribute("data-test-loaded", key);
-    expect(requests).toEqual([`https://bicea.org/22/${key}`]);
-    expect(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth,
-      ),
-    ).toBe(true);
-    // Resizing may change the slot, but must not generate extra impressions.
-    await page.setViewportSize({ width: width + 20, height: 900 });
-    await expect(ad).toHaveAttribute("data-ad-key", key);
-    expect(requests).toHaveLength(1);
-    await page.locator(".ad-sidebar").scrollIntoViewIfNeeded();
-    await expect(
-      page.frameLocator(".ad-sidebar iframe").locator("body"),
-    ).toHaveAttribute("data-test-loaded", "5eab9d566df2017b106271025e01263d");
-    expect(requests).toHaveLength(2);
   });
 }
 
-test("content pages load ads after navigation; privacy remains ad-free", async ({
-  page,
-}) => {
-  await page.route("https://bicea.org/**", (route) =>
-    route.fulfill({ contentType: "application/javascript", body: "" }),
-  );
+for (const [width, unit, key, adWidth, adHeight] of [
+  [320, "rectangle", "5eab9d566df2017b106271025e01263d", 300, 250],
+  [375, "mobile", "9a1a7edc1c25c225ff7981e4aa8e1fbc", 320, 50],
+  [768, "mobile", "9a1a7edc1c25c225ff7981e4aa8e1fbc", 320, 50],
+  [1440, "desktop", "3b697ed4f08c77989d03b8459db477b6", 728, 90],
+] as const) {
+  test(`original snippets execute directly with correct settings at ${width}px`, async ({ page }) => {
+    await stubAds(page);
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/");
+    const header = page.locator(".ad-header");
+    const ad = header.locator("iframe");
+    await expect(ad).toHaveAttribute("data-test-key", key);
+    await expect(ad).toHaveAttribute("width", String(adWidth));
+    await expect(ad).toHaveAttribute("height", String(adHeight));
+    await expect(header.locator("iframe[srcdoc], iframe[sandbox]")).toHaveCount(0);
+    // Exact original inline script text, and no added external script attributes.
+    expect(await header.locator("script").first().textContent()).toBe(adCodes[unit].split("<script>")[1].split("</script>")[0]);
+    expect(await header.locator("script[src]").evaluate((el) => el.outerHTML)).toBe(adCodes[unit].split("\n").at(-1));
+    await expect(page.locator(".ad-sidebar iframe")).toHaveAttribute("data-test-key", "5eab9d566df2017b106271025e01263d");
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.setViewportSize({ width: width + 20, height: 900 });
+    await expect(ad).toHaveAttribute("data-test-key", key);
+    await expect(header.locator("script[src]")).toHaveCount(1);
+  });
+}
+
+test("Social Bar runs only on the trial page and is discarded on navigation", async ({ page }) => {
+  await stubAds(page);
+  await page.goto("/");
+  await expect(page.locator('script[src*="bicea.org/14/"]')).toHaveCount(0);
   await page.goto("/puzzle/");
-  await expect(page.locator(".ad-header iframe")).toHaveCount(1);
-  await page
-    .getByRole("link", { name: "release-date briefing", exact: true })
-    .click();
+  const social = page.locator('script[src*="bicea.org/14/"]');
+  await expect(social).toHaveCount(1);
+  expect(await social.evaluate((el) => el.outerHTML)).toBe(adCodes.social);
+  await expect(page.locator(".ad-content iframe")).toHaveCount(1);
+  await page.getByRole("link", { name: "release-date briefing", exact: true }).click();
   await expect(page).toHaveURL(/release-date/);
   await expect(page.locator(".ad-header iframe")).toHaveCount(1);
+  await expect(page.locator('script[src*="bicea.org/14/"]')).toHaveCount(0);
   await page.goto("/privacy/");
   await expect(page.locator("[data-ad-provider]")).toHaveCount(0);
-  await expect(
-    page.getByRole("link", { name: "Adsterra Privacy Policy" }),
-  ).toBeVisible();
+  await expect(page.locator('script[src*="bicea.org"]')).toHaveCount(0);
+});
+
+test("long walkthrough includes a second placement after the complete steps", async ({ page }) => {
+  await stubAds(page);
+  await page.goto("/quests/night-two-pillars/");
+  await expect(page.locator(".ad-header iframe")).toHaveCount(1);
+  await expect(page.locator(".ad-content iframe")).toHaveCount(1);
+  expect(await page.locator(".ad-content").evaluate((el) => Boolean(el.previousElementSibling?.classList.contains("step-list")))).toBe(true);
 });

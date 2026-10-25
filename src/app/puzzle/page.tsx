@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SocialBarTrial } from "@/components/advertisement";
 import {
   AdSlot,
   Breadcrumb,
@@ -18,6 +19,7 @@ export const generateMetadata = () =>
 export default function Puzzle() {
   return (
     <div className="container page-content">
+      <SocialBarTrial />
       <Breadcrumb items={[{ name: "The Hollow puzzle", path: "/puzzle/" }]} />
       <PageHead
         eyebrow="TEASER EVIDENCE / OCTOBER 22, 2026"

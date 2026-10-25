@@ -585,7 +585,8 @@ export default async function Section({
           </p>
           <p>
             We display labeled Adsterra advertisements to support this
-            independent guide. Loading an advertisement contacts Adsterra and
+            independent guide. The puzzle briefing also trials Adsterra Social
+            Bar ads, which may float over the page. Loading an advertisement contacts Adsterra and
             its delivery partners, which may process your IP address, device and
             browser information, page/referrer information, cookies and ad
             interactions. Ads are third-party promotions, not Roblox rewards or

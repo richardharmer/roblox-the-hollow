@@ -215,6 +215,10 @@ export function Detail({
             </ol>
           </>
         )}
+        {(("steps" in entry && entry.steps.length >= 3) ||
+          ("walkthrough" in entry && entry.walkthrough.length >= 3)) && (
+          <AdSlot placement="content" />
+        )}
         {"troubleshooting" in entry && entry.troubleshooting.length > 0 && (
           <>
             <h2>Troubleshooting</h2>
