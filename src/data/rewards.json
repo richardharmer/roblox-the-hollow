@@ -8,6 +8,43 @@
     "image": null,
     "gameId": "the-hollow-2026",
     "sources": [
+      "waffle-dead-rails",
+      "official-hollow-badges"
+    ],
+    "id": "cowboy-hat-of-the-dead",
+    "slug": "cowboy-hat-of-the-dead",
+    "name": "Cowboy Hat of the Dead",
+    "description": "Complete Dead Rails Edison’s Revenge, then visit the left-hand hat display in the hub’s Floor 3 Dead Rails room.",
+    "steps": [
+      "In Dead Rails, press Play and choose Edison’s Revenge, the second option in the recording. Search the walls around spawn for Investigate the stain. Interact, collect the key that appears below you, and use it on the train lock.",
+      "Enter the changed train and move through its carriages. Pick up weapons and ammunition along the way. At the first locked door, go outside and defeat enemies until you obtain the bank combination.",
+      "Take the combination into the bank. Click and drag the vault wheel clockwise to each successive number on your paper. The video uses 55434; use your own combination rather than treating this as a universal code. Collect the key inside and unlock the train door.",
+      "Continue to the next locked door and fight the enemies outside. The creator recommends finding a rifle before this section. After clearing the ordinary enemies, enter the prison and interact with the key on the rock.",
+      "Pulling the prison key triggers a boss fight. Defeat the boss, retrieve the key, return to the train and unlock the next door. Continue to the final carriage and cutscene; the creator reports receiving the event badge after being teleported back.",
+      "Return to The Hollow hub on the same account. Take the cinema elevator to Floor 3, explore until you find the Dead Rails room, and interact with the cowboy-hat display on the left. Check your avatar inventory after claiming. The video shows the display and describes claiming; independent inventory delivery has not been tested here."
+    ],
+    "questIds": [
+      "dead-rails-edisons-revenge"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Dead Rails event quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the recorded event quest and visit the separate hub display.",
+      "Claim route is video-reported; badge identity alone does not prove avatar inventory delivery."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
       "waffle-night-three-floor",
       "official-hollow-badges"
     ],

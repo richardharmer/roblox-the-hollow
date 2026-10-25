@@ -768,5 +768,15 @@
     "note": "October 25: read full 0:00–1:55 native transcript and inspected paused gameplay at 0:37 (riddle: shortest lives, small to tall), 1:32 (Grave Lock I/II/III), 1:42 (Got it relic message), 1:50 (elevator return). Reward inventory delivery is creator-reported, not independently shown in an inventory inspection or tested on our account. Example symbols are not a universal code.",
     "lastCheckedAt": "2026-10-25",
     "lastSuccessAt": "2026-10-25"
+  },
+  {
+    "id": "waffle-dead-rails",
+    "name": "WaffleTrades — Dead Rails event badge and hat (full video review)",
+    "url": "https://www.youtube.com/watch?v=sYL-7EhMXZI",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 25: full native transcript 0:00–3:01 read. Key frames inspected at 0:24 Investigate the stain; 1:14 bank wheel and example 55434; 2:07 prison key; 2:50 Floor 3 corridor; 2:55 cowboy-hat display. Creator describes completing the train and claiming at the left display. No separate avatar-inventory inspection or account playtest. No Tickets amount inferred.",
+    "lastCheckedAt": "2026-10-25",
+    "lastSuccessAt": "2026-10-25"
   }
 ]

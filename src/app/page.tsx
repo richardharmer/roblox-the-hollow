@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Night 3 guide: compare eight grave lifespans, unlock the coffin and return the relic for Festering Felix. Night 1 and Night 2 guides are also available. Written steps, Tickets costs and Plus restrictions are all here.
+            Night 3 guides: solve the grave puzzle for Festering Felix, or complete Dead Rails Edison’s Revenge and claim Cowboy Hat of the Dead. Night 1 and Night 2 guides are also available. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">

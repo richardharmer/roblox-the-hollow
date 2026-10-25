@@ -411,9 +411,10 @@
     "id": "badge-79182670138641",
     "slug": "badge-79182670138641",
     "name": "Cowboy Hat of the Dead",
-    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "description": "Official Hub badge identity confirmed. Separate video documents Dead Rails Edison’s Revenge and the Floor 3 hat display; claim instructions remain community-reported.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "waffle-dead-rails",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
@@ -425,8 +426,11 @@
     "badgeId": 79182670138641,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/79182670138641/",
-    "requirements": []
+    "requirements": [
+      "Complete the Dead Rails event quest and visit the Floor 3 hat display."
+    ],
+    "relatedRewardSlug": "cowboy-hat-of-the-dead"
   }
 ]

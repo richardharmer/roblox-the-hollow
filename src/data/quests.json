@@ -8,6 +8,63 @@
     "image": null,
     "gameId": "the-hollow-2026",
     "sources": [
+      "waffle-dead-rails",
+      "official-hollow-badges"
+    ],
+    "id": "dead-rails-edisons-revenge",
+    "slug": "dead-rails-edisons-revenge",
+    "name": "Dead Rails: Edison’s Revenge and Cowboy Hat of the Dead",
+    "description": "Find the stain key, unlock the bank vault, defeat the prison boss and finish the train, then claim the hat in the hub’s Floor 3 Dead Rails room.",
+    "steps": [
+      "In Dead Rails, press Play and choose Edison’s Revenge, the second option in the recording. Search the walls around spawn for Investigate the stain. Interact, collect the key that appears below you, and use it on the train lock.",
+      "Enter the changed train and move through its carriages. Pick up weapons and ammunition along the way. At the first locked door, go outside and defeat enemies until you obtain the bank combination.",
+      "Take the combination into the bank. Click and drag the vault wheel clockwise to each successive number on your paper. The video uses 55434; use your own combination rather than treating this as a universal code. Collect the key inside and unlock the train door.",
+      "Continue to the next locked door and fight the enemies outside. The creator recommends finding a rifle before this section. After clearing the ordinary enemies, enter the prison and interact with the key on the rock.",
+      "Pulling the prison key triggers a boss fight. Defeat the boss, retrieve the key, return to the train and unlock the next door. Continue to the final carriage and cutscene; the creator reports receiving the event badge after being teleported back.",
+      "Return to The Hollow hub on the same account. Take the cinema elevator to Floor 3, explore until you find the Dead Rails room, and interact with the cowboy-hat display on the left. Check your avatar inventory after claiming. The video shows the display and describes claiming; independent inventory delivery has not been tested here."
+    ],
+    "tips": [
+      "Collect ammunition before leaving the train. The creator found the revolver challenging and recommends a rifle.",
+      "The bank combination is an in-game puzzle, not a redeem code. No Ticket purchase or Plus requirement appears in this recorded quest route."
+    ],
+    "troubleshooting": [
+      "Wrong vault combination: read the dropped paper and enter its numbers clockwise in order. Do not assume the example 55434 applies.",
+      "At the prison, pulling the key is not the end: defeat the boss and take the key before returning to the locked train door.",
+      "Completing Dead Rails and claiming the avatar item are separate steps. If no hat arrives, check the event badge and then visit the Floor 3 display; no universal delivery fix is verified."
+    ],
+    "estimatedMinutes": null,
+    "prerequisites": [
+      "Access to Dead Rails Edison’s Revenge and the hub’s Floor 3.",
+      "Community video reviewed October 25; not an account playtest."
+    ],
+    "videoChapters": [
+      {
+        "label": "0:16 — Find the stain and first key",
+        "url": "https://www.youtube.com/watch?v=sYL-7EhMXZI&t=16s"
+      },
+      {
+        "label": "1:06 — Bank combination and vault",
+        "url": "https://www.youtube.com/watch?v=sYL-7EhMXZI&t=66s"
+      },
+      {
+        "label": "1:58 — Prison key and boss",
+        "url": "https://www.youtube.com/watch?v=sYL-7EhMXZI&t=118s"
+      },
+      {
+        "label": "2:36 — Hub Floor 3 claim location",
+        "url": "https://www.youtube.com/watch?v=sYL-7EhMXZI&t=156s"
+      }
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
       "waffle-night-three-floor",
       "official-hollow-badges"
     ],
