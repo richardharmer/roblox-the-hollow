@@ -449,23 +449,27 @@
     "id": "badge-2815942081094508",
     "slug": "badge-2815942081094508",
     "name": "Boo & Bub",
-    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "description": "Official Hub badge identity confirmed. Separate creator footage documents the Floor 4 tile-path puzzle, relic return and Boo & Bub Item Owned page.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "cocajola-night-four",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
-    "updatedAt": "2026-10-25",
+    "updatedAt": "2026-10-26",
     "publishDetail": false,
     "image": null,
     "gameId": "the-hollow-2026",
     "badgeId": 2815942081094508,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/2815942081094508/",
-    "requirements": []
+    "requirements": [
+      "Finish the Floor 4 path puzzle and return with the relic."
+    ],
+    "relatedRewardSlug": "boo-and-bub"
   },
   {
     "id": "badge-3042033884649075",

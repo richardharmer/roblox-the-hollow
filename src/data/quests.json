@@ -1,6 +1,60 @@
 [
   {
     "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "cocajola-night-four",
+      "official-hollow-badges"
+    ],
+    "id": "night-four-path",
+    "slug": "night-four-path",
+    "name": "Night 4: follow the tile path and earn Boo & Bub",
+    "description": "Find the 99 Nights room on Floor 4, repeat the demonstrated tile path, collect the relic and return to the elevator. Includes retry and inventory checks.",
+    "steps": [
+      "Enter the cinema elevator in The Hollow and select Floor 4. Explore the maze until you find the 99 Nights in the Forest room with a tiled floor and red laser barrier. The recording does not establish one fixed corridor route for every run.",
+      "Stop at the puzzle entrance and watch the demonstration character cross the tiles. Note the order of the glowing tiles from your starting side. Follow that demonstrated path rather than jumping over the red barrier or guessing a universal left/right code.",
+      "Walk the same tile sequence. If you step incorrectly, return to the start and watch the demonstration again; the video shows a failed attempt followed by a successful retry. Copy the path shown in your own puzzle.",
+      "Reach the far end and collect the relic. The video calls it a key and shows the message “Lovely! That’s another one safely in our hands!” with the floor lit green. Do not leave before collecting it.",
+      "Carry the relic back through the maze to the elevator, avoiding the Deer. Use the return route you remembered on entry; reaching the far side of the tile puzzle alone does not finish the run.",
+      "After returning, check the Boo & Bub badge and your avatar inventory separately. The creator shows Boo & Bub by Roblox with Item Owned at 1:37. That verifies the recorded account’s result, not delivery to every account or a playtest by this site."
+    ],
+    "prerequisites": [
+      "Access to Floor 4 in The Hollow hub.",
+      "Full 1:42 original transcript and puzzle, relic and ownership frames reviewed October 26 Beijing."
+    ],
+    "tips": [
+      "Watch a complete demonstration before moving. Memorize the route from the entrance rather than from a rotated camera view.",
+      "No Ticket payment or Plus purchase appears in the recorded maze route."
+    ],
+    "troubleshooting": [
+      "If the puzzle resets, watch the demonstration again and follow its tile order; do not treat the laser barrier as a jumping challenge.",
+      "If the item is missing, first check whether you collected the relic and returned to the elevator. Check badge and avatar inventory independently; a universal delivery fix has not been verified."
+    ],
+    "estimatedMinutes": null,
+    "videoChapters": [
+      {
+        "label": "0:51 — Find the room and watch the tile demonstration",
+        "url": "https://www.youtube.com/watch?v=5DFaMKfw1Yg&t=51s"
+      },
+      {
+        "label": "1:06 — Retry the path and collect the relic",
+        "url": "https://www.youtube.com/watch?v=5DFaMKfw1Yg&t=66s"
+      },
+      {
+        "label": "1:37 — Recorded Item Owned result",
+        "url": "https://www.youtube.com/watch?v=5DFaMKfw1Yg&t=97s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/116463962153167",
+    "startLabel": "Open The Hollow hub"
+  },
+  {
+    "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-25",

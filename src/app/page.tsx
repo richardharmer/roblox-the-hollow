@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Burned Necrobloxicon has a 60-Ticket purchase guide; Trick or Treat Tentacles requires Plus and 60 Tickets. Written steps, Tickets costs and Plus restrictions are all here.
+            Night 4 guide: follow the Floor 4 tile path, return the relic and earn Boo &amp; Bub. Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Burned Necrobloxicon has a 60-Ticket purchase guide; Trick or Treat Tentacles requires Plus and 60 Tickets. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">
@@ -321,8 +321,8 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              Night 1, Night 2 and the Night 3 grave puzzle guides are available from recorded
-              gameplay. Ticket recovery now has player reports; check your own balance. Codes and other unreviewed Night 3 claims remain unverified.
+              Night 1–4 maze guides are available from recorded
+              gameplay. Ticket recovery now has player reports; check your own balance. Codes and other unreviewed reward claims remain unverified.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />

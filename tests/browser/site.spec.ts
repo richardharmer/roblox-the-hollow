@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import rewards from "../../src/data/rewards.json" with { type: "json" };
 import badges from "../../src/data/badges.json" with { type: "json" };
 test.beforeEach(async ({ page }) => {
   await page.route("https://bicea.org/**", (route) =>
@@ -179,7 +180,7 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
 }) => {
   await page.goto("/");
   const board = page.locator("#reward-board");
-  await expect(board.locator(".player-reward-row")).toHaveCount(8);
+  await expect(board.locator(".player-reward-row")).toHaveCount(rewards.length);
   await board
     .getByRole("link", { name: "Gourdlord: The Entangled", exact: true })
     .click();
@@ -190,9 +191,9 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
   await expect(page.locator("#codes")).toContainText(
     "No working event redemption code was verified",
   );
-  await expect(page.locator(".entry-card")).toHaveCount(8);
+  await expect(page.locator(".entry-card")).toHaveCount(rewards.length);
   await page.getByLabel("Free only", { exact: false }).check();
-  await expect(page.locator(".entry-card")).toHaveCount(7);
+  await expect(page.locator(".entry-card")).toHaveCount(rewards.filter((reward) => reward.free === true).length);
   await expect(
     page.locator(".entry-list").getByText("Quack-o'-Lantern", { exact: true }),
   ).toHaveCount(0);
@@ -216,7 +217,7 @@ test("official badge directory searches IDs without upgrading claim evidence", a
 
 test("new Hub badge identities remain separate from unverified claim instructions", async ({ page }) => {
   await page.goto("/badges/");
-  await expect(page.locator(".prose").first()).toContainText("18 enabled Hub badges");
+  await expect(page.locator(".prose").first()).toContainText(`${badges.filter((badge) => badge.universeId === 10770728771).length} enabled Hub badges`);
   for (const [id, name] of [
     ["1158209636385797", "Festering Felix"],
     ["1208009989394323", "Burned Necrobloxicon"],

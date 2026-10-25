@@ -29,7 +29,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
     >
       <div className="player-board-heading">
         <div>
-          <span className="eyebrow">NIGHT 3 · CHECKED OCT 25</span>
+          <span className="eyebrow">NIGHT 4 · CHECKED OCT 26</span>
           <h2 id="reward-board-title">What can you earn today?</h2>
         </div>
         <Link className="text-link" href="/progress/">
@@ -37,7 +37,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        Night 3 guides cover Festering Felix, Dead Rails Cowboy Hat of the Dead and Demonology Biter Fedora, including the separate hub claim steps. Burned Necrobloxicon has a recorded 60-Ticket shop claim. Trick or Treat Tentacles costs another 60 Tickets and requires Roblox Plus. Earned rewards and the separately labeled Plus-only shop items are documented below. Read the requirements here,
+        New: earn Boo &amp; Bub through the Floor 4 tile-path puzzle and elevator return. The recording shows Item Owned. Night 3 guides cover Festering Felix, Dead Rails Cowboy Hat of the Dead and Demonology Biter Fedora, including the separate hub claim steps. Burned Necrobloxicon has a recorded 60-Ticket shop claim. Trick or Treat Tentacles costs another 60 Tickets and requires Roblox Plus. Earned rewards and the separately labeled Plus-only shop items are documented below. Read the requirements here,
         then follow the written claim guide.
       </p>
       <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
@@ -56,7 +56,9 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
               {reward.costLabel}
               <br />
               <span>
-                {reward.id === "witches-brew-nado"
+                {reward.id === "boo-and-bub"
+                  ? "Floor 4 → follow the tile path → relic → elevator"
+                  : reward.id === "witches-brew-nado"
                   ? "Floor 2 → six pillars → relic → elevator"
                   : reward.id === "reeling-petal-garland"
                     ? "Dandy’s World: 200 pumpkins → hub claim"
@@ -78,7 +80,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         ))}
       </div>
       <p className="player-evidence">
-        Steps checked against October 23–24 creator recordings; official APIs
+        Steps checked against October 23–26 creator recordings; official APIs
         verify the cited identities. We have not claimed these on a test
         account. Early-server credit can vary.
       </p>

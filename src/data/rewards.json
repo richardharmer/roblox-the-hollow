@@ -1,6 +1,43 @@
 [
   {
     "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "cocajola-night-four",
+      "official-hollow-badges"
+    ],
+    "id": "boo-and-bub",
+    "slug": "boo-and-bub",
+    "name": "Boo & Bub",
+    "description": "The Floor 4 maze reward: follow the demonstrated tile path, collect the relic and escape to the elevator. The original recording ends on an Item Owned page.",
+    "steps": [
+      "Enter the cinema elevator in The Hollow and select Floor 4. Explore the maze until you find the 99 Nights in the Forest room with a tiled floor and red laser barrier. The recording does not establish one fixed corridor route for every run.",
+      "Stop at the puzzle entrance and watch the demonstration character cross the tiles. Note the order of the glowing tiles from your starting side. Follow that demonstrated path rather than jumping over the red barrier or guessing a universal left/right code.",
+      "Walk the same tile sequence. If you step incorrectly, return to the start and watch the demonstration again; the video shows a failed attempt followed by a successful retry. Copy the path shown in your own puzzle.",
+      "Reach the far end and collect the relic. The video calls it a key and shows the message “Lovely! That’s another one safely in our hands!” with the floor lit green. Do not leave before collecting it.",
+      "Carry the relic back through the maze to the elevator, avoiding the Deer. Use the return route you remembered on entry; reaching the far side of the tile puzzle alone does not finish the run.",
+      "After returning, check the Boo & Bub badge and your avatar inventory separately. The creator shows Boo & Bub by Roblox with Item Owned at 1:37. That verifies the recorded account’s result, not delivery to every account or a playtest by this site."
+    ],
+    "questIds": [
+      "night-four-path"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Night 4 maze quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the Floor 4 tile-path puzzle and return with its relic.",
+      "Creator recording shows Item Owned; official API confirms badge identity. Not our account playtest."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
     "updatedAt": "2026-10-25",
