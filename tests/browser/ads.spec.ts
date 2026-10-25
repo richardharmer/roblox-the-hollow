@@ -49,10 +49,15 @@ for (const [width, unit, key, adWidth, adHeight] of [
   });
 }
 
-test("Social Bar runs only on the trial page and is discarded on navigation", async ({ page }) => {
+test("Social Bar runs on home and puzzle and is discarded on other pages", async ({ page }) => {
   await stubAds(page);
   await page.goto("/");
-  await expect(page.locator('script[src*="bicea.org/14/"]')).toHaveCount(0);
+  const homeSocial = page.locator('script[src*="bicea.org/14/"]');
+  await expect(homeSocial).toHaveCount(1);
+  expect(await homeSocial.evaluate((el) => el.outerHTML)).toBe(adCodes.social);
+  await page.getByRole("link", { name: "Privacy", exact: true }).click();
+  await expect(page).toHaveURL(/privacy/);
+  await expect(page.locator('script[src*="bicea.org"]')).toHaveCount(0);
   await page.goto("/puzzle/");
   const social = page.locator('script[src*="bicea.org/14/"]');
   await expect(social).toHaveCount(1);

@@ -64,7 +64,7 @@ export function Advertisement({
   );
 }
 
-// Page-limited trial: only the puzzle landing page mounts this component.
+// Page-limited trial: the homepage and puzzle landing page mount this component.
 // The provider's original script is inserted directly at the end of the body.
 export function SocialBarTrial() {
   useEffect(() => {

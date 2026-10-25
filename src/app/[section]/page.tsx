@@ -585,7 +585,7 @@ export default async function Section({
           </p>
           <p>
             We display labeled Adsterra advertisements to support this
-            independent guide. The puzzle briefing also trials Adsterra Social
+            independent guide. The homepage and puzzle briefing also trial Adsterra Social
             Bar ads, which may float over the page. Loading an advertisement contacts Adsterra and
             its delivery partners, which may process your IP address, device and
             browser information, page/referrer information, cookies and ad

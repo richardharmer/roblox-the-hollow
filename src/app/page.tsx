@@ -1,3 +1,4 @@
+import { SocialBarTrial } from "@/components/advertisement";
 import { RewardBoard } from "@/components/player-guide";
 import { EventSchedule } from "@/components/event-schedule";
 import { dateBriefing, gameBriefing, rewardBriefing } from "@/lib/briefing";
@@ -61,6 +62,7 @@ export default function Home() {
   const status = eventStatus();
   return (
     <div className="container">
+      <SocialBarTrial />
       <div className="edition-strip">
         <span>
           <span className="red-dot" /> HALLOWEEN 2026 / FIELD GUIDE
