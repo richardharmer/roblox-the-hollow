@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import badges from "../../src/data/badges.json" with { type: "json" };
 test.beforeEach(async ({ page }) => {
   await page.route("https://bicea.org/**", (route) =>
     route.fulfill({
@@ -196,7 +197,7 @@ test("player rewards stay on-site and Plus is excluded by the free filter", asyn
 
 test("official badge directory searches IDs without upgrading claim evidence", async ({ page }) => {
   await page.goto("/badges/");
-  await expect(page.locator(".entry-card")).toHaveCount(13);
+  await expect(page.locator(".entry-card")).toHaveCount(badges.length);
   await page.getByLabel("Search badges").fill("2455468832393759");
   await expect(page.locator(".entry-card")).toHaveCount(1);
   await expect(page.locator(".entry-card")).toContainText("Lord Umberhallow BLOXikin");
@@ -204,5 +205,7 @@ test("official badge directory searches IDs without upgrading claim evidence", a
   await page.getByLabel("Search badges").fill("1912601234268529");
   await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
   await page.getByLabel("Search badges").fill("10770728771");
-  await expect(page.locator(".entry-card")).toHaveCount(13);
+  await expect(page.locator(".entry-card")).toHaveCount(
+    badges.filter((badge) => badge.universeId === 10770728771).length,
+  );
 });
