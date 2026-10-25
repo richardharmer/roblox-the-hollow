@@ -367,9 +367,10 @@
     "id": "badge-3255111880715709",
     "slug": "badge-3255111880715709",
     "name": "Biter Fedora",
-    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "description": "Official Hub badge identity confirmed. Separate community video documents Demonology’s six relics, ritual, portal and hub Claim display.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "waffle-demonology",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
@@ -381,9 +382,12 @@
     "badgeId": 3255111880715709,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3255111880715709/",
-    "requirements": []
+    "requirements": [
+      "Complete the Demonology event ritual and portal, then use the hub Claim display."
+    ],
+    "relatedRewardSlug": "biter-fedora"
   },
   {
     "id": "badge-3557398016002690",

@@ -8,6 +8,46 @@
     "image": null,
     "gameId": "the-hollow-2026",
     "sources": [
+      "waffle-demonology",
+      "official-hollow-badges"
+    ],
+    "id": "biter-fedora",
+    "slug": "biter-fedora",
+    "name": "Biter Fedora",
+    "description": "Complete Demonology’s six-relic ritual, enter the portal and use the Biter Fedora Claim display on the left side of The Hollow hub.",
+    "steps": [
+      "In Demonology, click The Hollow sticky notes at the top right and load into the event game. Follow the red marker on the compass at the top of the screen to find the altar. Avoid the monster while collecting the six relics.",
+      "Mirror: follow the mirror as it jumps between pedestals until you can collect it. In the recording it turns purple when obtained. Pick it up, equip it and bring it back to the altar.",
+      "Lantern: pick up the spectral flame and light the three lamps by holding the interaction key (E in the recording). Collect the lantern that appears in the middle and return it to the altar.",
+      "Book: interact with and read each sign in the area. Reading the final sign spawns the book; collect it and bring it to the altar.",
+      "Hourglass: stand inside the moving circle and walk with it. Stay inside until its progress indicator fills, then collect the hourglass and return it to the altar.",
+      "Lock: find the locked fence, then search nearby containers for a lockpick. Use it on the lock and click when the moving cursor is on the red segment of the minigame. Collect the lock relic and return it to the altar. The lockpick container in the video is an example, not a guaranteed spawn for every run.",
+      "Skull: pick up the shovel, dig the fresh grave, retrieve the skull and return it to the altar. Check that all six relics have been placed; carrying the final relic is not enough.",
+      "Begin the ritual, let the cutscene finish and walk into the portal. The creator reports receiving the Demonology event badge at this point.",
+      "Return to The Hollow hub on the same account. Look to the left for the Biter Fedora display by the green-lit entrance and interact with Claim. Check your avatar inventory afterward. The recording shows the Claim prompt; successful inventory delivery has not been independently tested here."
+    ],
+    "questIds": [
+      "demonology-six-relics"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Demonology event quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Collect and place all six relics, complete the ritual and enter the portal.",
+      "Return to the hub and use Claim; delivery is video-reported, not independently account-tested."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
       "waffle-dead-rails",
       "official-hollow-badges"
     ],
