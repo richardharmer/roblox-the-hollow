@@ -1,5 +1,38 @@
 [
   {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "id": "trick-or-treat-tentacles",
+    "slug": "trick-or-treat-tentacles",
+    "name": "Trick or Treat Tentacles",
+    "gameId": "the-hollow-2026",
+    "description": "A Roblox Plus-only avatar item costing 60 Tickets. The recording shows OWNED and a balance change from 180 to 120; the award banner calls it Trick or Treat Squid.",
+    "costLabel": "Roblox Plus subscription + 60 Tickets",
+    "free": false,
+    "type": "Avatar item",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Active Roblox Plus eligibility and 60 unspent event Tickets. This is not a free reward for every account."
+    ],
+    "steps": [
+      "Earn event badges and credit them in The Hollow hub using Confirm when new badges appear. Keep at least 60 Tickets available.",
+      "Enter the cinema and approach the right-hand concession counter. Choose Shop to open Little Shop of Terror.",
+      "Scroll down to the Roblox Plus row under Avatar Items. Select Trick or Treat Tentacles, the purple squid with a witch hat. Verify ROBLOX PLUS ONLY and the 60-Ticket price.",
+      "Choose Buy only if your account has the required Plus eligibility and balance. In the recording, OWNED and AVATAR ITEM OBTAINED appear and the balance drops from 180 to 120. The award banner uses the name Trick or Treat Squid.",
+      "Check Roblox avatar inventory after claiming. The shop says it will appear soon; this guide verifies the recorded in-game transaction, not our own account or a separate external inventory check."
+    ],
+    "questIds": [],
+    "sources": [
+      "premium-day-three-plus",
+      "official-hollow-badges"
+    ],
+    "catalogItemId": null
+  },
+  {
     "id": "burned-necrobloxicon",
     "slug": "burned-necrobloxicon",
     "name": "Burned Necrobloxicon",

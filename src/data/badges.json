@@ -397,9 +397,10 @@
     "id": "badge-3557398016002690",
     "slug": "badge-3557398016002690",
     "name": "Trick or Treat Squid",
-    "description": "Official badge identity confirmed in The Hollow universe. The API description is empty; claim steps, price, eligibility and avatar-item delivery remain unverified.",
+    "description": "Official Hub badge identity confirmed. Separate video shows a 60-Ticket Plus-only purchase under the shop name Trick or Treat Tentacles and award banner Trick or Treat Squid.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "premium-day-three-plus",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
@@ -411,9 +412,12 @@
     "badgeId": 3557398016002690,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3557398016002690/",
-    "requirements": []
+    "requirements": [
+      "Roblox Plus eligibility and 60 Tickets; see the recorded shop claim guide."
+    ],
+    "relatedRewardSlug": "trick-or-treat-tentacles"
   },
   {
     "id": "badge-79182670138641",
