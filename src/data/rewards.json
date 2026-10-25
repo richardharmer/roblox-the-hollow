@@ -1,6 +1,43 @@
 [
   {
     "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "sources": [
+      "waffle-night-three-floor",
+      "official-hollow-badges"
+    ],
+    "id": "festering-felix",
+    "slug": "festering-felix",
+    "name": "Festering Felix",
+    "description": "The Night 3 Floor 3 puzzle reward: identify the three shortest lifespans, open the coffin and return the relic to the elevator.",
+    "steps": [
+      "Enter the hub cinema elevator and choose Floor 3. Explore until you reach the Demonology room with a coffin in the middle and eight graves around it. No identical maze route for every run is established.",
+      "Read the riddle beside the coffin. It asks for the three shortest lives, ordered from youngest to oldest, rather than the earliest birth or death years.",
+      "Record the symbol, birth date and death date on each of the eight graves. Calculate each lifespan, then sort the eight from shortest to longest. Use the full displayed dates if needed; do not rank by death date alone.",
+      "Take the symbols of the three youngest people in that order. At the coffin, use the arrows on Grave Lock slots I, II and III to match those three symbols from left to right. The video uses broom, witch and ghost; that is the recorded example, not a verified universal code.",
+      "Press Open. The recording shows the relic collected and a Got it message. If the coffin does not open, recheck all eight lifespans and the order of the three selected symbols.",
+      "Carry the relic safely back to the elevator. The video shows the return and reports the Festering Felix badge and avatar reward. Check both your badge list and avatar inventory; opening the coffin alone is not the final step. Inventory delivery was not independently tested on our account."
+    ],
+    "questIds": [
+      "night-three-graves"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the Night 3 maze quest",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the Floor 3 coffin puzzle and return with the relic.",
+      "Video-reported reward delivery; official API confirms badge identity only. No account playtest."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-24",
     "lastVerifiedAt": "2026-10-24",
     "updatedAt": "2026-10-24",

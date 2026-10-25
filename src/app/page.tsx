@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Night 2 guides: solve the six-pillar maze, collect 200 pumpkins in Dandy’s World or 50 in AO ONI Nightmare, then claim your rewards. Written steps, Tickets costs and Plus restrictions are all here.
+            Night 3 guide: compare eight grave lifespans, unlock the coffin and return the relic for Festering Felix. Night 1 and Night 2 guides are also available. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">
@@ -321,8 +321,8 @@ export default function Home() {
               What we don’t.
             </h3>
             <p>
-              Night 1 and Night 2 task and claim guides are available from recorded
-              gameplay. Ticket recovery now has player reports; check your own balance. Codes and Night 3 onward remain unverified.
+              Night 1, Night 2 and the Night 3 grave puzzle guides are available from recorded
+              gameplay. Ticket recovery now has player reports; check your own balance. Codes and other unreviewed Night 3 claims remain unverified.
             </p>
             <Link href="/release-date/" className="text-link">
               Read the launch briefing <ArrowUpRight size={16} />

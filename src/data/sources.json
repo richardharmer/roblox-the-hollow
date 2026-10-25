@@ -758,5 +758,15 @@
     "note": "Official badge description explicitly names The Hollow in a confirmed game",
     "lastCheckedAt": "2026-10-25",
     "lastSuccessAt": "2026-10-25"
+  },
+  {
+    "id": "waffle-night-three-floor",
+    "name": "WaffleTrades — Floor 3 grave puzzle (full video review)",
+    "url": "https://www.youtube.com/watch?v=P40xYDjiSlc",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 25: read full 0:00–1:55 native transcript and inspected paused gameplay at 0:37 (riddle: shortest lives, small to tall), 1:32 (Grave Lock I/II/III), 1:42 (Got it relic message), 1:50 (elevator return). Reward inventory delivery is creator-reported, not independently shown in an inventory inspection or tested on our account. Example symbols are not a universal code.",
+    "lastCheckedAt": "2026-10-25",
+    "lastSuccessAt": "2026-10-25"
   }
 ]

@@ -29,7 +29,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
     >
       <div className="player-board-heading">
         <div>
-          <span className="eyebrow">NIGHT 2 · CHECKED OCT 24</span>
+          <span className="eyebrow">NIGHT 3 · CHECKED OCT 25</span>
           <h2 id="reward-board-title">What can you earn today?</h2>
         </div>
         <Link className="text-link" href="/progress/">
@@ -37,7 +37,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        Night 2 adds three quest rewards. Seven earned rewards and one Plus-only shop item are documented below. Read the requirements here,
+        Night 3 adds the Festering Felix grave-puzzle guide. Earned quest rewards and the separately labeled Plus-only shop item are documented below. Read the requirements here,
         then follow the written claim guide.
       </p>
       <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
