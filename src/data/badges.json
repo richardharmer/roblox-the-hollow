@@ -18,9 +18,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
     "relatedRewardSlug": "lord-umberhallow-bloxikin",
-    "robloxUrl": "https://www.roblox.com/badges/2455468832393759/"
+    "robloxUrl": "https://www.roblox.com/badges/2455468832393759/",
+    "requirements": []
   },
   {
     "id": "badge-1763079723422323",
@@ -41,9 +41,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
     "relatedRewardSlug": "gourdlord-entangled",
-    "robloxUrl": "https://www.roblox.com/badges/1763079723422323/"
+    "robloxUrl": "https://www.roblox.com/badges/1763079723422323/",
+    "requirements": []
   },
   {
     "id": "badge-1912601234268529",
@@ -64,8 +64,8 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "UNVERIFIED",
-    "requirements": [],
-    "robloxUrl": "https://www.roblox.com/badges/1912601234268529/"
+    "robloxUrl": "https://www.roblox.com/badges/1912601234268529/",
+    "requirements": []
   },
   {
     "id": "badge-113653722921762",
@@ -86,8 +86,8 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "UNVERIFIED",
-    "requirements": [],
-    "robloxUrl": "https://www.roblox.com/badges/113653722921762/"
+    "robloxUrl": "https://www.roblox.com/badges/113653722921762/",
+    "requirements": []
   },
   {
     "id": "badge-3659729077946821",
@@ -108,8 +108,8 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "UNVERIFIED",
-    "requirements": [],
-    "robloxUrl": "https://www.roblox.com/badges/3659729077946821/"
+    "robloxUrl": "https://www.roblox.com/badges/3659729077946821/",
+    "requirements": []
   },
   {
     "id": "badge-3758032687890331",
@@ -130,8 +130,8 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "UNVERIFIED",
-    "requirements": [],
-    "robloxUrl": "https://www.roblox.com/badges/3758032687890331/"
+    "robloxUrl": "https://www.roblox.com/badges/3758032687890331/",
+    "requirements": []
   },
   {
     "id": "badge-926854509956508",
@@ -152,9 +152,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
     "relatedRewardSlug": "all-seeking-antlers",
-    "robloxUrl": "https://www.roblox.com/badges/926854509956508/"
+    "robloxUrl": "https://www.roblox.com/badges/926854509956508/",
+    "requirements": []
   },
   {
     "id": "badge-76777109677652",
@@ -175,9 +175,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
     "relatedRewardSlug": "quack-o-lantern",
-    "robloxUrl": "https://www.roblox.com/badges/76777109677652/"
+    "robloxUrl": "https://www.roblox.com/badges/76777109677652/",
+    "requirements": []
   },
   {
     "id": "badge-1585089789720925",
@@ -198,9 +198,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
     "relatedRewardSlug": "the-beasthammer",
-    "robloxUrl": "https://www.roblox.com/badges/1585089789720925/"
+    "robloxUrl": "https://www.roblox.com/badges/1585089789720925/",
+    "requirements": []
   },
   {
     "id": "badge-3380536009947020",
@@ -222,9 +222,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
+    "relatedRewardSlug": "witches-brew-nado",
     "robloxUrl": "https://www.roblox.com/badges/3380536009947020/",
-    "relatedRewardSlug": "witches-brew-nado"
+    "requirements": []
   },
   {
     "id": "badge-4135856183138544",
@@ -245,8 +245,8 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "UNVERIFIED",
-    "requirements": [],
-    "robloxUrl": "https://www.roblox.com/badges/4135856183138544/"
+    "robloxUrl": "https://www.roblox.com/badges/4135856183138544/",
+    "requirements": []
   },
   {
     "id": "badge-891910194111232",
@@ -268,9 +268,9 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
+    "relatedRewardSlug": "reeling-petal-garland",
     "robloxUrl": "https://www.roblox.com/badges/891910194111232/",
-    "relatedRewardSlug": "reeling-petal-garland"
+    "requirements": []
   },
   {
     "id": "badge-3550249711586682",
@@ -292,8 +292,27 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
-    "requirements": [],
+    "relatedRewardSlug": "fuwatty-side-satchel",
     "robloxUrl": "https://www.roblox.com/badges/3550249711586682/",
-    "relatedRewardSlug": "fuwatty-side-satchel"
+    "requirements": []
+  },
+  {
+    "id": "badge-90161806056386",
+    "slug": "badge-90161806056386",
+    "name": "The Way Back",
+    "description": "The official badge description explicitly references The Hollow. Consult the official page for its current wording.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-2872e553d1bf"
+    ],
+    "firstSeenAt": "2026-10-25",
+    "lastVerifiedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "demonology",
+    "badgeId": 90161806056386,
+    "robloxUrl": "https://www.roblox.com/badges/90161806056386/",
+    "requirements": []
   }
 ]

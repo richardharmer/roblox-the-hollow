@@ -748,5 +748,15 @@
     "note": "Article dated October 23, read October 24. Reports five inventory slots, equipping candy and pressing G to deposit, and approximately ten seconds to stir. Keyboard instructions only; mobile/controller controls and current successful reward delivery not independently tested.",
     "lastCheckedAt": "2026-10-24",
     "lastSuccessAt": "2026-10-24"
+  },
+  {
+    "id": "official-2872e553d1bf",
+    "name": "Roblox Badges API official evidence",
+    "url": "https://badges.roblox.com/v1/universes/6170143659/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Official badge description explicitly names The Hollow in a confirmed game",
+    "lastCheckedAt": "2026-10-25",
+    "lastSuccessAt": "2026-10-25"
   }
 ]
