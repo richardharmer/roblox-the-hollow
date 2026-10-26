@@ -66,5 +66,5 @@ test("long walkthrough includes a second placement after the complete steps", as
   await page.goto("/quests/night-two-pillars/");
   await expect(page.locator(".ad-header iframe")).toHaveCount(1);
   await expect(page.locator(".ad-content iframe")).toHaveCount(1);
-  expect(await page.locator(".ad-content").evaluate((el) => Boolean(el.previousElementSibling?.classList.contains("step-list")))).toBe(true);
+  expect(await page.locator(".ad-content").evaluate((el) => Boolean(el.previousElementSibling?.querySelector(".step-list")))).toBe(true);
 });
