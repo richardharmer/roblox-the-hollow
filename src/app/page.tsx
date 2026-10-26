@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Night 4 guide: follow the Floor 4 tile path, return the relic and earn Boo &amp; Bub. Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Burned Necrobloxicon has a 60-Ticket purchase guide; Trick or Treat Tentacles requires Plus and 60 Tickets. Written steps, Tickets costs and Plus restrictions are all here.
+            New 99 Nights guide: upgrade the fire to level 3, collect 20 Void flowers and claim Chrome Deer Skull Chain at the hub display. Night 4 guide: follow the Floor 4 tile path, return the relic and earn Boo &amp; Bub. Night 3 guides: solve the grave puzzle for Festering Felix, complete Dead Rails Edison’s Revenge for Cowboy Hat of the Dead, or collect six Demonology relics for Biter Fedora. Night 1 and Night 2 guides are also available. Burned Necrobloxicon has a 60-Ticket purchase guide; Trick or Treat Tentacles requires Plus and 60 Tickets. Written steps, Tickets costs and Plus restrictions are all here.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">

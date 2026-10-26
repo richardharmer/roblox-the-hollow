@@ -5,7 +5,7 @@ const guideIds: Record<string, string[]> = {
   doors: ["doors-candy-vault", "night-one-relics"],
   "dandys-world": ["dandys-world-pumpkins", "night-two-pillars"],
   demonology: ["demonology-six-relics", "night-three-graves"],
-  "99-nights-in-the-forest": ["night-four-path"],
+  "99-nights-in-the-forest": ["forest-void-flowers", "night-four-path"],
 };
 export function guidesForGame(id: string) {
   return (guideIds[id] ?? []).flatMap((questId) => {

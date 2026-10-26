@@ -497,23 +497,28 @@
     "id": "badge-3730061270233127",
     "slug": "badge-3730061270233127",
     "name": "Chrome Deer Skull Chain",
-    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "description": "Official Hub badge identity confirmed. Separate video shows the 99 Nights Void flower quest and successful chain delivery at the hub display.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "sharkblox-forest-chain",
+      "official-forest-hollow-badge",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
-    "updatedAt": "2026-10-25",
+    "updatedAt": "2026-10-26",
     "publishDetail": false,
     "image": null,
     "gameId": "the-hollow-2026",
     "badgeId": 3730061270233127,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3730061270233127/",
-    "requirements": []
+    "requirements": [
+      "Complete the 99 Nights Void flower quest and use its hub reward display."
+    ],
+    "relatedRewardSlug": "chrome-deer-skull-chain"
   },
   {
     "id": "badge-3319727498189296",

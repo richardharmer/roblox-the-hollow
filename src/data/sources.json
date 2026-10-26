@@ -818,5 +818,25 @@
     "note": "Reviewed October 26 Beijing: complete 0:00–1:42 native transcript, tile demonstration/retry frames 0:59 and 1:06, collected relic/green floor at 1:14, and Roblox Boo & Bub Item Owned page at 1:37. Creator-recorded evidence, not our account playtest. No fixed maze route, universal tile sequence, Ticket amount or universal delivery claim.",
     "lastCheckedAt": "2026-10-26",
     "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "sharkblox-forest-chain",
+    "name": "SharkBlox and Cocajola — 99 Nights Void quest and chain claim",
+    "url": "https://www.youtube.com/watch?v=D3m2Ru2reUQ",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "Full original native transcript 0:00–3:45 read; October 26 re-review of 3:36 plaza approach and 3:41 AVATAR ITEM OBTAINED, Chrome Deer Skull Chain / Quest Reward beside green 99 Nights doorway. Cocajola AbZgvmjgTxI full 0:00–7:26 native transcript cross-checks tracker, lanterns, upgrades and tree-enclosed flowers; early empty podium is superseded by later successful claim footage. 10 Tickets is that creator’s report only, not guaranteed. No own-account playtest.",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "official-forest-hollow-badge",
+    "name": "Roblox — 99 Nights Hollow event badge and optional challenge distinction",
+    "url": "https://badges.roblox.com/v1/universes/7326934954/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "October 26 direct read: The Hollow 2026 badge 2195398371010118 describes fire level 3, Void flowers, lantern safe zones and teleport-out on death. Omnipotence badge 2875644502051649 explicitly says it is NOT part of The Hollow event. First page has next cursor; not an exhaustive badge inventory. No Tickets amount or avatar claim route established by API.",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
   }
 ]

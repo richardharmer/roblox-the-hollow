@@ -37,7 +37,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        New: earn Boo &amp; Bub through the Floor 4 tile-path puzzle and elevator return. The recording shows Item Owned. Night 3 guides cover Festering Felix, Dead Rails Cowboy Hat of the Dead and Demonology Biter Fedora, including the separate hub claim steps. Burned Necrobloxicon has a recorded 60-Ticket shop claim. Trick or Treat Tentacles costs another 60 Tickets and requires Roblox Plus. Earned rewards and the separately labeled Plus-only shop items are documented below. Read the requirements here,
+        New: earn Chrome Deer Skull Chain by collecting 20 Void flowers in 99 Nights, then use its hub display. Omnipotence is not required. Earn Boo &amp; Bub through the Floor 4 tile-path puzzle and elevator return. The recording shows Item Owned. Night 3 guides cover Festering Felix, Dead Rails Cowboy Hat of the Dead and Demonology Biter Fedora, including the separate hub claim steps. Burned Necrobloxicon has a recorded 60-Ticket shop claim. Trick or Treat Tentacles costs another 60 Tickets and requires Roblox Plus. Earned rewards and the separately labeled Plus-only shop items are documented below. Read the requirements here,
         then follow the written claim guide.
       </p>
       <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
@@ -56,7 +56,9 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
               {reward.costLabel}
               <br />
               <span>
-                {reward.id === "boo-and-bub"
+                {reward.id === "chrome-deer-skull-chain"
+                  ? "Fire level 3 → Void → 20 flowers → hub display"
+                  : reward.id === "boo-and-bub"
                   ? "Floor 4 → follow the tile path → relic → elevator"
                   : reward.id === "witches-brew-nado"
                   ? "Floor 2 → six pillars → relic → elevator"

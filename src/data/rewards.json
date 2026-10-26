@@ -6,6 +6,46 @@
     "updatedAt": "2026-10-26",
     "publishDetail": true,
     "image": null,
+    "gameId": "99-nights-in-the-forest",
+    "sources": [
+      "sharkblox-forest-chain",
+      "official-forest-hollow-badge",
+      "official-hollow-badges"
+    ],
+    "id": "chrome-deer-skull-chain",
+    "slug": "chrome-deer-skull-chain",
+    "name": "Chrome Deer Skull Chain",
+    "description": "The 99 Nights Void quest reward. Collect 20 red flowers after upgrading the fire to level 3, then claim the chain at its green doorway display in The Hollow hub.",
+    "steps": [
+      "Join 99 Nights in the Forest and open The Hollow event button. Enter a normal game, chop trees with your axe, store logs in your bag and deposit them into the campfire until it reaches level 3. On the recorded desktop controls, F stores and drops logs.",
+      "At fire level 3, use The Hollow menu’s Find the Void tracker to locate the portal in the expanded zone. Stand on its platform and wait for the teleport countdown. Do not copy the creator’s cave position as a universal map coordinate.",
+      "Inside the Void, collect all 20 outlined red flowers. Approach a flower and use its interaction prompt (E in the desktop recording). Move between flowers and the yellow lantern areas, which the official badge description identifies as safe zones.",
+      "Choose an available upgrade after every three collected flowers. The recordings show options such as more lanterns, faster tree cutting and a speed boost after picking flowers; the available choices may differ. Use lanterns when enemies gather rather than trying to fight every spawn.",
+      "Some flowers are enclosed by Hollow trees. Cocajola’s recording shows cutting through the surrounding trees, with an upgrade that later reduces the chopping needed. Return to a lantern when threatened and continue from the same opening; do not mistake an enclosed flower for a missing collectible.",
+      "Collect the final flower and finish the cutscene. Check that you earned The Hollow 2026 badge, ID 2195398371010118. Dying in the Void returns you to the fire and allows another try, according to the official description; persistence of flower progress after death was not independently verified.",
+      "Return to The Hollow hub. If REDEEM BADGES appears, review the listed credits and press Confirm. Cocajola reports 10 Tickets in that recorded run; this is not a guaranteed current payout or a repeatable farming claim.",
+      "In the hub plaza, find the green 99 Nights in the Forest doorway and use the chain reward display beside it. SharkBlox’s recording shows Chrome Deer Skull Chain, Quest Reward and AVATAR ITEM OBTAINED at 3:41. Check your avatar inventory as a separate final confirmation; this site did not claim it on its own account."
+    ],
+    "questIds": [
+      "forest-void-flowers"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the 99 Nights Void quest; no Ticket purchase shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Earn The Hollow 2026 badge in 99 Nights in the Forest, then claim at its hub display.",
+      "Omnipotence is not required. Video shows successful delivery on the recorded account; no own-account playtest."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
     "gameId": "the-hollow-2026",
     "sources": [
       "cocajola-night-four",

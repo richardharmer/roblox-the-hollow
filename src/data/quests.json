@@ -6,6 +6,64 @@
     "updatedAt": "2026-10-26",
     "publishDetail": true,
     "image": null,
+    "gameId": "99-nights-in-the-forest",
+    "sources": [
+      "sharkblox-forest-chain",
+      "official-forest-hollow-badge",
+      "official-hollow-badges"
+    ],
+    "id": "forest-void-flowers",
+    "slug": "forest-void-flowers",
+    "name": "99 Nights: level 3 fire, 20 Void flowers and chain claim",
+    "description": "Upgrade the fire to level 3, follow the Void tracker, collect 20 red flowers using lantern safe zones, then return to the hub’s chain display. Omnipotence is not required.",
+    "steps": [
+      "Join 99 Nights in the Forest and open The Hollow event button. Enter a normal game, chop trees with your axe, store logs in your bag and deposit them into the campfire until it reaches level 3. On the recorded desktop controls, F stores and drops logs.",
+      "At fire level 3, use The Hollow menu’s Find the Void tracker to locate the portal in the expanded zone. Stand on its platform and wait for the teleport countdown. Do not copy the creator’s cave position as a universal map coordinate.",
+      "Inside the Void, collect all 20 outlined red flowers. Approach a flower and use its interaction prompt (E in the desktop recording). Move between flowers and the yellow lantern areas, which the official badge description identifies as safe zones.",
+      "Choose an available upgrade after every three collected flowers. The recordings show options such as more lanterns, faster tree cutting and a speed boost after picking flowers; the available choices may differ. Use lanterns when enemies gather rather than trying to fight every spawn.",
+      "Some flowers are enclosed by Hollow trees. Cocajola’s recording shows cutting through the surrounding trees, with an upgrade that later reduces the chopping needed. Return to a lantern when threatened and continue from the same opening; do not mistake an enclosed flower for a missing collectible.",
+      "Collect the final flower and finish the cutscene. Check that you earned The Hollow 2026 badge, ID 2195398371010118. Dying in the Void returns you to the fire and allows another try, according to the official description; persistence of flower progress after death was not independently verified.",
+      "Return to The Hollow hub. If REDEEM BADGES appears, review the listed credits and press Confirm. Cocajola reports 10 Tickets in that recorded run; this is not a guaranteed current payout or a repeatable farming claim.",
+      "In the hub plaza, find the green 99 Nights in the Forest doorway and use the chain reward display beside it. SharkBlox’s recording shows Chrome Deer Skull Chain, Quest Reward and AVATAR ITEM OBTAINED at 3:41. Check your avatar inventory as a separate final confirmation; this site did not claim it on its own account."
+    ],
+    "prerequisites": [
+      "Access to 99 Nights in the Forest and its Hollow event mode.",
+      "Axe and bag for fueling the campfire; ordinary-map equipment can help in the Void."
+    ],
+    "tips": [
+      "The event badge permits lantern safe zones. Omnipotence is a separate optional challenge whose official description explicitly says it is NOT part of The Hollow event.",
+      "Taking friends is a creator recommendation, not an established requirement. The recordings also demonstrate solo play."
+    ],
+    "troubleshooting": [
+      "If you cannot find the Void, first reach fire level 3, then reopen The Hollow tracker.",
+      "If the hub reward is missing, verify the exact The Hollow 2026 badge and return to the green 99 Nights doorway’s display. The early Cocajola recording had an empty podium; the later SharkBlox recording demonstrates a successful claim. Neither is a universal server-fix claim.",
+      "Do not confuse the 99 Nights Void quest with the Floor 4 Hub tile puzzle: the latter rewards Boo & Bub, not this chain."
+    ],
+    "estimatedMinutes": null,
+    "videoChapters": [
+      {
+        "label": "0:29 — Read the original game’s event objective",
+        "url": "https://www.youtube.com/watch?v=D3m2Ru2reUQ&t=29s"
+      },
+      {
+        "label": "2:10 — Collect the 20 flowers",
+        "url": "https://www.youtube.com/watch?v=D3m2Ru2reUQ&t=130s"
+      },
+      {
+        "label": "3:36 — Hub display and successful chain claim",
+        "url": "https://www.youtube.com/watch?v=D3m2Ru2reUQ&t=216s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/79546208627805",
+    "startLabel": "Open 99 Nights in the Forest"
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
     "gameId": "the-hollow-2026",
     "sources": [
       "cocajola-night-four",
