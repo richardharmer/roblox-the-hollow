@@ -101,7 +101,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–4 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
+            The Great White Pumpkin: 20 Tickets at the cinema concessions shop, with a recorded successful claim. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–4 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">

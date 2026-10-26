@@ -37,7 +37,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
         </Link>
       </div>
       <p>
-        Choose a reward, follow its steps and save your progress as you play. New guides cover Home Alone’s four visitors and 99 Nights’ 20 Void flowers. Each reward lists its cost and claim route below.
+        Choose a reward, follow its steps and save your progress as you play. New: The Great White Pumpkin has a recorded 20-Ticket shop claim. Guides also cover Home Alone’s four visitors and 99 Nights’ 20 Void flowers. Each reward lists its cost and claim route below.
       </p>
       <p>Haunted Harvest Crown: the video announces a 20-Ticket daily shop item, but does not demonstrate a completed purchase or establish membership eligibility. Current claim availability remains unverified; check the shop’s actual requirements before spending. <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
       <div className="player-reward-list">
@@ -55,7 +55,9 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
               {reward.costLabel}
               <br />
               <span>
-                {reward.id === "anomaly-detection-rig"
+                {reward.id === "great-white-pumpkin"
+                  ? "20 Tickets → concessions → Avatar Items → OWNED"
+                  : reward.id === "anomaly-detection-rig"
                   ? "First Night Story → 4/4 visitors → Floor 4 house"
                   : reward.id === "chrome-deer-skull-chain"
                   ? "Fire level 3 → Void → 20 flowers → hub display"

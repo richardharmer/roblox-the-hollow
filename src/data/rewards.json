@@ -1,5 +1,39 @@
 [
   {
+    "id": "great-white-pumpkin",
+    "slug": "great-white-pumpkin",
+    "name": "The Great White Pumpkin",
+    "description": "A 20-Ticket Avatar Items shop reward. Visit the cinema concessions counter, select the white pumpkin and buy it; the recording shows OWNED and AVATAR ITEM OBTAINED.",
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "conor-white-pumpkin",
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "questIds": [],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "20 earned Tickets in the recorded shop; no Robux or Plus requirement shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Have at least 20 Tickets credited in The Hollow hub. This item is not a zero-Ticket claim.",
+      "Choose The Great White Pumpkin in the standard Avatar Items row. Price and successful delivery were checked in a creator recording, not on our account."
+    ],
+    "steps": [
+      "Earn Tickets through a documented participating-game task and return to The Hollow. Review any REDEEM BADGES prompt and press Confirm to credit the listed amount. Check your current balance; task payouts can differ.",
+      "Enter the cinema’s main building and talk to the concessions NPC at the counter. Open the Little Shop of Terror. The video reaches this counter from the plaza entrance at 0:30–0:35.",
+      "Find The Great White Pumpkin in the standard Avatar Items row, alongside the previously released shop items. The recorded tile shows a Ticket icon and 20, with the buyer’s balance at 660. Select the white pumpkin and check the actual live cost before buying.",
+      "Buy the selected item for 20 Tickets if the live panel matches. At 0:45 the recording shows The Great White Pumpkin marked OWNED, an AVATAR ITEM OBTAINED / Shop Item banner and the balance reduced to 640. A locked silhouette or timer alone is not evidence that the purchase completed.",
+      "Check the item in your Roblox avatar inventory separately. The shop says it will appear there soon; this site did not test delivery on its own account. If OWNED appears but the item is missing, retain the claim screen and check the correct account before spending again."
+    ]
+  },
+  {
     "verificationLevel": "REPORTED",
     "firstSeenAt": "2026-10-26",
     "lastVerifiedAt": "2026-10-26",

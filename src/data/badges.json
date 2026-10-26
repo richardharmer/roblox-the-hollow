@@ -475,23 +475,27 @@
     "id": "badge-3042033884649075",
     "slug": "badge-3042033884649075",
     "name": "The Great White Pumpkin",
-    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "description": "Official Hub identity confirmed. Separate Conor3D footage shows a 20-Ticket shop purchase, OWNED, avatar-item banner and the balance falling by 20.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "conor-white-pumpkin",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
-    "updatedAt": "2026-10-25",
+    "updatedAt": "2026-10-26",
     "publishDetail": false,
     "image": null,
     "gameId": "the-hollow-2026",
     "badgeId": 3042033884649075,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3042033884649075/",
-    "requirements": []
+    "requirements": [
+      "Buy The Great White Pumpkin for 20 earned Tickets at the cinema concessions shop, as recorded."
+    ],
+    "relatedRewardSlug": "great-white-pumpkin"
   },
   {
     "id": "badge-3730061270233127",
