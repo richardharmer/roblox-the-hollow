@@ -73,7 +73,6 @@ export function GameProfile({ id }: { id: string }) {
         <a href="#teaser-evidence">Teaser evidence</a>
         <a href="#game-sources">Sources</a>
       </nav>
-      <AdSlot placement="native" />
       <div className="game-profile-content">
         <div className="prose">
           <section id="event-tasks">

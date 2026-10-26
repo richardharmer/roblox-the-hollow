@@ -168,7 +168,6 @@ export function Detail({
             {entry.badgeId}
           </p>
         )}
-        <AdSlot placement="native" />
         {"prerequisites" in entry && entry.prerequisites.length > 0 && (
           <>
             <h2>Prerequisites</h2>

@@ -45,8 +45,7 @@ for (const width of [375, 390, 768, 1440])
       .getByRole("link", { name: "Games", exact: true })
       .click();
     await expect(page.locator("h1")).toHaveText("The Hollow Games");
-    // Leaving a Social Bar page loads a fresh document; wait for client effects
-    // before typing so hydration cannot replace the initial server-rendered input.
+    // Wait for client effects before interacting with the directory.
     await expect(page.locator(".ad-header script[src]")).toHaveCount(1);
     await page.getByLabel("Search games").fill("nonexistent");
     await expect(

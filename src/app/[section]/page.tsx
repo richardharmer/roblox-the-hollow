@@ -119,7 +119,6 @@ export default async function Section({
           {section === "rewards" && (
             <>
               <RewardIssueNotice />
-              <AdSlot placement="native" />
               <RewardBoard />
               <LauncherGhostsGuide />
               <TicketsGuide />
@@ -135,7 +134,6 @@ export default async function Section({
                   {collections.quests.filter((quest) => quest.publishDetail).length} written walkthroughs cover the reviewed event tasks, including Night 1–4 maze puzzles and participating experiences. Recordings, official written requirements and community reports are attributed in each guide.
                 </p>
               </div>
-              <AdSlot placement="native" />
               <Directory kind="quests" />
               <TicketsGuide />
             </>
@@ -143,7 +141,6 @@ export default async function Section({
           {section === "games" && (
             <>
               <LivestreamSchedule />
-              <AdSlot placement="native" />
               <FullLineup />
               <div className="prose"><h2>More participating-game walkthroughs</h2><p><Link href="/games/home-alone-anomalies/">Home Alone Anomalies: four visitors, notice board and Floor 4 claim →</Link></p></div>
             </>
@@ -175,7 +172,6 @@ export default async function Section({
                 </p>
                 <SourceList ids={["official-hollow-badges"]} />
               </div>
-              <AdSlot placement="native" />
               <Directory kind="badges" />
               <HuntedBriefing />
             </>
@@ -327,7 +323,6 @@ export default async function Section({
         <div className="prose">
           <Status level={event.dateVerification} />
           <EventSchedule />
-          <AdSlot placement="native" />
           <h2>Where does the schedule come from?</h2>
           <p>
             Roblox published the official Newsroom announcement on October 21;
@@ -591,8 +586,7 @@ export default async function Section({
           </p>
           <p>
             We display labeled Adsterra advertisements to support this
-            independent guide. The homepage and puzzle briefing also trial Adsterra Social
-            Bar ads, which may float over the page. Loading an advertisement contacts Adsterra and
+            independent guide. Loading an advertisement contacts Adsterra and
             its delivery partners, which may process your IP address, device and
             browser information, page/referrer information, cookies and ad
             interactions. Ads are third-party promotions, not Roblox rewards or

@@ -12,7 +12,7 @@ let bannerQueue = Promise.resolve();
 export function Advertisement({
   placement,
 }: {
-  placement: "header" | "content" | "sidebar" | "footer" | "native";
+  placement: "header" | "content" | "sidebar" | "footer";
 }) {
   const container = useRef<HTMLElement>(null);
   const host = useRef<HTMLDivElement>(null);
@@ -26,7 +26,7 @@ export function Advertisement({
     let finish: (() => void) | undefined;
     bannerQueue = bannerQueue.then(() => {
       if (cancelled || !target.isConnected) return;
-      const unit = placement === "native" ? "native" : banner
+      const unit = banner
         ? element.clientWidth >= 728
           ? "desktop"
           : element.clientWidth >= 320
@@ -54,44 +54,11 @@ export function Advertisement({
   return (
     <aside
       ref={container}
-      className={`ad-slot ad-${placement} ${placement === "native" ? "ad-native" : banner ? "ad-banner" : "ad-rectangle"}`}
+      className={`ad-slot ad-${placement} ${banner ? "ad-banner" : "ad-rectangle"}`}
       aria-label="Advertisement"
       data-ad-provider="adsterra"
     >
       <div ref={host} className="ad-frame-space" />
     </aside>
   );
-}
-
-// Page-limited trial: the homepage and puzzle landing page mount this component.
-// The provider's original script is inserted directly at the end of the body.
-export function SocialBarTrial() {
-  useEffect(() => {
-    if (process.env.NEXT_PUBLIC_ADS_ENABLED === "false") return;
-    if (!document.querySelector('script[src="https://bicea.org/14/278e37b3554f367cf51584d5599e6289"]')) {
-      const range = document.createRange();
-      range.selectNodeContents(document.body);
-      document.body.append(range.createContextualFragment(adCodes.social));
-    }
-    // The provider has no supplied SPA teardown. Leave this trial through a
-    // normal document navigation so its overlays cannot persist on other pages.
-    const navigate = (event: MouseEvent) => {
-      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const anchor = (event.target as Element | null)?.closest("a");
-      if (!anchor || anchor.target || anchor.hasAttribute("download")) return;
-      const url = new URL(anchor.href, location.href);
-      if (url.origin !== location.origin || url.pathname === location.pathname) return;
-      event.preventDefault();
-      event.stopPropagation();
-      location.assign(url.href);
-    };
-    const reload = () => location.reload();
-    document.addEventListener("click", navigate, true);
-    window.addEventListener("popstate", reload);
-    return () => {
-      document.removeEventListener("click", navigate, true);
-      window.removeEventListener("popstate", reload);
-    };
-  }, []);
-  return null;
 }

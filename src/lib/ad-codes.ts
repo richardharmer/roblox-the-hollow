@@ -1,8 +1,6 @@
 // Verbatim public embed snippets copied from Adsterra on 2026-10-25.
 // Do not rewrite parameters, URLs, attributes, or add an iframe/sandbox.
 export const adCodes = {
-  native: `<script async="async" data-cfasync="false" src="https://bicea.org/21/a3c4d96df4650a272f65a144fd62d913"></script>
-<div id="container-a3c4d96df4650a272f65a144fd62d913"></div>`,
   rectangle: `<script>
   atOptions = {
     'key' : '5eab9d566df2017b106271025e01263d',
@@ -33,5 +31,4 @@ export const adCodes = {
   };
 </script>
 <script src="https://bicea.org/22/3b697ed4f08c77989d03b8459db477b6"></script>`,
-  social: `<script data-cfasync="false" src="https://bicea.org/14/278e37b3554f367cf51584d5599e6289"></script>`,
 } as const;

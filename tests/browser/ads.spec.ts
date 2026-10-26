@@ -3,14 +3,6 @@ import { adCodes } from "../../src/lib/ad-codes";
 
 async function stubAds(page: Page) {
   await page.route("https://bicea.org/**", async (route) => {
-    if (route.request().url().includes("/21/")) {
-      await route.fulfill({ contentType: "application/javascript", body: `var nativeContainer = document.getElementById('container-a3c4d96df4650a272f65a144fd62d913'); nativeContainer.textContent = 'Test native advertisement'; nativeContainer.style.height = '180px';` });
-      return;
-    }
-    if (route.request().url().includes("/14/")) {
-      await route.fulfill({ contentType: "application/javascript", body: "window.socialTrialLoaded = true;" });
-      return;
-    }
     // Deliberately slow the first banner: a second slot must not overwrite
     // atOptions before this script consumes the provider's global settings.
     if (route.request().url().includes("3b697")) await new Promise((resolve) => setTimeout(resolve, 100));
@@ -45,10 +37,6 @@ for (const [width, unit, key, adWidth, adHeight] of [
     // Exact original inline script text, and no added external script attributes.
     expect(await header.locator("script").first().textContent()).toBe(adCodes[unit].split("<script>")[1].split("</script>")[0]);
     expect(await header.locator("script[src]").evaluate((el) => el.outerHTML)).toBe(adCodes[unit].split("\n").at(-1));
-    const native = page.locator(".ad-native");
-    await expect(native).toContainText("Test native advertisement");
-    expect(await native.locator("script").evaluate((el) => el.outerHTML)).toBe(adCodes.native.split("\n")[0]);
-    expect(await native.evaluate((el) => Boolean(el.compareDocumentPosition(document.querySelector('#reward-board')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
     await expect(page.locator(".ad-sidebar iframe")).toHaveAttribute("data-test-key", "5eab9d566df2017b106271025e01263d");
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.setViewportSize({ width: width + 20, height: 900 });
@@ -57,27 +45,20 @@ for (const [width, unit, key, adWidth, adHeight] of [
   });
 }
 
-test("Social Bar runs on home and puzzle and is discarded on other pages", async ({ page }) => {
+test("removed Native Banner and Social Bar never load on formerly enabled pages", async ({ page }) => {
+  const removedRequests: string[] = [];
+  page.on("request", (request) => {
+    if (/bicea\.org\/(14|21)\//.test(request.url())) removedRequests.push(request.url());
+  });
   await stubAds(page);
-  await page.goto("/");
-  const homeSocial = page.locator('script[src*="bicea.org/14/"]');
-  await expect(homeSocial).toHaveCount(1);
-  expect(await homeSocial.evaluate((el) => el.outerHTML)).toBe(adCodes.social);
-  await page.getByRole("link", { name: "Privacy", exact: true }).click();
-  await expect(page).toHaveURL(/privacy/);
-  await expect(page.locator('script[src*="bicea.org"]')).toHaveCount(0);
-  await page.goto("/puzzle/");
-  const social = page.locator('script[src*="bicea.org/14/"]');
-  await expect(social).toHaveCount(1);
-  expect(await social.evaluate((el) => el.outerHTML)).toBe(adCodes.social);
-  await expect(page.locator(".ad-content iframe")).toHaveCount(1);
-  await page.getByRole("link", { name: "release-date briefing", exact: true }).click();
-  await expect(page).toHaveURL(/release-date/);
-  await expect(page.locator(".ad-header iframe")).toHaveCount(1);
-  await expect(page.locator('script[src*="bicea.org/14/"]')).toHaveCount(0);
+  for (const path of ["/", "/puzzle/", "/games/", "/quests/", "/rewards/", "/badges/", "/release-date/", "/quests/night-two-pillars/"]) {
+    await page.goto(path);
+    await expect(page.locator(".ad-header iframe")).toHaveCount(1);
+    await expect(page.locator('.ad-native, script[src*="bicea.org/14/"], script[src*="bicea.org/21/"]')).toHaveCount(0);
+  }
+  expect(removedRequests).toEqual([]);
   await page.goto("/privacy/");
   await expect(page.locator("[data-ad-provider]")).toHaveCount(0);
-  await expect(page.locator('script[src*="bicea.org"]')).toHaveCount(0);
 });
 
 test("long walkthrough includes a second placement after the complete steps", async ({ page }) => {

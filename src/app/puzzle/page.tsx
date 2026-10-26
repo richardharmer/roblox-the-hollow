@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SocialBarTrial } from "@/components/advertisement";
 import {
   AdSlot,
   Breadcrumb,
@@ -19,7 +18,6 @@ export const generateMetadata = () =>
 export default function Puzzle() {
   return (
     <div className="container page-content">
-      <SocialBarTrial />
       <Breadcrumb items={[{ name: "The Hollow puzzle", path: "/puzzle/" }]} />
       <PageHead
         eyebrow="TEASER EVIDENCE / OCTOBER 22, 2026"
@@ -64,7 +62,6 @@ export default function Puzzle() {
             answers, quest steps or item unlock requirements.
           </p>
         </section>
-        <AdSlot placement="native" />
         <section id="qr-code">
           <h2>Is there a verified Hollow QR code or secret word?</h2>
           <p>

@@ -174,7 +174,7 @@ export function VerifiedDates({
 export function AdSlot({
   placement,
 }: {
-  placement: "header" | "content" | "sidebar" | "footer" | "native";
+  placement: "header" | "content" | "sidebar" | "footer";
 }) {
   return process.env.NEXT_PUBLIC_ADS_ENABLED === "false" ? null : (
     <Advertisement placement={placement} />
