@@ -625,9 +625,9 @@
     "url": "https://apis.roblox.com/virtual-events/v1/universes/10770728771/virtual-events?limit=50&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Direct API read October 23 returned nine public active event records and empty pagination cursors. Every record has Roblox Presents group 4111519, universe 10770728771 and place 116463962153167. Original UTC timestamps and event IDs retained in research/hollow-livestreams-api-2026-10-23.json. Starts include 59.606 seconds; display omits seconds to match the official Seek event page, also read directly. Records establish scheduled streams, not actual starts, monster unlocks or the finale start.",
-    "lastCheckedAt": "2026-10-23",
-    "lastSuccessAt": "2026-10-23"
+    "note": "Direct October 26 API read: 10 public active event records under verified Roblox Presents group 4111519, Universe 10770728771, Place 116463962153167; empty pagination cursor. Additional event 9185919240002208323 has title/subtitle/description ????????? and runs October 31 17:30:07.952–18:00:07.952 UTC (November 1 01:30–02:00 Beijing). Created October 23 UTC, not newly created on this check. Its identity as the finale is not established.",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
   },
   {
     "id": "waffle-night-two",

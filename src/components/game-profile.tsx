@@ -9,6 +9,7 @@ import {
   sources,
   formatDate,
 } from "@/lib/content";
+import { guidesForGame } from "@/lib/game-guides";
 import { AdSlot, Breadcrumb, SourceList, Status, VerifiedDates } from "./ui";
 
 export function GameProfile({ id }: { id: string }) {
@@ -16,6 +17,9 @@ export function GameProfile({ id }: { id: string }) {
   const participation = games.find((g) => g.id === id);
   const teaser = teasers.find((t) => t.id === id);
   if (!game || !teaser) notFound();
+  const guides = guidesForGame(id);
+  const guideSources = [...new Set(guides.flatMap(({ quest }) => quest.sources))];
+  const reviewDate = guides.map(({ quest }) => quest.lastVerifiedAt).sort().at(-1);
   const original = sources.find((s) => s.id === teaser.officialSourceId)!;
   return (
     <div className="container page-content">
@@ -41,14 +45,15 @@ export function GameProfile({ id }: { id: string }) {
         <div className="game-profile-heading">
           <p className="eyebrow">GAME PROFILE / THE HOLLOW 2026</p>
           <h1>{game.name}</h1>
-          <p>{game.summary}</p>
+          <p>{guides.length ? guides.map(({ quest }) => quest.description).join(" ") : `${participation?.monster} is confirmed in The Hollow. A complete reward walkthrough for this game has not yet been verified.`}</p>
           <p className="game-publisher">By {game.creator}</p>
           <div className="game-participation">
             <Status level={participation?.verificationLevel ?? "REPORTED"} />
             <span>The Hollow participation</span>
           </div>
+          <a className="button primary" href="#event-tasks">{guides.length ? "Read tasks and claim steps" : "Check task verification status"} <ArrowRight size={17} /></a>
           <a
-            className="button primary"
+            className="text-link"
             href={game.robloxUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +66,8 @@ export function GameProfile({ id }: { id: string }) {
         </div>
       </header>
       <nav className="game-profile-nav" aria-label="On this game page">
-        <a href="#overview">Overview</a>
+        <a href="#event-tasks">Tasks & rewards</a>
+        <a href="#overview">Game background</a>
         <a href="#hollow-status">Hollow status</a>
         <a href="#teaser-evidence">Teaser evidence</a>
         <a href="#game-sources">Sources</a>
@@ -69,36 +75,40 @@ export function GameProfile({ id }: { id: string }) {
       <AdSlot placement="native" />
       <div className="game-profile-content">
         <div className="prose">
-          <section id="overview">
-            <h2>About {game.name}</h2>
-            {game.overview.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
+          <section id="event-tasks">
+            <h2>{guides.length ? "Tasks, rewards and claim steps" : "Task guide: verification pending"}</h2>
+            {guides.length ? guides.map(({ quest, rewards: taskRewards }) => (
+              <article key={quest.id}>
+                <Status level={quest.verificationLevel} />
+                <h3>{quest.name}</h3>
+                <p>{quest.id.startsWith("night-") ? "Location: The Hollow hub maze. This task takes place in the event hub." : `Location: ${game.name}, followed by the return to The Hollow hub.`}</p>
+                <p>Reviewed {formatDate(quest.lastVerifiedAt)} against the cited recordings. This is not our own account playtest.</p>
+                {taskRewards.map((reward) => <div className="callout" key={reward.id}>
+                  <strong>Reward: <Link href={`/rewards/${reward.slug}/`}>{reward.name}</Link></strong>
+                  <p>{reward.costLabel}</p>
+                  <ul>{reward.requirements.map((requirement) => <li key={requirement}>{requirement}</li>)}</ul>
+                </div>)}
+                <h4>Complete the task and claim</h4>
+                <ol className="step-list">{quest.steps.map((step) => <li key={step}>{step}</li>)}</ol>
+                {quest.tips.length > 0 && <><h4>What helps</h4><ul>{quest.tips.map((tip) => <li key={tip}>{tip}</li>)}</ul></>}
+                {quest.troubleshooting.length > 0 && <><h4>If it does not count</h4><ul>{quest.troubleshooting.map((tip) => <li key={tip}>{tip}</li>)}</ul></>}
+                <SourceList ids={quest.sources} />
+                <p><Link href={`/quests/${quest.slug}/`}>Open this task’s guide and video timestamps →</Link></p>
+              </article>
+            )) : <>
+              <p>We have confirmed the featured monster, but have not yet checked a complete event run and its reward handover for {game.name}. A badge name or a normal seasonal objective is insufficient to publish a claim route.</p>
+              <p>Still needed: the event-specific entry point, exact completion objective, reward and any Ticket or membership requirement, plus the final claim screen.</p>
+              <p><Link href="/quests/">Choose a documented task you can complete now →</Link></p>
+            </>}
           </section>
           <section id="hollow-status">
-            <h2>Is {game.name} in The Hollow?</h2>
-            <p>{game.eventNote}</p>
-            <div className="callout">
-              <strong>Confirmed monster: {participation?.monster}</strong>
-              <p>
-                Roblox confirms this monster in the shared Hollow hub. The
-                original game link below does not open that hub or establish a
-                separate quest.
-              </p>
-            </div>
-            <h3>Tasks, badges and rewards</h3>
-            <p>
-              No event-specific instructions are verified for {game.name} yet.
-              Its normal objectives and seasonal updates should not be treated
-              as The Hollow requirements. We will add a sourced walkthrough when
-              the game’s actual event tasks and reward conditions can be
-              checked.
-            </p>
-            <p>
-              <Link href="/release-date/">Check the event date briefing</Link> ·{" "}
-              <Link href="/rewards/">View documented rewards</Link>
-            </p>
+            <h2>Featured monster and event identity</h2>
+            <p>Roblox’s official lineup confirms {participation?.monster} from {game.name} in The Hollow.</p>
+            <p>Use the task location shown above to choose between the event hub and the original game. <Link href="/games/#livestreams">View the official event schedule →</Link></p>
           </section>
+          <details id="overview"><summary>Original game background</summary>
+            {game.overview.map((p) => <p key={p}>{p}</p>)}
+          </details>
           <AdSlot placement="content" />
           <section id="teaser-evidence">
             <h2>The Instagram teaser</h2>
@@ -133,14 +143,15 @@ export function GameProfile({ id }: { id: string }) {
             <h2>Sources & verification</h2>
             <SourceList
               ids={[
+                ...guideSources,
                 ...(participation?.sources ?? [game.sourceId]),
                 teaser.officialSourceId,
                 ...teaser.reportSourceIds,
               ]}
             />
             <VerifiedDates
-              verified={participation?.lastVerifiedAt ?? game.checkedAt}
-              updated={participation?.updatedAt ?? game.checkedAt}
+              verified={reviewDate ?? participation?.lastVerifiedAt ?? game.checkedAt}
+              updated={reviewDate ?? participation?.updatedAt ?? game.checkedAt}
             />
           </section>
         </div>
@@ -156,7 +167,7 @@ export function GameProfile({ id }: { id: string }) {
             <dt>Identity checked</dt>
             <dd>{formatDate(game.checkedAt)}</dd>
             <dt>Event objectives</dt>
-            <dd>Awaiting verification</dd>
+            <dd>{guides.length ? `${guides.length} recorded task guides above` : "Full claim route pending"}</dd>
           </dl>
           <a
             href={game.robloxUrl}

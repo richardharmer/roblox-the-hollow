@@ -233,3 +233,30 @@ test("new Hub badge identities remain separate from unverified claim instruction
   await page.goto("/rewards/");
   await expect(page.getByRole("link", { name: "Check all 18 official Hub badge IDs →" })).toBeVisible();
 });
+
+test("game pages present recorded tasks before background and preserve pending gaps", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const [slug, objective] of [
+    ["doors", "50"],
+    ["dandys-world", "200"],
+    ["demonology", "six"],
+    ["99-nights-in-the-forest", "tile"],
+  ]) {
+    await page.goto(`/games/${slug}/`);
+    const tasks = page.locator("#event-tasks");
+    await expect(tasks.locator(".step-list").first()).toBeVisible();
+    await expect(tasks).toContainText(objective);
+    await expect(tasks).not.toContainText("No event-specific instructions");
+    await page.getByRole("link", { name: "Read tasks and claim steps", exact: false }).click();
+    await expect(page).toHaveURL(/#event-tasks$/);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+  await page.goto("/games/warden/");
+  await expect(page.locator("#event-tasks")).toContainText("Task guide: verification pending");
+  await expect(page.locator("#event-tasks .step-list")).toHaveCount(0);
+  await page.goto("/games/");
+  const mystery = page.locator("#livestreams tr").filter({ hasText: "Unnamed official event" });
+  await expect(mystery).toContainText("01:30");
+  await expect(mystery.getByRole("link")).toHaveAttribute("href", "https://www.roblox.com/events/9185919240002208323");
+  await expect(page.locator("#livestreams")).toContainText("do not identify it as the finale");
+});

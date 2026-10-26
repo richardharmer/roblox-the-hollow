@@ -15,11 +15,11 @@ function dateLabel(value: string, timeZone: string) {
 export function LivestreamSchedule() {
   return (
     <section className="prose field-notes" id="livestreams">
-      <h2>Official creator livestream schedule</h2>
+      <h2>Official event and livestream schedule</h2>
       <Status level="CONFIRMED" />
       <p>
-        Roblox’s public event API lists all nine sessions under Roblox Presents,
-        in The Hollow universe 10770728771. Checked October 23, 2026. Open a
+        Roblox’s public event API lists {streams.length} events under Roblox Presents,
+        in The Hollow universe 10770728771. Checked October 26, 2026. Open a
         session for its current official event page.
       </p>
       <div className="field-table-wrap">
@@ -43,7 +43,7 @@ export function LivestreamSchedule() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {stream.title}
+                    {stream.title === "?????????" ? "Unnamed official event (?????????)" : stream.title}
                   </a>
                 </th>
                 <td>
@@ -62,7 +62,7 @@ export function LivestreamSchedule() {
         </table>
       </div>
       <p>
-        The records contain a 59.606-second offset; the table omits seconds,
+        The table omits the records’ seconds,
         matching the official event page’s minute display. Each currently lists
         a 30-minute window. These are scheduled sessions, not proof that a
         stream started or lasted exactly 30 minutes.
@@ -72,7 +72,7 @@ export function LivestreamSchedule() {
           Livestream order is not a verified monster-unlock calendar.
         </strong>{" "}
         The records do not establish new maze release times, quest unlocks or
-        the finale’s exact start. Piggy × KreekCraft is listed for October 31 at
+        the finale’s exact start. The unnamed event is scheduled for October 31 at 17:30 UTC (November 1 at 01:30 Beijing), but its title and description do not identify it as the finale. Piggy × KreekCraft is listed for October 31 at
         16:30 UTC (November 1 at 00:30 Beijing); that listing alone does not
         identify the finale.
       </p>

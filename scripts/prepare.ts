@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { guidesForGame } from "../src/lib/game-guides";
 import { collections, updates, gameProfiles } from "../src/lib/content";
 const dir = "src/app/(generated)";
 await fs.rm(dir, { recursive: true, force: true });
@@ -19,11 +20,13 @@ for (const [kind, entries] of Object.entries({ ...collections, updates })) {
 for (const profile of gameProfiles) {
   if (collections.games.some((g) => g.slug === profile.id && g.publishDetail))
     continue;
+  const guides = guidesForGame(profile.id);
+  const profileSummary = guides.length ? `${profile.name} event tasks: ` + guides.map(({ quest }) => quest.description).join(" ") : `${profile.name}: confirmed monster and the remaining gaps in task and reward verification.`;
   const target = path.join(dir, "games", profile.id);
   await fs.mkdir(target, { recursive: true });
   await fs.writeFile(
     path.join(target, "page.tsx"),
-    `import {GameProfile} from '@/components/game-profile';import {metadata as makeMetadata} from '@/lib/seo';export const metadata=makeMetadata(${JSON.stringify(profile.name + " in The Hollow — Game & Event Status")},${JSON.stringify(profile.summary + " Check its confirmed monster, official Roblox link and Hollow evidence.")},${JSON.stringify("/games/" + profile.id + "/")},true);export default function Page(){return <GameProfile id=${JSON.stringify(profile.id)}/>}`,
+    `import {GameProfile} from '@/components/game-profile';import {metadata as makeMetadata} from '@/lib/seo';export const metadata=makeMetadata(${JSON.stringify(profile.name + " in The Hollow — Tasks, Rewards & Claim Status")},${JSON.stringify(profileSummary)},${JSON.stringify("/games/" + profile.id + "/")},true);export default function Page(){return <GameProfile id=${JSON.stringify(profile.id)}/>}`,
   );
 }
 const missing = async (file: string) => {
