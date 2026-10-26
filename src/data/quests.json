@@ -6,6 +6,59 @@
     "updatedAt": "2026-10-26",
     "publishDetail": true,
     "image": null,
+    "gameId": "home-alone-anomalies",
+    "sources": [
+      "sharkblox-home-alone",
+      "official-home-alone-hollow"
+    ],
+    "id": "home-alone-four-visitors",
+    "slug": "home-alone-four-visitors",
+    "name": "Home Alone: meet four crossover visitors and claim the Rig",
+    "description": "Play First Night Story, complete household tasks until the crossover tracker reaches 4/4, then claim Anomaly Detection Rig inside the Home Alone house on Hub Floor 4.",
+    "steps": [
+      "Join Home Alone Anomalies and select First Night in Story mode. The recorded run uses one player; the creator says other players are optional. Close the initial panels to enter the house.",
+      "Do household tasks while time advances and watch for crossover visitors. The video shows four visitors appearing during the night. Their exact identities and spawn times are not established as a universal schedule; the creator’s 3 a.m. and 4 a.m. sightings are examples.",
+      "Check the house notice board for the crossover-character tracker. Meet all four until it reads 4/4. The official objective is four characters, not surviving every night, buying equipment or collecting four ordinary household anomalies.",
+      "Wait for Crossover Hunter [The Hollow] to be awarded. Its official badge ID is 434944108901978. AFK completion is unverified: the creator completes tasks while waiting, so do not assume standing idle is sufficient.",
+      "Return to The Hollow hub and review any REDEEM BADGES prompt. The creator reports 10 Tickets in this run; that number is not a guaranteed current payout. The avatar item still has a separate claim location.",
+      "Take the cinema elevator to Floor 4 and find the Home Alone house room. Enter the house and use its reward display. The recording shows the Roblox Presents Anomaly Detection Rig badge award after the house claim at about 3:00. Check avatar inventory separately; this is a layered-clothing item and fit can vary by avatar. This site has not performed an own-account claim."
+    ],
+    "prerequisites": [
+      "Access to Home Alone Anomalies and Hub Floor 4."
+    ],
+    "tips": [
+      "Check the notice board instead of guessing which normal visitors count.",
+      "The Floor 4 Home Alone house is separate from the 99 Nights tile-puzzle room."
+    ],
+    "troubleshooting": [
+      "If only 3/4 count, continue the night and check the notice board after the next crossover appearance. Exact guaranteed spawn times are not verified.",
+      "If the plaza podium is empty, follow the recorded Floor 4 house claim route rather than assuming the badge failed. Check both the original-game badge and your avatar inventory."
+    ],
+    "estimatedMinutes": null,
+    "videoChapters": [
+      {
+        "label": "0:34 — Four-character objective and First Night Story",
+        "url": "https://www.youtube.com/watch?v=2Ct19dq8FCg&t=34s"
+      },
+      {
+        "label": "1:53 — Check the character tracker",
+        "url": "https://www.youtube.com/watch?v=2Ct19dq8FCg&t=113s"
+      },
+      {
+        "label": "2:35 — Floor 4 house claim",
+        "url": "https://www.youtube.com/watch?v=2Ct19dq8FCg&t=155s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/87468080405188",
+    "startLabel": "Open Home Alone Anomalies"
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
     "gameId": "99-nights-in-the-forest",
     "sources": [
       "sharkblox-forest-chain",

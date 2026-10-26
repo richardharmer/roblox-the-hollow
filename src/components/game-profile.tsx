@@ -9,6 +9,7 @@ import {
   sources,
   formatDate,
 } from "@/lib/content";
+import { QuestSteps } from "./quest-steps";
 import { guidesForGame } from "@/lib/game-guides";
 import { AdSlot, Breadcrumb, SourceList, Status, VerifiedDates } from "./ui";
 
@@ -89,7 +90,7 @@ export function GameProfile({ id }: { id: string }) {
                   <ul>{reward.requirements.map((requirement) => <li key={requirement}>{requirement}</li>)}</ul>
                 </div>)}
                 <h4>Complete the task and claim</h4>
-                <ol className="step-list">{quest.steps.map((step) => <li key={step}>{step}</li>)}</ol>
+                <QuestSteps id={quest.id} steps={quest.steps} />
                 {quest.tips.length > 0 && <><h4>What helps</h4><ul>{quest.tips.map((tip) => <li key={tip}>{tip}</li>)}</ul></>}
                 {quest.troubleshooting.length > 0 && <><h4>If it does not count</h4><ul>{quest.troubleshooting.map((tip) => <li key={tip}>{tip}</li>)}</ul></>}
                 <SourceList ids={quest.sources} />

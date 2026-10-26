@@ -145,6 +145,7 @@ export default async function Section({
               <LivestreamSchedule />
               <AdSlot placement="native" />
               <FullLineup />
+              <div className="prose"><h2>More participating-game walkthroughs</h2><p><Link href="/games/home-alone-anomalies/">Home Alone Anomalies: four visitors, notice board and Floor 4 claim →</Link></p></div>
             </>
           )}
           {section === "quests" && (
@@ -185,8 +186,7 @@ export default async function Section({
               <h2>Where to play and what to do</h2>
               <p>
                 The Hollow takes place in a shared event hub. The nine featured
-                games supply its monsters; their original game links are not
-                confirmed destinations for separate event quests. The Outskirts
+                games supply its monsters; separate original-game quests are documented where complete evidence is available. The Outskirts
                 is a separately announced cross-game quest lineup, listed above.
                 The official hub description now confirms avatar-item quests
                 both in the hub and participating experiences. Start with the{" "}

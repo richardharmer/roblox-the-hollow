@@ -524,22 +524,27 @@
     "id": "badge-3319727498189296",
     "slug": "badge-3319727498189296",
     "name": "Anomaly Detection Rig",
-    "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
+    "description": "Official Hub identity confirmed. Separate recorded walkthrough shows four Home Alone crossover visitors and the Floor 4 house claim.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "sharkblox-home-alone",
+      "official-home-alone-hollow",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-25",
     "lastVerifiedAt": "2026-10-25",
-    "updatedAt": "2026-10-25",
+    "updatedAt": "2026-10-26",
     "publishDetail": false,
     "image": null,
     "gameId": "the-hollow-2026",
     "badgeId": 3319727498189296,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3319727498189296/",
-    "requirements": []
+    "requirements": [
+      "Meet all four crossover visitors and use the Floor 4 Home Alone house reward display."
+    ],
+    "relatedRewardSlug": "anomaly-detection-rig"
   }
 ]

@@ -21,6 +21,7 @@ import {
 } from "./ui";
 import { jsonLd } from "@/lib/seo";
 import { TeaserGallery } from "./teasers";
+import { QuestSteps } from "./quest-steps";
 import { NightTwoVisualGuide } from "./night-two-visual-guide";
 export function Detail({
   kind,
@@ -204,16 +205,8 @@ export function Detail({
         {("steps" in entry || "walkthrough" in entry) && (
           <>
             <h2>Step-by-step walkthrough</h2>
-            <ol className="step-list">
-              {("steps" in entry
-                ? entry.steps
-                : "walkthrough" in entry
-                  ? entry.walkthrough
-                  : []
-              ).map((p) => (
-                <li key={p}>{p}</li>
-              ))}
-            </ol>
+            {kind === "games" && <p><Status level="REPORTED" /> The following task steps come from the cited creator recording. Confirmed participation does not upgrade the walkthrough to official instructions.</p>}
+            <QuestSteps id={entry.id} steps={"steps" in entry ? entry.steps : "walkthrough" in entry ? entry.walkthrough : []} />
           </>
         )}
         {(("steps" in entry && entry.steps.length >= 3) ||

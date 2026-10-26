@@ -205,5 +205,38 @@
     "participationStatus": "CONFIRMED",
     "walkthrough": [],
     "troubleshooting": []
+  },
+  {
+    "verificationLevel": "CONFIRMED",
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
+    "sources": [
+      "sharkblox-home-alone",
+      "official-home-alone-hollow"
+    ],
+    "id": "home-alone-anomalies",
+    "slug": "home-alone-anomalies",
+    "name": "Home Alone Anomalies",
+    "description": "Meet four crossover visitors in First Night Story, track 4/4 on the notice board and claim Anomaly Detection Rig in the Hub Floor 4 house.",
+    "robloxUrl": "https://www.roblox.com/games/87468080405188/Home-Alone-Anomalies",
+    "universeId": 10123059921,
+    "placeId": 87468080405188,
+    "monster": null,
+    "participationStatus": "CONFIRMED",
+    "walkthrough": [
+      "Join Home Alone Anomalies and select First Night in Story mode. The recorded run uses one player; the creator says other players are optional. Close the initial panels to enter the house.",
+      "Do household tasks while time advances and watch for crossover visitors. The video shows four visitors appearing during the night. Their exact identities and spawn times are not established as a universal schedule; the creator’s 3 a.m. and 4 a.m. sightings are examples.",
+      "Check the house notice board for the crossover-character tracker. Meet all four until it reads 4/4. The official objective is four characters, not surviving every night, buying equipment or collecting four ordinary household anomalies.",
+      "Wait for Crossover Hunter [The Hollow] to be awarded. Its official badge ID is 434944108901978. AFK completion is unverified: the creator completes tasks while waiting, so do not assume standing idle is sufficient.",
+      "Return to The Hollow hub and review any REDEEM BADGES prompt. The creator reports 10 Tickets in this run; that number is not a guaranteed current payout. The avatar item still has a separate claim location.",
+      "Take the cinema elevator to Floor 4 and find the Home Alone house room. Enter the house and use its reward display. The recording shows the Roblox Presents Anomaly Detection Rig badge award after the house claim at about 3:00. Check avatar inventory separately; this is a layered-clothing item and fit can vary by avatar. This site has not performed an own-account claim."
+    ],
+    "troubleshooting": [
+      "If only 3/4 count, continue the night and check the notice board after the next crossover appearance. Exact guaranteed spawn times are not verified.",
+      "If the plaza podium is empty, follow the recorded Floor 4 house claim route rather than assuming the badge failed. Check both the original-game badge and your avatar inventory."
+    ]
   }
 ]

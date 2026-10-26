@@ -58,7 +58,6 @@ export function Advertisement({
       aria-label="Advertisement"
       data-ad-provider="adsterra"
     >
-      <span className="ad-label">Advertisement</span>
       <div ref={host} className="ad-frame-space" />
     </aside>
   );

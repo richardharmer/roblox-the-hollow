@@ -838,5 +838,25 @@
     "note": "October 26 direct read: The Hollow 2026 badge 2195398371010118 describes fire level 3, Void flowers, lantern safe zones and teleport-out on death. Omnipotence badge 2875644502051649 explicitly says it is NOT part of The Hollow event. First page has next cursor; not an exhaustive badge inventory. No Tickets amount or avatar claim route established by API.",
     "lastCheckedAt": "2026-10-26",
     "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "sharkblox-home-alone",
+    "name": "SharkBlox — Home Alone four visitors and Floor 4 Rig claim",
+    "url": "https://www.youtube.com/watch?v=2Ct19dq8FCg",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "note": "October 26: complete native transcript 0:00–3:05 read. First Night Story, notice-board 4/4 tracker, original-game badge, then Floor 4 Home Alone house. Key late frame at approximately 3:00 shows Roblox Presents Anomaly Detection Rig badge award after house interaction. 10 Tickets is creator-reported, not a guaranteed payout. AFK, fixed spawn times and own-account delivery not verified.",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "official-home-alone-hollow",
+    "name": "Roblox — Home Alone Crossover Hunter badge",
+    "url": "https://badges.roblox.com/v1/badges/434944108901978",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Direct October 26 official universe badge list: Crossover Hunter [The Hollow] 434944108901978 requires finding all four crossover characters for the free avatar item. Place-to-universe API maps 87468080405188 to 10123059921. Badge identity does not establish Tickets amount or the hub claim route.",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
   }
 ]

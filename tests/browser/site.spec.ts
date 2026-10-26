@@ -260,3 +260,27 @@ test("game pages present recorded tasks before background and preserve pending g
   await expect(mystery.getByRole("link")).toHaveAttribute("href", "https://www.roblox.com/events/9185919240002208323");
   await expect(page.locator("#livestreams")).toContainText("do not identify it as the finale");
 });
+
+test("step checklist persists across game and quest pages and ads have no decorative shell", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/quests/forest-void-flowers/");
+  const steps = page.getByRole("region", { name: "Step-by-step task checklist" });
+  await expect(steps.getByRole("status")).toHaveText("0 of 8 completed");
+  await steps.getByLabel("Step 1 done", { exact: true }).check();
+  await expect(steps.getByRole("status")).toHaveText("1 of 8 completed");
+  await steps.getByRole("link", { name: "Next unfinished step" }).click();
+  await expect(page).toHaveURL(/#forest-void-flowers-step-2$/);
+  await page.goto("/games/99-nights-in-the-forest/");
+  await expect(page.locator(".quest-stepper").first().getByRole("status")).toHaveText("1 of 8 completed");
+  await page.reload();
+  await expect(page.locator(".quest-stepper").first().getByLabel("Step 1 done", { exact: true })).toBeChecked();
+  await expect(page.locator(".ad-label")).toHaveCount(0);
+  await expect(page.locator(".ad-slot").first()).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.locator(".quest-stepper").first().scrollIntoViewIfNeeded();
+  await page.screenshot({ path: "/tmp/hollow-steps-mobile.png", fullPage: false });
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.locator(".quest-stepper").first().scrollIntoViewIfNeeded();
+  await expect(page.locator(".quest-stepper").first().getByRole("status")).toHaveText("1 of 8 completed");
+  await page.screenshot({ path: "/tmp/hollow-steps-desktop.png", fullPage: false });
+});
