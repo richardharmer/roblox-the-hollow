@@ -246,11 +246,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "haunted-harvest-crown",
     "robloxUrl": "https://www.roblox.com/badges/4135856183138544/",
     "requirements": [
       "Creator-recorded shop purchase: 20 Tickets; see the separate reward walkthrough."
-    ],
-    "relatedRewardSlug": "haunted-harvest-crown"
+    ]
   },
   {
     "id": "badge-891910194111232",
@@ -339,11 +339,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "festering-felix",
     "robloxUrl": "https://www.roblox.com/badges/1158209636385797/",
     "requirements": [
       "See the Night 3 grave puzzle guide; badge identity does not prove avatar inventory delivery."
-    ],
-    "relatedRewardSlug": "festering-felix"
+    ]
   },
   {
     "id": "badge-1208009989394323",
@@ -365,11 +365,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "burned-necrobloxicon",
     "robloxUrl": "https://www.roblox.com/badges/1208009989394323/",
     "requirements": [
       "Purchase the named avatar item for 60 Tickets in the hub shop; see recorded claim guide."
-    ],
-    "relatedRewardSlug": "burned-necrobloxicon"
+    ]
   },
   {
     "id": "badge-3255111880715709",
@@ -391,11 +391,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "biter-fedora",
     "robloxUrl": "https://www.roblox.com/badges/3255111880715709/",
     "requirements": [
       "Complete the Demonology event ritual and portal, then use the hub Claim display."
-    ],
-    "relatedRewardSlug": "biter-fedora"
+    ]
   },
   {
     "id": "badge-3557398016002690",
@@ -417,11 +417,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "trick-or-treat-tentacles",
     "robloxUrl": "https://www.roblox.com/badges/3557398016002690/",
     "requirements": [
       "Roblox Plus eligibility and 60 Tickets; see the recorded shop claim guide."
-    ],
-    "relatedRewardSlug": "trick-or-treat-tentacles"
+    ]
   },
   {
     "id": "badge-79182670138641",
@@ -443,11 +443,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "cowboy-hat-of-the-dead",
     "robloxUrl": "https://www.roblox.com/badges/79182670138641/",
     "requirements": [
       "Complete the Dead Rails event quest and visit the Floor 3 hat display."
-    ],
-    "relatedRewardSlug": "cowboy-hat-of-the-dead"
+    ]
   },
   {
     "id": "badge-2815942081094508",
@@ -469,11 +469,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "boo-and-bub",
     "robloxUrl": "https://www.roblox.com/badges/2815942081094508/",
     "requirements": [
       "Finish the Floor 4 path puzzle and return with the relic."
-    ],
-    "relatedRewardSlug": "boo-and-bub"
+    ]
   },
   {
     "id": "badge-3042033884649075",
@@ -495,11 +495,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "great-white-pumpkin",
     "robloxUrl": "https://www.roblox.com/badges/3042033884649075/",
     "requirements": [
       "Buy The Great White Pumpkin for 20 earned Tickets at the cinema concessions shop, as recorded."
-    ],
-    "relatedRewardSlug": "great-white-pumpkin"
+    ]
   },
   {
     "id": "badge-3730061270233127",
@@ -522,11 +522,11 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "chrome-deer-skull-chain",
     "robloxUrl": "https://www.roblox.com/badges/3730061270233127/",
     "requirements": [
       "Complete the 99 Nights Void flower quest and use its hub reward display."
-    ],
-    "relatedRewardSlug": "chrome-deer-skull-chain"
+    ]
   },
   {
     "id": "badge-3319727498189296",
@@ -549,10 +549,29 @@
     "universeId": 10770728771,
     "enabled": true,
     "claimInstructionsEvidence": "REPORTED",
+    "relatedRewardSlug": "anomaly-detection-rig",
     "robloxUrl": "https://www.roblox.com/badges/3319727498189296/",
     "requirements": [
       "Meet all four crossover visitors and use the Floor 4 Home Alone house reward display."
+    ]
+  },
+  {
+    "id": "badge-1614932857309915",
+    "slug": "badge-1614932857309915",
+    "name": "Children of The Hollow",
+    "description": "The official badge description explicitly references The Hollow. Consult the official page for its current wording.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-6b83f8c0b9f8"
     ],
-    "relatedRewardSlug": "anomaly-detection-rig"
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-mimic",
+    "badgeId": 1614932857309915,
+    "robloxUrl": "https://www.roblox.com/badges/1614932857309915/",
+    "requirements": []
   }
 ]

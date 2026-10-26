@@ -878,5 +878,15 @@
     "note": "October 26 native original 1:00 video visual review: intro Roblox Item Owned; relevant route 0:25–0:45 checked in keyframes. Caption says collect20Tickets, approach cinema concessions. At0:40 selected Haunted Harvest Crown panel shows20 and balance300 in standard Avatar Items row. At0:45 AVATAR ITEM OBTAINED / Haunted Harvest Crown / Shop Item, badge toast and balance280. No Plus requirement shown. Supersedes earlier announcement-only evidence. Not an own-account test; no expiry inferred.",
     "lastCheckedAt": "2026-10-26",
     "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "official-6b83f8c0b9f8",
+    "name": "Roblox Badges API official evidence",
+    "url": "https://badges.roblox.com/v1/universes/2294168059/badges?limit=100&sortOrder=Desc",
+    "level": "OFFICIAL",
+    "access": "READ",
+    "note": "Official badge description explicitly names The Hollow in a confirmed game",
+    "lastCheckedAt": "2026-10-26",
+    "lastSuccessAt": "2026-10-26"
   }
 ]
