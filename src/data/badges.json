@@ -233,20 +233,24 @@
     "description": "Official identity confirmed in The Hollow universe. The API description is empty; it does not specify completion requirements or prove item delivery.",
     "verificationLevel": "CONFIRMED",
     "sources": [
-      "official-hollow-badges"
+      "official-hollow-badges",
+      "conor-harvest-crown"
     ],
     "firstSeenAt": "2026-10-24",
     "lastVerifiedAt": "2026-10-25",
-    "updatedAt": "2026-10-24",
+    "updatedAt": "2026-10-26",
     "publishDetail": false,
     "image": null,
     "gameId": "the-hollow-2026",
     "badgeId": 4135856183138544,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/4135856183138544/",
-    "requirements": []
+    "requirements": [
+      "Creator-recorded shop purchase: 20 Tickets; see the separate reward walkthrough."
+    ],
+    "relatedRewardSlug": "haunted-harvest-crown"
   },
   {
     "id": "badge-891910194111232",

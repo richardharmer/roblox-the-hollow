@@ -1,5 +1,39 @@
 [
   {
+    "id": "haunted-harvest-crown",
+    "slug": "haunted-harvest-crown",
+    "name": "Haunted Harvest Crown",
+    "description": "A 20-Ticket reward at the cinema concessions shop. The original recording shows the named purchase followed by AVATAR ITEM OBTAINED and a balance change from 300 to 280.",
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "conor-harvest-crown",
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-26",
+    "lastVerifiedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "questIds": [],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "20 earned Tickets in the recorded shop; no Robux or Plus requirement shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Have at least 20 credited Tickets in The Hollow hub; this is not a zero-Ticket claim.",
+      "Select Haunted Harvest Crown in the standard Avatar Items row. No Plus requirement is shown in the reviewed purchase."
+    ],
+    "steps": [
+      "Earn Tickets through a documented participating-game task and return to The Hollow. Review any REDEEM BADGES prompt and press Confirm to credit the listed amount. Check your current balance; task payouts can differ.",
+      "Enter the cinema from the plaza and approach the concessions counter. Talk to the NPC and open the Little Shop of Terror; the recording shows the approach at 0:25–0:30.",
+      "Choose Haunted Harvest Crown in the standard Avatar Items row. At 0:40 the selected panel names the crown, shows a Ticket icon with 20 and the buyer’s balance at 300. Check the live panel before spending.",
+      "Buy the crown for 20 Tickets if the live panel matches. At 0:45 the video shows AVATAR ITEM OBTAINED / Haunted Harvest Crown / Shop Item and the balance at 280. The badge toast is additional evidence, not a substitute for this purchase result.",
+      "Check the item in your Roblox avatar inventory separately. The shop says it will appear there soon; this site did not test delivery on its own account. If OWNED appears but the item is missing, retain the claim screen and check the correct account before spending again."
+    ]
+  },
+  {
     "id": "great-white-pumpkin",
     "slug": "great-white-pumpkin",
     "name": "The Great White Pumpkin",
