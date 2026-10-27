@@ -674,9 +674,10 @@
     "id": "badge-2586893792208379",
     "slug": "badge-2586893792208379",
     "name": "The Amazing Liquefactive Bighead",
-    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "description": "Official Hub badge identity confirmed; creator recordings separately support the documented task and reward claim.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "waffle-night-six",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-27",
@@ -688,9 +689,10 @@
     "badgeId": 2586893792208379,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/2586893792208379/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "amazing-liquefactive-bighead"
   },
   {
     "id": "badge-3555451806029358",
@@ -766,10 +768,13 @@
     "id": "badge-3642653337776706",
     "slug": "badge-3642653337776706",
     "name": "LOLWEN",
-    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "description": "Official Hub badge identity confirmed; creator recordings separately support the documented task and reward claim.",
     "verificationLevel": "CONFIRMED",
     "sources": [
-      "official-hollow-badges"
+      "waffle-night-six",
+      "official-hollow-badges",
+      "waffle-banana-hollow",
+      "conor-lolwen-claim"
     ],
     "firstSeenAt": "2026-10-27",
     "lastVerifiedAt": "2026-10-27",
@@ -780,9 +785,10 @@
     "badgeId": 3642653337776706,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3642653337776706/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "lolwen"
   },
   {
     "id": "badge-508771912270079",

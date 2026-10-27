@@ -6,6 +6,85 @@
     "updatedAt": "2026-10-27",
     "publishDetail": true,
     "image": null,
+    "sources": [
+      "waffle-night-six",
+      "official-hollow-badges",
+      "waffle-banana-hollow",
+      "conor-lolwen-claim"
+    ],
+    "id": "lolwen",
+    "slug": "lolwen",
+    "name": "LOLWEN",
+    "description": "Claim LOLWEN after Banana Eats’ key escape and basement cake hunt. Includes the secret lobby door, eight slices and separate Floor 6 display claim.",
+    "gameId": "the-hollow-2026",
+    "steps": [
+      "Join Banana Eats and choose Escape — One Banana for the recorded route. Play as a survivor; the creator uses this mode so only one player is Banana.",
+      "Find and pick up a Hollow Key on the round’s map. The recording shows it on the ground; no fixed spawn location was established. Keep the key and avoid Banana.",
+      "Survive until the exits open and escape with the key. The guide shows exits becoming available when the timer reaches 1:00; teammates completing puzzles can shorten the timer. Picking up the key without successfully escaping is not the completed objective.",
+      "Back in the Banana Eats lobby, find the red secret door by spawn in the cave area. Interact with it after escaping with the Hollow Key to enter Banana’s Basement.",
+      "Search the basement for eight cake slices. Follow the directional arrows and check both branches at hallway junctions; expect jump scares. Return to missed branches if the cake is not complete.",
+      "After collecting all eight slices, let the transition and cutscene finish. Walk forward to the prize in the new area to receive the event completion badge.",
+      "Return to The Hollow Hub on the same account. Take the elevator to Floor 6 and find the Banana Eats room, then interact with its reward display to claim LOLWEN.",
+      "Check AVATAR ITEM OBTAINED / LOLWEN / Quest Reward and your avatar inventory separately. Conor3D’s final claim segment shows this named banner at 6:23. The original-game badge and the Hub item are separate steps. No Ticket payout amount or repeatable farming method was verified."
+    ],
+    "questIds": [
+      "banana-eight-cake-slices"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the recorded quest; no Ticket-shop or Plus purchase shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the documented task and its final return or separate claim step.",
+      "Creator footage supports the route; no own-account test."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": true,
+    "image": null,
+    "sources": [
+      "waffle-night-six",
+      "official-hollow-badges"
+    ],
+    "id": "amazing-liquefactive-bighead",
+    "slug": "amazing-liquefactive-bighead",
+    "name": "The Amazing Liquefactive Bighead",
+    "description": "Earn the Bighead from the Floor 6 cauldron puzzle. Includes ingredient-color examples, correct order, relic collection and the elevator return.",
+    "gameId": "animal-hospital",
+    "steps": [
+      "Enter The Hollow cinema elevator and select Floor 6. Search the right side of the floor for the Animal Hospital room. This Hub maze puzzle is separate from treating patients in the original Animal Hospital game.",
+      "Find the cauldron and read the three-color sequence it requests. Memorize the order before collecting ingredients. Use your current displayed sequence; the recording’s orange → green → red is an example, not a fixed code for every run.",
+      "Search the room and nearby area for ingredients with the matching colors. In the reviewed run, orange is a pumpkin, green is slime and red is berries. Do not substitute a differently colored ingredient just because it is nearby.",
+      "Carry the first required ingredient to the cauldron and add it. Repeat for the second and third colors in the displayed order. Adding the right colors in the wrong order does not satisfy the sequence.",
+      "After the correct third ingredient, collect the released relic. The creator’s sequence finishes with red berries at about 2:01–2:11 in the complete Day 6 recording.",
+      "Bring the relic safely back to the elevator. Completing the cauldron alone is not the end of the maze task; keep avoiding the floor’s monster until you return.",
+      "Check the named The Amazing Liquefactive Bighead / Puzzle Reward result after returning. The reviewed footage shows that named reward around 2:20. Check your own badge and avatar inventory separately; this is a video-based route, not our own-account test."
+    ],
+    "questIds": [
+      "night-six-cauldron"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through the recorded quest; no Ticket-shop or Plus purchase shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the documented task and its final return or separate claim step.",
+      "Creator footage supports the route; no own-account test."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": true,
+    "image": null,
     "gameId": "animal-hospital",
     "sources": [
       "waffle-hospital-hollow",
