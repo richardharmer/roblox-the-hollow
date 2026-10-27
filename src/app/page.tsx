@@ -99,7 +99,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            New Night 5: solve the mirror chain for Spore-Worn Traffic Cone, finish The Mimic carnival for Hiachi Grin Mask, or fuel DTI’s boat for Veil of Darkness. Helmet of the Ossuary costs 60 Tickets at the cinema shop. Haunted Harvest Crown and The Great White Pumpkin cost 20 Tickets each. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–5 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
+            New: earn Mimic Hoodie in Animal Hospital by collecting eight photo pieces, solving the slider and handing in during Shift 3, then claim at the Hub display. Night 5: solve the mirror chain for Spore-Worn Traffic Cone, finish The Mimic carnival for Hiachi Grin Mask, or fuel DTI’s boat for Veil of Darkness. Helmet of the Ossuary costs 60 Tickets at the cinema shop. Haunted Harvest Crown and The Great White Pumpkin cost 20 Tickets each. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–5 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">

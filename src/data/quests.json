@@ -6,6 +6,80 @@
     "updatedAt": "2026-10-27",
     "publishDetail": true,
     "image": null,
+    "gameId": "animal-hospital",
+    "sources": [
+      "waffle-hospital-hollow",
+      "bros-hospital-claim",
+      "official-hospital-hollow",
+      "official-hollow-badges"
+    ],
+    "id": "hospital-slime-puzzle",
+    "slug": "hospital-slime-puzzle",
+    "name": "Animal Hospital: eight photo pieces, slider puzzle and Mimic Hoodie",
+    "description": "Finish Shift 1, vacuum eight photo pieces during Shift 2, solve the sliding picture and speak to the hazmat NPC in Shift 3 before claiming in the Hub.",
+    "steps": [
+      "Join Animal Hospital and find the platform labeled The Hollow. Start a shift in this event mode; this is separate from the Hub elevator maze and from The Mimic original game.",
+      "Complete Shift 1 patient check-ins. Take each patient’s picture, stamp the form and hand over their card, then visit the room they are assigned to.",
+      "Treat each patient in their room. Take a DNA sample, run it through the machine and read the diagnosis on the computer or TV. Get the requested treatment item from the vending machine and bring it back to that patient. Use the diagnosis shown in your run, not a fixed item list.",
+      "After Shift 1 ends, speak to the person in the hazmat suit in the lobby. This starts the slime-and-photo quest during Shift 2.",
+      "Use the vacuum on purple slime in the lobby and patient rooms. The recorded desktop control is to hold click while facing the slime. Some patches reveal a photo puzzle piece: collect it, and continue until you have all eight pieces.",
+      "Keep checking in and treating patients while searching. You must finish Shift 2 as well as the puzzle; collecting eight pieces alone does not finish the quest.",
+      "Solve the 3×3 sliding picture puzzle. Arrange the image of the dark rabbit-like figure with red eyes, a flask and laboratory background. Move pieces into the adjacent empty space. The creator solves the bottom row first, then the left column, then the remaining top-right 2×2. This is a strategy, not a universal click sequence.",
+      "Finish the remaining Shift 2 patients and reach Shift 3. Speak to the hazmat NPC again and finish the dialogue. The reviewed video shows QUEST COMPLETE and the Animal Hospital event badge toast at about 2:34.",
+      "Return to The Hollow Hub on the same Roblox account. To the left of spawn, find the green Animal Hospital display beside The Mimic doorway. Interact with the Animal Hospital reward display to claim the hoodie.",
+      "Check for AVATAR ITEM OBTAINED / Mimic Hoodie / Quest Reward and check your avatar inventory. BrosClanYt’s reviewed 11:00–11:31 claim chapter shows this named banner. The hospital completion panel’s purple ×100 currency is not proof of 100 Hollow Tickets; no Hub Ticket payout amount was verified."
+    ],
+    "prerequisites": [
+      "Enter Animal Hospital’s The Hollow platform with the same account used in the Hub.",
+      "Video-based walkthrough, not this site’s own-account test."
+    ],
+    "tips": [
+      "Search both the lobby and patient rooms for purple slime.",
+      "Work on patients while collecting pieces so the shift can advance.",
+      "The slider strategy depends on your current board; no fixed move sequence was established."
+    ],
+    "troubleshooting": [
+      "No hazmat quest? Finish Shift 1 and speak to the hazmat NPC before collecting event pieces.",
+      "Eight pieces but no completion? Solve the slider, complete Shift 2 patients and talk to the NPC in Shift 3.",
+      "Badge earned but hoodie missing? Return to the Animal Hospital Hub display, interact and check inventory separately. No global claim-failure fix is established."
+    ],
+    "estimatedMinutes": null,
+    "videoChapters": [
+      {
+        "label": "0:14 — Event platform and Shift 1",
+        "url": "https://www.youtube.com/watch?v=0vrDDFyn9Fc&t=14s"
+      },
+      {
+        "label": "0:59 — Hazmat quest",
+        "url": "https://www.youtube.com/watch?v=0vrDDFyn9Fc&t=59s"
+      },
+      {
+        "label": "1:07 — Eight pieces",
+        "url": "https://www.youtube.com/watch?v=0vrDDFyn9Fc&t=67s"
+      },
+      {
+        "label": "1:46 — Slider puzzle",
+        "url": "https://www.youtube.com/watch?v=0vrDDFyn9Fc&t=106s"
+      },
+      {
+        "label": "2:19 — Shift 3 hand-in",
+        "url": "https://www.youtube.com/watch?v=0vrDDFyn9Fc&t=139s"
+      },
+      {
+        "label": "11:00 — Separate Hub claim (BrosClanYt)",
+        "url": "https://www.youtube.com/watch?v=ci30ede9pIc&t=660s"
+      }
+    ],
+    "startUrl": "https://www.roblox.com/games/78515283254292/Animal-Hospital",
+    "startLabel": "Open Animal Hospital"
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": true,
+    "image": null,
     "gameId": "the-mimic",
     "sources": [
       "waffle-night-five",

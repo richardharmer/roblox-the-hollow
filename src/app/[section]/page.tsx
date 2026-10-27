@@ -49,7 +49,7 @@ const pages: Record<string, [string, string]> = {
   ],
   rewards: [
     "The Hollow Rewards",
-    "Get documented Night 1–5 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
+    "Get Mimic Hoodie from Animal Hospital and documented Night 1–5 maze rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
   ],
   badges: [
     "The Hollow Badges",

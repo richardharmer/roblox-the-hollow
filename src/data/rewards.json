@@ -6,6 +6,50 @@
     "updatedAt": "2026-10-27",
     "publishDetail": true,
     "image": null,
+    "gameId": "animal-hospital",
+    "sources": [
+      "waffle-hospital-hollow",
+      "bros-hospital-claim",
+      "official-hospital-hollow",
+      "official-hollow-badges"
+    ],
+    "id": "mimic-hoodie",
+    "slug": "mimic-hoodie",
+    "name": "Mimic Hoodie",
+    "description": "Earn Mimic Hoodie through Animal Hospital’s hazmat and photo-puzzle quest. Includes patient treatment, Shift 3 hand-in and the separate green Hub-display claim.",
+    "steps": [
+      "Join Animal Hospital and find the platform labeled The Hollow. Start a shift in this event mode; this is separate from the Hub elevator maze and from The Mimic original game.",
+      "Complete Shift 1 patient check-ins. Take each patient’s picture, stamp the form and hand over their card, then visit the room they are assigned to.",
+      "Treat each patient in their room. Take a DNA sample, run it through the machine and read the diagnosis on the computer or TV. Get the requested treatment item from the vending machine and bring it back to that patient. Use the diagnosis shown in your run, not a fixed item list.",
+      "After Shift 1 ends, speak to the person in the hazmat suit in the lobby. This starts the slime-and-photo quest during Shift 2.",
+      "Use the vacuum on purple slime in the lobby and patient rooms. The recorded desktop control is to hold click while facing the slime. Some patches reveal a photo puzzle piece: collect it, and continue until you have all eight pieces.",
+      "Keep checking in and treating patients while searching. You must finish Shift 2 as well as the puzzle; collecting eight pieces alone does not finish the quest.",
+      "Solve the 3×3 sliding picture puzzle. Arrange the image of the dark rabbit-like figure with red eyes, a flask and laboratory background. Move pieces into the adjacent empty space. The creator solves the bottom row first, then the left column, then the remaining top-right 2×2. This is a strategy, not a universal click sequence.",
+      "Finish the remaining Shift 2 patients and reach Shift 3. Speak to the hazmat NPC again and finish the dialogue. The reviewed video shows QUEST COMPLETE and the Animal Hospital event badge toast at about 2:34.",
+      "Return to The Hollow Hub on the same Roblox account. To the left of spawn, find the green Animal Hospital display beside The Mimic doorway. Interact with the Animal Hospital reward display to claim the hoodie.",
+      "Check for AVATAR ITEM OBTAINED / Mimic Hoodie / Quest Reward and check your avatar inventory. BrosClanYt’s reviewed 11:00–11:31 claim chapter shows this named banner. The hospital completion panel’s purple ×100 currency is not proof of 100 Hollow Tickets; no Hub Ticket payout amount was verified."
+    ],
+    "questIds": [
+      "hospital-slime-puzzle"
+    ],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "Earned through Animal Hospital’s event quest; no Ticket or Plus purchase shown",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Complete the hospital’s event quest, including the Shift 3 NPC dialogue.",
+      "Claim at the Animal Hospital Hub display; the item name does not mean The Mimic’s carnival quest.",
+      "Creator recordings checked; no own-account delivery test."
+    ]
+  },
+  {
+    "verificationLevel": "REPORTED",
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": true,
+    "image": null,
     "gameId": "the-mimic",
     "sources": [
       "waffle-night-five",

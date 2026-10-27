@@ -718,9 +718,12 @@
     "id": "badge-3987033661971983",
     "slug": "badge-3987033661971983",
     "name": "Mimic Hoodie",
-    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "description": "Official Hub badge identity confirmed; Animal Hospital quest and separate named hoodie claim are supported by creator recordings.",
     "verificationLevel": "CONFIRMED",
     "sources": [
+      "waffle-hospital-hollow",
+      "bros-hospital-claim",
+      "official-hospital-hollow",
       "official-hollow-badges"
     ],
     "firstSeenAt": "2026-10-27",
@@ -732,9 +735,10 @@
     "badgeId": 3987033661971983,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/3987033661971983/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "mimic-hoodie"
   },
   {
     "id": "badge-1120837573965561",
@@ -779,5 +783,31 @@
     "claimInstructionsEvidence": "UNVERIFIED",
     "robloxUrl": "https://www.roblox.com/badges/3642653337776706/",
     "requirements": []
+  },
+  {
+    "id": "badge-508771912270079",
+    "slug": "badge-508771912270079",
+    "name": "Animal Hospital x The Hollow",
+    "description": "Official original-game event badge. Video-reported completion requires the hazmat photo puzzle and Shift 3 hand-in; claim the hoodie separately in the Hub.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "waffle-hospital-hollow",
+      "bros-hospital-claim",
+      "official-hospital-hollow",
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "animal-hospital",
+    "badgeId": 508771912270079,
+    "universeId": 10148749921,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "robloxUrl": "https://www.roblox.com/badges/508771912270079/",
+    "requirements": [],
+    "relatedRewardSlug": "mimic-hoodie"
   }
 ]
