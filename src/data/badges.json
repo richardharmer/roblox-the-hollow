@@ -669,5 +669,115 @@
     "robloxUrl": "https://www.roblox.com/badges/1106624724274807/",
     "requirements": [],
     "relatedRewardSlug": "veil-of-darkness"
+  },
+  {
+    "id": "badge-2586893792208379",
+    "slug": "badge-2586893792208379",
+    "name": "The Amazing Liquefactive Bighead",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 2586893792208379,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/2586893792208379/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3555451806029358",
+    "slug": "badge-3555451806029358",
+    "name": "Dark Crescent Helm",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3555451806029358,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3555451806029358/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3987033661971983",
+    "slug": "badge-3987033661971983",
+    "name": "Mimic Hoodie",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3987033661971983,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3987033661971983/",
+    "requirements": []
+  },
+  {
+    "id": "badge-1120837573965561",
+    "slug": "badge-1120837573965561",
+    "name": "The Spectral Skull of Nevermoor",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1120837573965561,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/1120837573965561/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3642653337776706",
+    "slug": "badge-3642653337776706",
+    "name": "LOLWEN",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3642653337776706,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3642653337776706/",
+    "requirements": []
   }
 ]

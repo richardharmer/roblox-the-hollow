@@ -158,7 +158,7 @@ export default async function Section({
                 <h2>Official badge IDs and verification status</h2>
                 <p>
                   {hollowBadges.length} enabled Hub badges were returned by Roblox’s official API for
-                  The Hollow universe 10770728771 on October 25 (Beijing), with no
+                  The Hollow universe 10770728771 on October 27 (Beijing), with no
                   next-page cursor. Search by name, Badge ID or Universe ID
                   below. The directory also includes separately verified badges from participating experiences.
                 </p>

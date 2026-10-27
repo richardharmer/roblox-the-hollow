@@ -505,7 +505,7 @@
     "url": "https://badges.roblox.com/v1/universes/10770728771/badges?limit=100&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Direct read October 25, 15:33 UTC (23:33 Beijing): 22 enabled Hub badges, null next-page cursor and empty descriptions. Four additional identities observed: Boo & Bub, The Great White Pumpkin, Chrome Deer Skull Chain and Anomaly Detection Rig. Their API creation timestamps are October 21 UTC, with updates October 25 at 14:53 UTC; these are newly observed records, not newly created badges. Identity and enabled status do not establish claim steps, price, free/Plus eligibility, a night assignment or avatar-item delivery. October27 full API26enabled/no cursor. Newly seen:Spore-Worn Traffic Cone4020175883673650,Helmet of the Ossuary4074835199198354,Hiachi Grin Mask984883217756973,Veil of Darkness1106624724274807. Identity only; not newly created or claim proof.",
+    "note": "October 27, 12:38 UTC check: official API returned 31 enabled Hub badges, no next-page cursor. Five newly identified records were created October 21 UTC and updated October 27 around 12:13 UTC; not newly created today. Descriptions are null. Identity only: do not infer claim routes, Tickets prices, free/Plus eligibility or avatar delivery.",
     "lastCheckedAt": "2026-10-27",
     "lastSuccessAt": "2026-10-27"
   },
