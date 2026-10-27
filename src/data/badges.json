@@ -581,7 +581,8 @@
     "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
     "verificationLevel": "CONFIRMED",
     "sources": [
-      "official-hollow-badges"
+      "official-hollow-badges",
+      "waffle-night-five"
     ],
     "firstSeenAt": "2026-10-27",
     "lastVerifiedAt": "2026-10-27",
@@ -592,9 +593,10 @@
     "badgeId": 4020175883673650,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/4020175883673650/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "spore-worn-traffic-cone"
   },
   {
     "id": "badge-4074835199198354",
@@ -627,7 +629,8 @@
     "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
     "verificationLevel": "CONFIRMED",
     "sources": [
-      "official-hollow-badges"
+      "official-hollow-badges",
+      "waffle-night-five"
     ],
     "firstSeenAt": "2026-10-27",
     "lastVerifiedAt": "2026-10-27",
@@ -638,9 +641,10 @@
     "badgeId": 984883217756973,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/984883217756973/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "hiachi-grin-mask"
   },
   {
     "id": "badge-1106624724274807",
@@ -649,7 +653,8 @@
     "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
     "verificationLevel": "CONFIRMED",
     "sources": [
-      "official-hollow-badges"
+      "official-hollow-badges",
+      "waffle-night-five"
     ],
     "firstSeenAt": "2026-10-27",
     "lastVerifiedAt": "2026-10-27",
@@ -660,8 +665,9 @@
     "badgeId": 1106624724274807,
     "universeId": 10770728771,
     "enabled": true,
-    "claimInstructionsEvidence": "UNVERIFIED",
+    "claimInstructionsEvidence": "REPORTED",
     "robloxUrl": "https://www.roblox.com/badges/1106624724274807/",
-    "requirements": []
+    "requirements": [],
+    "relatedRewardSlug": "veil-of-darkness"
   }
 ]

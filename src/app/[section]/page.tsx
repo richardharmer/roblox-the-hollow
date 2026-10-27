@@ -49,7 +49,7 @@ const pages: Record<string, [string, string]> = {
   ],
   rewards: [
     "The Hollow Rewards",
-    "Get documented Night 1–4 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
+    "Get documented Night 1–5 rewards with written claim steps. Learn how to earn and spend Tickets, check event codes, and separate free quest items from Plus-only rewards.",
   ],
   badges: [
     "The Hollow Badges",
@@ -131,7 +131,7 @@ export default async function Section({
               <div className="prose">
                 <h2>Choose a task: maze puzzles and game quests</h2>
                 <p>
-                  {collections.quests.filter((quest) => quest.publishDetail).length} written walkthroughs cover the reviewed event tasks, including Night 1–4 maze puzzles and participating experiences. Recordings, official written requirements and community reports are attributed in each guide.
+                  {collections.quests.filter((quest) => quest.publishDetail).length} written walkthroughs cover the reviewed event tasks, including Night 1–5 maze puzzles and participating experiences. Recordings, official written requirements and community reports are attributed in each guide.
                 </p>
               </div>
               <Directory kind="quests" />
