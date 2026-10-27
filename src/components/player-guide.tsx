@@ -39,6 +39,7 @@ export function RewardBoard({ compact = false }: { compact?: boolean }) {
       <p>
         Choose a reward, follow its steps and save your progress as you play. New: The Great White Pumpkin has a recorded 20-Ticket shop claim. Guides also cover Home Alone’s four visitors and 99 Nights’ 20 Void flowers. Each reward lists its cost and claim route below.
       </p>
+      <p><Link href="/rewards/helmet-of-the-ossuary/">Helmet of the Ossuary: five steps to spend 60 earned Tickets →</Link> Recorded OWNED and balance 760 to 700.</p>
       <p>Haunted Harvest Crown costs 20 earned Tickets at the cinema concessions shop. The original recording shows the named item obtained and the balance changing from 300 to 280. <Link href="/rewards/haunted-harvest-crown/">Follow the five purchase and inventory-check steps →</Link> <Link href="/badges/">Check all {hollowBadges.length} official Hub badge IDs →</Link></p>
       <div className="player-reward-list">
         {rewards.map((reward) => (

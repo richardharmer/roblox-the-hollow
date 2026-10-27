@@ -573,5 +573,95 @@
     "badgeId": 1614932857309915,
     "robloxUrl": "https://www.roblox.com/badges/1614932857309915/",
     "requirements": []
+  },
+  {
+    "id": "badge-4020175883673650",
+    "slug": "badge-4020175883673650",
+    "name": "Spore-Worn Traffic Cone",
+    "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 4020175883673650,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/4020175883673650/",
+    "requirements": []
+  },
+  {
+    "id": "badge-4074835199198354",
+    "slug": "badge-4074835199198354",
+    "name": "Helmet of the Ossuary",
+    "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges",
+      "conor-ossuary-helmet"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 4074835199198354,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "REPORTED",
+    "robloxUrl": "https://www.roblox.com/badges/4074835199198354/",
+    "requirements": [],
+    "relatedRewardSlug": "helmet-of-the-ossuary"
+  },
+  {
+    "id": "badge-984883217756973",
+    "slug": "badge-984883217756973",
+    "name": "Hiachi Grin Mask",
+    "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 984883217756973,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/984883217756973/",
+    "requirements": []
+  },
+  {
+    "id": "badge-1106624724274807",
+    "slug": "badge-1106624724274807",
+    "name": "Veil of Darkness",
+    "description": "Official Hub badge identity confirmed. Empty API descriptions do not establish completion requirements or item delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1106624724274807,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/1106624724274807/",
+    "requirements": []
   }
 ]

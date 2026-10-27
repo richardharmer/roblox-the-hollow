@@ -505,9 +505,9 @@
     "url": "https://badges.roblox.com/v1/universes/10770728771/badges?limit=100&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Direct read October 25, 15:33 UTC (23:33 Beijing): 22 enabled Hub badges, null next-page cursor and empty descriptions. Four additional identities observed: Boo & Bub, The Great White Pumpkin, Chrome Deer Skull Chain and Anomaly Detection Rig. Their API creation timestamps are October 21 UTC, with updates October 25 at 14:53 UTC; these are newly observed records, not newly created badges. Identity and enabled status do not establish claim steps, price, free/Plus eligibility, a night assignment or avatar-item delivery.",
-    "lastCheckedAt": "2026-10-25",
-    "lastSuccessAt": "2026-10-25"
+    "note": "Direct read October 25, 15:33 UTC (23:33 Beijing): 22 enabled Hub badges, null next-page cursor and empty descriptions. Four additional identities observed: Boo & Bub, The Great White Pumpkin, Chrome Deer Skull Chain and Anomaly Detection Rig. Their API creation timestamps are October 21 UTC, with updates October 25 at 14:53 UTC; these are newly observed records, not newly created badges. Identity and enabled status do not establish claim steps, price, free/Plus eligibility, a night assignment or avatar-item delivery. October27 full API26enabled/no cursor. Newly seen:Spore-Worn Traffic Cone4020175883673650,Helmet of the Ossuary4074835199198354,Hiachi Grin Mask984883217756973,Veil of Darkness1106624724274807. Identity only; not newly created or claim proof.",
+    "lastCheckedAt": "2026-10-27",
+    "lastSuccessAt": "2026-10-27"
   },
   {
     "id": "official-leaves-badge",
@@ -888,5 +888,15 @@
     "note": "Official badge description explicitly names The Hollow in a confirmed game",
     "lastCheckedAt": "2026-10-26",
     "lastSuccessAt": "2026-10-26"
+  },
+  {
+    "id": "conor-ossuary-helmet",
+    "name": "Conor3D — Helmet of the Ossuary 60-Ticket purchase",
+    "url": "https://www.youtube.com/watch?v=LJ3OG0GUAro",
+    "level": "COMMUNITY",
+    "access": "READ",
+    "lastCheckedAt": "2026-10-27",
+    "lastSuccessAt": "2026-10-27",
+    "note": "Native original1:02 visual keyframes:0:05identity,0:25caption60Tickets+concessions,0:35approach,0:40standard Avatar Items helmet60 balance760,0:45OWNED,0:50balance700+badge toast. Relevant route checked; no Plus requirement shown, no own-account test."
   }
 ]

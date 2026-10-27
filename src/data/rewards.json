@@ -1,5 +1,39 @@
 [
   {
+    "id": "helmet-of-the-ossuary",
+    "slug": "helmet-of-the-ossuary",
+    "name": "Helmet of the Ossuary",
+    "description": "A 60-Ticket cinema shop reward. The original purchase recording shows OWNED and the balance falling from 760 to 700.",
+    "verificationLevel": "REPORTED",
+    "sources": [
+      "conor-ossuary-helmet",
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-27",
+    "lastVerifiedAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "publishDetail": true,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "questIds": [],
+    "catalogItemId": null,
+    "type": "Avatar item",
+    "free": true,
+    "costLabel": "60 earned Tickets; no Robux or Plus requirement shown in the recorded purchase",
+    "availability": "AVAILABLE",
+    "requirements": [
+      "Have at least 60 credited Tickets. This is not a zero-Ticket claim.",
+      "Choose Helmet of the Ossuary in the standard Avatar Items row, separate from Plus items."
+    ],
+    "steps": [
+      "Earn Tickets through a documented participating-game task and return to The Hollow. Review any REDEEM BADGES prompt and press Confirm to credit the listed amount. Check your current balance; task payouts can differ.",
+      "Enter the cinema main building and approach the concessions NPC. Open the Little Shop of Terror; the recorded route runs from the plaza to the counter at 0:25–0:40.",
+      "Select Helmet of the Ossuary in the standard Avatar Items row. At 0:40 its tile shows a Ticket icon and 60, with the buyer’s balance at 760. Check your actual live price.",
+      "Buy the helmet for 60 Tickets if the live panel matches. At 0:45 the selected helmet reads OWNED; at 0:50 the balance is 700 and its badge toast is visible. A badge listing alone does not prove a purchase.",
+      "Check the item in your Roblox avatar inventory separately. The shop says it will appear there soon; this site did not test delivery on its own account. If OWNED appears but the item is missing, retain the claim screen and check the correct account before spending again."
+    ]
+  },
+  {
     "id": "haunted-harvest-crown",
     "slug": "haunted-harvest-crown",
     "name": "Haunted Harvest Crown",

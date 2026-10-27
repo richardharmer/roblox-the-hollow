@@ -99,7 +99,7 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            Haunted Harvest Crown and The Great White Pumpkin: 20 Tickets each at the cinema concessions shop, with recorded successful claims. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–4 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
+            New: Helmet of the Ossuary costs 60 Tickets at the cinema shop, with a recorded successful purchase. Haunted Harvest Crown and The Great White Pumpkin cost 20 Tickets each. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–4 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
           </p>
           <div className="hero-actions">
             <Link href="/rewards/#reward-board" className="button primary">
