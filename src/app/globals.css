@@ -2461,3 +2461,29 @@ details p {
  .step-content h3 { font-size: 17px; }
  .step-content p { font-size: 16px; }
 }
+
+/* Compact answer routes preserve a readable flow on narrow screens. */
+.puzzle-routes {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0;
+}
+.puzzle-routes li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+}
+.puzzle-routes a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 44px;
+  font-weight: 700;
+}
+.puzzle-routes p {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.puzzle-page section[id] {
+  scroll-margin-top: 100px;
+}

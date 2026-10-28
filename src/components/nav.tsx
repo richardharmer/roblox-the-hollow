@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, ChartNoAxesCombined } from "lucide-react";
 import { Brand } from "./ui";
-const links = ["Home", "Games", "Quests", "Rewards", "Badges", "Updates"];
+const links = ["Home", "Puzzle", "Games", "Quests", "Rewards", "Badges", "Updates"];
 export function Nav() {
   const [open, setOpen] = useState(false);
   const path = usePathname();

@@ -5,9 +5,9 @@
     "url": "https://www.roblox.com/games/116463962153167/The-Hollow",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Directly read October 23, 2026, following the October 21 Newsroom link. The Hollow uses Place ID 116463962153167; its Roblox Presents publisher link points to group 4111519. The description gives October 22 opening at 2 p.m. PT and a separate 3 p.m. PT start without explaining the gameplay phase. It confirms avatar-item quests in the hub and participating experiences. Follow-up API read on October 23 verified Universe ID 10770728771. Recorded task guides are now available; successful entry on our own account remains untested. The static server message is not a live availability test. Re-read October 24 for code research: no event redemption string or code-entry procedure appears in this page; this does not establish that no code can ever exist.",
-    "lastCheckedAt": "2026-10-24",
-    "lastSuccessAt": "2026-10-24"
+    "note": "Directly read October 23, 2026, following the October 21 Newsroom link. The Hollow uses Place ID 116463962153167; its Roblox Presents publisher link points to group 4111519. The description gives October 22 opening at 2 p.m. PT and a separate 3 p.m. PT start without explaining the gameplay phase. It confirms avatar-item quests in the hub and participating experiences. Follow-up API read on October 23 verified Universe ID 10770728771. Recorded task guides are now available; successful entry on our own account remains untested. The static server message is not a live availability test. Re-read October 24 for code research: no event redemption string or code-entry procedure appears in this page; this does not establish that no code can ever exist. Re-read October 28 for the puzzle landing-page revision: no QR reward destination, secret-word answer or code-entry procedure is supplied in the visible text. The official Hub remains the linked event destination.",
+    "lastCheckedAt": "2026-10-28",
+    "lastSuccessAt": "2026-10-28"
   },
   {
     "id": "official-newsroom-hollow",
@@ -15,9 +15,9 @@
     "url": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Published October 21, 2026; re-read October 23. Its The Hollow link points directly to Place ID 116463962153167, whose publisher link points to Roblox Presents group 4111519. Confirms the public and Plus schedule, monster origins, reward categories and finale. Original-game links are distinct from the event hub. Earlier source records retain their original review dates. Re-read October 24 for code research: no event redemption string or code-entry procedure appears in this page; this does not establish that no code can ever exist.",
-    "lastCheckedAt": "2026-10-24",
-    "lastSuccessAt": "2026-10-24"
+    "note": "Published October 21, 2026; re-read October 23. Its The Hollow link points directly to Place ID 116463962153167, whose publisher link points to Roblox Presents group 4111519. Confirms the public and Plus schedule, monster origins, reward categories and finale. Original-game links are distinct from the event hub. Earlier source records retain their original review dates. Re-read October 24 for code research: no event redemption string or code-entry procedure appears in this page; this does not establish that no code can ever exist. Re-read October 28 for the puzzle landing-page revision: no QR reward destination, secret-word answer or code-entry procedure is supplied in the visible text. The official Hub remains the linked event destination.",
+    "lastCheckedAt": "2026-10-28",
+    "lastSuccessAt": "2026-10-28"
   },
   {
     "id": "community-announcement",

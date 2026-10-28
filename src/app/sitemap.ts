@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticDates: Record<string, string> = {
     "": newest([
       event.updatedAt,
+      "2026-10-28",
       ...Object.values(collections).flatMap((items) =>
         items.map((x) => x.updatedAt),
       ),
@@ -26,11 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     rewards: newest(collections.rewards.map((x) => x.updatedAt)),
     badges: newest(collections.badges.map((x) => x.updatedAt)),
     updates: newest(updates.map((x) => x.updatedAt)),
-    "release-date": event.updatedAt,
+    "release-date": newest([event.updatedAt, "2026-10-28"]),
     about: "2026-10-11",
     sources: newest(sources.map((s) => s.lastCheckedAt)),
     privacy: "2026-10-21",
-    puzzle: "2026-10-21",
+    puzzle: "2026-10-28",
   };
   return [
     ...Object.entries(staticDates).map(([p, date]) => ({

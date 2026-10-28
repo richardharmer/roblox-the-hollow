@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import games from "../../src/data/games.json" with { type: "json" };
 import rewards from "../../src/data/rewards.json" with { type: "json" };
 import badges from "../../src/data/badges.json" with { type: "json" };
 test.beforeEach(async ({ page }) => {
@@ -117,7 +118,7 @@ test("progress import, persistence, merge, export and reset", async ({
 });
 test("static HTML and real 404", async ({ request }) => {
   const r = await request.get("/");
-  expect(await r.text()).toContain("9 confirmed");
+  expect(await r.text()).toContain(`${games.length} confirmed`);
   const missing = await request.get("/quests/not-a-real-quest/");
   expect(missing.status()).toBe(404);
 });
@@ -133,7 +134,7 @@ test("confirmed lineup filters link to sourced monster profiles", async ({
   await expect(page.locator(".teaser-card")).toContainText("Seek");
   await page.getByRole("link", { name: "DOORS", exact: true }).click();
   await expect(page.locator("#hollow-status")).toContainText(
-    "Confirmed monster: Seek",
+    "official lineup confirms Seek from DOORS",
   );
   await expect(
     page.getByRole("link", { name: "Play on Roblox" }),
@@ -206,7 +207,7 @@ test("official badge directory searches IDs without upgrading claim evidence", a
   await expect(page.locator(".entry-card")).toContainText("Lord Umberhallow BLOXikin");
   await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
   await page.getByLabel("Search badges").fill("1912601234268529");
-  await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
+  await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
   await page.getByLabel("Search badges").fill("10770728771");
   await expect(page.locator(".entry-card")).toHaveCount(
     badges.filter((badge) => badge.universeId === 10770728771).length,
@@ -214,7 +215,7 @@ test("official badge directory searches IDs without upgrading claim evidence", a
 });
 
 
-test("new Hub badge identities remain separate from unverified claim instructions", async ({ page }) => {
+test("Hub badge identities distinguish reported guides from unverified claims", async ({ page }) => {
   await page.goto("/badges/");
   await expect(page.locator(".prose").first()).toContainText(`${badges.filter((badge) => badge.universeId === 10770728771).length} enabled Hub badges`);
   for (const [id, name] of [
@@ -227,10 +228,13 @@ test("new Hub badge identities remain separate from unverified claim instruction
     await page.getByLabel("Search badges").fill(id);
     await expect(page.locator(".entry-card")).toHaveCount(1);
     await expect(page.locator(".entry-card")).toContainText(name);
-    await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
+    await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
   }
+  await page.getByLabel("Search badges").fill("3555451806029358");
+  await expect(page.locator(".entry-card")).toContainText("Dark Crescent Helm");
+  await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
   await page.goto("/rewards/");
-  await expect(page.getByRole("link", { name: "Check all 18 official Hub badge IDs →" })).toBeVisible();
+  await expect(page.getByRole("link", { name: `Check all ${badges.filter((badge) => badge.universeId === 10770728771).length} official Hub badge IDs →` })).toBeVisible();
 });
 
 test("game pages present recorded tasks before background and preserve pending gaps", async ({ page }) => {
@@ -283,3 +287,19 @@ test("step checklist persists across game and quest pages and ads have no decora
   await expect(page.locator(".quest-stepper").first().getByRole("status")).toHaveText("1 of 8 completed");
   await page.screenshot({ path: "/tmp/hollow-steps-desktop.png", fullPage: false });
 });
+
+for (const width of [390, 1440]) {
+  test(`puzzle intent routes and QR answer at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/puzzle/");
+    await expect(page.locator(".puzzle-routes a")).toHaveCount(6);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.screenshot({ path: `test-results/puzzle-${width}.png`, fullPage: false });
+    await page.getByRole("link", { name: "Is the QR puzzle real?", exact: true }).click();
+    await expect(page).toHaveURL(/#qr-code$/);
+    await expect(page.locator("#qr-code")).toContainText("Neither supplies a QR reward destination");
+    await page.getByRole("link", { name: "Floor 3 · Grave / coffin code", exact: true }).click();
+    await expect(page).toHaveURL(/\/quests\/night-three-graves\/$/);
+    await expect(page.getByRole("region", { name: "Step-by-step task checklist" })).toBeVisible();
+  });
+}

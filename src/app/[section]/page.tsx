@@ -59,7 +59,7 @@ const pages: Record<string, [string, string]> = {
     "The Hollow Updates",
     "Read source reviews and meaningful changes to the event guide. Community reports are labeled separately from confirmed announcements.",
   ],
-  "release-date": ["The Hollow Release Date", dateBriefing],
+  "release-date": ["The Hollow Start Time, Finale & Reward Deadline", dateBriefing],
   progress: [
     "My Hollow Progress",
     "Your private, browser-based quest and reward checklist. No login, no Roblox password, and no account sync.",
@@ -307,9 +307,9 @@ export default async function Section({
             </p>
             {section === "quests" && (
               <p>
-                Looking for the teaser puzzle? Read{" "}
+                Looking for a floor solution or checking a QR claim? Read{" "}
                 <Link href="/puzzle/">
-                  The Hollow puzzle clues and QR-code status
+                  The Hollow floor puzzles and QR-code status
                 </Link>{" "}
                 before treating a claimed password as a quest requirement.
               </p>

@@ -34,8 +34,8 @@ import { Countdown } from "@/components/countdown";
 import { TeaserGallery, TeaserMosaic } from "@/components/teasers";
 export const generateMetadata = () =>
   metadata(
-    "The Hollow Roblox 2026 – Event Guide, Games & Rewards",
-    "The Hollow starts October 22, 2026. Follow verified information about Roblox’s Halloween event. Explore game, quest and reward updates and local progress tracking.",
+    "The Hollow Roblox 2026: Quests, Games & Free Rewards",
+    "Solve The Hollow’s Floor 1–6 puzzles, find game quests and follow reward claim steps. Check QR-code claims, Ticket requirements and the event schedule.",
     "/",
   );
 const faq = [
@@ -99,14 +99,16 @@ export default function Home() {
             Know how to claim it.
           </p>
           <p className="hero-caption">
-            New Night 6: match the cauldron’s three colors and return with the relic for The Amazing Liquefactive Bighead, or escape Banana Eats with a Hollow Key and collect eight cake slices for LOLWEN. Also earn Mimic Hoodie in Animal Hospital by collecting eight photo pieces, solving the slider and handing in during Shift 3, then claim at the Hub display. Night 5: solve the mirror chain for Spore-Worn Traffic Cone, finish The Mimic carnival for Hiachi Grin Mask, or fuel DTI’s boat for Veil of Darkness. Helmet of the Ossuary costs 60 Tickets at the cinema shop. Haunted Harvest Crown and The Great White Pumpkin cost 20 Tickets each. Follow written step-by-step routes for Home Alone’s four visitors, 99 Nights’ Void flowers and the Night 1–6 maze puzzles. Check off actions as you play, then use the separate reward claim steps.
+            Stuck on a maze puzzle? Find your floor’s solution, finish a game quest,
+            or check the exact steps to claim an avatar item. Written guides cover
+            Floors 1–6, with separate routes for Tickets and original-game rewards.
           </p>
           <div className="hero-actions">
-            <Link href="/rewards/#reward-board" className="button primary">
-              Get free rewards <ArrowRight size={17} />
+            <Link href="/puzzle/#floor-solutions" className="button primary">
+              Find my puzzle solution <ArrowRight size={17} />
             </Link>
-            <Link href="/rewards/#tickets" className="button">
-              Earn & spend Tickets <ArrowUpRight size={16} />
+            <Link href="/rewards/#reward-board" className="button">
+              Find rewards & claim steps <ArrowUpRight size={16} />
             </Link>
           </div>
           <div className="hero-date">
@@ -325,7 +327,7 @@ export default function Home() {
               Read the launch briefing <ArrowUpRight size={16} />
             </Link>
             <p>
-              <Link href="/puzzle/">Explore the nine-name puzzle clues →</Link>
+              <Link href="/puzzle/">Find floor solutions & QR-code status →</Link>
             </p>
           </section>
         </aside>
