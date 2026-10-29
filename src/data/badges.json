@@ -815,5 +815,93 @@
     "robloxUrl": "https://www.roblox.com/badges/508771912270079/",
     "requirements": [],
     "relatedRewardSlug": "mimic-hoodie"
+  },
+  {
+    "id": "badge-1274201487502645",
+    "slug": "badge-1274201487502645",
+    "name": "Candy Corn Rune Antlers",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 1274201487502645,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/1274201487502645/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3343528458724772",
+    "slug": "badge-3343528458724772",
+    "name": "Overseer Bandages",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3343528458724772,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3343528458724772/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3073912141588263",
+    "slug": "badge-3073912141588263",
+    "name": "Killer's Knife Aura",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3073912141588263,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3073912141588263/",
+    "requirements": []
+  },
+  {
+    "id": "badge-3090074421275702",
+    "slug": "badge-3090074421275702",
+    "name": "Mushroom Infestation",
+    "description": "Official Hub badge identity confirmed. Claim route, Tickets cost and avatar-item availability remain unverified; enabled status does not prove delivery.",
+    "verificationLevel": "CONFIRMED",
+    "sources": [
+      "official-hollow-badges"
+    ],
+    "firstSeenAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "publishDetail": false,
+    "image": null,
+    "gameId": "the-hollow-2026",
+    "badgeId": 3090074421275702,
+    "universeId": 10770728771,
+    "enabled": true,
+    "claimInstructionsEvidence": "UNVERIFIED",
+    "robloxUrl": "https://www.roblox.com/badges/3090074421275702/",
+    "requirements": []
   }
 ]

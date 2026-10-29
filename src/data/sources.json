@@ -505,9 +505,9 @@
     "url": "https://badges.roblox.com/v1/universes/10770728771/badges?limit=100&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "October 27, 12:38 UTC check: official API returned 31 enabled Hub badges, no next-page cursor. Five newly identified records were created October 21 UTC and updated October 27 around 12:13 UTC; not newly created today. Descriptions are null. Identity only: do not infer claim routes, Tickets prices, free/Plus eligibility or avatar delivery.",
-    "lastCheckedAt": "2026-10-27",
-    "lastSuccessAt": "2026-10-27"
+    "note": "Direct October 29 API read: API returned 35 enabled Hub badges with no next-page cursor. Four additional records were created October 21 UTC and updated October 28 UTC. Badge identity does not establish claim routes, Tickets prices, catalog IDs or avatar delivery.",
+    "lastCheckedAt": "2026-10-29",
+    "lastSuccessAt": "2026-10-29"
   },
   {
     "id": "official-leaves-badge",
@@ -621,13 +621,13 @@
   },
   {
     "id": "official-hollow-livestreams",
-    "name": "Roblox — nine official Hollow livestream records",
+    "name": "Roblox — official Hollow event records",
     "url": "https://apis.roblox.com/virtual-events/v1/universes/10770728771/virtual-events?limit=50&sortOrder=Asc",
     "level": "OFFICIAL",
     "access": "READ",
-    "note": "Direct October 26 API read: 10 public active event records under verified Roblox Presents group 4111519, Universe 10770728771, Place 116463962153167; empty pagination cursor. Additional event 9185919240002208323 has title/subtitle/description ????????? and runs October 31 17:30:07.952–18:00:07.952 UTC (November 1 01:30–02:00 Beijing). Created October 23 UTC, not newly created on this check. Its identity as the finale is not established.",
-    "lastCheckedAt": "2026-10-26",
-    "lastSuccessAt": "2026-10-26"
+    "note": "Direct October 29 API read: 10 public event records under Roblox Presents, Universe 10770728771, Place 116463962153167. Unnamed event 9185919240002208323 is scheduled October 31 17:15:07.952–18:00:07.952 UTC (November 1 01:15–02:00 Beijing). Its identity as the finale is not established.",
+    "lastCheckedAt": "2026-10-29",
+    "lastSuccessAt": "2026-10-29"
   },
   {
     "id": "waffle-night-two",

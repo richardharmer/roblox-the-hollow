@@ -207,7 +207,10 @@ test("official badge directory searches IDs without upgrading claim evidence", a
   await expect(page.locator(".entry-card")).toContainText("Lord Umberhallow BLOXikin");
   await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
   await page.getByLabel("Search badges").fill("1912601234268529");
-  await expect(page.locator(".entry-card")).toContainText("Reported — separate video-based reward guide");
+  await expect(page.locator(".entry-card")).toContainText("Unverified — no complete claim instructions");
+  await page.getByLabel("Claim guide").selectOption("reported");
+  await expect(page.getByText("No matching badges")).toBeVisible();
+  await page.getByRole("button", { name: "Clear filters" }).click();
   await page.getByLabel("Search badges").fill("10770728771");
   await expect(page.locator(".entry-card")).toHaveCount(
     badges.filter((badge) => badge.universeId === 10770728771).length,
@@ -259,7 +262,8 @@ test("game pages present recorded tasks before background and preserve pending g
   await expect(page.locator("#event-tasks .step-list")).toHaveCount(0);
   await page.goto("/games/");
   const mystery = page.locator("#livestreams tr").filter({ hasText: "Unnamed official event" });
-  await expect(mystery).toContainText("01:30");
+  await expect(mystery).toContainText("01:15");
+  await expect(mystery).toContainText("02:00");
   await expect(mystery.getByRole("link")).toHaveAttribute("href", "https://www.roblox.com/events/9185919240002208323");
   await expect(page.locator("#livestreams")).toContainText("do not identify it as the finale");
 });

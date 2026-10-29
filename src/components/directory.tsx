@@ -15,6 +15,7 @@ export function Directory({ kind }: { kind: Collection }) {
   const [search, setSearch] = useState("");
   const [game, setGame] = useState("");
   const [status, setStatus] = useState("");
+  const [claimGuide, setClaimGuide] = useState("");
   const [free, setFree] = useState(false);
   const entries = collections[kind];
   const filtered = entries.filter(
@@ -22,6 +23,7 @@ export function Directory({ kind }: { kind: Collection }) {
       `${x.name} ${"badgeId" in x ? x.badgeId : ""} ${"universeId" in x ? x.universeId : ""}`.toLowerCase().includes(search.toLowerCase()) &&
       (!game || ("gameId" in x && x.gameId === game)) &&
       (!status || x.verificationLevel === status) &&
+      (!claimGuide || ("claimInstructionsEvidence" in x && (claimGuide === "reported" ? x.claimInstructionsEvidence === "REPORTED" : x.claimInstructionsEvidence !== "REPORTED"))) &&
       (!free || ("free" in x && x.free === true)),
   );
   if (kind === "games" && gameProfiles.length) {
@@ -58,8 +60,8 @@ export function Directory({ kind }: { kind: Collection }) {
           </div>
         </div>
         <p className="results-count" role="status">
-          {profiles.length} of {gameProfiles.length} game profiles · Hollow
-          monster origins confirmed
+          {profiles.length} of {gameProfiles.length} game profiles · 9 confirmed
+          Hollow monster origin games
         </p>
         {profiles.length ? (
           <TeaserGallery ids={profiles.map((p) => p.id)} />
@@ -129,6 +131,16 @@ export function Directory({ kind }: { kind: Collection }) {
             <option value="REPORTED">Reported</option>
           </select>
         </div>
+        {kind === "badges" && (
+          <div className="field">
+            <label htmlFor="claim-filter">Claim guide</label>
+            <select id="claim-filter" value={claimGuide} onChange={(e) => setClaimGuide(e.target.value)}>
+              <option value="">All badges</option>
+              <option value="reported">Reported guide available</option>
+              <option value="unverified">Claim steps unverified</option>
+            </select>
+          </div>
+        )}
         {kind === "rewards" && (
           <label className="check-label">
             <input
@@ -163,6 +175,7 @@ export function Directory({ kind }: { kind: Collection }) {
               setSearch("");
               setGame("");
               setStatus("");
+              setClaimGuide("");
               setFree(false);
             }}
           >

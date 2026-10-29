@@ -158,7 +158,7 @@ export default async function Section({
                 <h2>Official badge IDs and verification status</h2>
                 <p>
                   {hollowBadges.length} enabled Hub badges were returned by Roblox’s official API for
-                  The Hollow universe 10770728771 on October 27 (Beijing), with no
+                  The Hollow universe 10770728771 on October 29 (Beijing), with no
                   next-page cursor. Search by name, Badge ID or Universe ID
                   below. The directory also includes separately verified badges from participating experiences.
                 </p>
@@ -285,9 +285,9 @@ export default async function Section({
                 Each profile introduces the original game and links to its
                 verified Roblox experience. The covers come from Roblox’s
                 official thumbnail service. The October 21 Newsroom announcement
-                confirms their monsters in the shared Hollow hub. Original game
-                IDs are not hub IDs; independent tasks in these games are not
-                confirmed.
+                confirms nine monster origin games in the shared Hollow hub;
+                other profiles cover separately documented event quests. Original
+                game IDs are not hub IDs.
               </p>
             ) : (
               <p>
